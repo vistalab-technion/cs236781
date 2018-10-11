@@ -1,0 +1,24 @@
+---
+layout: splash
+title: "Deep Learning on Computational Accelerators"
+excerpt: "Faculty of Computer Science, Technion"
+author_profile: false
+
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.4"
+  overlay_image: "assets/images/splash.jpg"
+  caption: "Winter 2018-9"
+---
+
+Welcome.
+
+
+<h3 class="archive__subtitle">Recent Updates</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
+
