@@ -16,8 +16,8 @@ title                    : "CS236605: Deep Learning"
 title_separator          : "|"
 name                     : "VISTA Lab"
 description              : "Course website"
-url                      : #"https://vistalab-technion.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : #"/cs236605" # the subpath of your site, e.g. "/blog"
+url                      : "https://vistalab-technion.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "/cs236605" # the subpath of your site, e.g. "/blog"
 repository               : "vistalab-technion/cs236605" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "https://placehold.it/500x300" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
@@ -275,7 +275,3 @@ defaults:
       layout: single
       author_profile: false
 
-footer_scripts:
-  - /assets/js/main.min.js
-  - https://use.fontawesome.com/releases/v5.3.1/js/all.js
-  - /assets/js/add_logos.js

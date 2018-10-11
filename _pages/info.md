@@ -1,5 +1,5 @@
 ---
-permalink: /info
+permalink: /info/
 title: Course Info
 classes: wide
 ---
