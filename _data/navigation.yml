@@ -1,4 +1,6 @@
 main:
+  - title: "Info"
+    url: /info/
   - title: "Lecture Notes"
     url: /lectures/
   - title: "Tutorials"
