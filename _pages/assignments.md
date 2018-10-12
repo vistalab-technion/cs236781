@@ -2,7 +2,7 @@
 title: Homework Assignments
 permalink: /hw/
 toc: true
-toc_title: Contents
+toc_label: Contents
 ---
 
 This document will help you get started with the course homework assignments.

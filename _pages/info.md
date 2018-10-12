@@ -4,8 +4,6 @@ title: Course Info
 classes: wide
 ---
 
-## General
-
 Deep learning is widely used in many market segments ranging from mobile devices
 to supercomputers. Recently many software packages as well as special hardware
 accelerators were developed to support deep learning. The course will focus on
