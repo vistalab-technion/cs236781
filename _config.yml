@@ -254,6 +254,15 @@ compress_html:
     envs: development
 
 
+collections:
+  lectures:
+    output: true
+    permalink: /:collection/:path/
+  tutorials:
+    output: true
+    permalink: /:collection/:path/
+
+
 # Defaults
 defaults:
   # _posts
@@ -274,4 +283,24 @@ defaults:
     values:
       layout: single
       author_profile: false
-
+  # _lectures
+  - scope:
+      path: ""
+      type: lectures
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      toc: true
+      toc_label: Contents
+      classes:
+          - text-justify
+          - wide
+  # _tutorials
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: single
+      author_profile: false
+      share: false
