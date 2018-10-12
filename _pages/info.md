@@ -32,6 +32,19 @@ At the end of the course, the student will:
 
 **Credits**: 3.0.
 
+## Course Staff
+
+<div>
+    <ul style="list-style: none">
+    {% for kv in site.data.authors %}
+        {% assign author = kv[1] %}
+    <li style="display: inline-block; vertical-align: top; margin-right: 0.5em">
+        {% include author.html %}
+    </li>
+    {% endfor %}
+    </ul>
+</div>
+
 ## Detailed Syllabus
 
 | #    | Date         | Lecture                                                                                                                                                                               | Tutorial                                                                            |
