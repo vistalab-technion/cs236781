@@ -24,6 +24,22 @@ $link-color: darkblue;
     margin-top: 1em;
 }
 
+.technion-logo {
+    margin-right: 0.4em;
+    width: 14em;
+    height: auto;
+}
+
+.vista-logo {
+    float: inline-end; 
+    margin: 1em;
+    width: 170px;
+}
+
+.page__footer footer {
+    display: inline-block;
+}
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
