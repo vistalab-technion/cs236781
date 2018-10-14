@@ -1,7 +1,7 @@
 alex:
   name: Prof. Alex Bronstein
   bio: Lecturer
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  avatar: "/assets/images/bio-photo-alex.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -13,7 +13,7 @@ alex:
 avi:
   name: Prof. Avi Mendelson
   bio: Lecturer
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  avatar: "/assets/images/bio-photo-avi.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -34,7 +34,7 @@ chaim:
 aviv:
   name: Aviv Rosenberg
   bio: Assignments TA
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  avatar: "/assets/images/bio-photo-aviv.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
