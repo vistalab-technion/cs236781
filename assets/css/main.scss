@@ -14,13 +14,14 @@ $link-color: darkblue;
 
 .staff_container {
     width: 100%;
-    display: table;
-    table-layout: fixed;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .staff {
-    display: table-cell;
+    flex-grow: 1;
     vertical-align: top;
+    margin-top: 1em;
 }
 
 @charset "utf-8";
