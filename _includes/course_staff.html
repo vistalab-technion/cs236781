@@ -1,0 +1,17 @@
+{% assign positions = "Lecturer TA" | split: ' ' %}
+
+
+{% for position in positions %}
+<h3>{{ position }}s</h3>
+<div class="staff_container">
+    {% for kv in site.data.authors %}
+        {% assign author = kv[1] %}
+        {% if author.bio contains position %}
+        <div class="staff">
+            {% include author.html %}
+        </div>
+        {%endif %}
+    {% endfor %}
+</div>
+{% endfor %}
+

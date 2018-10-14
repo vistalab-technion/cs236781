@@ -12,6 +12,17 @@
 $primary-color: darkorange;
 $link-color: darkblue;
 
+.staff_container {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.staff {
+    display: table-cell;
+    vertical-align: top;
+}
+
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
