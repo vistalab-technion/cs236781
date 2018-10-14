@@ -7,14 +7,20 @@ MathJax.Hub.Config({
       equationNumbers: { autoNumber: "AMS" },
       noErrors: { disabled: true },
       Macros: {
+        // Aviv's defs
         bold: ["{\\bf #1}",1],
         mat: ["\\boldsymbol {#1}",1],
         mattr: ["\\boldsymbol {#1}^\\top",1],
         vec: ["\\boldsymbol {#1}",1],
         vec: ["\\boldsymbol {#1}^\\top",1],
         diag: ["\\mathop{\\mathrm{diag}}"],
+        set: ["\\mathbb {#1}",1],
+
+        // Alex's defs
         bm: ["{\\bf #1}",1],
-        Tr: ["\\top"]
+        Tr: ["\\top"],
+        RR: ["\\set{R}"]
+
       }
     },
 
