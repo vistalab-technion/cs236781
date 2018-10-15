@@ -1,6 +1,6 @@
 ---
 title: Multivariate Calculus
-excerpt: ""
+excerpt: "Gradient, directional derivative, Hessian, Taylor expansion"
 date: 2018-10-01
 author: alex
 ---
