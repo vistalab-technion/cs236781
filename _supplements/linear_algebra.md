@@ -181,7 +181,7 @@ satisfying $\langle \bb{u}, \bb{v} \rangle = 0$ are said to be
 The following result is doubtlessly the most important inequality in
 linear algebra (and, perhaps, in mathematics in general):
 
-**Cauchy-Schwartz inequality**.
+**Theorem: Cauchy-Schwartz inequality**.
 Let $\| \cdot \|$ be the norm induced by an inner product
 $\langle \cdot, \cdot \rangle$ on $\RR^n$, Then, for any
 $\bb{u}, \bb{v} \in \RR^n$,
