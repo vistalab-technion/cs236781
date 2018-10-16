@@ -25,7 +25,7 @@ avi:
 chaim:
   name: Chaim Baskin
   bio: Head TA
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  avatar: "/assets/images/bio-photo-chaim.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
