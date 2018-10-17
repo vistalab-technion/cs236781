@@ -36,6 +36,10 @@ At the end of the course, the student will:
 
 {% include course_staff.html %}
 
+## Literature
+
+{% include literature.html %}
+
 ## Detailed Syllabus
 
 | #    | Date         | Lecture                                                                                                                                                                               | Tutorial                                                                            |
