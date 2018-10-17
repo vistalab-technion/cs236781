@@ -1,0 +1,23 @@
+goodfellow2016:
+  title: Deep Learning
+  author: Ian Goodfellow, Yoshua Bengio, Aaron Courville
+  publisher: MIT Press
+  year: 2016
+  url: https://www.deeplearningbook.org
+  cover_image: "https://images-na.ssl-images-amazon.com/images/I/61fim5QqaqL.jpg"
+
+aggarwal2018:
+  title: Neural Networks and Deep Learning
+  author: Charu C. Aggarwal
+  publisher: Springer
+  year: 2018
+  url: http://www.charuaggarwal.net/neural.htm
+  cover_image: "http://www.charuaggarwal.net/neural.jpg"
+
+subramanian2018:
+  title: Deep Learning with PyTorch
+  author: Vishnu Subramanian
+  publisher: Packt
+  year: 2018
+  url: https://www.packtpub.com/big-data-and-business-intelligence/deep-learning-pytorch
+  cover_image: "https://images-na.ssl-images-amazon.com/images/I/81mYCcGhMML.jpg"

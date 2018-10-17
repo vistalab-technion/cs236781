@@ -1,0 +1,22 @@
+<div class="books_container">
+    <ul>
+    {% for kv in site.data.books %}
+        {% assign book = kv[1] %}
+        <li>
+            <div class="book">
+                <div class="book-cover">
+                    <a href="{{ book.url }}">
+                        <img src="{{ book.cover_image }}">
+                    </a>
+                </div>
+                <div class="book-info">
+                    <h3>{{ book.title }}</h3>
+                    <p>{{ book.author }}</p>
+                    <p>{{ book.publisher }}, {{ book.year }}</p>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+

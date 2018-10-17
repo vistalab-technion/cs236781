@@ -12,17 +12,36 @@
 $primary-color: darkorange;
 $link-color: darkblue;
 
+.books_container {
+    .book div {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .book-cover {
+        width: 6em;
+        margin-right: 1em;
+        box-shadow: 3px 3px gray;
+    }
+    ul {
+        list-style: none;
+    }
+    .book-info h3 {
+        margin-top: 0;
+    }
+}
+
 .staff_container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+
+    .staff {
+        flex-grow: 1;
+        vertical-align: top;
+        margin-top: 1em;
+    }
 }
 
-.staff {
-    flex-grow: 1;
-    vertical-align: top;
-    margin-top: 1em;
-}
 
 .technion-logo {
     margin-right: 0.4em;
