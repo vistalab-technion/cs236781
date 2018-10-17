@@ -398,7 +398,11 @@ over many hypotheses. In order to accomodate for this, let us derive the
 following worst-case bound
 
 $$
-\mathbb{P}( | L_{\mathrm{out}}(h^\ast) - L_{\mathrm{in}}(h^\ast) | > \epsilon) \le \mathbb{P}( \sup_{h \in \mathcal{H} } | L_{\mathrm{out}}(h) - L_{\mathrm{in}}(h) | > \epsilon) = \mathbb{P}\left( \bigcup_{h \in \mathcal{H} } \{ | L_{\mathrm{out}}(h) - L_{\mathrm{in}}(h) | > \epsilon \} \right).
+\begin{align*}
+\mathbb{P}( | L_{\mathrm{out}}(h^\ast) - L_{\mathrm{in}}(h^\ast) | > \epsilon) & \le
+\mathbb{P}( \sup_{h \in \mathcal{H} } | L_{\mathrm{out}}(h) - L_{\mathrm{in}}(h) | > \epsilon) \\ & =
+\mathbb{P}\left( \bigcup_{h \in \mathcal{H} } \{ | L_{\mathrm{out}}(h) - L_{\mathrm{in}}(h) | > \epsilon \} \right).
+\end{align*}
 $$
 
 Using the union bound inequality yields
