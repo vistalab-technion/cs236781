@@ -54,7 +54,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : false # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 
 # SEO Related
