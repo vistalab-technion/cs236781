@@ -1,6 +1,5 @@
 ---
 title: "Lecture 3: Multi-layer Perceptron"
-date: 2018-10-01
 excerpt: MLP, Backpropagation, Gradient Descent, CNNs
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Linear Algebra Crash Course
 excerpt: Spaces, vector and matrix inner products, matrix functions, eigendecomposition
-date: 2018-10-01
 author: alex
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Lecture 2: Supervised Learning"
-date: 2018-10-01
 excerpt: Ingredients of supervised learning, linear regression,
          binary classification, logistic regression, why learning works
 author: alex
