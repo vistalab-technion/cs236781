@@ -275,7 +275,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
       comments: # true
       share: false
       related: false
@@ -296,6 +295,7 @@ defaults:
       share: false
       toc: true
       toc_label: Contents
+      read_time: true
       classes:
           - text-justify
           - wide
@@ -307,6 +307,7 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      read_time: true
       toc: true
       toc_label: Contents
       classes:
@@ -320,3 +321,5 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      read_time: true
+
