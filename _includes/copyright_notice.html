@@ -1,0 +1,13 @@
+{% if page.copyright %}
+<script>
+var copyright_element = '\
+    <p class="page__meta" style="margin-top: -0.5em;"> \
+    <i class="far fa-copyright"></i> \
+    {{ site.data.authors[page.copyright].name }} \
+    </p> \
+';
+
+first_header = document.getElementsByTagName('header')[0]
+first_header.insertAdjacentHTML('beforeend', copyright_element);
+</script>
+{% endif %}
