@@ -14,9 +14,16 @@ alt="" caption="" ref=""
 
 ## Slides
 
-- [Part I](https://technionmail-my.sharepoint.com/:p:/g/personal/avivr_technion_ac_il/EbMnsQqi_y5Jil_MxKYPrEYBF8FDYyzZECffs3kKOPzUEA) - Alex
 
-- [Part II](https://technionmail-my.sharepoint.com/:p:/g/personal/avivr_technion_ac_il/EXKuy6gAGnNPlWjcw55plYQBjWDow67T10Kgwr28aUcrVw) - Avi
+### Part I - Alex
+
+{% include ppt_embed.html
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21198&amp;authkey=AJXXpCr4zwVTE-E&amp;em=2&amp;wdAr=1.6" %}
+
+### Part II - Avi
+
+{% include ppt_embed.html
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21199&amp;authkey=AI9FN6vpAwwnawc&amp;em=2&amp;wdAr=1.7763888888888888" %}
 
 ## Videos
 
