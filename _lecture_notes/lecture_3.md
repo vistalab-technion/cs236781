@@ -1,6 +1,7 @@
 ---
 title: "Lecture 3: Multi-layer Perceptron"
 excerpt: MLP, Backpropagation, Gradient Descent, CNNs
+copyright: alex
 ---
 
 ## The Perceptron

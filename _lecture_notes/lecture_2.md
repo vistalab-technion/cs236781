@@ -3,6 +3,7 @@ title: "Lecture 2: Supervised Learning"
 excerpt: Ingredients of supervised learning, linear regression,
          binary classification, logistic regression, why learning works
 author: alex
+copyright: alex
 ---
 
 The goal of this lecture is to formalize the supervised regime of learning
