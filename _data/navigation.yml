@@ -1,7 +1,7 @@
 main:
   - title: "Info"
     url: /info/
-  - title: "Lecture Notes"
+  - title: "Lectures"
     url: /lectures/
   - title: "Tutorials"
     url: /tutorials/

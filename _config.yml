@@ -21,7 +21,7 @@ baseurl                  : "/cs236605" # the subpath of your site, e.g. "/blog"
 repository               : "vistalab-technion/cs236605" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "https://placehold.it/500x300" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 50
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -261,6 +261,9 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:path/
+  lecture_notes:
+    output: true
+    permalink: /:collection/:path/
   supplements:
     output: true
     permalink: /:collection/:path/
@@ -293,9 +296,29 @@ defaults:
       layout: single
       author_profile: false
       share: false
+      toc: false
+      toc_label: Contents
+      read_time: false
+  # _tutorials
+  - scope:
+      path: ""
+      type: tutorials
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      read_time: true
+  # _lecture_notes
+  - scope:
+      path: ""
+      type: lecture_notes
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      read_time: true
       toc: true
       toc_label: Contents
-      read_time: true
       classes:
           - text-justify
           - wide
@@ -313,13 +336,3 @@ defaults:
       classes:
           - text-justify
           - wide
-  # _tutorials
-  - scope:
-      path: ""
-      type: tutorials
-    values:
-      layout: single
-      author_profile: false
-      share: false
-      read_time: true
-

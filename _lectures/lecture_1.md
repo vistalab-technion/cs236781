@@ -1,10 +1,8 @@
 ---
 title: "Lecture 1: Introduction"
 excerpt: Origins of deep learning, course goals and topics overview
-author: alex
 header:
     teaser: assets/images/lec1/dataism.png
-toc: false
 ---
 
 {% include figure
@@ -20,4 +18,4 @@ alt="" caption="" ref=""
 
 ### Part II - Avi
 
-## Video
+## Videos
