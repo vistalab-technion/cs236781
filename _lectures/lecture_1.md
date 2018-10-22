@@ -20,7 +20,7 @@ alt="" caption="" ref=""
 
 ### Part II - Avi
 
-Will be added soon.
+{% include ppt_embed.html src="https://technionmail-my.sharepoint.com/personal/avivr_technion_ac_il/_layouts/15/Doc.aspx?sourcedoc={a8cbae72-1a00-4f73-9568-dcc39e699584}&amp;action=embedview&amp;wdAr=1.7763888888888888" %}
 
 ## Videos
 
