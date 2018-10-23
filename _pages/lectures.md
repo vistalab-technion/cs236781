@@ -21,5 +21,5 @@ The accompanying material for each lecture is posted here.
 - The [supplemental material]({{ site.baseurl }}{% link _pages/supplements.md %}) page 
   contains prerequisite topics you should be familiar with.
 
-- Detailed [notes]({{ site.baseurl }}{% link _pages/lecture_notes.md %}) are
-  available for each lecture.
+- Detailed notes will be available for most lectures on the
+  [lecture notes]({{ site.baseurl }}{% link _pages/lecture_notes.md %}) page.
