@@ -28,3 +28,8 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 ## Videos
 
 Stay tuned.
+
+## Lecture Notes
+
+This lecture has no accompanying notes.
+
