@@ -34,25 +34,27 @@ described.
 For working on the code itself, we recommend using
 [PyCharm](https://www.jetbrains.com/pycharm/),
 however you can use any other
-editor or IDE that you prefer. Note that you can get the professional version of
+editor or IDE if you prefer. Note that you can get the professional version of
 PyCharm for free by using your Technion student email - see
 [here](https://www.jetbrains.com/student/).
 
 
 ### Obtaining the assignment code
 
-The assignments can be downloaded from the [VISTA Lab github
+The assignments will be made available on the [VISTA Lab github
 page](https://github.com/vistalab-technion).
 You can either download a zip file of the assignment repo or, preferably, use
-git to clone it. For example, for the first assignment,
+git to clone it.
 
-```shell
-git clone https://github.com/vistalab-technion/cs236605-hw1.git
-```
+You should only download or clone after the assignment has been officially
+published to make sure you have the final version.
+
+In case we need to update the assignment or make corrections, the assignment
+repo will be updated and notice will be given.
 
 ### Project structure
 
-The assignment root directory contains the following files and folders:
+Each assignment's root directory contains the following files and folders:
 
 - `cs236605`: Python package containing course utilities and helper functions.
   You do not need to edit anything here.
@@ -67,44 +69,10 @@ The assignment root directory contains the following files and folders:
 - `main.py`: A script providing some utilities via a CLI.
   Mainly, you'll run it to create your submission after completing the
   assignment.
-- `environment.yml`: A file for conda, specifying the third-party packages it
+- `environment.yml`: A file for `conda`, specifying the third-party packages it
   should install into the virtual environment it creates.
 
 ## Environment set-up
-
-You can do the assignments either locally (on your own hardware) or on a
-dedicated HPC server (`rishon`) provisioned by the faculty IT. Running on the
-faculty server will give you access to more computing power and also fast GPUs
-(which will greatly accelerate your deep-learning tasks).
-
-While it's also possible to do everything locally, we may not be able to support
-you if you encounter technical difficulties.
-
-### Logging in to the faculty server
-
-Logging in is performed with your TD-CSF domain credentials.
-If you don't have such an account contact the course TAs.
-
-If your username is e.g. `user1`, login like so
-
-```shell
-ssh user1@rishon.technion.ac.il
-```
-
-When prompted for a password, you'll need to use your CSF domain password.  If
-you wish to not use a password every time, you can [generate an SSH
-key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),
-and copy the private key to your user on the machine (into
-`~/.ssh/authorized_keys`).
-
-On macOS an linux, there's a utility you can use to do this. After generating an
-SSH key, copy it to the server like so:
-
-```shell
-ssh-copy-id user1@rishon.cs.technion.ac.il
-```
-
-### Installation
 
 1. Install the python3 version of [miniconda](https://conda.io/miniconda.html).
    Follow the [installation instructions](https://conda.io/docs/user-guide/install/index.html)
@@ -122,6 +90,13 @@ ssh-copy-id user1@rishon.cs.technion.ac.il
    echo "source $HOME/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
    ```
 
+   On macOS it's similar but with a different script URL
+   ```shell
+   curl -fsSLO https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh 
+   bash Miniconda3-latest-MacOSX-x86_64.sh
+   # Rest is the same
+   ```
+
 2. Use conda to create a virtual environment for the assignment.
    From the assignment's root directory, run
 
@@ -130,16 +105,19 @@ ssh-copy-id user1@rishon.cs.technion.ac.il
    ```
 
    This will install all the necessary packages into a new conda virtual
-   environment named `cs236605-hw`. Activate the new environment by running
+   environment named `cs236605-hw`.
+
+3. Activate the new environment by running
 
    ```shell
    conda activate cs236605-hw
    ```
 
-   Activating an environment simply means that the path to it's python binaries
-   (and packages) is placed at the beginning of your `$PATH`. Therefore, running 
-   programs installed into the conda env (e.g. `python`) will run the version
-   from the env since it appears in the `$PATH` before any other installed version.
+   *Activating* an environment simply means that the path to it's python binaries
+   (and packages) is placed at the beginning of your `$PATH` shell variable.
+   Therefore, running programs installed into the conda env (e.g. `python`) will
+   run the version from the env since it appears in the `$PATH` before any other
+   installed version.
 
    To check what conda environments you have and which is active, run
 
@@ -147,18 +125,26 @@ ssh-copy-id user1@rishon.cs.technion.ac.il
    conda env list
    ```
 
+   or, you can run `which python` and you should see the python binary is in a
+   subfolder of `~/miniconda3/envs/cs236605-hw/`.
+
    You can find more useful info about conda environments
    [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-Note that you only need to do the above once (not for each assignment).
-However, the third-party package dependencies might slightly change from
-one assignment to the next. To make sure you have the correct versions run
+Notes: 
 
-```shell
-conda env update
-```
+- You only need to do steps 1 and 2 above once (not for each assignment).
+  However, the third-party package dependencies (in the `environment.yml` file)
+  might slightly change from one
+  assignment to the next. To make sure you have the correct versions run
+  ```shell
+  conda env update
+  ```
+  from the assignment root directory every time a new assignment is published.
 
-from the assignment root directory.
+- Always make sure the correct environment is active. It will revert to it's
+  default each new terminal session. If you want to change the default env you
+  can add a `conda activate` in your `~/.bashrc`.
 
 ## Working on the assignment
 
@@ -179,8 +165,8 @@ If you're new to jupyter notebooks, you can get started by reading the
 and also about how to use notebooks in
 [JupyterLab](https://jupyterlab.readthedocs.io/en/latest/user/notebook.html).
 
-Note that if you are familiar with the regular `jupyter notebook` you can use
-that instead of `jupyter lab`.
+Note that if you are familiar with and prefer the regular `jupyter notebook` you
+can use that instead of `jupyter lab`.
 
 ### Implementing your solution and answering questions
 
@@ -193,8 +179,9 @@ that instead of `jupyter lab`.
 - Within the notebooks, anything you need to do is marked with a **TODO** beside
   it. It will explain what to implement and in which file.
 - Within the assignment code package, all locations where you need to write code
-  are marked with a special marker ("YOUR CODE"). Additionally, implementation
-  guidelines, technical details and hints are provided in a comment above.
+  are marked with a special marker (`YOUR CODE`). Additionally, implementation
+  guidelines, technical details and hints are in some cases provided in a
+  comment above.
 - Sometimes there are open questions to answer. Your answers should also be
   written within the assignment package, not within the notebook itself. The
   notebook will specify where to write each answer.
@@ -254,3 +241,39 @@ all outputs are present. Note that if some of the outputs are missing from your
 submission you'll lose marks.
 
 
+## Working with the faculty HPC servers
+
+Those of you who are officially enrolled to the course will have access to
+dedicated HPC servers (`rishon1-4`) provisioned by Computer Science faculty IT
+department. Running on the faculty server will give you access to more computing
+power and also fast GPUs (which will greatly accelerate your deep-learning
+tasks). **However**, these servers are mainly suited for running batch jobs
+which you can submit to dedicated job queues and be notified upon completion.
+
+We recommend you install and work on the assignment locally (on your own
+machine), and only use the faculty servers when you need to run a long model
+training task (we will specify in the assignment).
+
+### Logging in 
+
+Logging in is performed with your TD-CSF domain credentials.
+If you don't have such an account contact the course TAs.
+
+If your username is e.g. `user1`, login like so
+
+```shell
+ssh user1@rishon.technion.ac.il
+```
+
+When prompted for a password, you'll need to use your CSF domain password.  If
+you wish to not use a password every time, you can [generate an SSH
+key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),
+and copy the private key to your user on the machine (into
+`~/.ssh/authorized_keys`).
+
+On macOS an linux, there's a utility you can use to do this. After generating an
+SSH key, copy it to the server like so:
+
+```shell
+ssh-copy-id user1@rishon.cs.technion.ac.il
+```
