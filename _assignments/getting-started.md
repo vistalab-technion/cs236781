@@ -197,7 +197,7 @@ Notes:
    contents of the assignment folder.
 
 3. Always make sure the active conda env is `cs236605-hw`. If you get strange
-   errors or broken import statement, this is probably the reason.
+   errors or broken import statements, this is probably the reason.
    Note that if you close your terminal session you will need to re-activate
    since conda will use it's default `base` environment.
 
@@ -212,6 +212,8 @@ What you'll submit:
 You don't need to do this manually - we provide you with a helper CLI program to
 run all the notebooks and combine them into a single file for submission.
 
+### Generating your submission file
+
 To generate your submission, run (obviously with different id's):
 
 ```shell
@@ -224,21 +226,38 @@ The above command will:
 - Create a zip file with all of the above and also with your code.
 
 If there are errors when running your notebooks, it means there's a problem with
-your solution or that you forgot to implement something. However, if you are
-unable to solve the entire assignment, you can create a submission with errors
-by adding an `allow-errors` flag, like so:
-
-```shell
-python main.py prepare-submission --id 123456789 --id 987654321 --allow-errors
-```
-
-This will enable you to submit a partial solution, if needed.
+your solution or that you forgot to implement something.
 
 Additionally, you can use the `--skip-run` flag to skip running your notebooks
 (and just merge them) in case you already ran everything and you're sure that
-all outputs are present. Note that if some of the outputs are missing from your
-submission you'll lose marks.
+all outputs are present:
 
+```shell
+python main.py prepare-submission --skip-run --id 123456789 --id 987654321
+```
+
+Note however that if some of the outputs are missing from your submission you'll
+lose marks.
+
+**Note**: The submission script must also be run from within the same `conda env` as
+the assignment.
+
+### Submitting a partial solution
+
+If you are unable to solve the entire assignment and wish to submit a partial
+solution you can create a submission with errors by adding an `allow-errors`
+flag, like so:
+
+```shell
+python main.py prepare-submission --allow-errors --id 123456789 --id 987654321
+```
+
+### Uploading the solution
+
+The `.zip` file you generate should be uploaded using the assignments tab in the
+[webcourse](https://webcourse.cs.technion.ac.il/236605/) system.
+
+Grades will also be reported there.
 
 ## Working with the faculty HPC servers
 
@@ -276,3 +295,7 @@ SSH key, copy it to the server like so:
 ```shell
 ssh-copy-id user1@rishon.cs.technion.ac.il
 ```
+
+### Usage
+
+Stay tuned for more.
