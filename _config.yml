@@ -262,6 +262,9 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:path/
+  assignments:
+    output: true
+    permalink: /:collection/:path/
   lecture_notes:
     output: true
     permalink: /:collection/:path/
@@ -304,6 +307,15 @@ defaults:
   - scope:
       path: ""
       type: tutorials
+    values:
+      layout: single
+      author_profile: false
+      share: false
+      read_time: true
+  # _assignments
+  - scope:
+      path: ""
+      type: assignments
     values:
       layout: single
       author_profile: false
