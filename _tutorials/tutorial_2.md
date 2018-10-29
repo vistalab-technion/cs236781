@@ -22,3 +22,8 @@ conda env update
 jupyter lab
 ```
 to update your environment and run jupyter.
+
+## Video
+
+{% include video provider="youtube" id="eRZLKBFBSuY" %}
+
