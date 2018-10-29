@@ -27,7 +27,13 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Videos
 
-Stay tuned.
+### Part I - Alex
+
+Unfortunately the video for part one will not be unavailable.
+
+### Part II - Avi
+
+{% include video provider="youtube" id="1-OA5IeJjqo" %}
 
 ## Lecture Notes
 

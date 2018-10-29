@@ -22,4 +22,3 @@ conda env update
 jupyter lab
 ```
 to update your environment and run jupyter.
-
