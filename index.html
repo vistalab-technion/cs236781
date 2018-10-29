@@ -14,9 +14,9 @@ header:
 <h3 class="archive__subtitle">Recent Updates</h3>
 
 {% for post in paginator.posts %}
-    <div style="">
-        <p style="float: right" class="page__meta">
-            {{ post.date | date: "%d-%m-%Y" }}
+    <div style="" class="page__meta">
+        <p style="float: right" class="page__date">
+            <time>{{ post.date | date: "%d-%m-%Y" }}</time>
         </p>
         {% include archive-single.html %}
     </div>
