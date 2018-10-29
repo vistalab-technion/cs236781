@@ -296,6 +296,10 @@ SSH key, copy it to the server like so:
 ssh-copy-id user1@rishon.cs.technion.ac.il
 ```
 
+Note: The rishon server is only accessible from within the Technion networks.
+If you need to connect from home, first SSH into a Technion server that’s
+accessible from the outside (e.g. CSM) and from there you can SSH into rishon. 
+
 ### Usage
 
 Stay tuned for more.
