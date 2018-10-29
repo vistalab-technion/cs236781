@@ -2,8 +2,10 @@
 title: "Homework 1: Machine Learning Basics"
 excerpt: Linear classification and regression, working with data
 author: aviv
-published: false
+published: true
 ---
+
+**Submission date**: November 15th, 2018
 
 ## Topics
 
