@@ -29,7 +29,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ### Part I - Alex
 
-Unfortunately the video for part one will not be unavailable.
+Unfortunately the video for part one will not be available.
 
 ### Part II - Avi
 
