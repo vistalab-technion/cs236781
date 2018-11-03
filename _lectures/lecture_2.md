@@ -19,7 +19,7 @@ alt="" caption="" ref=""
 
 ## Videos
 
-Stay tuned.
+{% include video provider="youtube" id="IclXQNHkYgI" %}
 
 ## Lecture Notes
 
