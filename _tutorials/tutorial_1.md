@@ -6,8 +6,9 @@ author: aviv
 
 ## Material
 
-The notebook from the tutorial can be downloaded from
-[the couse tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
+The tutorial
+[notebook](https://github.com/vistalab-technion/cs236605-tutorials/blob/master/tutorial1/tutorial1-Python_Numpy.ipynb)
+can be downloaded from the course [tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
 
 We recommend cloning the repo with `git` and using `git pull` to update it next
 time.
