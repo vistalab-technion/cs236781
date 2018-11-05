@@ -3,6 +3,7 @@ title: Getting started with the course assignments
 toc: true
 toc_label: Contents
 toc_sticky: true
+date: 2018-10-01
 ---
 
 This document will help you get started with the course homework assignments.
@@ -258,48 +259,3 @@ The `.zip` file you generate should be uploaded using the assignments tab in the
 [webcourse](https://webcourse.cs.technion.ac.il/236605/) system.
 
 Grades will also be reported there.
-
-## Working with the faculty HPC servers
-
-Those of you who are officially enrolled to the course will have access to
-dedicated HPC servers (`rishon1-4`) provisioned by Computer Science faculty IT
-department. Running on the faculty server will give you access to more computing
-power and also fast GPUs (which will greatly accelerate your deep-learning
-tasks). **However**, these servers are mainly suited for running batch jobs
-which you can submit to dedicated job queues and be notified upon completion.
-
-We recommend you install and work on the assignment locally (on your own
-machine), and only use the faculty servers when you need to run a long model
-training task (we will specify in the assignment).
-
-### Logging in 
-
-Logging in is performed with your TD-CSF domain credentials.
-If you don't have such an account contact the course TAs.
-
-If your username is e.g. `user1`, login like so
-
-```shell
-ssh user1@rishon.technion.ac.il
-```
-
-When prompted for a password, you'll need to use your CSF domain password.  If
-you wish to not use a password every time, you can [generate an SSH
-key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/),
-and copy the private key to your user on the machine (into
-`~/.ssh/authorized_keys`).
-
-On macOS an linux, there's a utility you can use to do this. After generating an
-SSH key, copy it to the server like so:
-
-```shell
-ssh-copy-id user1@rishon.cs.technion.ac.il
-```
-
-Note: The rishon server is only accessible from within the Technion networks.
-If you need to connect from home, first SSH into a Technion server that’s
-accessible from the outside (e.g. CSM) and from there you can SSH into rishon. 
-
-### Usage
-
-Stay tuned for more.
