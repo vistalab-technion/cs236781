@@ -33,27 +33,6 @@ If your username is e.g. `user`, login like so
 ssh user@rishon.technion.ac.il
 ```
 
-### Connecting with pubic-key based authentication
-
-If you wish to not use a password to connect every time, you can use a public-key based authentication.
-
-1. Generate an SSH key pair using the `ssh-keygen` tool. More detailed instructions for all platforms can be found
-   [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
-1. Copy the **public** key. By default it's in `~/.ssh/id_rsa.pub`. Make sure you copy it exactly
-   without any extra spaces or newlines.
-1. Connect to your user on the machine and paste the public key contents into a new line in `~/.ssh/authorized_keys`.
-
-Notes:
-
-1. On macOS and linux, there's a utility you can use to automate steps 2-3.
-   After generating the key pair, copy the public key to the server like so:
-   ```shell
-   ssh-copy-id user@rishon.cs.technion.ac.il
-   ```
-1. If you use an intermediate server to connect from home, make sure to first
-   also copy your public key to that server.
-
-
 ### Connecting from home
 
 The `rishon` server is only accessible from within the Technion networks.
@@ -265,3 +244,69 @@ tasks.
 
 In any case, this script is completely optional since you can always use
 `sbatch` directly as shown in the previous section.
+
+## Tips
+
+### For windows users
+
+Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
+a good graphical ssh client for windows.
+
+### Pubic-key based authentication
+
+You can use a public-key based authentication to prevent the need for typing
+your password when connecting to remote servers over SSH.
+
+1. Generate an SSH key pair using the `ssh-keygen` tool. More detailed instructions for all platforms can be found
+   [here](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/).
+1. Copy the **public** key. By default it's in `~/.ssh/id_rsa.pub`. Make sure you copy it exactly
+   without any extra spaces or newlines.
+1. Connect to your user on the machine and paste the public key contents into a new line in `~/.ssh/authorized_keys`.
+
+Notes:
+
+1. On macOS and linux, there's a utility you can use to automate steps 2-3.
+   After generating the key pair, copy the public key to the server like so:
+   ```shell
+   ssh-copy-id user@rishon.cs.technion.ac.il
+   ```
+1. If you use an intermediate server to connect from home, make sure to first
+   also copy your public key to that server.
+
+After generating your key pair, you should also [add it to your github
+account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/).
+After that, you can use the SSH remote-URLs (instead of HTTPS) to clone repos
+and prevent the need to specify your username and password when
+`push`ing, `pull`ing and `fetch`ing.
+
+### Git-based workflow
+
+A very effective way to synchronize your local work with the server (and also with your
+assignment partner) is with `git`. Note that `git` is already installed on the
+server.
+
+You can [fork](https://help.github.com/articles/fork-a-repo/) the assignment repo.
+Then you can clone your fork both onto your local machine and to the server. This
+will allow you to work on either machine while synching changes both with
+yourself (on each machine) and with your partner.
+
+If you decide to work this way you should also add the original assignment repo
+as a new `git remote` so that you can pull updates from us.
+
+### Transferring files to and from the server
+
+The `rsync` tool can be your friend. For example, to send files or a directory
+you can do
+
+```
+rsync -Cavz path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+```
+
+To send files from home via an intermediate server (in this example CSM):
+```
+rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+```
+
+To download files from the server to your computer, simple change the order of
+the last two arguments in the above examples.
+
