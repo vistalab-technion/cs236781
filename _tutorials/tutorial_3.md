@@ -13,5 +13,4 @@ can be downloaded from the course [tutorials repo](https://github.com/vistalab-t
 
 ## Video
 
-Stay tuned.
-
+{% include video provider="youtube" id="F978ijef9G8" %}
