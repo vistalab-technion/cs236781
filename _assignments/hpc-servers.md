@@ -45,7 +45,7 @@ If you wish to not use a password to connect every time, you can use a public-ke
 
 Notes:
 
-1. On macOS and linux, there's a utility you can use to do automate steps 2-3.
+1. On macOS and linux, there's a utility you can use to automate steps 2-3.
    After generating the key pair, copy the public key to the server like so:
    ```shell
    ssh-copy-id user@rishon.cs.technion.ac.il
@@ -75,5 +75,159 @@ intermediate machine.
 
 ## Usage
 
-Instructions on how to run jobs on the server will be added soon.
+### General
+
+The faculty HPC server cluster is composed of a gateway server (`rishon`) into which
+you log in with SSH, and four compute nodes `rishon1-4` which run the actual
+computations.
+
+Your home directory on the gateway server (e.g. `/home/user`) is automatically
+mounted on all the computation nodes. This ensures that any programs you
+install locally under your home folder (for example a `conda` environment) will
+be available for jobs running on these nodes.
+
+The computation tasks are manged by a job scheduling system called
+[`slurm`](https://slurm.schedmd.com/).  The system manages the computation nodes
+and resources and allocates them to jobs submitted by users into a queue (AKA
+partition).  If you wish, you can read the `slurm` [quick start
+guide](https://slurm.schedmd.com/quickstart.html) to get a better understanding
+of the system and the available commands.
+
+The most useful `slurm` commands for our needs are,
+- [`sbatch`](https://slurm.schedmd.com/sbatch.html)
+- [`srun`](https://slurm.schedmd.com/srun.html)
+- [`squeue`](https://slurm.schedmd.com/squeue.html)
+- [`scancel`](https://slurm.schedmd.com/scancel.html)
+
+### Job queues
+
+We have a dedicated job queue ("partition") for our course, `236605`. Jobs submitted to this queue
+will be processed on one of the `rishon3` or `rishon4` nodes.
+
+You can view the jobs currently in the course queue by running `squeue -p 236605`.
+
+Each job defines which computational resources it requires (nodes, CPU cores, number of
+GPUs). Multiple jobs can run simultaneously on each compute node as long as
+their computational requirements can be satisfied.
+
+For example, if job1 requires 2 CPU cores and 1 GPU and job2 requires 4 CPU
+cores and 2 GPUs then they can run together on the same compute node if that node has at
+least 6 CPU cores and 3 GPUs.
+
+### Running interactive jobs
+
+An interactive job allows you to view it's output and interact with it in
+real time, as if it were running on the machine you're logged
+in to.
+
+Submitting an interactive job is performed with the `srun` command. Required resources
+can be specified and if they're available the job starts running immediately.
+
+#### Example
+
+Let's see how to run an `ipython` console session as an interactive job with an
+allocated GPU.
+
+```shell
+(cs236605-hw) avivr@rishon:~/cs236605-hw1$ srun -c 2 --gres=gpu:1 --pty ipython
+cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
+cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
+Python 3.7.0 (default, Oct  9 2018, 10:31:47)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import torch
+
+In [2]: torch.cuda.is_available()
+Out[2]: True
+
+In [3]: t = torch.tensor([1,2,3], dtype=torch.float).cuda()
+
+In [4]: t.dot(t)
+Out[4]: tensor(14., device='cuda:0')
+```
+
+Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the `--pty` option is required for the session
+to be interactive and the last argument `ipython` is the command to run. You can
+specify any command and also add command arguments after it.
+
+Notes:
+1. You should use interactive jobs for debugging or running short one-off
+   tasks.  If you need to run something long, submit a batch job instead.
+1. When you submit an interactive job, your shell is blocked (by `srun`) until
+   it completes. If you terminate `srun`, it will cancel your job.
+   Crucially, this means that if you log out of the machine while running an
+   interactive job, the job will terminate (as with regular processes you
+   invoke from the shell). You can get around this by either,
+    - Using terminal managers e.g. `screen` and `tmux`;
+    - Running with `nohup`;
+    - Running a batch job instead (preferred). See below.
+
+   The reason the last method is preferred is that interactive jobs run with
+   `srun` may be terminated after running for a few hours due to policy.
+1. You should activate your `conda env` before running an interactive job if
+   you need to run python.
+   The shell environment variables will be passed to the process that will run
+   your job on the compute node, so therefore the `conda env` will effectively
+   also be active there.
+1. You can specify `bash` as the command to run in an interactive job to get a
+   shell on one of the compute nodes.
+
+### Running batch jobs
+
+A batch job is submitted to the queue with the `sbatch` command.
+It runs non-interactively when resources are available and sends it's output to
+files that you can specify. Additionally, it can notify you by email when the
+job starts and finishes.
+
+Running jobs with `sbatch` is useful for long-running processes such as training
+models. While the job is running, it's not connected to any specific shell
+session and thus it keeps running if you log out of the machine. To view output
+from a batch job, you'll need to read it from the file it writes to.
+
+To use `sbatch`, you need to create a script for it to run. It can be any script
+with a valid shebang line (`#!`) at the top, e.g. a bash script or a python
+script.
+
+#### Example
+
+Lets create a file `~/myscript.sh` on the server with the following contents:
+```bash
+#!/bin/bash
+
+# Setup env
+source $HOME/miniconda3/etc/profile.d/conda.sh
+conda activate cs236605-hw
+echo "hello from $(python --version) in $(which python)"
+
+# Run some arbitrary python
+python -c 'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'
+```
+
+Then we can run the script as a `slurm` batch job as follows:
+```shell
+avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -p 236605 -o slurm-test.out -J my_job  myscript.sh
+Submitted batch job 114425
+
+avivr@rishon:~$ squeue -p 236605
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+            114425    236605   my_job    avivr  R       0:01      1 rishon3
+
+avivr@rishon:~$ tail -f slurm-test.out
+cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
+cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
+hello from Python 3.7.0 in /home/avivr/miniconda3/envs/cs236605-hw/bin/python
+i can haz gpu? True
+```
+
+Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the `-p 236605` option specifies the name of the
+job queue (partition) to use, the `-o slurm-test.out` option specifies where
+to write the output from the process and `-J my_job` is an arbitrary name we can
+assign to the job.
+
+After submitting the batch job, you can use `squeue -p 236605` to view it's
+status in the queue, as shown in the example above. To view the output from the
+job in real time, you can use `tail -f` or `less +F` on the output file.
 
