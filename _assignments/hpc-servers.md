@@ -79,7 +79,8 @@ intermediate machine.
 
 The faculty HPC server cluster is composed of a gateway server (`rishon`) into which
 you log in with SSH, and four compute nodes `rishon1-4` which run the actual
-computations.
+computations. The gateway server is relatively weak and has no attached GPUs, so
+it should not be used for running computations.
 
 Your home directory on the gateway server (e.g. `/home/user`) is automatically
 mounted on all the computation nodes. This ensures that any programs you
@@ -231,3 +232,36 @@ After submitting the batch job, you can use `squeue -p 236605` to view it's
 status in the queue, as shown in the example above. To view the output from the
 job in real time, you can use `tail -f` or `less +F` on the output file.
 
+#### Course helper script
+
+To slightly simplify your workflow on the server, we provide you with a simple
+script to run python code from the course `conda env` as a `slurm` batch job.
+
+The homework assignment repos contain a script called `py-sbatch.sh`. You can
+use this script as if it were the `python` command, and it will active the
+`conda env` for you and execute your provided python code with `sbatch`.
+
+For example, let's say we want to run all our notebooks with the `main.py`
+script. Instead of
+```shell
+conda activate cs236605-hw
+python main.py run-nb *.ipynb
+```
+
+which will run on the gateway server, do this
+```shell
+./py-sbatch.sh main.py run-nb *.ipynb
+```
+
+This will take care of activating the `conda env` and run the script on the more
+powerful compute nodes as a batch job. The script has some declared variables
+which you can edit to configure the `sbatch` parameters such as computational
+resources, notification email address and others.
+
+Note that for the above example it may have been more straightforward to use an
+interactive job (`srun`). However this script may be useful when you need to
+create a batch job running a python script, for example to run long training
+tasks.
+
+In any case, this script is completely optional since you can always use
+`sbatch` directly as shown in the previous section.
