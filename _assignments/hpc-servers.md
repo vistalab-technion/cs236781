@@ -81,18 +81,48 @@ The most useful `slurm` commands for our needs are,
 
 ### Job queues
 
-We have a dedicated job queue ("partition") for our course, `236605`. Jobs submitted to this queue
-will be processed on one of the `rishon3` or `rishon4` nodes.
+We have a dedicated job queue ("partition") for our course, `236605`. Jobs
+submitted to this queue will be served on one of the `rishon3` or `rishon4`
+nodes.
 
-You can view the jobs currently in the course queue by running `squeue -p 236605`.
+You can view the jobs currently in the course queue by running `squeue -p
+236605` or an all queues with `squeue`.
 
 Each job defines which computational resources it requires (nodes, CPU cores, number of
-GPUs). Multiple jobs can run simultaneously on each compute node as long as
+GPUs). Multiple jobs can run simultaneously on a compute node as long as
 their computational requirements can be satisfied.
 
 For example, if job1 requires 2 CPU cores and 1 GPU and job2 requires 4 CPU
 cores and 2 GPUs then they can run together on the same compute node if that node has at
 least 6 CPU cores and 3 GPUs.
+
+### Priority and preemption
+
+Students from our course have special priority for the compute nodes serving the
+`236605` queue.  Other users in the system can also run jobs on these nodes, but
+if resources become limited a job submitted by a student in this course will
+**preempt** (in this context, stop and re-queue) a job submitted by an external user that's
+currently running on one of these nodes.
+
+Likewise if you submit your jobs without specifying a queue, they may end up
+running on a compute node that gives priority to other users. This might be OK
+if you're running an interactive job or a jupyter server (see sections below),
+but it's not a good idea for long-running batch jobs. The reason is that the
+system has the following **major limitation**: it can't guarantee GPU state when your
+process starts running again after being preempted. In other words, if you get
+preempted while training some model on a GPU, the process may resume later on
+some other node with an inconsistent GPU state. Not fun. To prevent this, **always
+use the course queue for running model training tasks**.
+
+Specifying which queue to submit a job to is performed with the `-p` flag for
+the `srun`/`sbatch` commands. For example, use `-p 236605` to make sure your job
+is submitted to the course queue. If you don't specify it, it will be submitted
+to the `all` queue which is served by all compute nodes, not just those that
+give priority to course students.
+
+The advantage of not specifying a specific queue is that your job may start
+sooner since it can run on any node. For interactive jobs, this may allow you to
+start immediately.
 
 ### Running interactive jobs
 
@@ -130,7 +160,10 @@ Out[4]: tensor(14., device='cuda:0')
 Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
 cores and one GPU to the job, the `--pty` option is required for the session
 to be interactive and the last argument `ipython` is the command to run. You can
-specify any command and also add command arguments after it.
+specify any command and also add command arguments after it. In this example we
+didn't specify the queue to submit to (`-p`) which may or may not be right for
+your use case. Indeed, you can see that the example ran on `rishon1`, which is not one
+of the dedicated course nodes.
 
 Notes:
 1. You should use interactive jobs for debugging or running short one-off
@@ -244,6 +277,39 @@ tasks.
 
 In any case, this script is completely optional since you can always use
 `sbatch` directly as shown in the previous section.
+
+### Running `jupyter`
+
+You can run `jupyter` on a compute node by creating a script that exposes the IP
+of the compute node as the jupyer server URL.
+
+For example, if you create a script `jupyter-lab.sh` like so
+```bash
+#!/bin/bash
+unset XDG_RUNTIME_DIR
+jupyter lab --no-browser --ip=$(hostname -I) --port-retries=100
+```
+
+then you can start the jupyter lab server with `srun`, e.g.
+```shell
+srun -c 2 --gres=gpu:1 --pty jupyter-lab.sh
+```
+
+The connection URL in the console will show the IP of the compute node that the
+server is actually running on.
+
+We'll provide you with a similar script in the assignment repos.
+
+Notes:
+1. As mentioned previously, interactive jobs are not meant to be long-running.
+   Please be considerate of other students and use the computing resources only
+   as needed.
+1. In the above example we didn't specify a specific queue. Read the
+   above section about preemption to understand the implications of this.
+1. Remember that these servers are only accessible within the Technion networks.
+   You won't be able to connect to the jupyter server from home using a browser
+   unless you have some proxy server within the Technion and you configure your
+   connection to use it.
 
 ## Tips
 
