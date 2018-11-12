@@ -13,4 +13,5 @@ This tutorial has only accompanying slides, which can be viewed or downloaded
 
 ## Video
 
-Stay tuned.
+{% include video provider="youtube" id="FYM9qC7kWJA" %}
+
