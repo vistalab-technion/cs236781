@@ -18,3 +18,6 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 Stay tuned.
 
+## Lecture Notes
+
+Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_5.md %}).
