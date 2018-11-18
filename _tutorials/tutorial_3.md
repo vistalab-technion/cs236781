@@ -7,9 +7,7 @@ MLPs, convolutional layers, loss functions and optimization in PyTorch
 
 ## Material
 
-The tutorial
-[notebook](https://github.com/vistalab-technion/cs236605-tutorials/blob/master/tutorial3/tutorial3-CNN.ipynb)
-can be downloaded from the course [tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial3/tutorial3-CNN.ipynb).
 
 ## Video
 

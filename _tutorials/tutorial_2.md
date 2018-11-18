@@ -8,12 +8,10 @@ Topics: Supervised learning context, binary and multiclass logistic regression.
 
 ## Material
 
-The tutorial
-[notebook](https://github.com/vistalab-technion/cs236605-tutorials/blob/master/tutorial2/tutorial2-Logistic_Regression.ipynb)
-can be downloaded from the course [tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
 
-We recommend cloning the repo with `git` and using `git pull` to update it next
-time.
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial2/tutorial2-Logistic_Regression.ipynb).
+
+To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
 
 If you have previously cloned the repo, run
 ```shell

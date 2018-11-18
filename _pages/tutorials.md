@@ -7,8 +7,10 @@ author_profile: false
 ---
 
 All tutorial materials are available from the course
-[tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
+[tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials). We
+recommend cloning this repo and pulling updates from it if you want to run the
+notebooks yourself.
 
-Additionally, the tutorial notebooks can be run live in your browser by using
-[binder](https://mybinder.org/v2/gh/vistalab-technion/cs236605-tutorials/master).
+Additionally, the tutorial notebooks can be viewed in your browser by using
+[nbviewer](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/tree/master/).
 
