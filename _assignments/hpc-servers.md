@@ -21,7 +21,7 @@ you install and work on the assignments locally (on your own machine), and only
 use the faculty servers when you need to run a long model training task (we will
 specify in the assignment).
 
-## Logging in 
+# Logging in 
 
 Logging in is performed with your Technion Single Sign-On (SSO) credentials.
 Usually this means the username and password of your `@campus` or `@technion`
@@ -33,7 +33,7 @@ If your username is e.g. `user`, login like so
 ssh user@rishon.technion.ac.il
 ```
 
-### Connecting from home
+## Connecting from home
 
 The `rishon` server is only accessible from within the Technion networks.
 If you need to connect from home, first SSH into a Technion server that’s
@@ -52,9 +52,9 @@ Note that this method (`-J`) has the useful advantage of forwarding the SSH publ
 from your local machine (if available) to the target machine though the
 intermediate machine.
 
-## Usage
+# Usage
 
-### General
+## General
 
 The faculty HPC server cluster is composed of a gateway server (`rishon`) into which
 you log in with SSH, and four compute nodes `rishon1-4` which run the actual
@@ -79,7 +79,7 @@ The most useful `slurm` commands for our needs are,
 - [`squeue`](https://slurm.schedmd.com/squeue.html)
 - [`scancel`](https://slurm.schedmd.com/scancel.html)
 
-### Job queues
+## Job queues
 
 We have a dedicated job queue ("partition") for our course, `236605`. Jobs
 submitted to this queue will be served on one of the `rishon3` or `rishon4`
@@ -96,7 +96,7 @@ For example, if job1 requires 2 CPU cores and 1 GPU and job2 requires 4 CPU
 cores and 2 GPUs then they can run together on the same compute node if that node has at
 least 6 CPU cores and 3 GPUs.
 
-### Priority and preemption
+## Priority and preemption
 
 Students from our course have special priority for the compute nodes serving the
 `236605` queue.  Other users in the system can also run jobs on these nodes, but
@@ -124,7 +124,7 @@ The advantage of not specifying a specific queue is that your job may start
 sooner since it can run on any node. For interactive jobs, this may allow you to
 start immediately.
 
-### Running interactive jobs
+## Running interactive jobs
 
 An interactive job allows you to view it's output and interact with it in
 real time, as if it were running on the machine you're logged
@@ -133,7 +133,7 @@ in to.
 Submitting an interactive job is performed with the `srun` command. Required resources
 can be specified and if they're available the job starts running immediately.
 
-#### Example
+### Example
 
 Let's see how to run an `ipython` console session as an interactive job with an
 allocated GPU.
@@ -187,7 +187,7 @@ Notes:
 1. You can specify `bash` as the command to run in an interactive job to get a
    shell on one of the compute nodes.
 
-### Running batch jobs
+## Running batch jobs
 
 A batch job is submitted to the queue with the `sbatch` command.
 It runs non-interactively when resources are available and sends it's output to
@@ -203,7 +203,7 @@ To use `sbatch`, you need to create a script for it to run. It can be any script
 with a valid shebang line (`#!`) at the top, e.g. a bash script or a python
 script.
 
-#### Example
+### Example
 
 Lets create a file `~/myscript.sh` on the server with the following contents:
 ```bash
@@ -240,13 +240,13 @@ job queue (partition) to use, the `-o slurm-test.out` option specifies where
 to write the output from the process and `-J my_job` is an arbitrary name we can
 assign to the job.
 
-#### Viewing status
+### Viewing status
 
 After submitting a batch job, you can use `squeue -p 236605` to view it's
 status in the queue, as shown in the example above. You can see the job name and
 it's id there.
 
-#### Viewing output
+### Viewing output
 
 Each job you submit causes a text file you be created in your current directory,
 named `slurm-<jobid>.out`.
@@ -255,13 +255,13 @@ To view the output from a job in real time, you can use `tail -f` or `less -r
 +F` on the output file for the relevant job. `less` allows you to also scroll
 back.
 
-#### Canceling
+### Canceling
 
 To cancel a batch job you've submitted (whether it's running or waiting in the
 queue), run `scancel <job-id>` where `<job-id>` is the id you received when
 starting the batch job.
 
-#### Course helper script
+### Course helper script
 
 To slightly simplify your workflow on the server, we provide you with a simple
 script to run python code from the course `conda env` as a `slurm` batch job.
@@ -295,7 +295,7 @@ tasks.
 In any case, this script is completely optional since you can always use
 `sbatch` directly as shown in the previous section.
 
-### Running `jupyter`
+## Running `jupyter`
 
 You can run `jupyter` on a compute node by creating a script that exposes the IP
 of the compute node as the jupyer server URL.
@@ -324,7 +324,7 @@ Notes:
 1. In the above example we didn't specify a specific queue. Read the
    above section about preemption to understand the implications of this.
 
-#### Accessing jupyter from home
+### Accessing jupyter from home
 
 Although the `rishon` servers are only accessible within the Technion networks,
 it's possible to connect from home to a jupyter instance running on them by using a
@@ -352,14 +352,14 @@ combination of SSH port forwarding and using an intermediate server.
 5. To connect to the jupyter lab server from home, you can now point your
    local browser to `localhost:9999`.
 
-## Tips
+# Tips
 
-### For windows users
+## For windows users
 
 Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
 a good graphical ssh client for windows.
 
-### Pubic-key based authentication
+## Pubic-key based authentication
 
 You can use a public-key based authentication to prevent the need for typing
 your password when connecting to remote servers over SSH.
@@ -386,7 +386,7 @@ After that, you can use the SSH remote-URLs (instead of HTTPS) to clone repos
 and prevent the need to specify your username and password when
 `push`ing, `pull`ing and `fetch`ing.
 
-### Git-based workflow
+## Git-based workflow
 
 A very effective way to synchronize your local work with the server (and also with your
 assignment partner) is with `git`. Note that `git` is already installed on the
@@ -400,7 +400,7 @@ yourself (on each machine) and with your partner.
 If you decide to work this way you should also add the original assignment repo
 as a new `git remote` so that you can pull updates from us.
 
-### Transferring files to and from the server
+## Transferring files to and from the server
 
 The `rsync` tool can be your friend. For example, to send files or a directory
 you can do
