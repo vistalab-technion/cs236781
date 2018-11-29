@@ -240,9 +240,26 @@ job queue (partition) to use, the `-o slurm-test.out` option specifies where
 to write the output from the process and `-J my_job` is an arbitrary name we can
 assign to the job.
 
-After submitting the batch job, you can use `squeue -p 236605` to view it's
-status in the queue, as shown in the example above. To view the output from the
-job in real time, you can use `tail -f` or `less +F` on the output file.
+#### Viewing status
+
+After submitting a batch job, you can use `squeue -p 236605` to view it's
+status in the queue, as shown in the example above. You can see the job name and
+it's id there.
+
+#### Viewing output
+
+Each job you submit causes a text file you be created in your current directory,
+named `slurm-<jobid>.out`.
+
+To view the output from a job in real time, you can use `tail -f` or `less -r
++F` on the output file for the relevant job. `less` allows you to also scroll
+back.
+
+#### Canceling
+
+To cancel a batch job you've submitted (whether it's running or waiting in the
+queue), run `scancel <job-id>` where `<job-id>` is the id you received when
+starting the batch job.
 
 #### Course helper script
 
@@ -306,10 +323,34 @@ Notes:
    as needed.
 1. In the above example we didn't specify a specific queue. Read the
    above section about preemption to understand the implications of this.
-1. Remember that these servers are only accessible within the Technion networks.
-   You won't be able to connect to the jupyter server from home using a browser
-   unless you have some proxy server within the Technion and you configure your
-   connection to use it.
+
+#### Accessing jupyter from home
+
+Although the `rishon` servers are only accessible within the Technion networks,
+it's possible to connect from home to a jupyter instance running on them by using a
+combination of SSH port forwarding and using an intermediate server.
+
+1. Follow the instructions above to start jupyter on one of the compute nodes.
+2. Observe the IP and port of the jupyter server specified on the command line.
+   Let's assume you got this line after jupyer started:
+
+    ```shell
+    [I 21:39:07.830 LabApp] http://132.68.39.38:8888/?token=abcdef0123...
+    ```
+3. Additionally, let's assume you can you have SSH access from home to another
+   Technion server, such as CSM as in the previous examples.
+4. Then you can run the following from your machine (from a different terminal):
+
+   ```shell
+   ssh -L 9999:132.68.39.38:8888 -J user@csm.cs.technion.ac.il user@rishon
+   ```
+
+   This creates a local port forwarding from port `9999` on your `localhost` to
+   `132.68.39.38:8888` from the CSM machine through an SSH tunnel, and also
+   gives you a new SSH session on `rison` which you can work from.
+
+5. To connect to the jupyter lab server from home, you can now point your
+   local browser to `localhost:9999`.
 
 ## Tips
 
