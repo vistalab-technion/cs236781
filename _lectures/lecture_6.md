@@ -1,10 +1,11 @@
 ---
-title: "Lecture 6: Unsupervised learning and generative models"
+title: "Lecture 6: Unsupervised Learning and Generative Models"
 header:
     teaser: assets/images/lec6/3.png
 ---
 
-Subspace models, autoencoders, adjoint convolution and pooling layers.
+Subspace models, autoencoders, unsupervised loss,
+generative adversarial nets, domain adaptation.
 
 {% include figure image_path="assets/images/lec6/1.png" alt="" caption="" ref="" %}
 
