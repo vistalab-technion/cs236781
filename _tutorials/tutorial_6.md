@@ -3,7 +3,7 @@ title: "Tutorial 6: RNNs"
 author: aviv
 ---
 
-Word representations, vanilla RNNs, GRUs, LSTM, attention
+Word representations, vanilla RNNs, GRUs, LSTM, attention.
 
 ## Slides
 
