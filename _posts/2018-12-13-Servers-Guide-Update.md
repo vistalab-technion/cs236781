@@ -6,7 +6,7 @@ author: aviv
 
 Dear students, 
 
-The "Logging in" and "connecting from home" sections of the [guide for using course servers]({{ site.baseurl }}{% link _assignments/hpc-servers.md %}) was updated to address some questions raised.
+The "Logging in" and "connecting from home" sections of the [guide for using course servers]({{ site.baseurl }}{% link _assignments/hpc-servers.md %}) was updated to address some questions and issues raised by students.
 
 Thanks,  
 Course staff.
