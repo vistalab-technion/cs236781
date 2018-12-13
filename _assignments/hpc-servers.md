@@ -33,9 +33,20 @@ If your username is e.g. `user`, login like so
 ssh user@rishon.technion.ac.il
 ```
 
+or, directly using the server's IP:
+
+```shell
+ssh user@132.68.39.36
+```
+
+Notes:
+1. The `rishon` server is only directly accessible from **within the Technion networks**.
+1. In some internal Technion networks the DNS lookup seems to not find
+   the `rishon` hostname. If you get a `could not resolve hostname` error, use
+   the second option (directly with IP).
+
 ## Connecting from home
 
-The `rishon` server is only accessible from within the Technion networks.
 If you need to connect from home, first SSH into a Technion server that’s
 accessible from the outside (e.g. CSM) and from there you can SSH into `rishon`. 
 
@@ -46,11 +57,19 @@ ssh -J user@csm.cs.technion.ac.il user@rishon.cs.technion.ac.il
 ```
 
 This example will connect through the CSM server in the CS faculty. You should
-be able to use any other Technion server that you have SSH access to.
+be able to use other Technion servers that you have SSH access to.
 
-Note that this method (`-J`) has the useful advantage of forwarding the SSH public key
+This method (`-J`) has the useful advantage of forwarding the SSH public key
 from your local machine (if available) to the target machine though the
 intermediate machine.
+
+Notes:
+1. Unfortunately the `t2`/`lux` student server cannot be used to access the
+   Technion network from outside due to CIS
+   [policy](https://cis.technion.ac.il/news/t2-server-upgraded-to-lux/).
+1. If you use CSM, note that the credentials for the CSM server and `rishon` are
+   not the same: CSM uses the CS-faculty credentials while the `rishon` server
+   uses the Technion SSO credentials.
 
 # Usage
 
