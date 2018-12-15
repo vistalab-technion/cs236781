@@ -1,7 +1,7 @@
 ---
 title: "Lecture 3: Neural Networks"
 header:
-    teaser: assets/images/lec3/nn-black.png
+    teaser: assets/images/lec3/nn-black.jpg
 ---
 
 Linear and multilayer Perceptron, loss functions, activation functions, pooling,

@@ -1,7 +1,7 @@
 ---
 title: "Lecture 2: Supervised learning"
 header:
-    teaser: assets/images/lec2/supervised-bw.png
+    teaser: assets/images/lec2/supervised-bw.jpg
 ---
 
 Supervised learning problem statement, data sets, hypothesis classes, loss
@@ -9,7 +9,7 @@ functions, basic examples of supervised machine learning models, adding
 non-linearity.
 
 {% include figure
-image_path="assets/images/lec2/supervised-bw.png"
+image_path="assets/images/lec2/supervised-bw.jpg"
 alt="" caption="" ref=""
 %}
 

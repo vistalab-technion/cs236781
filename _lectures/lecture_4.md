@@ -1,14 +1,14 @@
 ---
 title: "Lecture 4: Training Neural Networks"
 header:
-    teaser: assets/images/lec4/teaser.png
+    teaser: assets/images/lec4/teaser.jpg
 ---
 
 Approximation, estimation and optimization errors, regularization, loss surface
 curvature, descent-based optimization methods, second-order methods.
 
 
-{% include figure image_path="assets/images/lec4/teaser.png" alt="" caption="" ref="" %}
+{% include figure image_path="assets/images/lec4/teaser.jpg" alt="" caption="" ref="" %}
 
 ## Slides
 
