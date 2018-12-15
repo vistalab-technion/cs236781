@@ -1,6 +1,7 @@
 ---
 title: "Lecture 7: Reinforcement learning"
-excerpt: foo bar
+excerpt: "Markov decision process, optimal control, value-based learning,
+    policy-based learning."
 copyright: alex
 ---
 
