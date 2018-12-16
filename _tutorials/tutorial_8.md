@@ -1,0 +1,17 @@
+---
+title: "Tutorial 8: Domain Adaptation"
+author: aviv
+---
+
+Unsupervised vs. supervised approach, approximate labels, AutoDIAL.
+
+## Notebook
+
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial8/tutorial8-domain_adaptation.ipynb).
+
+## Video
+
+Stay tuned.
+
+
+

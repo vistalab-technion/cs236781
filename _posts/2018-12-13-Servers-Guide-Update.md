@@ -1,6 +1,6 @@
 ---
 title: "Server usage guide update"
-excerpt: "More details about connecting to course servers"
+excerpt: "More details about connecting to course servers."
 author: aviv
 ---
 
