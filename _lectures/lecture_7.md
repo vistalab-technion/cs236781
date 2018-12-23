@@ -16,7 +16,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Videos
 
-{% include video provider="youtube" id="bpXYH9PVDGo" %}
+{% include video provider="youtube" id="0ck90bLwiPI" %}
 
 ## Lecture Notes
 
