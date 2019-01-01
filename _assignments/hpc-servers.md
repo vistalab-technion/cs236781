@@ -48,7 +48,8 @@ Notes:
 ## Connecting from home
 
 If you need to connect from home, first SSH into a Technion server that’s
-accessible from the outside (e.g. CSM) and from there you can SSH into `rishon`. 
+accessible from the outside (e.g. CSM, CSL) and from there you can SSH into
+`rishon`. 
 
 You can do this in one command like so:
 
@@ -83,7 +84,9 @@ it should not be used for running computations.
 Your home directory on the gateway server (e.g. `/home/user`) is automatically
 mounted on all the computation nodes. This ensures that any programs you
 install locally under your home folder (for example a `conda` environment) will
-be available for jobs running on these nodes.
+be available for jobs running on these nodes. In fact, the **first thing** you
+should do after connecting for the first time is to install `conda` and the
+course `conda` environment for your user account.
 
 The computation tasks are manged by a job scheduling system called
 [`slurm`](https://slurm.schedmd.com/).  The system manages the computation nodes
@@ -377,6 +380,8 @@ combination of SSH port forwarding and using an intermediate server.
 
 Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
 a good graphical ssh client for windows.
+Here's a useful [guide]({{ site.baseurl }}{% link assets/mobaXterm_guide.docx %}) for using it to
+connect to the server.
 
 ## Pubic-key based authentication
 
