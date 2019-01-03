@@ -36,7 +36,7 @@ most two students.
    topic. Feedback will be given by Prof. Alex Bronstein.
 1. You will work on your projects. Weekly (optional) guidance meetings with
    course TAs at dedicated office hours will be available for you.
-1. The **final** submission date for the project is **14th/03/2019**. No further
+1. The **final** submission date for the project is **14/03/2019**. No further
    postponement will be possible; it is advised that you finish well before this
    date.
 1. Your submission should be a detailed report. It should explain the problem
