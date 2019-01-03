@@ -3,6 +3,7 @@ title: "Homework 3"
 excerpt: Sequence models, variational autoencoders, GANs
 author: aviv
 published: true
+date: 2018-12-31
 ---
 
 **Submission date**: January 24th, 2019

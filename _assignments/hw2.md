@@ -3,6 +3,7 @@ title: "Homework 2"
 excerpt: Backpropagarion, optimization, training and convolutional architectures
 author: aviv
 published: true
+date: 2018-12-01
 ---
 
 **Submission date**: December ~~22th~~ 30th, 2018
