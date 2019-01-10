@@ -47,9 +47,26 @@ most two students.
 ## Registration links
 
 Please view the [project
-topics](https://docs.google.com/spreadsheets/d/1UiJCCM7V2kiecSP5FnZvAOMXQxNTAUaf0r7DphKi_lM)
+topics](https://docs.google.com/spreadsheets/d/1WtlyOQC5oVkR0EoxdBmKyaSk5xRJn_0UvAJH74SBhSw) (**updated with groups**)
 and then fill out [this
 form](https://docs.google.com/forms/d/e/1FAIpQLSeG0qfWuZwom6qtr-bg7F5SBl7JMxSlc0b21rZNAv-jmUJfsw/viewform) with your priorities.
+
+## Guidelines for presentations
+
+1. After you receive an email approving one of your project priorities,
+   you should start working on your presentation.
+1. Presentations slides should be emailed to
+   [Aviv](mailto:avivr@cs.technion.ac.il) no later than **19/01/2019**.
+1. We will publish the order of presentations in advance. Everyone will
+   present from the same computer to reduce overhead between presenters.
+1. The presentation should address briefly the following points:
+    - Full project title and description
+    - Previous related work or main paper
+    - Proposed method or improvement
+    - Baseline you’re comparing to
+    - Evaluation methods
+1. Please keep your presentation short! Just 5-6 slides are enough, up to 5
+   minutes total time.
 
 ## Project-related office hours
 
