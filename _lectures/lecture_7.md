@@ -2,6 +2,7 @@
 title: "Lecture 7: Reinforcement Learning"
 header:
     teaser: assets/images/lec7/rl2.jpg
+date: 2018-12-16
 ---
 
 Markov decision process, policies, rewards, value functions, the Bellman

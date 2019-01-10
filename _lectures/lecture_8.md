@@ -1,7 +1,8 @@
 ---
-title: "Lecture 8: Parallel Architectures"
+title: "Lecture 8: Intro to Parallel Architectures"
 header:
     teaser: assets/images/lec8/gpu2.jpg
+date: 2018-12-23
 ---
 
 Parallelism and multithreading, execution of DL tasks, CPU vs. GPU architectures, CUDA programming model.
@@ -13,3 +14,6 @@ Parallelism and multithreading, execution of DL tasks, CPU vs. GPU architectures
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21218&authkey=AK_Yl6zPVxQmrTo&em=2" %}
 
+## Video
+
+{% include video provider="youtube" id="G4hQQrvJckg" %}

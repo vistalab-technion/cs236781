@@ -2,6 +2,7 @@
 title: "Lecture 4: Training Neural Networks"
 header:
     teaser: assets/images/lec4/teaser.jpg
+date: 2018-11-11
 ---
 
 Approximation, estimation and optimization errors, regularization, loss surface
