@@ -2,7 +2,7 @@
 title: "Lecture 11: Learning on Non-Euclidean Domains"
 header:
     teaser: assets/images/lec11/lec11-1.jpg
-date: 2019-01-06
+date: 2019-01-13
 ---
 
 Toeplitz operators, basis changes, graphs, fields, gradients, divergence,
