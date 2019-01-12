@@ -21,5 +21,5 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Lecture Notes
 
-Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_7.md %}).
+Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_07.md %}).
 

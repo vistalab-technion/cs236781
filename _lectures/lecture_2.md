@@ -24,4 +24,4 @@ alt="" caption="" ref=""
 
 ## Lecture Notes
 
-Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_2.md %}).
+Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_02.md %}).
