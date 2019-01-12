@@ -1,7 +1,6 @@
 ---
 title: "Lecture 11: Learning on Non-Euclidean Domains"
-excerpt: "Markov decision process, optimal control, value-based learning,
-    policy-based learning."
+excerpt: "Toeplitz operators, manifolds, graphs, convolution, spectral CNN"
 copyright: alex
 ---
 
@@ -849,19 +848,8 @@ localized.
 Using this observation, we can reformulate the convolutional layer
 directly in the spatial domain as
 
-
 $$\bb{y} _j = \varphi\left( \sum _{i=1}^m  \sum _{k=0}^r \alpha _k^{ij} \bb{\Delta}^k  \bb{x}^i \right),$$
 
-
-
-Graph CNNs
-==========
-
-Spectral CNN
-------------
-
-Spatial domain constructions
-----------------------------
 
 [^1]: The term *shift-invariant* is so abundant in the signal processing
     and machine learning literature that we will not even attempt to
