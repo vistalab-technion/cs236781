@@ -56,6 +56,6 @@ At the end of the course, the student will:
 | `30/12/2018` | 9        | Parallel architectures for Training                                                                                                     | Introduction to CUDA                                                                |
 | `06/01/2019` | 10<br>11 | Parallel architectures for Inference;<br>CNNs on non-euclidean domains: graphs and manifolds                                            | CUDA with PyTorch                                                                   |
 | `13/01/2019` | 11       | CNNs on non-euclidean domains (continued)                                                                                               | CNN on graphs                                                                       |
-| `20/01/2019` | 12       | Advanced Topics                                                                                                                         | Advanced Topics                                                                     |
+| `20/01/2019` | 12       | Project Presentations                                                                                                                   | Project Presentations                                                               |
 | -----------  | ----     | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 
