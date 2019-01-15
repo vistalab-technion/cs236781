@@ -33,3 +33,10 @@ This will allow you to pull updates from us in the event that they are needed.
 Make sure to read the [getting started page]({{ site.baseurl }}{% link _assignments/getting-started.md %})
 and the [guide for using course servers]({{ site.baseurl }}{% link _assignments/hpc-servers.md %}).
 
+**Q**: What is the `checkpoint_file_final` for?
+**A**: You can use this to create your final submission with result images from
+your best-trained model. Just train with checkpoints enabled, and when you get
+results that your happy with rename the checkpoint file with `_final`.
+You don't need to submit the checkpoint files (the `main.py` script will ignore
+them).
+
