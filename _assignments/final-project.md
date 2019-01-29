@@ -3,7 +3,7 @@ title: Final Project
 toc: false
 toc_label: Contents
 toc_sticky: true
-date: 2019-01-03
+date: 2019-01-29
 ---
 
 As part of this course, students must complete a small research project instead
@@ -36,9 +36,10 @@ most two students.
    topic. Feedback will be given by Prof. Alex Bronstein.
 1. You will work on your projects. Weekly (optional) guidance meetings with
    course TAs at dedicated office hours will be available for you.
-1. The **final** submission date for the project is **14/03/2019**. No further
-   postponement will be possible; it is advised that you finish well before this
-   date.
+1. The official submission date for the project is **14/03/2019**. It is advised
+   that you finish well before this date in order to get a grade on time.
+   However, in special circumstances we will allow submission up to
+   **30/04/2019** (with prior approval).
 1. Your submission should be a detailed report. It should explain the problem
    and the paper you implemented (if relevant), explain your specific
    enhancements and modifications, showcase all your results (both reproduction
@@ -70,5 +71,7 @@ form](https://docs.google.com/forms/d/e/1FAIpQLSeG0qfWuZwom6qtr-bg7F5SBl7JMxSlc0
 
 ## Project-related office hours
 
-Will be announced soon.
+Tuesdays 15:00 - 17:00, Taub 120 (VISTA lab).
+
+Please email Chaim and Aviv beforehand if you plan to arrive.
 
