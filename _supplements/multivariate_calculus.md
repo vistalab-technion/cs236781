@@ -186,7 +186,7 @@ $$
 Considering $f'_{\bb{r}}(\bb{x}) = \bb{r}^\Tr \bb{g}(\bb{x})$ as a
 function of $\bb{x}$, we can write its differential as
 
-$$df'_{\bb{r}} = \bb{r}^\Tr \dg = \bb{r}^\Tr bb{H}(\bb{x}_0) \dx = \bb{r}^\Tr \bb{H}(\bb{x}_0) \bb{r} d\alpha,$$
+$$df'_{\bb{r}} = \bb{r}^\Tr \dg = \bb{r}^\Tr \bb{H}(\bb{x}_0) \dx = \bb{r}^\Tr \bb{H}(\bb{x}_0) \bb{r} d\alpha,$$
 
 from where
 
