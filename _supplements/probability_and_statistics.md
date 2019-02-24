@@ -471,7 +471,7 @@ $\hat{\mathpzcb{X}} = \hat{\bb{x}}(\mathpzcb{Y})$; here the
 deterministic function $\hat{\bb{x}}$ acts as a random variable
 transformation.
 
-Ideally, $\hat{\mathpzcb{X}}$ and $\hat{\mathpzcb{X}}$ should coincide;
+Ideally, $\hat{\mathpzcb{X}}$ and $\mathpzcb{X}$ should coincide;
 however, unless the measurement is perfect, there will be a discrepancy
 $\mathpzcb{E} = \hat{\mathpzcb{X}} - \mathpzcb{X}$ which we will refer
 to as the *error* vector.
