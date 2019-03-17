@@ -4,8 +4,8 @@ title: Course Info
 classes: wide
 ---
 
-Deep learning is widely used in growing range of applications ranging from image
-classification and generation, text comprehension, signal processing, game
+Deep learning is widely used in a growing range of applications ranging from
+image classification and generation, text comprehension, signal processing, game
 playing and more. This course will focus on algorithms, programming frameworks
 and new hardware and software interfaces that aim to allow execution of deep
 learning algorithms in an efficient way. It will provide both the necessary
