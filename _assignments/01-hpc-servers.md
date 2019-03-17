@@ -1,10 +1,11 @@
 ---
 title: Using the course HPC servers
+permalink: assignments/hpc-servers
 excerpt: How to connect to and run jobs on the course servers.
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2018-10-02
+date: 2019-03-17
 ---
 
 Those of you who are officially enrolled to the course will have access to

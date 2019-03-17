@@ -1,9 +1,10 @@
 ---
 title: Getting started with the course assignments
+permalink: assignments/getting-started
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2018-10-01
+date: 2019-03-17
 ---
 
 This document will help you get started with the course homework assignments.
