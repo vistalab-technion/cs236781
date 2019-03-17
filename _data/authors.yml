@@ -39,7 +39,15 @@ aviv:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:avivr@cs.technion.ac.il"
-    - label: "Web"
-      icon: "fas fa-fw fa-link"
-      url: "https://avivr.net"
+    # - label: "Web"
+    #   icon: "fas fa-fw fa-link"
+    #   url: "https://avivr.net"
 
+evgenii:
+  name: Evgenii Zheltonozhskii
+  bio: Homework checker
+  avatar: "/assets/images/bio-photo-evgeniy.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:evgeniizh@campus.technion.ac.il"
