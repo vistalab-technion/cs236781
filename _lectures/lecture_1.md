@@ -19,7 +19,7 @@ alt="" caption="" ref=""
 ### Part I - Alex
 
 {% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21198&amp;authkey=AJXXpCr4zwVTE-E&amp;em=2&amp;wdAr=1.6" %}
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21264&amp;authkey=ALQXLih_SLT7r2M&amp;em=2&amp;wdAr=1.6" %}
 
 ### Part II - Avi
 
@@ -30,7 +30,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ### Part I - Alex
 
-Unfortunately the video for part one will not be available.
+Stay tuned.
 
 ### Part II - Avi
 
