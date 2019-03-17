@@ -30,7 +30,7 @@ with the examples from the notebook.
   <https://github.com/gertingold/euroscipy-numpy-tutorial>
 
 - Python official docs<br>
-  <https://docs.python.org/3.6/>.
+  <https://docs.python.org/3.7/>.
 
 - `numpy` official docs<br>
   <https://docs.scipy.org/doc/numpy/reference/>
