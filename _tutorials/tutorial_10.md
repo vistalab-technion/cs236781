@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 10: CUDA with numba"
 author: aviv
+published: false
 ---
 
 Numba, CUDA programming model, writing CUDA kernels in python.

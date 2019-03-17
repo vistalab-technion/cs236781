@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 4: Training Neural Networks"
 author: aviv
+published: false
 ---
 
 Overfitting and regularization, dropout, batch normalization, learning rate

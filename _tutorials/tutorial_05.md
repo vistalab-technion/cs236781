@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 5: Convolutional Neural Nets"
 author: aviv
+published: false
 ---
 
 Convolutional and pooling layers, architectures, spatial classification,

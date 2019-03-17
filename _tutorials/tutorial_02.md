@@ -2,6 +2,7 @@
 title: "Tutorial 2: Logistic regression"
 excerpt: Supervised learning context, binary and multiclass logistic regression
 author: aviv
+published: false
 ---
 
 Topics: Supervised learning context, binary and multiclass logistic regression.

@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 3: Intro to CNNs"
 author: aviv
+published: false
 ---
 
 MLPs, convolutional layers, loss functions and optimization in PyTorch

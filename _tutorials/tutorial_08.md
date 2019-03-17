@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 8: Domain Adaptation"
 author: aviv
+published: false
 ---
 
 Unsupervised vs. supervised approach, approximate labels, AutoDIAL.

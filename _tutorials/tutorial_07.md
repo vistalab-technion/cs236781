@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 7: Unsupervised learning and GANs"
 author: aviv
+published: false
 ---
 
 Autoencoders: denoising, deep and variational, generative adversarial networks.

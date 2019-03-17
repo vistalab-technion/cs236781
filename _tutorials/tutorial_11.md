@@ -1,6 +1,7 @@
 ---
 title: "Tutorial 11: DNN Compression"
 author: aviv
+published: false
 ---
 
 Number representation, pruning, bottlenecks, quantization.
