@@ -4,12 +4,14 @@ title: Course Info
 classes: wide
 ---
 
-Deep learning is widely used in many market segments ranging from mobile devices
-to supercomputers. Recently many software packages as well as special hardware
-accelerators were developed to support deep learning. The course will focus on
-algorithms, programming frameworks and new software/hardware interfaces that aim
-to allow execution of deep learning algorithms in a productive and efficient
-way. 
+Deep learning is widely used in growing range of applications ranging from image
+classification and generation, text comprehension, signal processing, game
+playing and more. This course will focus on algorithms, programming frameworks
+and new hardware and software interfaces that aim to allow execution of deep
+learning algorithms in an efficient way. It will provide both the necessary
+theoretical background and the hands-on experience required to be an effective
+deep learning practitioner, or to start on the path towards deep learning
+research.
 
 ## Learning Outcomes
 
@@ -20,7 +22,8 @@ At the end of the course, the student will:
     learning frameworks such as PyTorch.
 1.	Know how to optimize software and hardware performance in deep neural
     network applications.
-1.	Know how to program GPUs using CUDA.
+1.	Know how to leverage GPUs and write custom computational kernels to
+    accelerate both training and inference.
 1.	Perform a small research project using the studied notions and techniques.
 
 
@@ -38,24 +41,38 @@ At the end of the course, the student will:
 
 ## Literature
 
+The course does not follow any specific book. For your own reference, the
+following material may be useful.
+
 {% include literature.html %}
 
 ## Detailed Syllabus
 
-| Date         | #        | Lecture                                                                                                                                                                               | Tutorial                                                                            |
-| -----------  | ----     | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| `21/10/2018` | 1        | Introduction to machine learning and accelerators                                                                                       | Environment set up, intro to notebooks, using course servers                        |
-| `28/10/2018` | 2        | Supervised learning: linear classifiers, linear regression, loss functions, optimization, descent methods, SGD                          | ML basics: Linear Classifiers, score & loss functions, data sets, cross validation  |
-| `04/11/2018` | 3        | Neural networks: multi-layered perceptrons, backpropagation and intro to CNNs, ResNets                                                  | MLP, Optimization algorithms                                                        |
-| `11/11/2018` | 4        | Training neural networks: Initialization, dropout, batch normalization, update rules, data augmentation                                 | Training convolution neural networks in PyTorch                                     |
-| `18/11/2018` | 5        | Recurrent neural networks: RNN, B-RNN, LSTM, GRU and applications                                                                       | Convolutional neural networks                                                       |
-| `25/11/2018` | 5<br>6   | RNNs (continued);<br>Unsupervised Learning: Generative Models, VAEs, GANs                                                               | RNNs, LSTM training for NLP application                                             |
-| `09/12/2018` | 6        | Unsupervised Learning (continued)                                                                                                       | Unsupervised learning, GANs, Variational Auto Encoders                              |
-| `16/12/2018` | 7        | Reinforcement learning, Deep Q-Learning, Policy Gradients                                                                               | Domain adaptation, style transfer                                                   |
-| `23/12/2018` | 8        | Intro to Parallel architectures for DL                                                                                                  | Deep reinforcement learning                                                         |
-| `30/12/2018` | 9        | Parallel architectures for Training                                                                                                     | Introduction to CUDA                                                                |
-| `06/01/2019` | 10<br>11 | Parallel architectures for Inference;<br>CNNs on non-euclidean domains: graphs and manifolds                                            | CUDA with PyTorch                                                                   |
-| `13/01/2019` | 11       | CNNs on non-euclidean domains (continued)                                                                                               | CNN on graphs                                                                       |
-| `20/01/2019` | 12       | Project Presentations                                                                                                                   | Project Presentations                                                               |
-| -----------  | ----     | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+This semester, the course will be presented using a flipped-classroom approach.
+
+Students are expected to watch and read the pre-requisite material, available
+from the couse [Lectures page]({{ site.baseurl }}/lectures) before each class.
+The in-class lectures will then be divided into a *supplementary* part, relating
+to the pre-requisite material and an *introductory* part presenting new material
+relating to the next lecture.
+
+
+| Date         | #    | Pre requisite | Lecture                                                                                                                                 | Tutorial                                                                            | Homework   |
+| -----------  | ---- | ----          | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
+| `17/03/2019` | 1    |               | Introduction to machine learning                                                                                                        | Python, numpy and friends                                                           |            |
+| `24/03/2019` | 2    | Lecture 1b    | **Introductory**: Supervised learning, probability and statistics                                                                       | Logistic regression                                                                 | HW1        |
+| `31/03/2019` | 3    | Lecture 2     | **Supplementary**:  performance evaluation, ROC, confusion matrix;<br>**Introductory**: neural networks                                 | MLP                                                                                 |            |
+| `07/04/2019` | 4    | Lecture 3     | **Supplementary**: CNNs architectures<br>**Introductory**: training, calculus, optimization                                             | CNNs                                                                                |            |
+| `14/04/2019` | 5    | Lecture 4     | **Supplementary**: Regularization, BatchNorm, ResNets<br>**Introductory**: RNNs                                                         | Training deep nets                                                                  | HW2        |
+| `21/04/2019` | 6    |               | *No class*                                                                                                                              |                                                                                     |            |
+| `28/04/2019` | 7    | Lecture 5     | **Supplementary**: Word embeddings, attention<br>**Introductory**: Unsupervised learning                                                | RNNs                                                                                |            |
+| `05/05/2019` | 8    | Lecture 6     | **Supplementary**: GANs, image generation, domain adaptation<br>**Introductory**: Reinforcement learning                                | Domain adaptation                                                                   |            |
+| `12/05/2019` | 9    | Lecture 7     | **Supplementary**: Actor-critic, AutoML, NAS<br>**Introductory**: Non-euclidean domains, harmonic analysis                              | Reinforcement learning                                                              | HW3        |
+| `19/05/2019` | 10   | Lecture 11    | **Supplementary**: Applications of CNNs on graphs<br>**Introductory**: Hardware accelerators                                            | Deep learning on graphs                                                             |            |
+| `26/05/2019` | 11   | Lecture 8     | Neural network compression and pruning                                                                                                  |                                                                                     |            |
+| `02/06/2019` | 12   | Lecture 9     | **Supplementary**: GPU architectures                                                                                                    | CUDA with PyTorch                                                                   | HW4        |
+| `09/06/2019` | 13   |               | *No class*                                                                                                                              |                                                                                     |            |
+| `16/06/2019` | 14   | Lecture 10    | **Supplementary**: Hardware for inference                                                                                               | Accelerating inference                                                              |            |
+| `23/06/2019` | 15   |               | *Project Presentations*                                                                                                                 |                                                                                     |            |
+| -----------  | ---- | ----          | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |            |
 
