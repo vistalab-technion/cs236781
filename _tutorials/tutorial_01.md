@@ -18,6 +18,8 @@ with the examples from the notebook.
 
 {% include video provider="youtube" id="6_Y6zAP6sLA" %}
 
+(from the previous semester)
+
 ## Extra Resources
 
 - `conda` [download](https://conda.io/miniconda.html) and

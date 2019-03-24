@@ -2,7 +2,7 @@
 title: "Tutorial 2: Logistic regression"
 excerpt: Supervised learning context, binary and multiclass logistic regression
 author: aviv
-published: false
+published: true
 ---
 
 Topics: Supervised learning context, binary and multiclass logistic regression.
@@ -26,4 +26,6 @@ to update your environment and run jupyter.
 ## Video
 
 {% include video provider="youtube" id="eRZLKBFBSuY" %}
+
+(from previous semester)
 
