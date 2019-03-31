@@ -26,6 +26,12 @@ alt="" caption="" ref=""
 
 ## Videos
 
+- Introductory video
+
+{% include video provider="youtube" id="FYaxB9y5pi8" %}
+
+- Main lecture video
+
 {% include video provider="youtube" id="IclXQNHkYgI" %}
 
 ## Lecture Notes

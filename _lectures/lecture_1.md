@@ -30,7 +30,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ### Part I - Alex
 
-Stay tuned.
+{% include video provider="youtube" id="2Hu348tBtM8" %}
 
 ### Part II - Avi
 
