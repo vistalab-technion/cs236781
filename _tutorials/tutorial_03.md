@@ -1,15 +1,15 @@
 ---
-title: "Tutorial 3: Intro to CNNs"
+title: "Tutorial 3: Multilayer Perceptron"
 author: aviv
-published: false
+published: true
 ---
 
-MLPs, convolutional layers, loss functions and optimization in PyTorch
+MLP model, activations, backprop, loss functions and optimization in PyTorch
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial3/tutorial3-CNN.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial3/tutorial3-MLP.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="F978ijef9G8" %}
+Stay tuned.
