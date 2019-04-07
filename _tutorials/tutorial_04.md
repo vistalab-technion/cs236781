@@ -1,18 +1,17 @@
 ---
-title: "Tutorial 4: Training Neural Networks"
+title: "Tutorial 4: Convolutional Neural Nets"
 author: aviv
-published: false
+published: true
 ---
 
-Overfitting and regularization, dropout, batch normalization, learning rate
-decay, momentum, adaptive optimizers, training practices.
+Convolutional and pooling layers, architectures, spatial classification,
+residual nets.
 
 ## Material
 
-This tutorial has only accompanying slides, which can be viewed or downloaded
-[here](https://github.com/vistalab-technion/cs236605-tutorials/blob/master/tutorial4/tutorial_4.pdf).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial4/tutorial4-CNNs.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="FYM9qC7kWJA" %}
+Stay tuned.
 
