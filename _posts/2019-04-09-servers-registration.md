@@ -7,8 +7,9 @@ excerpt: Access can now be requested.
 
 Dear students,
 
-Fill out the form below in order to request access to course servers.
-Please submit the form before next Sunday, April 14.
+Fill out the [form below](https://forms.gle/d67yFeDGDPhmTiUZ8) in order to
+request access to course servers.  Please submit the form before next Sunday,
+April 14.
 
 Thanks,  
 Course staff
