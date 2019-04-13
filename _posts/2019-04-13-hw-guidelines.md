@@ -13,9 +13,9 @@ Below are some guidelines regarding the homework assignments.
    assignments, or other technical questions please email
    [Aviv](mailto:avivr@cs.technion.ac.il).
 2. To request a delayed submission, please email
-   [Evgenii](mailto:evgeniizh@campus.technion.ac.il) with a CC to
-   [Chaim](mailto:chaimbaskin@cs.technion.ac.il), specifying a valid reason for
-   the request.  Wait for approval of the request by email.
+   [Chaim](mailto:chaimbaskin@cs.technion.ac.il) with a CC to
+   [Evgenii](mailto:evgeniizh@campus.technion.ac.il), specifying a valid reason
+   for the request.  Wait for approval of the request by email.
 3. For inquiries or appeals about grades, please email
    [Evgenii](mailto:evgeniizh@campus.technion.ac.il).
 4. Please note that even if your delay request is approved, any subsequent
