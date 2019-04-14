@@ -1,7 +1,7 @@
 ---
 title: New videos and youtube playlist
 author: aviv
-excerpt: Tutorial 3 and 4, lecture 4 intro
+excerpt: Tutorial 3 and 4, lecture 4 intro.
 ---
 
 Dear students,

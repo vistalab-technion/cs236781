@@ -1,7 +1,7 @@
 ---
 title: "Guildeline clarifications for homework assignments"
 author: aviv
-excerpt: Please read and follow these guidelines
+excerpt: Please read and follow these guidelines.
 ---
 
 
