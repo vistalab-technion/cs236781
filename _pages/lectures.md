@@ -24,6 +24,5 @@ The accompanying material for each lecture is posted here.
 - Detailed notes will be available for most lectures on the
   [lecture notes]({{ site.baseurl }}{% link _pages/lecture_notes.md %}) page.
 
-- You can browse the course [youtube
-  playlist](https://www.youtube.com/playlist?list=PLM0a6Z788YAZuqg2Ip-_dPLzEd33lZvP2)
+- You can browse the course [youtube playlist](https://www.youtube.com/playlist?list=PLM0a6Z788YAa_WCy_V-q9NrGm5qQegZR5)
   and get updates about new videos.
