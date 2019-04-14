@@ -18,5 +18,11 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Videos
 
+- Introductory video
+
+{% include video provider="youtube" id="8wbBehsHN1o" %}
+
+- Main lecture video
+
 {% include video provider="youtube" id="eIicKFeOrzI" %}
 
