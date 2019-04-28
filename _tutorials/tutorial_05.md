@@ -1,17 +1,15 @@
 ---
-title: "Tutorial 5: Convolutional Neural Nets"
+title: "Tutorial 5: Recurrent neural networks"
 author: aviv
-published: false
+published: true
 ---
 
-Convolutional and pooling layers, architectures, spatial classification,
-residual nets.
+RNN implementation, sentiment analysis, attention.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial5/tutorial5-CNNs.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial5/tutorial5-RNNs.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="msRpRUSBcSU" %}
-
+Stay tuned.
