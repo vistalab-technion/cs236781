@@ -1,17 +1,17 @@
 ---
-title: "Tutorial 6: RNNs"
+title: "Tutorial 6: Transfer learning and domain adaptation"
 author: aviv
-published: false
+published: true
 ---
 
-Word representations, vanilla RNNs, GRUs, LSTM, attention.
+Transfer learning definition, contexts, fine-tuning pre-trained models,
+unsupervised domain adaptation.
 
-## Slides
+## Material
 
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21212&amp;authkey=AFA10VUEuJB51QQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial6/tutorial6-TL_DA.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="Py1HmVNxQcQ" %}
+Stay tuned.
 
