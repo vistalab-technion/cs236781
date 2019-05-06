@@ -17,7 +17,13 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Videos
 
+- Main lecture
+
 {% include video provider="youtube" id="98V7VRAFJGM" %}
+
+- Supplementary material: Stabilizing GAN training
+
+{% include video provider="youtube" id="TZysW1nWJb4" %}
 
 ## Lecture Notes
 
