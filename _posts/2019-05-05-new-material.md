@@ -1,7 +1,7 @@
 ---
 title: New material
 author: aviv
-excerpt: Tutorial 5 video, tutorial 6 notebook
+excerpt: Tutorial 5 video, tutorial 6 notebook.
 ---
 
 Dear students,
