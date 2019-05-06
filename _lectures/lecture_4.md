@@ -31,5 +31,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79
 
 {% include video provider="youtube" id="eIicKFeOrzI" %}
 
-- Part B  
-  Stay tuned.
+- Part B
+
+{% include video provider="youtube" id="EAl2ivWjK1g" %}
+
