@@ -5,8 +5,8 @@ header:
 date: 2018-10-21
 ---
 
-Origins of deep learning, course goals and overview of machine-learning
-paradigms.
+Origins of deep learning, course goals, overview of machine-learning
+paradigms, intro to computational acceleration.
 
 {% include figure
 image_path="assets/images/lec1/dataism-large.jpg"
@@ -24,7 +24,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 ### Part II - Avi
 
 {% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21199&amp;authkey=AI9FN6vpAwwnawc&amp;em=2&amp;wdAr=1.7763888888888888" %}
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21270&authkey=AEENkC5Wh3mZ7iw&em=2" %}
 
 ## Videos
 
@@ -34,7 +34,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ### Part II - Avi
 
-{% include video provider="youtube" id="1-OA5IeJjqo" %}
+{% include video provider="youtube" id="JuLkHQF6EuM" %}
 
 ## Lecture Notes
 
