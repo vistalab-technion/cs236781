@@ -5,8 +5,8 @@ header:
 date: 2019-01-13
 ---
 
-Toeplitz operators, basis changes, graphs, fields, gradients, divergence,
-Laplace-Beltrami operator, non-euclidean convolution, spectral CNN.
+Toeplitz operators, graphs, fields, gradients, divergence, Laplace-Beltrami
+operator, non-euclidean convolution, spectral and spatial CNN for graphs.
 
 {% include figure image_path="assets/images/lec11/lec11-2.jpg" alt="" caption="" ref="" %}
 
@@ -16,8 +16,6 @@ Laplace-Beltrami operator, non-euclidean convolution, spectral CNN.
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21224&amp;authkey=ACgvH6CnyMPYymE&amp;em=2&amp;wdAr=1.6" %}
 
 ## Video
-
-Stay tuned.
 
 {% include video provider="youtube" id="XeFLA99keXw" %}
 
