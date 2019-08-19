@@ -45,6 +45,7 @@ Baskin](mailto:chaimbaskin@cs.technion.ac.il).
    of the paper and novel results, if any), compare your solution to the
    baseline method (if relevant), etc.
 1. The submission date for the project is **01/10/2019**.
+   Note that we can't guarantee access to the course servers after this date.
 
 ## Registration links
 
@@ -67,7 +68,7 @@ Starting on 22/08/2019 we will hold project-related office hours
 every Thursday 16:00-17:30 at the VISTA lab.
 Please email if you intend to attend.
 
-## Submission structure and evaluation
+## Report structure and evaluation
 
 The following list details what your project report should contain and it's
 impact on the grade.
@@ -95,10 +96,31 @@ impact on the grade.
    preprocessing/augmentation approaches, loss formulations, training methods
    and hyperparameter values.
 
+   Note: You can use any existing code, e.g. code implementing all or part of
+   relevant papers, in your implementation but specify what you used and
+   which parts you implemented yourself.
+
 4. Results (20%). Present all results in an orderly table and include graphs or
    figures as you see fit.
    Discuss and explain your results. If implementing an existing paper,
    compare to the original approach in the paper as. If your task
    is different than the paper, or if you are working on a custom project,
    compare to previous works in the domain solving the same or similar tasks.
+
+
+## Submission
+
+Create a zip file titled `proj-id1_id2.zip` (replace `id1`/`id2` with your
+IDs) and email it to Chaim and Aviv.
+
+The zip file should include:
+1. A single PDF document, `report.pdf`, containing your project report.
+   It should be structured according to the sections listed above.
+2. A folder `src/` containing all your code.
+3. A README file explaining:
+    1. The structure of the code in the `src/` folder: What is implemented in
+       each package/module.
+    2. Steps to reproduce your results using this code: Where to get and place
+       the data, how to run all the data processing steps, how to run training
+       and evaluation.
 
