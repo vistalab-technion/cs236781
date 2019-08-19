@@ -70,7 +70,7 @@ Please email if you intend to attend.
 
 ## Report structure and evaluation
 
-The following list details what your project report should contain and it's
+The following list details what your project report should contain and its
 impact on the grade.
 
 0. Abstract (10%). Summarize your work. Briefly introduce the problem, the
