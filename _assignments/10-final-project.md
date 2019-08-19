@@ -63,5 +63,42 @@ Initial office hours will be given by Chaim on:
 Both at VISTA lab, Taub 120. You can use these hours to consult regarding
 project selection.
 
-Other office hours will be published later on.
- 
+Starting on 22/08/2019 we will hold project-related office hours 
+every Thursday 16:00-17:30 at the VISTA lab.
+Please email if you intend to attend.
+
+## Submission structure and evaluation
+
+The following list details what your project report should contain and it's
+impact on the grade.
+
+0. Abstract (10%). Summarize your work. Briefly introduce the problem, the
+   methods and state the key results.
+
+1. Intro (25%). Review the papers relevant to your project. Explain the
+   problem domain, existing approaches and the specific contribution of the
+   relevant paper(s). Also detail the drawbacks which you plan to address.
+   If it's a custom project, explain your specific motivation and goals.
+   Cite any other work as needed.
+
+2. Methods (25%).  If implementing an existing paper,
+   explain your ideas for modifications, additions or improvements to the
+   algorithm/task/domain etc., as relevant. If working on a custom project,
+   provide a detailed explanation of your approach.  In both cases, explain the
+   empirical and/or theoretical motivation for what you are doing.  Finally,
+   describe the data you will be using for evaluation.
+
+3. Implementation and experiments (20%). 
+   Describe the experiments performed and their configurations, what was
+   compared to what and the evaluation metrics used and why.
+   Explain all implementation details such as model architectures used, data
+   preprocessing/augmentation approaches, loss formulations, training methods
+   and hyperparameter values.
+
+4. Results (20%). Present all results in an orderly table and include graphs or
+   figures as you see fit.
+   Discuss and explain your results. If implementing an existing paper,
+   compare to the original approach in the paper as. If your task
+   is different than the paper, or if you are working on a custom project,
+   compare to previous works in the domain solving the same or similar tasks.
+
