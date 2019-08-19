@@ -117,7 +117,7 @@ The zip file should include:
 1. A single PDF document, `report.pdf`, containing your project report.
    It should be structured according to the sections listed above.
 2. A folder `src/` containing all your code.
-3. A README file explaining:
+3. A `README` file (plain text/markdown) explaining:
     1. The structure of the code in the `src/` folder: What is implemented in
        each package/module.
     2. Steps to reproduce your results using this code: Where to get and place
