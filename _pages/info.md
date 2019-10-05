@@ -1,27 +1,33 @@
 ---
 permalink: /info/
 title: Course Info
-classes: wide
+classes: wide text-justify
 ---
 
-Deep learning is widely used in a growing range of applications ranging from
-image classification and generation, text comprehension, signal processing, game
-playing and more. This course will focus on algorithms, programming frameworks
-and new hardware and software interfaces that aim to allow execution of deep
-learning algorithms in an efficient way. It will provide both the necessary
-theoretical background and the hands-on experience required to be an effective
-deep learning practitioner, or to start on the path towards deep learning
-research.
+Deep learning is a branch of machine learning which aims to learn meaningful
+representations directly from raw data, without the need for traditional feature
+engineering.
+In recent years it has been successfully applied to some of the most challenging
+problems in the broad field of AI, such as recognizing objects in an image,
+converting speech to text or playing games. In many such tasks,
+the state of the art performance today is attained by deep-learning algorithms,
+in some cases surpassing human-level performance.
+
+This course will focus on the theory and algorithms behind deep learning,
+as well as on hardware and software interfaces that allow efficient training of
+deep learning algorithms. It will provide both the necessary theoretical
+background and the hands-on experience required to be an effective deep learning
+practitioner, or to start on the path towards deep learning research.
 
 ## Learning Outcomes
 
 At the end of the course, the student will:
 
-1.	Understand and be able to apply notions in deep learning.
+1.	Understand the key notions of deep learning, such as learning regimes, model
+    types, optimization and training methodologies.
+1.  Be able to apply deep learning algorithms to real work data and problems.
 1.	Know how to effectively use leading python machine-learning and deep
     learning frameworks such as PyTorch.
-1.	Know how to optimize software and hardware performance in deep neural
-    network applications.
 1.	Know how to leverage GPUs and write custom computational kernels to
     accelerate both training and inference.
 1.	Perform a small research project using the studied notions and techniques.
@@ -34,6 +40,13 @@ At the end of the course, the student will:
 **Language**: The course will be taught in English.
 
 **Credits**: 3.0.
+
+**Prerequisites**:
+- A good background of linear algebra, probability and calculus.
+- Programming competency. The course will be very hands-on; much programming
+  will be required.  We will use Python exclusively, so it's recommended to have
+  experience with it.
+- An introductory course about machine learning and/or signal/image processing.
 
 ## Course Staff
 
