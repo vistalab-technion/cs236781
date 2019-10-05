@@ -1,0 +1,1 @@
+Sitemap: https://vistalab-technion.github.io/cs236605/semesters/sp19/sitemap.xml
