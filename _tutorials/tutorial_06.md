@@ -9,7 +9,7 @@ unsupervised domain adaptation.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial6/tutorial6-TL_DA.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial6/tutorial6-TL_DA.ipynb).
 
 ## Video
 

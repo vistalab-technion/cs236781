@@ -9,16 +9,16 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Using the course HPC servers | CS236605: Deep Learning</title>
+<!-- begin _includes/seo.html --><title>Using the course HPC servers | CS236781: Deep Learning</title>
 <meta name="description" content="How to connect to and run jobs on the course servers.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="CS236605: Deep Learning">
+<meta property="og:site_name" content="CS236781: Deep Learning">
 <meta property="og:title" content="Using the course HPC servers">
-<meta property="og:url" content="https://vistalab-technion.github.io/cs236605/semesters/w1819/assignments/hpc-servers/">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/w1819/assignments/hpc-servers/">
 
 
   <meta property="og:description" content="How to connect to and run jobs on the course servers.">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="https://vistalab-technion.github.io/cs236605/semesters/w1819/assignments/hpc-servers/">
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/w1819/assignments/hpc-servers/">
 
 
 
@@ -53,7 +53,7 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "VISTA Lab",
-      "url": "https://vistalab-technion.github.iocs236605/semesters/w1819",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/w1819",
       "sameAs": null
     }
   </script>
@@ -67,7 +67,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/cs236605/semesters/w1819/feed.xml" type="application/atom+xml" rel="alternate" title="CS236605: Deep Learning Feed">
+<link href="/cs236781/semesters/w1819/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -79,7 +79,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/cs236605/semesters/w1819/assets/css/main.css">
+<link rel="stylesheet" href="/cs236781/semesters/w1819/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -115,15 +115,15 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/cs236605/semesters/w1819/">CS236605: Deep Learning</a>
+        <a class="site-title" href="/cs236781/semesters/w1819/">CS236781: Deep Learning</a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/w1819/info/" >Info</a>
+              <a href="/cs236781/semesters/w1819/info/" >Info</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/w1819/lectures/" >Lectures</a>
+              <a href="/cs236781/semesters/w1819/lectures/" >Lectures</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/w1819/tutorials/" >Tutorials</a>
+              <a href="/cs236781/semesters/w1819/tutorials/" >Tutorials</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/w1819/assignments/" >Assignments</a>
+              <a href="/cs236781/semesters/w1819/assignments/" >Assignments</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -322,12 +322,12 @@ of the system and the available commands.</p>
 
 <h2 id="job-queues">Job queues</h2>
 
-<p>We have a dedicated job queue (“partition”) for our course, <code class="highlighter-rouge">236605</code>. Jobs
+<p>We have a dedicated job queue (“partition”) for our course, <code class="highlighter-rouge">236781</code>. Jobs
 submitted to this queue will be served on one of the <code class="highlighter-rouge">rishon3</code> or <code class="highlighter-rouge">rishon4</code>
 nodes.</p>
 
 <p>You can view the jobs currently in the course queue by running <code class="highlighter-rouge">squeue -p
-236605</code> or an all queues with <code class="highlighter-rouge">squeue</code>.</p>
+236781</code> or an all queues with <code class="highlighter-rouge">squeue</code>.</p>
 
 <p>Each job defines which computational resources it requires (nodes, CPU cores, number of
 GPUs). Multiple jobs can run simultaneously on a compute node as long as
@@ -340,7 +340,7 @@ least 6 CPU cores and 3 GPUs.</p>
 <h2 id="priority-and-preemption">Priority and preemption</h2>
 
 <p>Students from our course have special priority for the compute nodes serving the
-<code class="highlighter-rouge">236605</code> queue.  Other users in the system can also run jobs on these nodes, but
+<code class="highlighter-rouge">236781</code> queue.  Other users in the system can also run jobs on these nodes, but
 if resources become limited a job submitted by a student in this course will
 <strong>preempt</strong> (in this context, stop and re-queue) a job submitted by an external user that’s
 currently running on one of these nodes.</p>
@@ -356,7 +356,7 @@ some other node with an inconsistent GPU state. Not fun. To prevent this, <stron
 use the course queue for running model training tasks</strong>.</p>
 
 <p>Specifying which queue to submit a job to is performed with the <code class="highlighter-rouge">-p</code> flag for
-the <code class="highlighter-rouge">srun</code>/<code class="highlighter-rouge">sbatch</code> commands. For example, use <code class="highlighter-rouge">-p 236605</code> to make sure your job
+the <code class="highlighter-rouge">srun</code>/<code class="highlighter-rouge">sbatch</code> commands. For example, use <code class="highlighter-rouge">-p 236781</code> to make sure your job
 is submitted to the course queue. If you don’t specify it, it will be submitted
 to the <code class="highlighter-rouge">all</code> queue which is served by all compute nodes, not just those that
 give priority to course students.</p>
@@ -379,7 +379,7 @@ can be specified and if they’re available the job starts running immediately.<
 <p>Let’s see how to run an <code class="highlighter-rouge">ipython</code> console session as an interactive job with an
 allocated GPU.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>cs236605-hw<span class="o">)</span> avivr@rishon:~/cs236605-hw1<span class="nv">$ </span>srun <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">--pty</span> ipython
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>cs236781-hw<span class="o">)</span> avivr@rishon:~/cs236781-hw1<span class="nv">$ </span>srun <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">--pty</span> ipython
 cpu-bind<span class="o">=</span>MASK - rishon1, task  0  0 <span class="o">[</span>15995]: mask 0x100000001 <span class="nb">set
 </span>cpu-bind<span class="o">=</span>MASK - rishon1, task  0  0 <span class="o">[</span>15995]: mask 0x100000001 <span class="nb">set
 </span>Python 3.7.0 <span class="o">(</span>default, Oct  9 2018, 10:31:47<span class="o">)</span>
@@ -455,7 +455,7 @@ script.</p>
 
 <span class="c"># Setup env</span>
 <span class="nb">source</span> <span class="nv">$HOME</span>/miniconda3/etc/profile.d/conda.sh
-conda activate cs236605-hw
+conda activate cs236781-hw
 <span class="nb">echo</span> <span class="s2">"hello from </span><span class="k">$(</span>python <span class="nt">--version</span><span class="k">)</span><span class="s2"> in </span><span class="k">$(</span>which python<span class="k">)</span><span class="s2">"</span>
 
 <span class="c"># Run some arbitrary python</span>
@@ -463,29 +463,29 @@ python <span class="nt">-c</span> <span class="s1">'import torch; print(f"i can 
 </code></pre></div></div>
 
 <p>Then we can run the script as a <code class="highlighter-rouge">slurm</code> batch job as follows:</p>
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>avivr@rishon:~<span class="nv">$ </span>sbatch <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">-p</span> 236605 <span class="nt">-o</span> slurm-test.out <span class="nt">-J</span> my_job  myscript.sh
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>avivr@rishon:~<span class="nv">$ </span>sbatch <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">-p</span> 236781 <span class="nt">-o</span> slurm-test.out <span class="nt">-J</span> my_job  myscript.sh
 Submitted batch job 114425
 
-avivr@rishon:~<span class="nv">$ </span>squeue <span class="nt">-p</span> 236605
+avivr@rishon:~<span class="nv">$ </span>squeue <span class="nt">-p</span> 236781
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST<span class="o">(</span>REASON<span class="o">)</span>
-            114425    236605   my_job    avivr  R       0:01      1 rishon3
+            114425    236781   my_job    avivr  R       0:01      1 rishon3
 
 avivr@rishon:~<span class="nv">$ </span>tail <span class="nt">-f</span> slurm-test.out
 cpu-bind<span class="o">=</span>MASK - rishon3, task  0  0 <span class="o">[</span>20442]: mask 0x100000001 <span class="nb">set
 </span>cpu-bind<span class="o">=</span>MASK - rishon3, task  0  0 <span class="o">[</span>20442]: mask 0x100000001 <span class="nb">set
-</span>hello from Python 3.7.0 <span class="k">in</span> /home/avivr/miniconda3/envs/cs236605-hw/bin/python
+</span>hello from Python 3.7.0 <span class="k">in</span> /home/avivr/miniconda3/envs/cs236781-hw/bin/python
 i can haz gpu? True
 </code></pre></div></div>
 
 <p>Here the <code class="highlighter-rouge">-c 2</code> and <code class="highlighter-rouge">--gres=gpu:1</code> options specify that we want to allocate 2 CPU
-cores and one GPU to the job, the <code class="highlighter-rouge">-p 236605</code> option specifies the name of the
+cores and one GPU to the job, the <code class="highlighter-rouge">-p 236781</code> option specifies the name of the
 job queue (partition) to use, the <code class="highlighter-rouge">-o slurm-test.out</code> option specifies where
 to write the output from the process and <code class="highlighter-rouge">-J my_job</code> is an arbitrary name we can
 assign to the job.</p>
 
 <h3 id="viewing-status">Viewing status</h3>
 
-<p>After submitting a batch job, you can use <code class="highlighter-rouge">squeue -p 236605</code> to view it’s
+<p>After submitting a batch job, you can use <code class="highlighter-rouge">squeue -p 236781</code> to view it’s
 status in the queue, as shown in the example above. You can see the job name and
 it’s id there.</p>
 
@@ -515,7 +515,7 @@ use this script as if it were the <code class="highlighter-rouge">python</code> 
 
 <p>For example, let’s say we want to run all our notebooks with the <code class="highlighter-rouge">main.py</code>
 script. Instead of</p>
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate cs236605-hw
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate cs236781-hw
 python main.py run-nb <span class="k">*</span>.ipynb
 </code></pre></div></div>
 
@@ -602,7 +602,7 @@ local browser to <code class="highlighter-rouge">localhost:9999</code>.</li>
 
 <p>Many people recommend <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> as
 a good graphical ssh client for windows.
-Here’s a useful <a href="cs236605/semesters/w1819/assets/mobaXterm_guide.docx">guide</a> for using it to
+Here’s a useful <a href="cs236781/semesters/w1819/assets/mobaXterm_guide.docx">guide</a> for using it to
 connect to the server.</p>
 
 <h2 id="pubic-key-based-authentication">Pubic-key based authentication</h2>
@@ -684,11 +684,11 @@ the last two arguments in the above examples.</p>
       
   <nav class="pagination">
     
-      <a href="/cs236605/semesters/w1819/assignments/getting-started/" class="pagination--pager" title="Getting started with the course assignments
+      <a href="/cs236781/semesters/w1819/assignments/getting-started/" class="pagination--pager" title="Getting started with the course assignments
 ">Previous</a>
     
     
-      <a href="/cs236605/semesters/w1819/assignments/hw1/" class="pagination--pager" title="Homework 1: Machine Learning Basics
+      <a href="/cs236781/semesters/w1819/assignments/hw1/" class="pagination--pager" title="Homework 1: Machine Learning Basics
 ">Next</a>
     
   </nav>
@@ -718,7 +718,7 @@ the last two arguments in the above examples.</p>
 var logo_element = '\
 <div class="technion-logo"> \
     <a href="https://cs.technion.ac.il"> \
-        <img src="/cs236605/semesters/w1819/assets/images/cs_technion-logo.png" alt="Technion"> \
+        <img src="/cs236781/semesters/w1819/assets/images/cs_technion-logo.png" alt="Technion"> \
     </a> \
 </div> \
 ';
@@ -730,7 +730,7 @@ document
 var logo_element = '\
 <div class="vista-logo"> \
     <a href="https://vista.cs.technion.ac.il" > \
-        <img src="/cs236605/semesters/w1819/assets/images/vista-logo-bw.png" alt="VISTA"> \
+        <img src="/cs236781/semesters/w1819/assets/images/vista-logo-bw.png" alt="VISTA"> \
     </a> \
 </div> \
 ';
@@ -810,7 +810,7 @@ MathJax.Hub.Config({
       
     
 
-    <li><a href="/cs236605/semesters/w1819/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/cs236781/semesters/w1819/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -820,15 +820,15 @@ MathJax.Hub.Config({
     </div>
 
     
-  <script src="/cs236605/semesters/w1819/assets/js/main.min.js"></script>
+  <script src="/cs236781/semesters/w1819/assets/js/main.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 
 
-<script src="/cs236605/semesters/w1819/assets/js/lunr/lunr.min.js"></script>
-<script src="/cs236605/semesters/w1819/assets/js/lunr/lunr-store.js"></script>
-<script src="/cs236605/semesters/w1819/assets/js/lunr/lunr-en.js"></script>
+<script src="/cs236781/semesters/w1819/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/w1819/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/w1819/assets/js/lunr/lunr-en.js"></script>
 
 
 

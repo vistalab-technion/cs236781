@@ -9,23 +9,23 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Lecture 11: Learning on Non-Euclidean Domains | CS236605: Deep Learning</title>
+<!-- begin _includes/seo.html --><title>Lecture 11: Learning on Non-Euclidean Domains | CS236781: Deep Learning</title>
 <meta name="description" content="Toeplitz operators, graphs, fields, gradients, divergence, Laplace-Beltramioperator, non-euclidean convolution, spectral and spatial CNN for graphs.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="CS236605: Deep Learning">
+<meta property="og:site_name" content="CS236781: Deep Learning">
 <meta property="og:title" content="Lecture 11: Learning on Non-Euclidean Domains">
-<meta property="og:url" content="https://vistalab-technion.github.io/cs236605/semesters/sp19/lectures/lecture_11/">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/sp19/lectures/lecture_11/">
 
 
   <meta property="og:description" content="Toeplitz operators, graphs, fields, gradients, divergence, Laplace-Beltramioperator, non-euclidean convolution, spectral and spatial CNN for graphs.">
 
 
 
-  <meta property="og:image" content="https://vistalab-technion.github.io/cs236605/semesters/sp19/assets/images/lec11/lec11-1.jpg">
+  <meta property="og:image" content="https://vistalab-technion.github.io/cs236781/semesters/sp19/assets/images/lec11/lec11-1.jpg">
 
 
 
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="https://vistalab-technion.github.io/cs236605/semesters/sp19/lectures/lecture_11/">
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/sp19/lectures/lecture_11/">
 
 
 
@@ -55,7 +55,7 @@
       "@context": "http://schema.org",
       "@type": "Person",
       "name": "VISTA Lab",
-      "url": "https://vistalab-technion.github.iocs236605/semesters/sp19",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/sp19",
       "sameAs": null
     }
   </script>
@@ -69,7 +69,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/cs236605/semesters/sp19/feed.xml" type="application/atom+xml" rel="alternate" title="CS236605: Deep Learning Feed">
+<link href="/cs236781/semesters/sp19/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -81,7 +81,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/cs236605/semesters/sp19/assets/css/main.css">
+<link rel="stylesheet" href="/cs236781/semesters/sp19/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -117,15 +117,15 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/cs236605/semesters/sp19/">CS236605: Deep Learning</a>
+        <a class="site-title" href="/cs236781/semesters/sp19/">CS236781: Deep Learning</a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/sp19/info/" >Info</a>
+              <a href="/cs236781/semesters/sp19/info/" >Info</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/sp19/lectures/" >Lectures</a>
+              <a href="/cs236781/semesters/sp19/lectures/" >Lectures</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/sp19/tutorials/" >Tutorials</a>
+              <a href="/cs236781/semesters/sp19/tutorials/" >Tutorials</a>
             </li><li class="masthead__menu-item">
-              <a href="/cs236605/semesters/sp19/assignments/" >Assignments</a>
+              <a href="/cs236781/semesters/sp19/assignments/" >Assignments</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -177,7 +177,7 @@ operator, non-euclidean convolution, spectral and spatial CNN for graphs.</p>
   
     <a name=""></a>
   
-  <img src="/cs236605/semesters/sp19/assets/images/lec11/lec11-2.jpg" alt="" />
+  <img src="/cs236781/semesters/sp19/assets/images/lec11/lec11-2.jpg" alt="" />
   
     <figcaption>
 </figcaption>
@@ -206,7 +206,7 @@ operator, non-euclidean convolution, spectral and spatial CNN for graphs.</p>
 
 <h2 id="lecture-notes">Lecture Notes</h2>
 
-<p>Accompanying notes for this lecture can be found <a href="cs236605/semesters/sp19/lecture_notes/lecture_11/">here</a>.</p>
+<p>Accompanying notes for this lecture can be found <a href="cs236781/semesters/sp19/lecture_notes/lecture_11/">here</a>.</p>
 
         
       </section>
@@ -226,11 +226,11 @@ operator, non-euclidean convolution, spectral and spatial CNN for graphs.</p>
       
   <nav class="pagination">
     
-      <a href="/cs236605/semesters/sp19/lectures/lecture_10/" class="pagination--pager" title="Lecture 10: Parallel Architectures for Inference
+      <a href="/cs236781/semesters/sp19/lectures/lecture_10/" class="pagination--pager" title="Lecture 10: Parallel Architectures for Inference
 ">Previous</a>
     
     
-      <a href="/cs236605/semesters/sp19/lectures/lecture_12/" class="pagination--pager" title="Lecture 12: Neural network compression
+      <a href="/cs236781/semesters/sp19/lectures/lecture_12/" class="pagination--pager" title="Lecture 12: Neural network compression
 ">Next</a>
     
   </nav>
@@ -260,7 +260,7 @@ operator, non-euclidean convolution, spectral and spatial CNN for graphs.</p>
 var logo_element = '\
 <div class="technion-logo"> \
     <a href="https://cs.technion.ac.il"> \
-        <img src="/cs236605/semesters/sp19/assets/images/cs_technion-logo.png" alt="Technion"> \
+        <img src="/cs236781/semesters/sp19/assets/images/cs_technion-logo.png" alt="Technion"> \
     </a> \
 </div> \
 ';
@@ -272,7 +272,7 @@ document
 var logo_element = '\
 <div class="vista-logo"> \
     <a href="https://vista.cs.technion.ac.il" > \
-        <img src="/cs236605/semesters/sp19/assets/images/vista-logo-bw.png" alt="VISTA"> \
+        <img src="/cs236781/semesters/sp19/assets/images/vista-logo-bw.png" alt="VISTA"> \
     </a> \
 </div> \
 ';
@@ -352,7 +352,7 @@ MathJax.Hub.Config({
       
     
 
-    <li><a href="/cs236605/semesters/sp19/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/cs236781/semesters/sp19/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -362,15 +362,15 @@ MathJax.Hub.Config({
     </div>
 
     
-  <script src="/cs236605/semesters/sp19/assets/js/main.min.js"></script>
+  <script src="/cs236781/semesters/sp19/assets/js/main.min.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 
 
 
 
-<script src="/cs236605/semesters/sp19/assets/js/lunr/lunr.min.js"></script>
-<script src="/cs236605/semesters/sp19/assets/js/lunr/lunr-store.js"></script>
-<script src="/cs236605/semesters/sp19/assets/js/lunr/lunr-en.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-en.js"></script>
 
 
 

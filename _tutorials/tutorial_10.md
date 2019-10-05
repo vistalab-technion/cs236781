@@ -8,7 +8,7 @@ Numba, CUDA programming model, writing CUDA kernels in python.
 
 ## Notebook
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial10/tutorial10-cuda.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial10/tutorial10-cuda.ipynb).
 
 ## Video
 

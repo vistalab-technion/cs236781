@@ -3,5 +3,6 @@ permalink: /semesters/
 title: Semesters
 ---
 
-- [Spring 2019](/cs236605/) (Current semester)
-- [Winter 2018-9](/cs236605/semesters/w1819)
+- [Winter 2019-20](/cs236781/) (Current semester)
+- [Spring 2019](/cs236781/semesters/sp19)
+- [Winter 2018-9](/cs236781/semesters/w1819)

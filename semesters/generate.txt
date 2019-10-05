@@ -1,1 +1,1 @@
-dc exec site jekyll build --destination semesters/sp19 --baseurl 'cs236605/semesters/sp19'
+dc exec site jekyll build --destination semesters/sp19 --baseurl 'cs236781/semesters/sp19'

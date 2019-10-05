@@ -8,7 +8,7 @@ RNN implementation, sentiment analysis, attention.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial5/tutorial5-RNNs.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial5/tutorial5-RNNs.ipynb).
 
 ## Video
 

@@ -104,12 +104,12 @@ The most useful `slurm` commands for our needs are,
 
 ## Job queues
 
-We have a dedicated job queue ("partition") for our course, `236605`. Jobs
+We have a dedicated job queue ("partition") for our course, `236781`. Jobs
 submitted to this queue will be served on one of the `rishon3` or `rishon4`
 nodes.
 
 You can view the jobs currently in the course queue by running `squeue -p
-236605` or an all queues with `squeue`.
+236781` or an all queues with `squeue`.
 
 Each job defines which computational resources it requires (nodes, CPU cores, number of
 GPUs). Multiple jobs can run simultaneously on a compute node as long as
@@ -122,7 +122,7 @@ least 6 CPU cores and 3 GPUs.
 ## Priority and preemption
 
 Students from our course have special priority for the compute nodes serving the
-`236605` queue.  Other users in the system can also run jobs on these nodes, but
+`236781` queue.  Other users in the system can also run jobs on these nodes, but
 if resources become limited a job submitted by a student in this course will
 **preempt** (in this context, stop and re-queue) a job submitted by an external user that's
 currently running on one of these nodes.
@@ -138,7 +138,7 @@ some other node with an inconsistent GPU state. Not fun. To prevent this, **alwa
 use the course queue for running model training tasks**.
 
 Specifying which queue to submit a job to is performed with the `-p` flag for
-the `srun`/`sbatch` commands. For example, use `-p 236605` to make sure your job
+the `srun`/`sbatch` commands. For example, use `-p 236781` to make sure your job
 is submitted to the course queue. If you don't specify it, it will be submitted
 to the `all` queue which is served by all compute nodes, not just those that
 give priority to course students.
@@ -162,7 +162,7 @@ Let's see how to run an `ipython` console session as an interactive job with an
 allocated GPU.
 
 ```shell
-(cs236605-hw) avivr@rishon:~/cs236605-hw1$ srun -c 2 --gres=gpu:1 --pty ipython
+(cs236781-hw) avivr@rishon:~/cs236781-hw1$ srun -c 2 --gres=gpu:1 --pty ipython
 cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
 cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
 Python 3.7.0 (default, Oct  9 2018, 10:31:47)
@@ -234,7 +234,7 @@ Lets create a file `~/myscript.sh` on the server with the following contents:
 
 # Setup env
 source $HOME/miniconda3/etc/profile.d/conda.sh
-conda activate cs236605-hw
+conda activate cs236781-hw
 echo "hello from $(python --version) in $(which python)"
 
 # Run some arbitrary python
@@ -243,29 +243,29 @@ python -c 'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'
 
 Then we can run the script as a `slurm` batch job as follows:
 ```shell
-avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -p 236605 -o slurm-test.out -J my_job  myscript.sh
+avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -p 236781 -o slurm-test.out -J my_job  myscript.sh
 Submitted batch job 114425
 
-avivr@rishon:~$ squeue -p 236605
+avivr@rishon:~$ squeue -p 236781
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-            114425    236605   my_job    avivr  R       0:01      1 rishon3
+            114425    236781   my_job    avivr  R       0:01      1 rishon3
 
 avivr@rishon:~$ tail -f slurm-test.out
 cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
 cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
-hello from Python 3.7.0 in /home/avivr/miniconda3/envs/cs236605-hw/bin/python
+hello from Python 3.7.0 in /home/avivr/miniconda3/envs/cs236781-hw/bin/python
 i can haz gpu? True
 ```
 
 Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
-cores and one GPU to the job, the `-p 236605` option specifies the name of the
+cores and one GPU to the job, the `-p 236781` option specifies the name of the
 job queue (partition) to use, the `-o slurm-test.out` option specifies where
 to write the output from the process and `-J my_job` is an arbitrary name we can
 assign to the job.
 
 ### Viewing status
 
-After submitting a batch job, you can use `squeue -p 236605` to view it's
+After submitting a batch job, you can use `squeue -p 236781` to view it's
 status in the queue, as shown in the example above. You can see the job name and
 it's id there.
 
@@ -296,7 +296,7 @@ use this script as if it were the `python` command, and it will active the
 For example, let's say we want to run all our notebooks with the `main.py`
 script. Instead of
 ```shell
-conda activate cs236605-hw
+conda activate cs236781-hw
 python main.py run-nb *.ipynb
 ```
 

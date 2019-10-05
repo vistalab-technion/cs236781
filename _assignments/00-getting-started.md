@@ -57,7 +57,7 @@ repo will be updated and notice will be given.
 
 Each assignment's root directory contains the following files and folders:
 
-- `cs236605`: Python package containing course utilities and helper functions.
+- `cs236781`: Python package containing course utilities and helper functions.
   You do not need to edit anything here.
 - `hwN` where `N` is the assignment number: Python package containing the
   assignment code. **All** your solutions will be implemented here.
@@ -106,12 +106,12 @@ Each assignment's root directory contains the following files and folders:
    ```
 
    This will install all the necessary packages into a new conda virtual
-   environment named `cs236605-hw`.
+   environment named `cs236781-hw`.
 
 3. Activate the new environment by running
 
    ```shell
-   conda activate cs236605-hw
+   conda activate cs236781-hw
    ```
 
    *Activating* an environment simply means that the path to it's python binaries
@@ -127,7 +127,7 @@ Each assignment's root directory contains the following files and folders:
    ```
 
    or, you can run `which python` and you should see the python binary is in a
-   subfolder of `~/miniconda3/envs/cs236605-hw/`.
+   subfolder of `~/miniconda3/envs/cs236781-hw/`.
 
    You can find more useful info about conda environments
    [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
@@ -151,7 +151,7 @@ Notes:
 
 ### Running Jupyter
 
-Make sure that the active conda environment is `cs236605-hw`, and run
+Make sure that the active conda environment is `cs236781-hw`, and run
 
 ```shell
 jupyter lab
@@ -198,7 +198,7 @@ Notes:
    will be added to your submission which is automatically generated from the
    contents of the assignment folder.
 
-3. Always make sure the active conda env is `cs236605-hw`. If you get strange
+3. Always make sure the active conda env is `cs236781-hw`. If you get strange
    errors or broken import statements, this is probably the reason.
    Note that if you close your terminal session you will need to re-activate
    since conda will use it's default `base` environment.
@@ -257,6 +257,6 @@ python main.py prepare-submission --allow-errors --id 123456789 --id 987654321
 ### Uploading the solution
 
 The `.zip` file you generate should be uploaded using the assignments tab in the
-[webcourse](https://webcourse.cs.technion.ac.il/236605/) system.
+[webcourse](https://webcourse.cs.technion.ac.il/236781/) system.
 
 Grades will also be reported there.

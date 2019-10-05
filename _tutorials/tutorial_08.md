@@ -8,7 +8,7 @@ Filters on graphs, graph convolution layers, semi-supervised node classification
 
 ## Notebook
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial8/tutorial8-GeometricDL.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial8/tutorial8-GeometricDL.ipynb).
 
 ## Video
 

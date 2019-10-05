@@ -7,9 +7,9 @@ author: aviv
 ## Material
 
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236605-tutorials/blob/master/tutorial1/tutorial1-Python_Numpy.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial1/tutorial1-Python_Numpy.ipynb).
 
-To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236605-tutorials).
+To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236781-tutorials).
 
 Students are encouraged to install the provided `conda` environment and play
 with the examples from the notebook.
