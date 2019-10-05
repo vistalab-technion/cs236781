@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 6: Transfer learning and domain adaptation"
 author: aviv
-published: true
+published: false
 ---
 
 Transfer learning definition, contexts, fine-tuning pre-trained models,

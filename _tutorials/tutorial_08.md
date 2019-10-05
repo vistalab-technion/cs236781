@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 8: Geometric deep learning"
 author: aviv
-published: true
+published: false
 ---
 
 Filters on graphs, graph convolution layers, semi-supervised node classification

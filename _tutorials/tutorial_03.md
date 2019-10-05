@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 3: Multilayer Perceptron"
 author: aviv
-published: true
+published: false
 ---
 
 MLP model, activations, backprop, loss functions and optimization in PyTorch

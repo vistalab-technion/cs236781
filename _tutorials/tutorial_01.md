@@ -7,7 +7,7 @@ author: aviv
 ## Material
 
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial1/tutorial1-Python_Numpy.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t01/tutorial1-Python_Numpy.ipynb).
 
 To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236781-tutorials).
 
@@ -16,9 +16,7 @@ with the examples from the notebook.
 
 ## Video
 
-{% include video provider="youtube" id="6_Y6zAP6sLA" %}
-
-(from the previous semester)
+Stay tuned.
 
 ## Extra Resources
 

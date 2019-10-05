@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 5: Recurrent neural networks"
 author: aviv
-published: true
+published: false
 ---
 
 RNN implementation, sentiment analysis, attention.

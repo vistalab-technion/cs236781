@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 7: Deep reinforcement learning"
 author: aviv
-published: true
+published: false
 ---
 
 The RL setting, openAI Gym, Deep q-learning for Atari games.
