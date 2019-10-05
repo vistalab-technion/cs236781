@@ -41,14 +41,31 @@ ssh user@132.68.39.36
 ```
 
 Notes:
-1. The `rishon` server is only directly accessible from **within the Technion networks**.
+1. Your credentials will only work after we pass a final list of
+   registered students to the faculty IT department.
+   This will happen during the first 2-3 weeks of the semester.
+1. These servers are only directly accessible from **within the Technion networks**.
+   If connecting over WiFi, do not use the `TechPublic` network, as it won't
+   allow you to connect. The `TechSec` network will work, as well as other
+   non-open faculty networks (e.g. `CS-WIFI`).
+1. `rishon` is a gateway server that you connect to in order to run jobs on the
+   actual compute nodes (`rishon1-4`) as explained below.
+   You should not run any computations on `rishon` itself as it does not have a
+   GPU and is limited in CPU resources.
 1. In some internal Technion networks the DNS lookup seems to not find
    the `rishon` hostname. If you get a `could not resolve hostname` error, use
    the second option (directly with IP).
 
 ## Connecting from home
 
-If you need to connect from home, first SSH into a Technion server that’s
+The easiest way is to configure a VPN connection to the Technion. See the
+[instructions](https://cis.technion.ac.il/en/central-services/communication/off-campus-connection/ssl-vpn/)
+on the Technion CIS website regarding how to set this up. After you connect
+though the VPN, you can connect to the server as normal.
+Note that we cannot provide you with techical support regarding how to setup/use
+the VPN. You can contact CIS for support.
+
+Another way is to first SSH into a Technion server that’s
 accessible from the outside (e.g. CSM, CSL) and from there you can SSH into
 `rishon`. 
 
@@ -72,12 +89,14 @@ Notes:
 1. If you use CSM, note that the credentials for the CSM server and `rishon` are
    not the same: CSM uses the CS-faculty credentials while the `rishon` server
    uses the Technion SSO credentials.
+1. We cannot provide you with credentials to any such server (CSM/CSL/other
+   technion servers).
 
-# Usage
+# Server Usage
 
 ## General
 
-The faculty HPC server cluster is composed of a gateway server (`rishon`) into which
+The faculty HPC server cluster is composed of a gateway server, `rishon`, into which
 you log in with SSH, and four compute nodes `rishon1-4` which run the actual
 computations. The gateway server is relatively weak and has no attached GPUs, so
 it should not be used for running computations.
@@ -360,9 +379,11 @@ combination of SSH port forwarding and using an intermediate server.
     ```shell
     [I 21:39:07.830 LabApp] http://132.68.39.38:8888/?token=abcdef0123...
     ```
-3. Additionally, let's assume you can you have SSH access from home to another
+3. If connecting from home using a VPN, simply point your browser to the above
+   URL.
+3. If not using a VPN, let's assume you can you have SSH access from home to another
    Technion server, such as CSM as in the previous examples.
-4. Then you can run the following from your machine (from a different terminal):
+   Then you can run the following from your machine (from a different terminal):
 
    ```shell
    ssh -L 9999:132.68.39.38:8888 -J user@csm.cs.technion.ac.il user@rishon
@@ -376,13 +397,6 @@ combination of SSH port forwarding and using an intermediate server.
    local browser to `localhost:9999`.
 
 # Tips
-
-## For windows users
-
-Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
-a good graphical ssh client for windows.
-Here's a useful [guide]({{ site.baseurl }}{% link assets/mobaXterm_guide.docx %}) for using it to
-connect to the server.
 
 ## Pubic-key based authentication
 
@@ -411,24 +425,12 @@ After that, you can use the SSH remote-URLs (instead of HTTPS) to clone repos
 and prevent the need to specify your username and password when
 `push`ing, `pull`ing and `fetch`ing.
 
-## Git-based workflow
-
-A very effective way to synchronize your local work with the server (and also with your
-assignment partner) is with `git`. Note that `git` is already installed on the
-server.
-
-You can [fork](https://help.github.com/articles/fork-a-repo/) the assignment repo.
-Then you can clone your fork both onto your local machine and to the server. This
-will allow you to work on either machine while synching changes both with
-yourself (on each machine) and with your partner.
-
-If you decide to work this way you should also add the original assignment repo
-as a new `git remote` so that you can pull updates from us.
-
 ## Transferring files to and from the server
 
-The `rsync` tool can be your friend. For example, to send files or a directory
-you can do
+The `rsync` tool can be your friend. It can automatically sync between local and
+remote folders, only uploading/downloading modified files.
+
+For example, to send files or a directory you can do
 
 ```
 rsync -Cavz path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
@@ -439,6 +441,17 @@ To send files from home via an intermediate server (in this example CSM):
 rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
 ```
 
-To download files from the server to your computer, simple change the order of
+To download files from the server to your computer, simply change the order of
 the last two arguments in the above examples.
 
+### GUI option for macOS users
+
+[Cyberduck](https://cyberduck.io/) is a free remote file browser that you can
+use to copy files to/from the server using a GUI.
+
+### GUI option Windows users
+
+Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
+a good graphical ssh client for windows.
+Here's a useful [guide]({{ site.baseurl }}{% link assets/mobaXterm_guide.docx %}) for using it to
+connect to the server.
