@@ -2,7 +2,6 @@
 title: "Lecture 2: Supervised learning"
 header:
     teaser: assets/images/lec2/supervised-bw.jpg
-date: 2018-10-28
 ---
 
 Supervised learning problem statement, data sets, hypothesis classes, loss

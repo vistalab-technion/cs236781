@@ -2,7 +2,6 @@
 title: "Lecture 5: Recurrent Neural Networks"
 header:
     teaser: assets/images/lec5/rnn.png
-date: 2018-11-18
 ---
 
 RNN model, input-output sequences relationships, non-sequential input, layered RNN,

@@ -2,7 +2,6 @@
 title: "Lecture 9: Parallel Architectures for Training"
 header:
     teaser: assets/images/lec9/lec9-1.png
-date: 2018-12-30
 ---
 
 NVidia GPU architectures, memory hierarchy, CUDA threads, unified memory,

@@ -2,7 +2,6 @@
 title: "Lecture 10: Parallel Architectures for Inference"
 header:
     teaser: assets/images/lec10/lec10-1.png
-date: 2019-01-06
 ---
 
 Challenges of inference, low-bit representations, pruning,
