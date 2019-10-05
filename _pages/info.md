@@ -42,7 +42,9 @@ At the end of the course, the student will:
 **Credits**: 3.0.
 
 **Prerequisites**:
-- A good background of linear algebra, probability and calculus.
+- A good background of linear algebra, probability and calculus. See the
+  [supplemental material]({{ site.baseurl }}{% link _pages/supplements.md %})
+  page if you need a refresher on one of these.
 - Programming competency. The course will be very hands-on; much programming
   will be required.  We will use Python exclusively, so it's recommended to have
   experience with it.
