@@ -72,22 +72,21 @@ to the pre-requisite material and an *introductory* part presenting new material
 relating to the next lecture.
 
 
-| Date         | #    | Pre requisite | Lecture                                                                                                                                 | Tutorial                                                                            | Homework   |
-| -----------  | ---- | ----          | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ---------- |
-| `17/03/2019` | 1    |               | Introduction to machine learning                                                                                                        | Python, numpy and friends                                                           |            |
-| `24/03/2019` | 2    | Lecture 1b    | **Introductory**: Supervised learning, probability and statistics                                                                       | Logistic regression                                                                 | HW1        |
-| `31/03/2019` | 3    | Lecture 2     | **Supplementary**:  performance evaluation, ROC, confusion matrix;<br>**Introductory**: neural networks                                 | MLP                                                                                 |            |
-| `07/04/2019` | 4    | Lecture 3     | **Supplementary**: CNNs architectures<br>**Introductory**: training, calculus, optimization                                             | CNNs                                                                                |            |
-| `14/04/2019` | 5    | Lecture 4     | Training deep networks: Optimization, generalization and regularization                                                                 |                                                                                     | HW2        |
-| `21/04/2019` | 6    |               | *No class*                                                                                                                              |                                                                                     |            |
-| `28/04/2019` | 7    | Lecture 5     | **Supplementary**: Word embeddings, attention<br>**Introductory**: Unsupervised learning                                                | RNNs                                                                                |            |
-| `05/05/2019` | 8    | Lecture 6     | **Supplementary**: GANs, image generation, domain adaptation<br>**Introductory**: Reinforcement learning                                | Domain adaptation                                                                   |            |
-| `12/05/2019` | 9    | Lecture 7     | **Supplementary**: Actor-critic, AutoML, NAS<br>**Introductory**: Non-euclidean domains, harmonic analysis                              |                                                                                     | HW3        |
-| `19/05/2019` | 10   | Lecture 11    | **Supplementary**: Applications of CNNs on graphs<br>**Introductory**: Hardware accelerators                                            | Deep reinforcement learning                                                         |            |
-| `26/05/2019` | 11   | Lecture 8     | Neural network compression and pruning                                                                                                  |                                                                                     |            |
-| `02/06/2019` | 12   | Lecture 9     | **Supplementary**: GPU architectures                                                                                                    | Geometric deep learning                                                             |            |
-| `09/06/2019` | 13   |               | *No class*                                                                                                                              |                                                                                     | HW4        |
-| `16/06/2019` | 14   | Lecture 10    | **Supplementary**: Hardware for inference                                                                                               | CUDA                                                                                |            |
-| `23/06/2019` | 15   |               | *Project Presentations*                                                                                                                 |                                                                                     |            |
-| -----------  | ---- | ----          | --------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |            |
+| #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class)                           | Tutorial<br>(in-class)                      | Homework   |
+| ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
+| 1    | `24/10/2019` | -                        | Course Introduction                             | Python, numpy and friends                   |            |
+| 2    | `31/10/2019` | Lecture 2                | Supervised learning                             | Logistic regression                         | HW1        |
+| 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP                                         |            |
+| 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs                                        |            |
+| 5    | `21/11/2019` | Lecture 5                | Attention and Transformers                      | Sequence models                             | HW2        |
+| 6    | `28/11/2019` | Lecture 6                | Losses for generative models                    |                                             |            |
+| 7    | `05/12/2019` | -                        | Object detection                                | Transfer learning and domain adaptation     |            |
+| 8    | `12/12/2019` | Lecture 7                | AutoML                                          | Deep reinforcement learning                 | HW3        |
+| 9    | `19/12/2019` |                          | *NO CLASS*                                      |                                             |            |
+| 10   | `26/12/2019` |                          | *NO CLASS*                                      |                                             |            |
+| 11   | `02/01/2020` | Lecture 11               | Applications of graph neural networks           | Geometric deep learning                     |            |
+| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | TBD                                         | HW4        |
+| 13   | `16/01/2020` | Lecture 9                | Training hardware                               | TBD                                         |            |
+| 14   | `23/01/2020` | Lecture 10               | Inference hardware                              | CUDA                                        |            |
+| ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
 
