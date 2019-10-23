@@ -2,6 +2,7 @@
 title: "Tutorial 1: Python, `numpy` and friends 🐍"
 excerpt: Environment setup, jupyter, python and numpy basics
 author: aviv
+published: false
 ---
 
 ## Material
