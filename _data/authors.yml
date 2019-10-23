@@ -24,7 +24,7 @@ avi:
 
 chaim:
   name: Chaim Baskin
-  bio: Head TA
+  bio: Lecturer
   avatar: "/assets/images/bio-photo-chaim.jpg"
   links:
     - label: "Email"
@@ -33,7 +33,7 @@ chaim:
 
 aviv:
   name: Aviv Rosenberg
-  bio: Assignments TA
+  bio: TA
   avatar: "/assets/images/bio-photo-aviv.jpg"
   links:
     - label: "Email"
