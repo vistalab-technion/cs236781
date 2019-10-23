@@ -63,30 +63,34 @@ following material may be useful.
 
 ## Detailed Syllabus
 
-This semester, the course will be presented using a flipped-classroom approach.
+The course will be presented using a mixed approach of both offline content
+(videos and lecture notes) and in-class frontal learning, and hands-on homework
+assignments. The frontal lectures
+are meant to deepen understanding of the topics in the videos and provide useful
+context, techniques and applicative examples. The in-class tutorials and
+homework assignments are meant to teach you the technical aspects of
+implementing deep learning systems.
 
 Students are expected to watch and read the pre-requisite material, available
 from the couse [Lectures page]({{ site.baseurl }}/lectures) before each class.
-The in-class lectures will then be divided into a *supplementary* part, relating
-to the pre-requisite material and an *introductory* part presenting new material
-relating to the next lecture.
+Viewing and/or reading the The pre-requisite material is **mandatory**.
 
 
-| #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class)                           | Tutorial<br>(in-class)                      | Homework   |
+| #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Chaim)              | Tutorial<br>(in-class; Aviv)                | Homework   |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
-| 1    | `24/10/2019` | -                        | Course Introduction                             | Python, numpy and friends                   |            |
-| 2    | `31/10/2019` | Lecture 2                | Supervised learning                             | Logistic regression                         | HW1        |
-| 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP                                         |            |
-| 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs                                        |            |
-| 5    | `21/11/2019` | Lecture 5                | Attention and Transformers                      | Sequence models                             | HW2        |
-| 6    | `28/11/2019` | Lecture 6                | Losses for generative models                    |                                             |            |
-| 7    | `05/12/2019` | -                        | Object detection                                | Transfer learning and domain adaptation     |            |
-| 8    | `12/12/2019` | Lecture 7                | AutoML                                          | Deep reinforcement learning                 | HW3        |
-| 9    | `19/12/2019` |                          | *NO CLASS*                                      |                                             |            |
-| 10   | `26/12/2019` |                          | *NO CLASS*                                      |                                             |            |
-| 11   | `02/01/2020` | Lecture 11               | Applications of graph neural networks           | Geometric deep learning                     |            |
-| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | TBD                                         | HW4        |
-| 13   | `16/01/2020` | Lecture 9                | Training hardware                               | TBD                                         |            |
+| 1    | `24/10/2019` | ---                      | Course Introduction                             | Python, numpy, environment setup            |            |
+| 2    | `31/10/2019` | Lecture 2                | Supervised learning                             | Logistic regression, PyTorch basics I       | HW1        |
+| 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP, PyTorch basics II                      |            |
+| 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs, ResNets                               |            |
+| 5    | `21/11/2019` | Lecture 5                | Attention and Transformers                      | Sequence modeling, RNNs, TCNs               | HW2        |
+| 6    | `28/11/2019` | Lecture 6                | Losses for generative models                    | Attention, Transformers                     |            |
+| 7    | `05/12/2019` | ---                      | Object detection                                | Transfer learning and domain adaptation     |            |
+| 8    | `12/12/2019` | Lecture 7                | *TBD*                                           | Deep reinforcement learning                 | HW3        |
+| 9    | `19/12/2019` |                          | **NO CLASS**                                    |                                             |            |
+| 10   | `26/12/2019` |                          | **NO CLASS**                                    |                                             |            |
+| 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Geometric deep learning                     | HW4        |
+| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | *TBD*                                       |            |
+| 13   | `16/01/2020` | Lecture 9                | Training hardware                               | *TBD*                                       |            |
 | 14   | `23/01/2020` | Lecture 10               | Inference hardware                              | CUDA                                        |            |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
 
