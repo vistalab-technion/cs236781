@@ -16,7 +16,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79
 
 ## Video
 
-Stay tuned.
+{% include video provider="youtube" id="bfgzN0Ru_hs" %}
 
 ## Lecture Notes
 

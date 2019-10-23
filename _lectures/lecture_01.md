@@ -15,25 +15,15 @@ alt="" caption="" ref=""
 ## Slides
 
 
-### Part I - Alex
-
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21264&amp;authkey=ALQXLih_SLT7r2M&amp;em=2&amp;wdAr=1.6" %}
 
-### Part II - Avi
-
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21270&authkey=AEENkC5Wh3mZ7iw&em=2" %}
 
 ## Videos
 
-### Part I - Alex
 
 {% include video provider="youtube" id="2Hu348tBtM8" %}
 
-### Part II - Avi
-
-{% include video provider="youtube" id="JuLkHQF6EuM" %}
 
 ## Lecture Notes
 

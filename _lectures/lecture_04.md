@@ -12,13 +12,9 @@ curvature, descent-based optimization methods, second-order methods.
 
 ## Slides
 
-- Part A
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21206&amp;authkey=AHUFOpWAN35F5lM&amp;em=2&amp;wdAr=1.6" %}
 
-- Part B
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21267&authkey=AIlLtSTNJZ8QRqY&em=2" %}
 
 ## Videos
 
@@ -26,11 +22,9 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79
 
 {% include video provider="youtube" id="8wbBehsHN1o" %}
 
-- Part A
+- Main Lecture
 
 {% include video provider="youtube" id="eIicKFeOrzI" %}
 
-- Part B
 
-{% include video provider="youtube" id="EAl2ivWjK1g" %}
 

@@ -16,11 +16,11 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 ## Videos
 
-- Main lecture
+- Part I
 
 {% include video provider="youtube" id="_mQf44nB4JQ" %}
 
-- Supplementary material: Word embeddings
+- Part II: Word embeddings
 
 {% include video provider="youtube" id="rZSnN5LvvkA" %}
 
