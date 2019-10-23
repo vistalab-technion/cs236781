@@ -76,7 +76,7 @@ from the couse [Lectures page]({{ site.baseurl }}/lectures) before each class.
 Viewing and/or reading the The pre-requisite material is **mandatory**.
 
 
-| #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Chaim)              | Tutorial<br>(in-class; Aviv)                | Homework   |
+| #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Avi, Chaim)         | Tutorial<br>(in-class; Aviv)                | Homework   |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
 | 1    | `24/10/2019` | ---                      | Course Introduction                             | Python, numpy, environment setup            |            |
 | 2    | `31/10/2019` | Lecture 2                | Supervised learning                             | Logistic regression, PyTorch basics I       | HW1        |
