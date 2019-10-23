@@ -4,7 +4,7 @@ permalink: assignments/final-project
 toc: false
 toc_label: Contents
 toc_sticky: true
-published: true
+published: false
 ---
 
 As part of this course, students must complete a small research project instead
