@@ -73,7 +73,7 @@ implementing deep learning systems.
 
 Students are expected to watch and read the pre-requisite material, available
 from the couse [Lectures page]({{ site.baseurl }}/lectures) before each class.
-Viewing and/or reading the The pre-requisite material is **mandatory**.
+Viewing and/or reading the pre-requisite material is **mandatory**.
 
 
 | #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Avi, Chaim)         | Tutorial<br>(in-class; Aviv)                | Homework   |
