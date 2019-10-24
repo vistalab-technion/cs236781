@@ -1,8 +1,8 @@
 ---
-title: "Tutorial 1: Python, `numpy` and friends 🐍"
-excerpt: Environment setup, jupyter, python and numpy basics
+title: "Tutorial 1: Python and tensor basics"
+excerpt: Environment setup, jupyter, python, tensor basics with numpy and PyTorch
 author: aviv
-published: false
+published: True
 ---
 
 ## Material
@@ -35,3 +35,6 @@ Stay tuned.
 
 - `numpy` official docs<br>
   <https://docs.scipy.org/doc/numpy/reference/>
+
+- `PyTorch` official docs<br>
+  <https://pytorch.org/docs/stable/>
