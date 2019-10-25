@@ -22,7 +22,7 @@ Stay tuned.
 ## Extra Resources
 
 - `conda` [download](https://conda.io/miniconda.html) and
-  [installation](https://conda.io/docs/user-guide/install/index.html).
+  [installation](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
 - Detailed notebooks for learning python<br>
   <https://github.com/jerry-git/learn-python3>
