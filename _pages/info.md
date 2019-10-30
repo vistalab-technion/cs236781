@@ -79,7 +79,7 @@ Viewing and/or reading the pre-requisite material is **mandatory**.
 | #    | Date         | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Avi, Chaim)         | Tutorial<br>(in-class; Aviv)                | Homework   |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
 | 1    | `24/10/2019` | ---                      | Course Introduction                             | Python, numpy, environment setup            |            |
-| 2    | `31/10/2019` | Lecture 2                | Supervised learning                             | Logistic regression, PyTorch basics I       | HW1        |
+| 2    | `31/10/2019` | Lecture 2                | Introduction to hardware for Deep Learning      | Logistic regression, PyTorch basics I       | HW1        |
 | 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP, PyTorch basics II                      |            |
 | 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs, ResNets                               |            |
 | 5    | `21/11/2019` | Lecture 5                | Attention and Transformers                      | Sequence modeling, RNNs, TCNs               | HW2        |
