@@ -15,9 +15,6 @@ To run it yourself we recommend cloning the course [tutorials repo](https://gith
 Students are encouraged to install the provided `conda` environment and play
 with the examples from the notebook.
 
-## Video
-
-Stay tuned.
 
 ## Extra Resources
 
