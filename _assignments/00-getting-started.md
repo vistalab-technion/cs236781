@@ -40,19 +40,6 @@ PyCharm for free by using your Technion student email - see
 [here](https://www.jetbrains.com/student/).
 
 
-### Obtaining the assignment code
-
-The assignments will be made available on the [VISTA Lab github
-page](https://github.com/vistalab-technion).
-You can either download a zip file of the assignment repo or, preferably, use
-git to clone it.
-
-You should only download or clone after the assignment has been officially
-published to make sure you have the final version.
-
-In case we need to update the assignment or make corrections, the assignment
-repo will be updated and notice will be given.
-
 ### Project structure
 
 Each assignment's root directory contains the following files and folders:
