@@ -63,7 +63,7 @@ Each assignment's root directory contains the following files and folders:
 ## Environment set-up
 
 1. Install the python3 version of [miniconda](https://conda.io/miniconda.html).
-   Follow the [installation instructions](https://conda.io/docs/user-guide/install/index.html)
+   Follow the [installation instructions](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
    for your platform.
 
    For example, on linux you should do:
@@ -101,7 +101,7 @@ Each assignment's root directory contains the following files and folders:
    conda activate cs236781-hw
    ```
 
-   *Activating* an environment simply means that the path to it's python binaries
+   *Activating* an environment simply means that the path to its python binaries
    (and packages) is placed at the beginning of your `$PATH` shell variable.
    Therefore, running programs installed into the conda env (e.g. `python`) will
    run the version from the env since it appears in the `$PATH` before any other
@@ -133,6 +133,16 @@ Notes:
 - Always make sure the correct environment is active. It will revert to it's
   default each new terminal session. If you want to change the default env you
   can add a `conda activate` in your `~/.bashrc`.
+
+- If you use PyCharm or any other IDE, you should configure the interpreter path
+  of the IDE to the path of the `python` executable within the conda
+  env folder. For example, point the interpreter path to
+  `~/miniconda3/envs/cs236781/bin/python`.
+
+- On Windows, you can run these commands from the **Anaconda Prompt** program
+  that is installed with miniconda. If you also add the `conda` installation
+  to the Windows `PATH` variable, you can run these commands from the regular
+  windows command prompt.
 
 ## Working on the assignment
 
