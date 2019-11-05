@@ -25,4 +25,6 @@ to update your environment and run jupyter.
 
 ## Video
 
-Stay tuned.
+{% include video provider="youtube" id="dJGTeInV2ZM" %}
+
+
