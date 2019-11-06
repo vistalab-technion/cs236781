@@ -63,8 +63,8 @@ following material may be useful.
 
 ## Detailed Syllabus
 
-The course will be presented using a mixed approach of both offline content
-(videos and lecture notes) and in-class frontal learning, and hands-on homework
+The course will be presented using a mixed approach of offline content
+(videos and lecture notes), in-class frontal learning, and hands-on homework
 assignments. The frontal lectures
 are meant to deepen understanding of the topics in the videos and provide useful
 context, techniques and applicative examples. The in-class tutorials and
