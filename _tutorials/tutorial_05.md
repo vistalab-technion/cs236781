@@ -1,16 +1,16 @@
 ---
-title: "Tutorial 5: Recurrent neural networks"
+title: "Tutorial 5: Sequence Models"
 author: aviv
-published: false
+published: true
 ---
 
-RNN implementation, sentiment analysis, attention.
+RNN implementation, sentiment analysis, Temporal Convolution Networks.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial5/tutorial5-RNNs.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t05/tutorial5-SeqModels.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="jDiEaSqmCp4" %}
+Stay tuned.
 
