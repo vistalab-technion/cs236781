@@ -4,9 +4,7 @@ title: Course Info
 classes: wide text-justify
 ---
 
-Deep learning is a branch of machine learning which aims to learn meaningful
-representations directly from raw data, without the need for traditional feature
-engineering.
+Deep learning is a powerful and relatively-new branch of machine learning.
 In recent years it has been successfully applied to some of the most challenging
 problems in the broad field of AI, such as recognizing objects in an image,
 converting speech to text or playing games. In many such tasks,
@@ -82,10 +80,10 @@ Viewing and/or reading the pre-requisite material is **mandatory**.
 | 2    | `31/10/2019` | Lecture 2                | Introduction to hardware for Deep Learning      | Supervised learning, PyTorch basics I       | HW1        |
 | 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP, PyTorch basics II                      |            |
 | 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs, ResNets                               |            |
-| 5    | `21/11/2019` | Lecture 5                | Attention and Transformers                      | Sequence modeling, RNNs, TCNs               | HW2        |
-| 6    | `28/11/2019` | Lecture 6                | Losses for generative models                    | Attention, Transformers                     |            |
+| 5    | `21/11/2019` | Lecture 5                | RNNs                                            | Sequence modeling, RNNs, TCNs               | HW2        |
+| 6    | `28/11/2019` | Lecture 6                | Attention and Transformers                      | Attention, Transformers                     |            |
 | 7    | `05/12/2019` | ---                      | Object detection                                | Transfer learning and domain adaptation     |            |
-| 8    | `12/12/2019` | Lecture 7                | *TBD*                                           | Deep reinforcement learning                 | HW3        |
+| 8    | `12/12/2019` | Lecture 7                | Losses for generative models                    | Deep reinforcement learning                 | HW3        |
 | 9    | `19/12/2019` |                          | **NO CLASS**                                    |                                             |            |
 | 10   | `26/12/2019` |                          | **NO CLASS**                                    |                                             |            |
 | 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Geometric deep learning                     | HW4        |
