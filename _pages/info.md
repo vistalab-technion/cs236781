@@ -83,11 +83,11 @@ Viewing and/or reading the pre-requisite material is **mandatory**.
 | 5    | `21/11/2019` | Lecture 5                | RNNs                                            | Sequence modeling, RNNs, TCNs               | HW2        |
 | 6    | `28/11/2019` | Lecture 6                | Attention and Transformers                      | Attention, Transformers                     |            |
 | 7    | `05/12/2019` | ---                      | Object detection                                | Transfer learning and domain adaptation     |            |
-| 8    | `12/12/2019` | Lecture 7                | Losses for generative models                    | Deep reinforcement learning                 | HW3        |
-| 9    | `19/12/2019` |                          | **NO CLASS**                                    |                                             |            |
+| 8    | `12/12/2019` | Lecture 7                | Losses for generative models                    | Deep reinforcement learning                 |            |
+| 9    | `19/12/2019` |                          | **NO CLASS**                                    |                                             | HW3        |
 | 10   | `26/12/2019` |                          | **NO CLASS**                                    |                                             |            |
-| 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Geometric deep learning                     | HW4        |
-| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | *TBD*                                       |            |
+| 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Geometric deep learning                     |            |
+| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | *TBD*                                       | HW4        |
 | 13   | `16/01/2020` | Lecture 9                | Training hardware                               | *TBD*                                       |            |
 | 14   | `23/01/2020` | Lecture 10               | Inference hardware                              | CUDA                                        |            |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
