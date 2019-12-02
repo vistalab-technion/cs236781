@@ -80,14 +80,14 @@ Viewing and/or reading the pre-requisite material is **mandatory**.
 | 2    | `31/10/2019` | Lecture 2                | Introduction to hardware for Deep Learning      | Supervised learning, PyTorch basics I       | HW1        |
 | 3    | `07/11/2019` | Lecture 3                | CNN applications and architectures              | MLP, PyTorch basics II                      |            |
 | 4    | `14/11/2019` | Lecture 4                | Training techniques                             | CNNs, ResNets                               |            |
-| 5    | `21/11/2019` | Lecture 5                | RNNs                                            | Sequence modeling, RNNs, TCNs               | HW2        |
-| 6    | `28/11/2019` | Lecture 6                | Attention and Transformers                      | Attention, Transformers                     |            |
-| 7    | `05/12/2019` | ---                      | Object detection                                | Transfer learning and domain adaptation     |            |
-| 8    | `12/12/2019` | Lecture 7                | Losses for generative models                    | Deep reinforcement learning                 |            |
+| 5    | `21/11/2019` | Lecture 5                |                                                 | Sequence modeling, RNNs, TCNs               | HW2        |
+| 6    | `28/11/2019` | Lecture 6                | Attention and Transformers                      |                                             |            |
+| 7    | `05/12/2019` | ---                      | Object detection                                | Attention                                   |            |
+| 8    | `12/12/2019` | Lecture 7                | Losses for generative models                    | Transfer learning and domain adaptation     |            |
 | 9    | `19/12/2019` |                          | **NO CLASS**                                    |                                             | HW3        |
 | 10   | `26/12/2019` |                          | **NO CLASS**                                    |                                             |            |
-| 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Geometric deep learning                     |            |
-| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | *TBD*                                       | HW4        |
+| 11   | `02/01/2020` | Lecture 11               | Applications of graph NNs                       | Deep reinforcement learning                 |            |
+| 12   | `09/01/2020` | Lecture 12               | DNN compression practices                       | Geometric deep learning                     | HW4        |
 | 13   | `16/01/2020` | Lecture 9                | Training hardware                               | *TBD*                                       |            |
 | 14   | `23/01/2020` | Lecture 10               | Inference hardware                              | CUDA                                        |            |
 | ---- | -----------  | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
