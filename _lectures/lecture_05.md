@@ -1,18 +1,25 @@
 ---
-title: "Lecture 5: Recurrent Neural Networks"
+title: "Lecture 5: Sequence Models"
 header:
     teaser: assets/images/lec5/rnn.png
 ---
 
 RNN model, input-output sequences relationships, non-sequential input, layered RNN,
-backpropagation through time, word embeddings.
+backpropagation through time, word embeddings, attention, transformers.
 
 {% include figure image_path="assets/images/lec5/tbptt.png" alt="" caption="" ref="" %}
 
 ## Slides
 
+- Part I: RNNs
+
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21208&amp;authkey=AC2UftXfSCJp_lQ&amp;em=2&amp;wdAr=1.6" %}
+
+- Part II: Attention and Transformers
+
+{% include ppt_embed.html
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21279&amp;authkey=ANZEXMX5buyP6Ns&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
 ## Videos
 
