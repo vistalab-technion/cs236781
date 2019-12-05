@@ -1,17 +1,17 @@
 ---
 title: "Tutorial 6: Transfer learning and domain adaptation"
 author: aviv
-published: false
+published: true
 ---
 
-Transfer learning definition, contexts, fine-tuning pre-trained models,
-unsupervised domain adaptation.
+Transfer learning definition and contexts, fine-tuning pre-trained models,
+unsupervised domain adaptation via an adversarial approach.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial6/tutorial6-TL_DA.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-TL_DA.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="MIsSuWsZtKE" %}
+Stay tuned.
 
