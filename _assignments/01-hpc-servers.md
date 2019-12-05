@@ -110,8 +110,9 @@ course `conda` environment for your user account.
 
 The computation tasks are manged by a job scheduling system called
 [`slurm`](https://slurm.schedmd.com/).  The system manages the computation nodes
-and resources and allocates them to jobs submitted by users into a queue (AKA
-partition).  If you wish, you can read the `slurm` [quick start
+and resources and allocates them to jobs submitted by users into a queue
+("partition").
+If you wish, you can read the `slurm` [quick start
 guide](https://slurm.schedmd.com/quickstart.html) to get a better understanding
 of the system and the available commands.
 
@@ -120,51 +121,6 @@ The most useful `slurm` commands for our needs are,
 - [`srun`](https://slurm.schedmd.com/srun.html)
 - [`squeue`](https://slurm.schedmd.com/squeue.html)
 - [`scancel`](https://slurm.schedmd.com/scancel.html)
-
-## Job queues
-
-We have a dedicated job queue ("partition") for our course, `236781`. Jobs
-submitted to this queue will be served on one of the `rishon3` or `rishon4`
-nodes.
-
-You can view the jobs currently in the course queue by running `squeue -p
-236781` or an all queues with `squeue`.
-
-Each job defines which computational resources it requires (nodes, CPU cores, number of
-GPUs). Multiple jobs can run simultaneously on a compute node as long as
-their computational requirements can be satisfied.
-
-For example, if job1 requires 2 CPU cores and 1 GPU and job2 requires 4 CPU
-cores and 2 GPUs then they can run together on the same compute node if that node has at
-least 6 CPU cores and 3 GPUs.
-
-## Priority and preemption
-
-Students from our course have special priority for the compute nodes serving the
-`236781` queue.  Other users in the system can also run jobs on these nodes, but
-if resources become limited a job submitted by a student in this course will
-**preempt** (in this context, stop and re-queue) a job submitted by an external user that's
-currently running on one of these nodes.
-
-Likewise if you submit your jobs without specifying a queue, they may end up
-running on a compute node that gives priority to other users. This might be OK
-if you're running an interactive job or a jupyter server (see sections below),
-but it's not a good idea for long-running batch jobs. The reason is that the
-system has the following **major limitation**: it can't guarantee GPU state when your
-process starts running again after being preempted. In other words, if you get
-preempted while training some model on a GPU, the process may resume later on
-some other node with an inconsistent GPU state. Not fun. To prevent this, **always
-use the course queue for running model training tasks**.
-
-Specifying which queue to submit a job to is performed with the `-p` flag for
-the `srun`/`sbatch` commands. For example, use `-p 236781` to make sure your job
-is submitted to the course queue. If you don't specify it, it will be submitted
-to the `all` queue which is served by all compute nodes, not just those that
-give priority to course students.
-
-The advantage of not specifying a specific queue is that your job may start
-sooner since it can run on any node. For interactive jobs, this may allow you to
-start immediately.
 
 ## Running interactive jobs
 
@@ -202,10 +158,7 @@ Out[4]: tensor(14., device='cuda:0')
 Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
 cores and one GPU to the job, the `--pty` option is required for the session
 to be interactive and the last argument `ipython` is the command to run. You can
-specify any command and also add command arguments after it. In this example we
-didn't specify the queue to submit to (`-p`) which may or may not be right for
-your use case. Indeed, you can see that the example ran on `rishon1`, which is not one
-of the dedicated course nodes.
+specify any command and also add command arguments after it.
 
 Notes:
 1. You should use interactive jobs for debugging or running short one-off
@@ -262,10 +215,10 @@ python -c 'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'
 
 Then we can run the script as a `slurm` batch job as follows:
 ```shell
-avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -p 236781 -o slurm-test.out -J my_job  myscript.sh
+avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -o slurm-test.out -J my_job  myscript.sh
 Submitted batch job 114425
 
-avivr@rishon:~$ squeue -p 236781
+avivr@rishon:~$ squeue 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
             114425    236781   my_job    avivr  R       0:01      1 rishon3
 
@@ -277,14 +230,13 @@ i can haz gpu? True
 ```
 
 Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
-cores and one GPU to the job, the `-p 236781` option specifies the name of the
-job queue (partition) to use, the `-o slurm-test.out` option specifies where
+cores and one GPU to the job, the `-o slurm-test.out` option specifies where
 to write the output from the process and `-J my_job` is an arbitrary name we can
 assign to the job.
 
 ### Viewing status
 
-After submitting a batch job, you can use `squeue -p 236781` to view it's
+After submitting a batch job, you can use `squeue` to view it's
 status in the queue, as shown in the example above. You can see the job name and
 it's id there.
 
@@ -359,12 +311,9 @@ server is actually running on.
 
 We'll provide you with a similar script in the assignment repos.
 
-Notes:
-1. As mentioned previously, interactive jobs are not meant to be long-running.
-   Please be considerate of other students and use the computing resources only
-   as needed.
-1. In the above example we didn't specify a specific queue. Read the
-   above section about preemption to understand the implications of this.
+Note: As mentioned previously, interactive jobs are not meant to be
+long-running.  Please be considerate of other students and use the computing
+resources only as needed. For long-running jobs use `sbatch`.
 
 ### Accessing jupyter from home
 
