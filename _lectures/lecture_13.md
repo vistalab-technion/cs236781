@@ -4,8 +4,7 @@ header:
     teaser: assets/images/lec13/Picture6.png
 ---
 
-Object detection, traditional computer-vision approaches, CNN-based detectors
-(R-CNN, RPN, YOLO, SSD), losses, benchmarks and performance metrics for object detection
+CV-based approaches, R-CNN, RPN, YOLO, SSD, losses, benchmarks and performance metrics.
 
 {% include figure image_path="assets/images/lec13/Picture5.png" alt="" caption="" ref="" %}
 
