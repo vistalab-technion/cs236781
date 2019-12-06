@@ -1,7 +1,7 @@
 ---
 title: Course servers
 author: aviv
-excerpt: Now online
+excerpt: Now online.
 ---
 
 Dear students,
