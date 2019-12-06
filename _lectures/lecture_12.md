@@ -14,10 +14,6 @@ retraining, network weights quantization.
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21272&authkey=AA6jpzuqLrqJPRU&em=2" %}
 
-## Video
-
-{% include video provider="youtube" id="bfgzN0Ru_hs" %}
-
 ## Lecture Notes
 
 Accompanying notes are not available for this lecture.
