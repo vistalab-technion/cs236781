@@ -13,5 +13,5 @@ The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/v
 
 ## Video
 
-Stay tuned.
+{% include video provider="youtube" id="U4ab267wl6U" %}
 
