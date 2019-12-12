@@ -84,10 +84,10 @@ Viewing and/or reading the pre-requisite material is **mandatory**.
 | 6    | `28/11/2019`               | Lecture 6                | Attention and Transformers                      |                                             |            |
 | 7    | `05/12/2019`               | ---                      | Object detection I                              | Transfer learning and domain adaptation     |            |
 | 8    | `12/12/2019`               | Lecture 7                | Object detection II                             |                                             |            |
-| 9    | **Sunday<br>`22/12/2019`** |                          |                                                 | Attention mechanisms                        | HW3        |
+| 9    | **Sunday<br>`22/12/2019`** | ---                      |                                                 | Attention mechanisms                        | HW3        |
 | 10   | `26/12/2019`               |                          | **NO CLASS**                                    |                                             |            |
 | 11   | `02/01/2020`               | Lecture 11               | Applications of graph NNs                       | Deep reinforcement learning                 |            |
-| 12   | `09/01/2020`               |                          | DNN compression                                 |                                             | HW4        |
+| 12   | `09/01/2020`               | ---                      | DNN compression                                 |                                             | HW4        |
 | 13   | `16/01/2020`               | Lecture 9                | Training hardware                               | Geometric deep learning                     |            |
 | 14   | `23/01/2020`               | Lecture 10               | Inference hardware                              | CUDA                                        |            |
 | ---- | -----------                | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
