@@ -1,17 +1,16 @@
 ---
-title: "Tutorial 8: Geometric deep learning"
+title: "Tutorial 8: Deep reinforcement learning"
 author: aviv
 published: false
 ---
 
-Filters on graphs, graph convolution layers, semi-supervised node classification
+The RL setting, openAI Gym, Deep q-learning for Atari games.
 
-## Notebook
+## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial8/tutorial8-GeometricDL.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t08/tutorial8-DeepRL.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="2eh2VVFveMM" %}
-
+{% include video provider="youtube" id="yCk0Hqmj0_g" %}
 

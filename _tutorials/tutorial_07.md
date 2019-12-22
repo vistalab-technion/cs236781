@@ -1,16 +1,17 @@
 ---
-title: "Tutorial 7: Deep reinforcement learning"
+title: "Tutorial 7: Attention"
 author: aviv
-published: false
+published: true
 ---
 
-The RL setting, openAI Gym, Deep q-learning for Atari games.
+Attention mechanisms, sequence-to-sequence models, machine translation.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial7/tutorial7-DeepRL.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t07/tutorial7-Attention.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="yCk0Hqmj0_g" %}
+Stay tuned.
+
 
