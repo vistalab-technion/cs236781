@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 8: Deep reinforcement learning"
 author: aviv
-published: false
+published: true
 ---
 
 The RL setting, openAI Gym, Deep q-learning for Atari games.
@@ -12,5 +12,5 @@ The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/v
 
 ## Video
 
-{% include video provider="youtube" id="yCk0Hqmj0_g" %}
+Stay tuned.
 
