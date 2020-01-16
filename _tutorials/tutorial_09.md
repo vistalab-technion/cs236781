@@ -1,7 +1,7 @@
 ---
 title: "Tutorial 9: Geometric deep learning"
 author: aviv
-published: false
+published: True
 ---
 
 Filters on graphs, graph convolution layers, semi-supervised node classification
@@ -12,6 +12,6 @@ The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/v
 
 ## Video
 
-{% include video provider="youtube" id="2eh2VVFveMM" %}
+Stay tuned.
 
 
