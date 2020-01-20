@@ -23,9 +23,9 @@ At the end of the course, the student will:
 
 1.	Understand the key notions of deep learning, such as learning regimes, model
     types, optimization and training methodologies.
-1.  Be able to apply deep learning algorithms to real work data and problems.
-1.	Know how to effectively use leading python machine-learning and deep
-    learning frameworks such as PyTorch.
+1.  Be able to apply deep learning algorithms to real-world data and problems.
+1.	Know how to effectively use python and deep-learning frameworks to implement
+    models and algorithms from the recent literature.
 1.	Know how to leverage GPUs and write custom computational kernels to
     accelerate both training and inference.
 1.	Perform a small research project using the studied notions and techniques.
