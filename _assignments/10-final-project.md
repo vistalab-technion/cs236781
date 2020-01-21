@@ -14,7 +14,8 @@ We provide you with a pool of project ideas mostly based on recent papers and
 our current research interests.  The projects will be supervised by course TAs
 or other graduate students from the VISTA lab.  During the project
 period you will be able to meet with course TAs for guidance during dedicated
-office hours.  The project can be performed in groups of at most two students.
+office hours.  The project can be performed in groups of at most two students,
+and at most two groups can work on the same project topic (separately).
 
 Some of the projects are "reimplementation projects" where you should start from
 a specific paper, implement it, suggest at least one improvement and evaluate it
