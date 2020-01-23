@@ -1,17 +1,17 @@
 ---
-title: "Tutorial 10: CUDA with numba"
+title: "Tutorial 10: CUDA Kernels"
 author: aviv
-published: false
+published: true
 ---
 
-Numba, CUDA programming model, writing CUDA kernels in python.
+The CUDA programming model, `numba`, implementing CUDA kernels in python, thread synchronization, shared memory
 
 ## Notebook
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/tutorial10/tutorial10-cuda.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t10/tutorial10-cuda.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="90gdhFSvPwk" %}
+Stay tuned.
 
 
