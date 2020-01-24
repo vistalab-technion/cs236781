@@ -60,7 +60,7 @@ and then fill out the [registration form](https://forms.gle/8rYUFWspfkeX3dBKA) w
 
 ## Project-related office hours
 
-Initial office hours will be given by Chaim on Monday 27/01, 11:30 at the VISTA
+Initial office hours will be given by Chaim on Monday 26/01, 10:00 at the VISTA
 lab, Taub 120.
 You can use these hours to consult regarding project selection.
 
