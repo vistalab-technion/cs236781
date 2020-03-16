@@ -39,7 +39,8 @@ At the end of the course, the student will:
 
 **Credits**: 3.0.
 
-**Prerequisites**:
+### Prerequisites
+
 - A good background of linear algebra, probability and calculus. See the
   [supplemental material]({{ site.baseurl }}{% link _pages/supplements.md %})
   page if you need a refresher on one of these.
@@ -47,6 +48,26 @@ At the end of the course, the student will:
   will be required.  We will use Python exclusively, so it's recommended to have
   experience with it.
 - An introductory course about machine learning and/or signal/image processing.
+
+### Collaboration Policy and Honor Code
+
+By enrolling in this course, you agree that you will strictly follow our
+collaboration policy as specified below. Any violation of this policy will
+result in an immediate failure in the course, and treatment by the Technion
+regulations committee.
+
+0. Submission of assignments is in singles or pairs.
+   You are free to form study groups and discuss homeworks with other students.
+   However, you must implement all required code independently of other groups
+   (only with your submission partner).
+1. Submitted work must only be your own. You must do your own thinking,
+   coding, debugging and write all answers yourself. We will run automatic
+   plagiarism-detection software on your submissions to enforce this policy.
+3. You may not use any solutions from previous semesters' homeworks.
+4. You may not share your solutions with other students.
+5. You may not upload your homework solutions to *any* public website, such as
+   github. Private repos are OK, but they must remain so even after course completion.
+   As an exception, for the course final project only, you may use a public github repo.
 
 ## Course Staff
 
