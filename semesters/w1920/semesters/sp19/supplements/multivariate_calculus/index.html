@@ -1,0 +1,812 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Multivariate Calculus | CS236781: Deep Learning</title>
+<meta name="description" content="Gradient, directional derivative, Hessian, Taylor expansion">
+
+
+  <meta name="author" content="Prof. Alex Bronstein">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS236781: Deep Learning">
+<meta property="og:title" content="Multivariate Calculus">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/sp19/supplements/multivariate_calculus/">
+
+
+  <meta property="og:description" content="Gradient, directional derivative, Hessian, Taylor expansion">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/sp19/supplements/multivariate_calculus/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "VISTA Lab",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/sp19",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/cs236781/semesters/sp19/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/cs236781/semesters/sp19/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single text-justify wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/cs236781/semesters/sp19/">CS236781: Deep Learning</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/info/" >Info</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/lectures/" >Lectures</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/tutorials/" >Tutorials</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/assignments/" >Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Multivariate Calculus">
+    <meta itemprop="description" content="Gradient, directional derivative, Hessian, Taylor expansion">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Multivariate Calculus
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  49 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#notation">Notation</a></li>
+  <li><a href="#first-order-derivative-of-a-function-of-one-variable">First-order derivative of a function of one variable</a></li>
+  <li><a href="#gradient">Gradient</a></li>
+  <li><a href="#directional-derivative">Directional derivative</a></li>
+  <li><a href="#hessian">Hessian</a></li>
+  <li><a href="#second-order-directional-derivative">Second-order directional derivative</a></li>
+  <li><a href="#derivatives-of-linear-and-quadratic-functions">Derivatives of linear and quadratic functions</a></li>
+  <li><a href="#multivariate-taylor-expansion">Multivariate Taylor expansion</a></li>
+  <li><a href="#gradient-of-a-function-of-a-matrix">Gradient of a function of a matrix</a></li>
+  <li><a href="#gradient-of-a-nonlinear-function">Gradient of a nonlinear function</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h2 id="introduction">Introduction</h2>
+
+<p>The purpose of this document is to quickly refresh (presumably) known
+notions in multivariate differential calculus such as differentials,
+directional derivatives, the gradient and the Hessian. These notions
+will be used heavily in our course. Even though this quick reminder may
+seem redundant or trivial to most of you (I hope), I still suggest at
+least to skim through it, as it might present less common ways of
+interpretation of very familiar definitions and properties. And even if
+you discover nothing new in this document, it will at least be useful to
+introduce notation.</p>
+
+<h2 id="notation">Notation</h2>
+
+<p>In our course, we will deal exclusively with real functions. A scalar
+function will be denoted as $f : \RR^n \rightarrow \RR$, $f(\bb{x})$, or
+simply $f$. A vector-valued function will be denoted in bold, as
+$\bb{f} : \RR^n \rightarrow \RR^m$, or component-wise as
+$\bb{f}(\bb{x}) = (f_1(\bb{x}), \dots, f_m(\bb{x}))^\Tr$. A scalar
+function of a matrix variable, $f : \RR^{m \times n} \rightarrow \RR$,
+will be denoted as $f(\bb{A})$, and a matrix-valued function of a
+vector, $f : \RR^n \rightarrow \RR^{m \times k}$ as $\bb{F}(\bb{x})$.
+Derivatives of a scalar function of one variable will be denoted as
+$f’(x)$, $f’‘(x)$, etc. An $n$-times continuously differentiable
+function will be said $\mathcal{C}^n$ ($f \in \mathcal{C}^n$). In most
+cases, we will tacitly assume that a function is sufficiently smooth for
+at least the first-order derivative to exist.</p>
+
+<h2 id="first-order-derivative-of-a-function-of-one-variable">First-order derivative of a function of one variable</h2>
+
+<p>Before proceeding to multivariate functions, let us remind ourselves a few basic
+notions of univariate calculus. A $\mathcal{C}^1$ function $f(x)$ can be
+approximated linearly around some point $x=x_0$.  Incrementing the argument by
+$dx$, the function itself changes by the amount that we denote by
+$\Delta f = f(x_0+dx) - f(x_0)$, while the linear approximation changes by the
+amount denoted by $df$. For a sufficiently small $dx$ (more formally, in the
+limit $|dx| \rightarrow 0$), it can be shown that $\Delta f = df + o(dx)$<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.
+This means that for an infinitesimally small increment $dx$, the linear
+approximation of the function becomes exact. In this limit, $df$ is called the
+<em>differential</em> of $f$, and the slope of the linear approximation, is called the
+<em>first-order derivative</em> of $f$, denoted $\displaystyle{\frac{df}{dx} =
+f’(x_0)}$.  Another way to express this fact is through the first-order <em>Taylor
+expansion</em> of $f$ around $x_0$:</p>
+
+<script type="math/tex; mode=display">f(x_0+dx) = f(x_0) + f'(x_0) dx + O(dx^2),</script>
+
+<p>which essentially says that a linear function whose value at $x_0$ matches that
+of $f(x_0)$, and whose slope matches that of $f$ (expressed by $f’(x_0)$)
+approximates $f$ around $x_0$ up to some second-order error.</p>
+
+<h2 id="gradient">Gradient</h2>
+
+<p>We can extend the previous discussion straightforwardly to the
+$n$-dimensional case. Let $f$ now be a $\mathcal{C}^1$ function on
+$\RR^n$. The surface the function creates in $\RR^{n+1}$ can be
+approximated by an $n$-dimensional tangent plane (the multidimensional
+analog of linear approximation). Fixing a point $\bb{x}_0$ and making a
+small step $\dx = (dx_1,\dots,dx_n)^\Tr$ (note that now $\dx$ is a
+vector), it can be shown that the change in the value of the linear
+approximation is given by</p>
+
+<script type="math/tex; mode=display">df = \frac{\partial f}{\partial x_1} dx_1 + \cdots + \frac{\partial f}{\partial x_n} dx_n,</script>
+
+<p>where $\frac{\partial f}{\partial x_i}$ denotes the <em>partial derivative</em>
+of $f$ at $\bb{x}_0$. The latter formula is usually known as the <em>total
+differential</em>. Arranging the partial derivatives into a vector
+$\displaystyle{\bb{g} = \left( \frac{\partial f}{\partial x_1}, \dots, \frac{\partial f}{\partial x_n} \right)^\Tr }$,
+the total differential can be expressed as the inner product
+$df = \langle \bb{g}, \dx \rangle$. The object $\bb{g}$ appearing in the
+inner product is called the <em>gradient</em> of $f$ at point $\bb{x}_0$, and
+will be denoted by $\nabla f (\bb{x}_0)$ (the symbol $\nabla$,
+graphically a rotated capital Delta, is pronounced “nabla”, from the
+grecized Hebrew “nevel” for “harp”; $\nabla$ is sometimes called the
+<em>del operator</em>). While we can simply define the gradient as the vector
+of partial derivatives, we will see that the definition through the
+inner product can often be more useful.</p>
+
+<h2 id="directional-derivative">Directional derivative</h2>
+
+<p>In this course, we will often encounter situations where we are
+interested in the behavior of a function along a line (formally, we say
+that $f(\bb{x})$ is restricted to the one-dimensional linear subspace
+$\mathcal{L} = { \bb{x}_0 + \alpha \bb{r} : \alpha \in \RR }$, where
+$\bb{x}_0$ is some fixed point, and $\bb{r}$ is a fixed direction). Let
+use define a new function of a single variable $\alpha$,
+$\varphi(\alpha) = f(\bb{x}_0 + \alpha \bb{r})$. Note that we can find
+the first-order derivative of $\varphi$, arriving at the following
+important notion:</p>
+
+<script type="math/tex; mode=display">f_{\bb{r}}'(\bb{x}_0) = \left. \frac{d}{d\alpha} f(\bb{x}_0 + \alpha \bb{r}) \right|_{\alpha=0}  =\varphi'(0)</script>
+
+<p>which is called the <em>directional derivative</em> of $f$ at $\bb{x}_0$ in the
+direction $\bb{r}$.</p>
+
+<p>The same way a derivative measures the rate of change of a function, a
+directional derivative measures the rate of change of a multivariate
+function when we make a small step in a particular direction.</p>
+
+<p>Denoting $\bb{g} = \nabla f(\bb{x}_0)$ and using our definition of the
+gradient as the inner product, we can write</p>
+
+<script type="math/tex; mode=display">d\varphi = df = \bb{g}^\Tr\dx = \bb{g}^\Tr (d\alpha \bb{r}) = d\alpha (\bb{g}^\Tr \bb{r}).</script>
+
+<p>Identifying in the latter quantity an inner product of $d\alpha$ with
+the scalar $\bb{g}^\Tr \bb{r}$, we can say that $\bb{g}^\Tr \bb{r}$ is
+the gradient of $\varphi(\alpha)$ at $\alpha=0$, which coincides with
+the first-order derivative, $\varphi’(0) = \bb{g}^\Tr \bb{r}$, as
+$\varphi$ is a function of a single variable. We can summarize this
+result as the following:</p>
+
+<p><strong>Property</strong>. The directional derivative of $f$ at $\bb{x}_ {0}$ in the direction
+$\bb{r}$ is obtained by projecting the gradient at $\bb{x}_ {0}$ onto the
+direction $\bb{r}$, $f’_ {\bb{r}} = {\bb{r}}^\Tr \nabla f(\bb{x}_ {0})$.</p>
+
+<h2 id="hessian">Hessian</h2>
+
+<p>In the case of a function of a single variable, we saw that the
+differential of $f$ was given by $df = f’(x) dx$. However, the
+first-order derivative $f’(x)$ is also a function of $x$, and we can
+again express its differential as $df’ = f’‘(x) dx$, where $f’‘(x)$
+denotes the second-order derivative. This notion can be extended to the
+multivariate case. Recall our definition of the gradient through the
+inner product, <script type="math/tex">df = \bb{g}^\Tr \dx.</script> Thinking of the gradient as of a
+vector-valued function on $\RR^n$,
+$\bb{g}(\bb{x}) = (g_1(\bb{x}),\dots,g_n(\bb{x}))^\Tr$, we can write</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\left\{ 
+\begin{array}{ccc}
+  dg_1 & = & \bb{h}^\Tr_1 \dx \\
+  \vdots &   & \vdots \\
+  dg_n & = & \bb{h}^\Tr_n \dx, 
+  \end{array}
+\right. %]]></script>
+
+<p>with each $\bb{h}_i$ being the gradient of the $i$-th
+component of the gradient vector $\bb{g}$,</p>
+
+<script type="math/tex; mode=display">\bb{h}_i = \left( \frac{\partial g_i }{\partial x_1}, \dots, \frac{\partial g_i }{\partial x_n} \right)^\Tr =
+\left( \frac{\partial^2 f }{\partial x_1 \partial x_i}, \dots, \frac{\partial^2 g_i }{\partial x_n \partial x_i} \right)^\Tr.</script>
+
+<p>Denoting by $\bb{H} = (\bb{h}_ 1,\dots,\bb{h}_ n)$, we can write compactly
+$\dg = \bb{H}^\Tr \bb{dx}$. The $n\times n$ matrix $\bb{H}$ containing
+all the second-order partial derivatives of $f$ as its elements is
+called the <em>Hessian</em> of $f$ at point $\bb{x}$, and is also denoted<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>
+as $\nabla^2 f(\bb{x})$. We tacitly assumed that $f$ is $\mathcal{C}^2$
+in order for the second-order derivatives to exist. A nice property of
+$\mathcal{C}^2$ functions is that partial derivation is commutative,
+meaning that the order of taking second-order partial derivatives can be
+interchanged:
+$\displaystyle{h_{ij} = \frac{\partial^2 f }{\partial x_i \partial x_j} = \frac{\partial^2 f}{\partial x_j \partial x_i} = h_{ji} }$.
+Algebraically, this implies that the Hessian matrix is symmetric, and we
+can write</p>
+
+<script type="math/tex; mode=display">\dg = \bb{H} \bb{dx}.</script>
+
+<h2 id="second-order-directional-derivative">Second-order directional derivative</h2>
+
+<p>Recall that we have previously considered the restriction of a
+multivariate function $f$ to a line,
+$\varphi(\alpha) = f(\bb{x}_ 0 + \alpha \bb{r})$. This gave rise to the
+first-order directional derivative $f_{\bb{r}}(\bb{x}_ 0) = \varphi’(0)$.
+In a similar way, we define the <em>second-order directional derivative</em> at
+$\bb{x}_ 0$ in the direction $\bb{r}$ as</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned}
+f''_{\bb{rr}}(\bb{x}_0) &=& \varphi''(0) = \left. \frac{d^2}{d\alpha^2} f(\bb{x}_0 + \alpha\bb{r}) \right|_{\alpha=0}
+= \left. \frac{d}{d\alpha} f'_{\bb{r}}(\bb{x}_0 + \alpha\bb{r}) \right|_{\alpha=0}.
+\end{aligned} %]]></script>
+
+<p>Considering $f’_{\bb{r}}(\bb{x}) = \bb{r}^\Tr \bb{g}(\bb{x})$ as a
+function of $\bb{x}$, we can write its differential as</p>
+
+<script type="math/tex; mode=display">df'_{\bb{r}} = \bb{r}^\Tr \dg = \bb{r}^\Tr \bb{H}(\bb{x}_0) \dx = \bb{r}^\Tr \bb{H}(\bb{x}_0) \bb{r} d\alpha,</script>
+
+<p>from where</p>
+
+<script type="math/tex; mode=display">f''_{\bb{rr}} = \bb{r}^\Tr \bb{H} \bb{r}.</script>
+
+<p>In other words, in order to get the second-order directional derivative in the
+direction $\bb{r}$, one has to evaluate the quadratic form $\bb{r}^\Tr \bb{H}
+\bb{r}$.</p>
+
+<h2 id="derivatives-of-linear-and-quadratic-functions">Derivatives of linear and quadratic functions</h2>
+
+<p>Let $\bb{y} = \bb{A}\bb{x}$ be a general linear operator defined by an
+$m \times n$ matrix. Its differential is given straightforwardly by</p>
+
+<script type="math/tex; mode=display">\dy = \bb{A}(\bb{x} + \dx) - \bb{A}\bb{x} = \bb{A}\dx.</script>
+
+<p>Using this result, we will do a small exercise deriving gradients and Hessians
+of linear and quadratic functions. As we will see, it is often convenient to
+start with evaluating the differential of a function.</p>
+
+<p>Our first example is a linear function of the form
+$f(\bb{x}) = \bb{b}^\Tr \bb{x}$, where $\bb{b}$ is a constant vector.
+Note that this function is a particular case of the previous result
+(with $\bb{A} = \bb{b}^\Tr$), and we can write $df = \bb{b}^\Tr \dx$.
+Comparing this to the general definition of the gradient,
+$df = \bb{g}^\Tr(\bb{x}) \dx$, we deduce that the gradient of $f$ is
+given by $\nabla f(\bb{x}) = \bb{b}$. Note that the gradient of a linear
+function is constant – this generalizes the case of a linear function of
+one variable, $f(x)= bx$, which has a constant derivative $f’(x) = b$.</p>
+
+<p>Our second example is a quadratic function of the form
+$f(\bb{x}) = \bb{x}^\Tr \bb{A} \bb{x}$, where $\bb{A}$ is an
+$n \times n$ matrix. We again compute the differential by definition,</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned}
+df &=& f(\bb{x}+\dx) -f(\bb{x}) = (\bb{x}+\dx)^\Tr \bb{A} (\bb{x}+\dx)- \bb{x}^\Tr \bb{A} \bb{x} \nonumber\\
+   &=& \bb{x}^\Tr \bb{A} \bb{x} + \dx^\Tr \bb{A} \bb{x} + \bb{x}^\Tr \bb{A} \dx + \dx^\Tr \bb{A} \dx - \bb{x}^\Tr \bb{A} \bb{x} \nonumber\\
+   &=& \dx^\Tr \bb{A} \bb{x} + \bb{x}^\Tr \bb{A} \dx + \dx^\Tr \bb{A} \dx.
+\end{aligned} %]]></script>
+
+<p>Note that in the limit $| \dx | \rightarrow 0$, the third term
+(quadratic in $|\dx|$) goes to zero much faster than the first two
+terms (linear in $\dx$), and can be therefore neglected<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>, leading to</p>
+
+<script type="math/tex; mode=display">df = \dx^\Tr \bb{A} \bb{x} + \bb{x}^\Tr \bb{A} \dx =
+\dx^\Tr \bb{A} \bb{x} + (\bb{x}^\Tr \bb{A} \dx)^\Tr =
+\dx^\Tr(\bb{A}^\Tr + \bb{A})\bb{x}.</script>
+
+<p>Again, recognizing in the latter expression an inner product with $\dx$,
+we conclude that $\nabla f(\bb{x}) = (\bb{A}^\Tr + \bb{A})\bb{x}$. For a
+symmetric $\bb{A}$, the latter simplifies to
+$\nabla f(\bb{x}) = 2\bb{A} \bb{x}$. Note that the gradient of a
+quadratic function is a linear function; furthermore, the latter
+expression generalizes the univariate quadratic function $f(x) = ax^2$,
+whose first-order derivative $f’(x) = 2ax$ is linear.</p>
+
+<p>Since the gradient $\bb{g}(\bb{x}) = (\bb{A}^\Tr +\bb{A})\bb{x}$ of the
+quadratic function is linear, its differential is immediately given by
+$\dg = (\bb{A}^\Tr +\bb{A})\dx$, from where we conclude that the Hessian
+of $f$ is $\bb{H}(\bb{x}) = \bb{A}^\Tr +\bb{A}$ (or $2\bb{A}$ in the
+symmetric case). Note that the Hessian of a quadratic function is
+constant, which coincides with the univariate case $f’’ (x) = 2a$.</p>
+
+<p>In the sequel, we will see more complicated examples of gradients and
+Hessians. For a comprehensive reference on derivatives of matrix and
+vector expressions, the Matrix Cookbook<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup> is highly advisable.</p>
+
+<h2 id="multivariate-taylor-expansion">Multivariate Taylor expansion</h2>
+
+<p>We have seen the Taylor expansion of a function of one variable as a way
+to obtain a linear approximation. This construction can be generalized
+to the multivariate case, as we show here, limiting the expansion to
+second order.</p>
+
+<p><strong>Theorem: Second-order Taylor expansion</strong>.
+Let $f$ be a $\mathcal{C}^2$ function on $\RR^n$, $\bb{x}$ some point,
+and $\bb{r}$ a sufficient small vector. Then,</p>
+
+<script type="math/tex; mode=display">f(\bb{x}+\bb{r}) =
+f(\bb{x}) + \bb{g}^\Tr (\bb{x}) \bb{r} + \frac{1}{2} \bb{r}^\Tr \bb{H}(\bb{x}) \bb{r} + O(\|\bb{r}\|^3).</script>
+
+<p>The theorem say that up to a third-order error term, the function can be
+approximated around $\bb{x}$ by a quadratic function
+$q(\bb{r}) = f + \bb{g}^\Tr \bb{r} + \frac{1}{2} \bb{r}^\Tr \bb{H} \bb{r}$
+(note that the function is quadratic in $\bb{r}$, as $\bb{x}$ is
+constant, and so are $f=f(\bb{x})$, $\bb{g}$, and $\bb{H}$). Out of all
+possible quadratic approximations of $f$, the approximation described by
+$q(\bb{r}) \approx f(\bb{x} + \bb{r})$ is such that its value, slope,
+and curvature at $\bb{x}$ (equivalently, at $\bb{r} = \bb{0}$) match
+those of $f$. The latter geometric quantities are captured,
+respectively, by the values of the function, its gradient, and its
+Hessian; in order to match the value, slope, and curvature of $f$, $q$
+has to satisfy $q(\bb{0}) = f(\bb{x})$,
+$\nabla q(\bb{0}) = \nabla f(\bb{x})$, and
+$\nabla^2 q(\bb{0}) = \nabla^2 f(\bb{x})$ (note that the gradient and
+the Hessian of $q$ are w.r.t $\bb{r}$, whereas the derivatives of $f$
+are w.r.t. $\bb{x}$). To see that the later equalities hold, we first
+observe that $q(\bb{0}) = f(\bb{x})$. Next, using the fact that
+$q(\bb{r})$ is quadratic, its gradient and Hessian (w.r.t. $\bb{r}$) are
+given by $\nabla q(\bb{r}) = \bb{g} + \bb{H} \bb{r}$ and
+$\nabla^2 q(\bb{r}) = \bb{H} \bb{r}$. Substituting $\bb{r} = \bb{0}$
+yields $\nabla q(\bb{0}) = \bb{g}$ and $\nabla^2 q(\bb{r}) = \bb{H}$.</p>
+
+<h2 id="gradient-of-a-function-of-a-matrix">Gradient of a function of a matrix</h2>
+
+<p>The notion of gradient can be generalized to functions of matrices. Let
+$f : \RR^{m \times n} \rightarrow \RR$ be such function evaluated at
+some $\bb{X}$. We can think of an equivalent function on $\RR^{mn}$
+evaluated at $\bb{x} = \vec(\bb{X})$, for which the gradient is defined
+simply as the $mn$-dimensional vector of all partial derivatives. We can
+therefore think of the gradient of $f(\bb{X})$ at $\bb{X}$ as of the
+$m \times n$ matrix</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\bb{G}(\bb{X}) = \left(
+                   \begin{array}{ccc}
+                     \frac{\partial f }{\partial x_{11} } & \cdots & \frac{\partial f }{\partial x_{1n} } \\
+                     \vdots & \ddots & \vdots \\
+                     \frac{\partial f }{\partial x_{m1} } & \cdots & \frac{\partial f }{\partial x_{mn} } \\
+                   \end{array}
+                 \right). %]]></script>
+
+<p>Previously, we have seen that an “external” definition of the gradient
+through an inner product is often more useful. Such a definition is also
+valid for matrix arguments. Recall our definition of the standard inner
+product on the space of $m\times n$ matrices as
+<script type="math/tex">\langle \bb{A}, \bb{B} \rangle = \sum_{ij} a_{ij} b_{ij} = \trace(\bb{A}^\Tr \bb{B}),</script>
+for $\bb{A},\bb{B} \in \RR^{m \times n}$. Using the total differential
+formula yields</p>
+
+<script type="math/tex; mode=display">df = \sum_{ij} \frac{\partial f }{\partial x_{ij}} dx_{ij} = \langle \bb{G}, \dX \rangle,</script>
+
+<p>where $\dX$ is now an $m\times n$ matrix. The matrix $\bb{G}$ appearing
+in the above identity can be <em>defined</em> as the gradient of $f$.</p>
+
+<h2 id="gradient-of-a-nonlinear-function">Gradient of a nonlinear function</h2>
+
+<p>We finish this brief introduction by deriving the gradient of a more
+complicated function of the form</p>
+
+<script type="math/tex; mode=display">f(\bb{X}) = \bb{c}^\Tr \varphi( \bb{X}^\Tr \bb{a} + \bb{b}),</script>
+
+<p>where
+$\bb{X} \in \RR^{m\times n}$, $\bb{a} \in \RR^n$,
+$\bb{b},\bb{c} \in \RR^m$, and $\varphi$ is a $\mathcal{C}^1$ function
+applied element-wise. We will encounter such functions during the course
+when dealing with nonlinear regression and classification applications.
+In machine learning, functions of this form constitute building
+blocks of more complicated functions called artificial neural networks.
+As before, we proceed by computing differentials and using the chain
+rule. Denoting $\bb{u} = \bb{X}^\Tr \bb{a} + \bb{b}$, we have</p>
+
+<script type="math/tex; mode=display">\varphi(\bb{u}) = \left(
+                    \begin{array}{c}
+                      \varphi(u_1) \\
+                      \vdots \\
+                      \varphi(u_m) \\
+                    \end{array}
+                  \right).</script>
+
+<p>Since $\varphi$ is applied element-wise to
+$\bb{u}$, the differential of $\bb{\varphi} = \varphi(\bb{u})$ is given
+by</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\dphi = \left(
+                    \begin{array}{c}
+                      \varphi'(u_1) du_1\\
+                      \vdots \\
+                      \varphi'(u_m) du_m \\
+                    \end{array}
+                  \right) = 
+                  \underbrace{\left(
+                    \begin{array}{ccc}
+                      \varphi'(u_1) &  &  \\
+                       & \ddots &  \\
+                       &  & \varphi'(u_m) \\
+                    \end{array}
+                  \right)}_{\bb{\Phi}'} \du = \bb{\Phi}' \du. %]]></script>
+
+<p>Next, we consider the function $\bb{u}(\bb{X}) = \bb{X}^\Tr \bb{a} + \bb{b}$;
+since it is linear in $\bb{X}$, its differential is given by $\du = \dX^\Tr
+\bb{a}$. Finally, we consider the function $f(\bb{\varphi}) = \bb{c}^\Tr
+\bb{\varphi}$, which is linear in $\bb{\varphi}$ and has the differential
+$df = \bb{c}^\Tr \dphi$.</p>
+
+<p>Combining these results and using simple properties of the matrix trace
+yields</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{aligned}
+df &=& \bb{c}^\Tr \dphi = \bb{c}^\Tr \bb{\Phi}' \du = \bb{c}^\Tr\bb{\Phi}' \dX^\Tr \bb{a} \\
+&=& \trace\left( \bb{c}^\Tr\bb{\Phi}' \dX^\Tr \bb{a} \right) = \trace\left( \dX^\Tr \bb{a}\bb{c}^\Tr\bb{\Phi}'  \right) \\
+&=& \langle \dX, \bb{a}\bb{c}^\Tr\bb{\Phi}'\rangle.
+\end{aligned} %]]></script>
+
+<p>In the latter expression, we recognize in the second argument of the inner
+product the gradient of $f$ w.r.t. $\bb{X}$,</p>
+
+<script type="math/tex; mode=display">\nabla f(\bb{X}) = \bb{a}\bb{c}^\Tr\bb{\Phi}'.</script>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>The little-$o$ notation means that there exists some function of
+$dx$, $o(dx)$, going faster to zero than $dx$ (i.e.,
+$\displaystyle{\frac{o(dx)}{dx}} \rightarrow 0$), but the exact form
+of this function is unimportant. On the other hand, the big-$O$
+notation, as in $O(dx^2)$, stands for some function that grows with
+the same rate as $dx^2$ (i.e.,
+$\displaystyle{\lim_{|dx|\rightarrow 0} \frac{dx^2}{O(dx^2)} &lt; \infty }$). <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Some people find the following abuse of notation helpful: Thinking
+of the gradient of $f$ as of a differential operator of the form
+“$\displaystyle{\nabla = \left(
+                            \begin{array}{c}
+                            \frac{\partial }{\partial x_1} <br />
+                            \vdots <br />
+                            \frac{\partial }{\partial x_n} <br />
+                            \end{array}
+                        \right)}$”
+applied to $f$, the Hessian can be expressed by applying the
+operator “$\displaystyle{
+\nabla^2 = \nabla \nabla^\Tr =
+\left(
+    \begin{array}{c}
+    \frac{\partial }{\partial x_1} <br />
+    \vdots <br />
+    \frac{\partial }{\partial x_n} <br />
+    \end{array}
+\right)
+\left(\textstyle{
+    \frac{\partial }{\partial x_1}},\dots, \textstyle{\frac{\partial }{\partial x_n}}
+\right) =
+\left(
+    \begin{array}{ccc}
+        \frac{\partial^2 }{\partial x_1 \partial x_1} &amp; \cdots &amp; \frac{\partial^2 }{\partial x_1 \partial x_n} <br />
+        \vdots &amp;  \ddots &amp; \vdots <br />
+        \frac{\partial^2 }{\partial x_n \partial x_1} &amp; \cdots &amp; \frac{\partial^2 }{\partial x_n \partial x_n} <br />
+    \end{array}
+\right)
+}$”. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>This “explanation” can be written rigorously using limits. Another
+way of getting the same result is the well-known rule of
+“differential of a product”, $d(fg) = df\, g + f \, dg$, which can
+be generalized to the multivariate case as follows: Let $h$ be a
+scalar function given as the inner product of two vector-valued
+functions, $h(\bb{x}) = \bb{f}^\Tr(\bb{x}) \bb{g}(\bb{x})$. Then,
+$dh = \df^\Tr \bb{g} + \bb{f}^\Tr \dg$. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p><a href="http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3274/pdf/imm3274.pdf">http://www2.imm.dtu.dk/pubdb/views/edoc_download.php/3274/pdf/imm3274.pdf</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/cs236781/semesters/sp19/supplements/linear_algebra/" class="pagination--pager" title="Linear Algebra Crash Course
+">Previous</a>
+    
+    
+      <a href="/cs236781/semesters/sp19/supplements/probability_and_statistics/" class="pagination--pager" title="Probability and statistics: a survival guide
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        
+<!-- Technion and VISTA logos --><script>
+
+var logo_element = '\
+<div class="technion-logo"> \
+    <a href="https://cs.technion.ac.il"> \
+        <img src="/cs236781/semesters/sp19/assets/images/cs_technion-logo.png" alt="Technion"> \
+    </a> \
+</div> \
+';
+
+document
+    .querySelector('.masthead__inner-wrap')
+    .insertAdjacentHTML('afterbegin', logo_element);
+
+var logo_element = '\
+<div class="vista-logo"> \
+    <a href="https://vista.cs.technion.ac.il" > \
+        <img src="/cs236781/semesters/sp19/assets/images/vista-logo-bw.png" alt="VISTA"> \
+    </a> \
+</div> \
+';
+
+var footerNodes = document.getElementsByTagName("FOOTER")
+var footerNode = footerNodes[footerNodes.length - 1];
+footerNode.insertAdjacentHTML('afterend', logo_element);
+
+</script>
+<!-- Mathjax support --><!-- see: http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/ -->
+<!-- also: http://docs.mathjax.org/en/latest/tex.html for defning mathjax macros -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noErrors: { disabled: true },
+      Macros: {
+        // Each def here is an array: [<macro>, <num_params>]
+        // Aviv's defs
+        bold: ["{\\bf #1}",1],
+        m: ["\\boldsymbol {#1}",1],             // matrix
+        mt: ["\\boldsymbol {#1}^\\top",1],      // transposed matrix
+        v: ["\\boldsymbol {#1}",1],             // vector
+        vt: ["\\boldsymbol {#1}^\\top",1],      // transposed vector
+        diag: ["\\mathop{\\mathrm{diag}}"],
+        trace: ["\\mathop{\\mathrm{tr}}"],
+        rank: ["\\mathop{\\mathrm{rank}}"],
+        set: ["\\mathbb {#1}",1],
+        rvar: ["\\mathrm{#1}",1],               // random variable
+        rvec: ["\\boldsymbol{\\mathrm{#1}}",1], // random vector
+
+        // Alex's defs
+        bm: ["{\\bf #1}",1],
+        bb: ["{\\bm{\\mathrm{#1}}}",1],
+        spn: ["\\mathrm{span}\\left\\{ {#1} \\right\\}",1],
+        vec: ["\\mathrm{vec}"],
+        dx:  ["\\bb{dx}"], dX:  ["\\bb{dX}"], dy:  ["\\bb{dy}"], du:  ["\\bb{du}"],
+        df:  ["\\bb{df}"], dg:  ["\\bb{dg}"],
+        dphi:  ["\\bb{d\\varphi}"],
+        Tr: ["\\top"],
+        RR: ["\\set{R}"],
+        mathpzc: ["\\rvar{#1}", 1],
+        mathpzcb: ["\\rvec{#1}", 1],
+        ind: ["\\unicode{x1D7D9}"]
+      }
+    },
+
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'] ],
+    processEscapes: true,
+  },
+
+  "HTML-CSS": {
+     fonts: ["TeX"]
+  },
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- Copyright notice support on single pages -->
+<script>
+var copyright_element = '\
+    <p class="page__meta" style="margin-top: -0.5em;"> \
+    <i class="far fa-copyright"></i> \
+    Prof. Alex Bronstein \
+    </p> \
+';
+
+first_header = document.getElementsByTagName('header')[0]
+first_header.insertAdjacentHTML('beforeend', copyright_element);
+</script>
+
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://vista.cs.technion.ac.il"><i class="fas fa-fw fa-link" aria-hidden="true"></i> VISTA Lab</a></li>
+        
+      
+        
+          <li><a href="https://github.com/vistalab-technion"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/cs236781/semesters/sp19/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 VISTA Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/cs236781/semesters/sp19/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
