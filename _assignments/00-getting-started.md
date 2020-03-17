@@ -39,7 +39,6 @@ editor or IDE if you prefer. Note that you can get the professional version of
 PyCharm for free by using your Technion student email - see
 [here](https://www.jetbrains.com/student/).
 
-
 ### Project structure
 
 Each assignment's root directory contains the following files and folders:
