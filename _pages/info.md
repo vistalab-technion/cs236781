@@ -82,34 +82,40 @@ following material may be useful.
 
 ## Detailed Syllabus
 
-The course will be presented using a mixed approach of offline content
-(videos and lecture notes), in-class frontal learning, and hands-on homework
-assignments. The frontal lectures
-are meant to deepen understanding of the topics in the videos and provide useful
-context, techniques and applicative examples. The in-class tutorials and
-homework assignments are meant to teach you the technical aspects of
-implementing deep learning systems.
+Due to the COVID-19 pandemic, this semester the course will be given using a remote-learning approach.
 
-Students are expected to watch and read the pre-requisite material, available
-from the couse [Lectures page]({{ site.baseurl }}/lectures) before each class.
-Viewing and/or reading the pre-requisite material is **mandatory**.
+We provide lecture videos, notes, and slides to facilitate self-learning of the
+core topics.  The tutorials are based on detailed Jupyter notebooks, which guide
+you through a full implementation of one or more models and techniques for
+solving a specific task. They are meant to teach you the technical aspects of
+implementing deep learning systems.  The course also includes hands-on homework
+assignments where you will implement working real-world models and run them GPUs
+in the course servers.  Finally, you will be required to perform a small
+research project instead of a final exam.
+
+Students are expected to watch and read course material, available from the
+course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
+}}/tutorials) pages.  Viewing and/or reading the lecture and tutorial material is
+**mandatory** and crucial for success in the homework and project.
 
 
-| #    | Date                       | Pre-requisite<br>(video) | Lecture<br>(in-class; Alex, Avi, Chaim)         | Tutorial<br>(in-class; Aviv)                | Homework   |
-| ---- | -----------                | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
-| 1    | `24/10/2019`               | ---                      | Course Introduction                             | Python, numpy, environment setup            |            |
-| 2    | `31/10/2019`               | Lecture 2                | Introduction to hardware for Deep Learning      | Supervised learning, PyTorch basics I       | HW1        |
-| 3    | `07/11/2019`               | Lecture 3                | CNN applications and architectures              | MLP, PyTorch basics II                      |            |
-| 4    | `14/11/2019`               | Lecture 4                | Training techniques                             | CNNs, ResNets                               |            |
-| 5    | `21/11/2019`               | Lecture 5                |                                                 | Sequence modeling, RNNs, TCNs               | HW2        |
-| 6    | `28/11/2019`               | Lecture 6                | Attention and Transformers                      |                                             |            |
-| 7    | `05/12/2019`               | ---                      | Object detection I                              | Transfer learning and domain adaptation     |            |
-| 8    | `12/12/2019`               | Lecture 7                | Object detection II                             |                                             |            |
-| 9    | **Sunday<br>`22/12/2019`** | ---                      |                                                 | Attention mechanisms                        | HW3        |
-| 10   | `26/12/2019`               |                          | **NO CLASS**                                    |                                             |            |
-| 11   | `02/01/2020`               | Lecture 11               | Applications of graph NNs                       | Deep reinforcement learning                 |            |
-| 12   | `09/01/2020`               | ---                      | DNN compression                                 |                                             | HW4        |
-| 13   | `16/01/2020`               | Lecture 9                | Training hardware                               | Geometric deep learning                     |            |
-| 14   | `23/01/2020`               | Lecture 10               | Inference hardware                              | CUDA                                        |            |
-| ---- | -----------                | ----                     | ----------------------------------------------- | ------------------------------------------- | ---------- |
+| #    | Date                       | Lecture materials                                                             | Tutorial materials                                                       | Homework   |
+| ---- | -----------------------    | ------------------------------------------------------------------------      | -------------------------------------------                              | ---------- |
+| 1    | `19/03/2020`               | Lecture 1: Course Introduction (Zoom, video lecture)                          | Tutorial 1: Python, numpy, env setup (Zoom, jupyter notebook)            |            |
+| 2    | `26/03/2020`               | Lecture 2: Supervised learning (motivation and main lecture videos)           | Tutorial 2: Supervised learning, PyTorch basics I (video and notebook)   | HW1        |
+| 3    | `02/04/2020`               | Lecture 3: Neural networks and CNNs (video)                                   | Tutorial 3: MLP, PyTorch basics II (video and notebook)                  |            |
+| 4    | `09/04/2020`               | **NO CLASS**                                                                  |                                                                          |            |
+| 5    | `16/04/2020`               | **NO CLASS**                                                                  |                                                                          | HW2        |
+| 6    | `23/04/2020`               | Lecture 4: Training (motivation and main lecture videos), Techniques (slides) | Tutorial 4: CNNs, ResNets (video and notebook)                           |            |
+| 7    | `30/04/2020`               | **NO CLASS**                                                                  |                                                                          |            |
+| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                              | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           |            |
+| 9    | `14/05/2020`               | **NO CLASS**                                                                  |                                                                          | HW3        |
+| 10   | `21/05/2020`               | Lecture 5: Attention and Transformers (slides)                                | Tutorial 7: Attention (video and notebook)                               |            |
+| 11   | **Sunday**<br>`24/05/2020` | Lecture 6: Unsupervised learning and supplementary (videos)                   | Tutorial 6: Transfer learning and domain adaptation (video and notebook) |            |
+| 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                                | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
+| 13   | `11/06/2020`               | Lecture 11: Non-euclidean domains (video)                                     | Tutorial 9: Geometric deep learning (video and notebook)                 |            |
+| 14   | `18/06/2020`               | Lecture 8:  Intro to parallel architectures (video)                           | Tutorial 10: CUDA                                                        |            |
+| 15   | `25/06/2020`               | Lecture 9:  Training hardware (video)                                         |                                                                          |            |
+| 16   | `02/07/2020`               | Lecture 10: Inference hardware (video)                                        |                                                                          |            |
+| ---- | -----------------------    | ------------------------------------------------------------------------      | -------------------------------------------                              | ---------- |
 
