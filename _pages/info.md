@@ -85,13 +85,13 @@ following material may be useful.
 Due to the COVID-19 pandemic, this semester the course will be given using a remote-learning approach.
 
 We provide lecture videos, notes, and slides to facilitate self-learning of the
-core topics.  The tutorials are based on detailed Jupyter notebooks, which guide
-you through a full implementation of one or more models and techniques for
-solving a specific task. They are meant to teach you the technical aspects of
-implementing deep learning systems.  The course also includes hands-on homework
-assignments where you will implement working real-world models and run them GPUs
-in the course servers.  Finally, you will be required to perform a small
-research project instead of a final exam.
+core topics.  The tutorials are based on detailed and self-contained Jupyter
+notebooks, which guide you through a full implementation of one or more models
+and techniques for solving a specific task. They are meant to teach you the
+technical aspects of implementing deep learning systems.  The course also
+includes hands-on homework assignments where you will implement working
+real-world models and run them on GPUs in the course servers.  Finally, you will be
+required to perform a small research project instead of a final exam.
 
 Students are expected to watch and read course material, available from the
 course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
