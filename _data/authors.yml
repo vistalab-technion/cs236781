@@ -51,3 +51,12 @@ evgenii:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:evgeniizh@campus.technion.ac.il"
+
+yaniv:
+  name: Yaniv Nemcovsky
+  bio: Homework Checker
+  avatar: "/assets/images/bio-photo-yaniv.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yanemcovsky@gmail.com"
