@@ -84,6 +84,9 @@ Each assignment's root directory contains the following files and folders:
    # Rest is the same
    ```
 
+   On Windows, download the installer and follow the instructions on the conda
+   website. See also the Windows-specific notes below before you proceed.
+
 2. Use conda to create a virtual environment for the assignment.
    From the assignment's root directory, run
 
@@ -142,6 +145,11 @@ Notes:
   that is installed with miniconda. If you also add the `conda` installation
   to the Windows `PATH` variable, you can run these commands from the regular
   windows command prompt.
+
+- Also on Windows, you need to install Microsoft's [Build Tools for Visual
+  Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)
+  before the conda environment.  Make sure "C++ Build Tools" is selected during
+  installation.
 
 ## Working on the assignment
 
