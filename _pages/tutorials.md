@@ -8,6 +8,7 @@ author_profile: false
 
 All tutorial materials will be available on this page.
 
-Additionally, the tutorial notebooks can be viewed in your browser by using
+The tutorial notebooks can be obtained by cloning the course [tutorials
+repo](https://github.com/vistalab-technion/cs236781-tutorials), or viewed in
+your browser by using
 [nbviewer](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/tree/master/).
-
