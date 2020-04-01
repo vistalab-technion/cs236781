@@ -23,6 +23,6 @@ Notes about posting on Piazza:
   etc.
 
 
-Thanks and enjoy,
+Thanks and enjoy,  
 Course staff.
 

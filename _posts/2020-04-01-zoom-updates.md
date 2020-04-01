@@ -25,5 +25,5 @@ Tutorial Zoom session, and they will be given as follows:
 These meetings will only take place on dates where there is supposed
 to be a class according to the [Technion calendar](https://www.admin.technion.ac.il/dpcalendar/).
 
-
-
+See you,  
+Course Staff.
