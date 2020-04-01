@@ -21,6 +21,10 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 {% include video provider="youtube" id="KCd07ZVIVXQ" %}
 
+## Supplementary Slides
+
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21284&amp;authkey=AI2lAQTJc_h3-DM&amp;em=2&amp;wdAr=1.7777777777777777" %}
+
 ## Lecture Notes
 
 Accompanying notes for this lecture can be found [here]({{ site.baseurl }}{% link _lecture_notes/lecture_03.md %}).
