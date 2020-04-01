@@ -4,6 +4,8 @@ author: aviv
 excerpt: Times and links.
 ---
 
+**NOTE**: The information in this post has been updated, see updated post [here]({{ site.baseurl }}/2020/04/01/zoom-updates).
+
 Dear Students,
 
 As you know, this semester the course will be given virtually.
