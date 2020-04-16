@@ -108,8 +108,8 @@ course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
 | 5    | `16/04/2020`               | **NO CLASS**                                                                  |                                                                          | HW2        |
 | 6    | `23/04/2020`               | Lecture 4: Training (motivation and main lecture videos), Techniques (slides) | Tutorial 4: CNNs, ResNets (video and notebook)                           |            |
 | 7    | `30/04/2020`               | **NO CLASS**                                                                  |                                                                          |            |
-| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                              | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           |            |
-| 9    | `14/05/2020`               | **NO CLASS**                                                                  |                                                                          | HW3        |
+| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                              | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           | HW3        |
+| 9    | `14/05/2020`               | **NO CLASS**                                                                  |                                                                          |            |
 | 10   | `21/05/2020`               | Lecture 5: Attention and Transformers (slides)                                | Tutorial 7: Attention (video and notebook)                               |            |
 | 11   | **Sunday**<br>`24/05/2020` | Lecture 6: Unsupervised learning and supplementary (videos)                   | Tutorial 6: Transfer learning and domain adaptation (video and notebook) |            |
 | 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                                | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
