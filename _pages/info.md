@@ -99,23 +99,23 @@ course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
 **mandatory** and crucial for success in the homework and project.
 
 
-| #    | Date                       | Lecture materials                                                             | Tutorial materials                                                       | Homework   |
-| ---- | -----------------------    | ------------------------------------------------------------------------      | -------------------------------------------                              | ---------- |
-| 1    | `19/03/2020`               | Lecture 1: Course Introduction (Zoom, video lecture)                          | Tutorial 1: Python, numpy, env setup (Zoom, jupyter notebook)            |            |
-| 2    | `26/03/2020`               | Lecture 2: Supervised learning (motivation and main lecture videos)           | Tutorial 2: Supervised learning, PyTorch basics I (video and notebook)   | HW1        |
-| 3    | `02/04/2020`               | Lecture 3: Neural networks and CNNs (video)                                   | Tutorial 3: MLP, PyTorch basics II (video and notebook)                  |            |
-| 4    | `09/04/2020`               | **NO CLASS**                                                                  |                                                                          |            |
-| 5    | `16/04/2020`               | **NO CLASS**                                                                  |                                                                          | HW2        |
-| 6    | `23/04/2020`               | Lecture 4: Training (motivation and main lecture videos), Techniques (slides) | Tutorial 4: CNNs, ResNets (video and notebook)                           |            |
-| 7    | `30/04/2020`               | **NO CLASS**                                                                  |                                                                          |            |
-| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                              | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           | HW3        |
-| 9    | `14/05/2020`               | **NO CLASS**                                                                  |                                                                          |            |
-| 10   | `21/05/2020`               | Lecture 5: Attention and Transformers (slides)                                | Tutorial 7: Attention (video and notebook)                               |            |
-| 11   | **Sunday**<br>`24/05/2020` | Lecture 6: Unsupervised learning and supplementary (videos)                   | Tutorial 6: Transfer learning and domain adaptation (video and notebook) |            |
-| 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                                | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
-| 13   | `11/06/2020`               | Lecture 11: Non-euclidean domains (video)                                     | Tutorial 9: Geometric deep learning (video and notebook)                 |            |
-| 14   | `18/06/2020`               | Lecture 8:  Intro to parallel architectures (video)                           | Tutorial 10: CUDA                                                        |            |
-| 15   | `25/06/2020`               | Lecture 9:  Training hardware (video)                                         |                                                                          |            |
-| 16   | `02/07/2020`               | Lecture 10: Inference hardware (video)                                        |                                                                          |            |
-| ---- | -----------------------    | ------------------------------------------------------------------------      | -------------------------------------------                              | ---------- |
+| #    | Date                       | Lecture materials                                                        | Tutorial materials                                                       | Homework   |
+| ---- | -----------------------    | ------------------------------------------------------------------------ | -------------------------------------------                              | ---------- |
+| 1    | `19/03/2020`               | Lecture 1: Course Introduction (Zoom, video lecture)                     | Tutorial 1: Python, numpy, env setup (Zoom, jupyter notebook)            |            |
+| 2    | `26/03/2020`               | Lecture 2: Supervised learning (motivation and main lecture videos)      | Tutorial 2: Supervised learning, PyTorch basics I (video and notebook)   | HW1        |
+| 3    | `02/04/2020`               | Lecture 3: Neural networks and CNNs (video)                              | Tutorial 3: MLP, PyTorch basics II (video and notebook)                  |            |
+| 4    | `09/04/2020`               | **NO CLASS**                                                             |                                                                          |            |
+| 5    | `16/04/2020`               | **NO CLASS**                                                             |                                                                          | HW2        |
+| 6    | `23/04/2020`               | Lecture 4: Training (motivation and main lecture videos)                 | Tutorial 4: CNNs, ResNets (video and notebook)                           |            |
+| 7    | **Monday**<br>`27/04/2020` | Advanced training techniques                                             |                                                                          |            |
+| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                         | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           | HW3        |
+| 9    | `14/05/2020`               | **NO CLASS**                                                             |                                                                          |            |
+| 10   | `21/05/2020`               | Lecture 5: Attention and Transformers (slides)                           | Tutorial 7: Attention (video and notebook)                               |            |
+| 11   | **Sunday**<br>`24/05/2020` | Lecture 6: Unsupervised learning and supplementary (videos)              | Tutorial 6: Transfer learning and domain adaptation (video and notebook) |            |
+| 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                           | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
+| 13   | `11/06/2020`               | Lecture 11: Non-euclidean domains (video)                                | Tutorial 9: Geometric deep learning (video and notebook)                 |            |
+| 14   | `18/06/2020`               | Lecture 8:  Intro to parallel architectures (video)                      | Tutorial 10: CUDA                                                        |            |
+| 15   | `25/06/2020`               | Lecture 9:  Training hardware (video)                                    |                                                                          |            |
+| 16   | `02/07/2020`               | **NO CLASS**                                                             |                                                                          |            |
+| ---- | -----------------------    | ------------------------------------------------------------------------ | -------------------------------------------                              | ---------- |
 
