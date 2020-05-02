@@ -18,7 +18,7 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 - Part 2
 {% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21275&amp;authkey=APAlndHyYqK2_p4&amp;em=2&amp;wdAr=1.6" %}
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21288&amp;authkey=AC95kVuf1yOLm58&amp;em=2&amp;wdAr=1.6" %}
 
 ## Videos
 
