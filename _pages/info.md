@@ -115,7 +115,6 @@ course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
 | 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                           | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
 | 13   | `11/06/2020`               | Lecture 11: Non-euclidean domains (video)                                | Tutorial 9: Geometric deep learning (video and notebook)                 |            |
 | 14   | `18/06/2020`               | Lecture 8:  Intro to parallel architectures (video)                      | Tutorial 10: CUDA                                                        |            |
-| 15   | `25/06/2020`               | Lecture 9:  Training hardware (video)                                    |                                                                          |            |
-| 16   | `02/07/2020`               | **NO CLASS**                                                             |                                                                          |            |
+| 15   | `25/06/2020`               | Assorted theoretical topics                                              |                                                                          |            |
 | ---- | -----------------------    | ------------------------------------------------------------------------ | -------------------------------------------                              | ---------- |
 
