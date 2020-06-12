@@ -4,7 +4,7 @@ permalink: assignments/final-project
 toc: false
 toc_label: Contents
 toc_sticky: true
-published: false
+published: true
 ---
 
 As part of this course, students must complete a small research project instead
@@ -12,21 +12,26 @@ of a final exam.
 
 We provide you with a pool of project ideas mostly based on recent papers and
 our current research interests.  The projects will be supervised by course TAs
-or other graduate students from the VISTA lab.  During the project
-period you will be able to meet with course TAs for guidance during dedicated
+or other graduate students from the VISTA lab.  During the project period you
+will be able to get guidance course TAs/Supervisors, during dedicated
 office hours.  The project can be performed in groups of at most two students,
-and at most two groups can work on the same project topic (separately).
+and at most three groups can work on the same project topic (separately).
 
-Some of the projects are "reimplementation projects" where you should start from
-a specific paper, implement it, suggest at least one improvement and evaluate it
-using experiments which you must also devise and implement.  Selecting this kind
-of project means we may expect more of you, in terms of the project ideas and
-experimental methodology.
+For most projects, unless defined otherwise, you should start from a specific
+paper, suggest at least one improvement which you can motivate based on
+theoretical or experimental evidence, and evaluate your suggestion based on
+experiments which you must also devise and implement. Based on past experience,
+we **strongly** recommend that you first devise a full plan for the project:
+what exactly the learning task is, what the baseline method is, what you plan
+to modify about the task or method,  what metrics will you use for comparison
+to the baseline, how the experiments will be structured, what data will be
+used, etc. Then, consult and get feedback about it, and finally start
+implementing.
 
 For graduate students only, we allow you to define a custom project that relates
 to your own research topic.
 
-If you have further **questions** regarding the course final project, please
+If you have further questions regarding the course final project, please
 contact [Chaim Baskin](mailto:chaimbaskin@cs.technion.ac.il).
 
 The project topics spreadsheet link will be sent by email to all registered
@@ -36,33 +41,28 @@ students.
 
 1. Each group should read the topics and paper abstracts in the project topics spreadsheet.
 1. Each group must fill out the registration form with their top-3 priorities
-   or custom project proposal until date **01/02/2020**.
+   or custom project proposal until date **02/07/2020**.
 1. Soon after you submit your priorities, we will approve one of
    them. Submitting the form sooner will increase your chance of getting your
    first priority.
 1. You will start working on your projects.
    You can schedule periodic meetings with course staff at dedicated office
    hours which will be published.
-1. Your submission should be a detailed report. It should explain the problem
-   and the paper you implemented (if relevant), explain your specific
-   enhancements and modifications, showcase all your results (both reproduction
-   of the paper and novel results, if any), compare your solution to the
-   baseline method (if relevant), etc. See below for details submission
-   instructions.
-1. The submission date for the project is **16/04/2020**.
-   Note that the course servers will not be available to Winter 19-20 students after this date.
+1. Your submission should be a detailed report. See below for exact details
+   about the report.
+1. The submission date for the project is **30/09/2020**.
+   Further extensions might be granted upon request, but note that the course
+   servers will not be available to Spring 2020 students after this date.
 
 ## Registration links
 
-Please view the project topics spreadsheet (link will be sent via emali)
-and then fill out the [registration form](https://forms.gle/8rYUFWspfkeX3dBKA) with your priorities.
+Please view the project topics spreadsheet (link will be sent via email)
+and then fill out the [registration form](https://forms.gle/irKzLY23vzyLXMUj8) with your priorities.
 
 
 ## Project-related office hours
 
-Initial office hours will be given by Chaim on Monday 26/01, 10:00 at the VISTA
-lab, Taub 120.
-You can use these hours to consult regarding project selection.
+Initial office hours will be given by Chaim during the next Zoom meetings.
 
 We will publish additional office hours in the coming weeks.
 
@@ -95,23 +95,30 @@ impact on the grade.
    preprocessing/augmentation approaches, loss formulations, training methods
    and hyperparameter values.
 
-   Note: You can use existing code, e.g. in your implementation but specify what
-   you used and which parts you implemented yourself.
+   Note: You can use pre-existing code in your implementation, but specify what
+   you used and which parts you implemented yourself. The experiments
+   themselves should be unique to your project and implemented by you.
 
-4. Results (20%). Present all results in an orderly table and include graphs or
-   figures as you see fit.
+4. Results and discussion (20%).
+   Present all results in an orderly table and include graphs or figures as you see fit.
    Discuss, analyze and explain your results.
    Compare to previous works and other approaches for your task.
 
+Your work will be evaluated based solely on this report (although your results
+should also be reproducible, see below). It will not be evaluated based on the
+code you write, how much server time you used, how many experiments you
+performed, etc. Therefore, make sure to structure your time accordingly so that
+you properly address each of the required sections in the report. This will
+maximize both the chance of a good project and of a good grade.
 
 ## Submission
 
 Create a zip file titled `proj-id1_id2.zip` (replace `id1`/`id2` with your
 IDs) and email it to Chaim and Aviv.
 
-The zip file should include:
+The zip file **must** include:
 1. A single PDF document, `report.pdf`, containing your project report.
-   It **must** be structured according to the sections listed above.
+   It must be structured **exactly** according to the sections listed above.
 2. A folder `src/` containing all your code.
 3. A `README` file (plain text/markdown) explaining:
     1. The structure of the code in the `src/` folder: What is implemented in
@@ -120,3 +127,11 @@ The zip file should include:
        the data, how to run all the data processing steps, how to run training
        and evaluation.
 
+The zip file **must not** include:
+- Training or test data
+- Training checkpoints
+- Model parameters
+- Any other unnecessary files
+
+
+Enjoy and good luck!
