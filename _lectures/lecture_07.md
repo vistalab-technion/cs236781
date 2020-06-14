@@ -11,8 +11,15 @@ equation, q-learning, policy learning, actor-critic learning, AutoML.
 
 ## Slides
 
+- Main Lecture
+
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21216&amp;authkey=AAz9aK1XwP0em2w&amp;em=2&amp;wdAr=1.6" %}
+
+- Supplementary Slides
+
+{% include ppt_embed.html
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21296&amp;authkey=AO69olTyORaGBjI&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
 
 ## Videos
