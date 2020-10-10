@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/" rel="alternate" type="text/html" /><updated>2020-10-10T12:15:15+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/</id><title type="html">CS236781: Deep Learning</title><subtitle>Course website</subtitle><author><name>{&quot;name&quot;=&gt;&quot;&quot;, &quot;avatar&quot;=&gt;&quot;&quot;, &quot;bio&quot;=&gt;&quot;&quot;, &quot;location&quot;=&gt;&quot;&quot;, &quot;email&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Final projects</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/12/final-projects/" rel="alternate" type="text/html" title="Final projects" /><published>2020-06-12T00:00:00+03:00</published><updated>2020-06-12T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/12/final-projects</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/12/final-projects/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;Instructions regarding the final project and registration are now posted in the
+assignments section.
+Project registration is on a first-come-first-served basis, so you
+should not delay registration.&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Registration now open.</summary></entry><entry><title type="html">Final homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/10/hw4/" rel="alternate" type="text/html" title="Final homework assignment" /><published>2020-06-10T00:00:00+03:00</published><updated>2020-06-10T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/10/hw4</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/10/hw4/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;The final homework assignment has been &lt;a href=&quot;cs236781/semesters/sp20/assignments/hw4&quot;&gt;published&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before starting, please read and follow the Collaboration Policy on the &lt;a href=&quot;cs236781/semesters/sp20/info/&quot;&gt;info
+page&lt;/a&gt; and the read the instructions for using the &lt;a href=&quot;cs236781/semesters/sp20/assignments/hpc-servers&quot;&gt;course servers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good luck and enjoy,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">HW4 has been published.</summary></entry><entry><title type="html">HW3 Update</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/04/hw3-postponed/" rel="alternate" type="text/html" title="HW3 Update" /><published>2020-06-04T00:00:00+03:00</published><updated>2020-06-04T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/04/hw3-postponed</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/06/04/hw3-postponed/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;The deadline third homework assignment has been &lt;a href=&quot;cs236781/semesters/sp20/assignments/hw3&quot;&gt;postponed&lt;/a&gt; to June 11th.&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Deadline postponed.</summary></entry><entry><title type="html">Schedule updates</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/20/Schedule-updates/" rel="alternate" type="text/html" title="Schedule updates" /><published>2020-05-20T00:00:00+03:00</published><updated>2020-05-20T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/20/Schedule-updates</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/20/Schedule-updates/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tomorrow’s Zoom session with Chaim will be about auto encoders and
+unsupervised learning and the Zoom session with Aviv will be about attention
+mechanisms (notice this is tutorial 7, see syllabus).&lt;/li&gt;
+  &lt;li&gt;This Sunday, May 24th, the Technion is on a Thursday-schedule so we will also
+have Zoom sessions. Chaim will continue with unsupervised learning and Aviv
+will talk about transfer learning (tutorial 6).&lt;/li&gt;
+  &lt;li&gt;The last lecture of the course, on June 25th, will be given by Prof. Alex
+Bronstein, who will talk about Stein’s phenomenon.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Regarding the next few weeks.</summary></entry><entry><title type="html">Third homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/09/hw3/" rel="alternate" type="text/html" title="Third homework assignment" /><published>2020-05-09T00:00:00+03:00</published><updated>2020-05-09T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/09/hw3</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/05/09/hw3/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;The third homework assignment has been &lt;a href=&quot;cs236781/semesters/sp20/assignments/hw3&quot;&gt;published&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before starting, please read and follow the Collaboration Policy on the &lt;a href=&quot;cs236781/semesters/sp20/info/&quot;&gt;info
+page&lt;/a&gt; and the read the instructions for using the &lt;a href=&quot;cs236781/semesters/sp20/assignments/hpc-servers&quot;&gt;course servers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good luck and enjoy,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">HW3 has been published.</summary></entry><entry><title type="html">Class on Monday</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/23/class-on-monday/" rel="alternate" type="text/html" title="Class on Monday" /><published>2020-04-23T00:00:00+03:00</published><updated>2020-04-23T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/23/class-on-monday</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/23/class-on-monday/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;This Monday, April 27th, is a Thursday-schedule day in the Technion.
+We will therefore have a class. Chaim will talk about advanced
+training techniques over the scheduled Zoom meeting at 11:30.
+Note that you do not need to watch video materials before this meeting.
+There will be no tutorial Q&amp;amp;A at 10:30.&lt;/p&gt;
+
+&lt;p&gt;On Thursday, April 30th, there will be no class and on May 7th we’ll resume with
+the usual schedule.
+The syllabus on the course &lt;a href=&quot;cs236781/semesters/sp20/info/&quot;&gt;info
+page&lt;/a&gt; has been updated.&lt;/p&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Note the schedule change.</summary></entry><entry><title type="html">Second homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/16/hw2/" rel="alternate" type="text/html" title="Second homework assignment" /><published>2020-04-16T00:00:00+03:00</published><updated>2020-04-16T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/16/hw2</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/16/hw2/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;The second homework assignment has been &lt;a href=&quot;cs236781/semesters/sp20/assignments/hw2&quot;&gt;published&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before starting, please read and follow the Collaboration Policy on the &lt;a href=&quot;cs236781/semesters/sp20/info/&quot;&gt;info
+page&lt;/a&gt; and the read the instructions for using the &lt;a href=&quot;cs236781/semesters/sp20/assignments/hpc-servers&quot;&gt;course servers&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Good luck and enjoy,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">HW2 has been published.</summary></entry><entry><title type="html">Zoom meeting updates</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/zoom-updates/" rel="alternate" type="text/html" title="Zoom meeting updates" /><published>2020-04-01T00:00:00+03:00</published><updated>2020-04-01T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/zoom-updates</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/zoom-updates/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;Starting tomorrow (02/04/2020) we will &lt;strong&gt;switch&lt;/strong&gt; the times for the Lecture and
+Tutorial Zoom session, and they will be given as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thursdays 10:30-11:30.&lt;br /&gt;
+&lt;strong&gt;Aviv&lt;/strong&gt; will host a Q&amp;amp;A session regarding the tutorial material and
+homework assignments.&lt;br /&gt;
+Zoom link: &lt;a href=&quot;https://technion.zoom.us/j/565561639&quot;&gt;https://technion.zoom.us/j/565561639&lt;/a&gt;&lt;br /&gt;
+(same link as before).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thursdays at 11:30-13:30.&lt;br /&gt;
+&lt;strong&gt;Chaim&lt;/strong&gt; will provide supplementary material and host a Q&amp;amp;A session
+regarding the lectures.&lt;br /&gt;
+Zoom link: &lt;a href=&quot;https://technion.zoom.us/j/933983915&quot;&gt;https://technion.zoom.us/j/933983915&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;NOTE NEW LINK&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These meetings will only take place on dates where there is supposed
+to be a class according to the &lt;a href=&quot;https://www.admin.technion.ac.il/dpcalendar/&quot;&gt;Technion calendar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;See you,&lt;br /&gt;
+Course Staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">New times and links.</summary></entry><entry><title type="html">Registration to course servers</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/registration-for-course-servers/" rel="alternate" type="text/html" title="Registration to course servers" /><published>2020-04-01T00:00:00+03:00</published><updated>2020-04-01T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/registration-for-course-servers</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/registration-for-course-servers/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;In order to use the course servers for the upcoming homework assignments,
+we request that you register.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Deadline for registration is 09/04/2020&lt;/strong&gt;. After this date the list of
+registered students who requested access will be passed to the CS faculty IT
+team and granted access. Students who do not register on time forfeit access for
+the entire semester.&lt;/p&gt;
+
+&lt;p&gt;Please register using &lt;a href=&quot;https://forms.gle/nPz5MThSiBzW7XHr6&quot;&gt;this link&lt;/a&gt; or using the embedded form below.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/forms/d/e/1FAIpQLScpg8RyEwWXElaY1-lZjm1fHjUVV7GFTUEk9sHvHqR71ZqTqg/viewform?embedded=true&quot; width=&quot;640&quot; height=&quot;1047&quot; frameborder=&quot;0&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot;&gt;Loading…&lt;/iframe&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now open.</summary></entry><entry><title type="html">Course Piazza</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/course-piazza/" rel="alternate" type="text/html" title="Course Piazza" /><published>2020-04-01T00:00:00+03:00</published><updated>2020-04-01T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/course-piazza</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp20/2020/04/01/course-piazza/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;We have opened a Piazza forum for your benefit.
+This will serve as the &lt;strong&gt;official&lt;/strong&gt; discussion forum for our course.&lt;/p&gt;
+
+&lt;p&gt;You can sign up and access Piazza
+&lt;a href=&quot;https://piazza.com/technion.ac.il/spring2020/236781/home&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please post all questions regarding course material and homework on the Piazza
+forum and refrain from using email for this purpose.
+This way all students can benefit collectively from the answers we post.&lt;/p&gt;
+
+&lt;p&gt;Notes about posting on Piazza:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Select the proper &lt;strong&gt;post type&lt;/strong&gt; (at the top of the “New Post” page).
+Select “Question” if you need an answer.&lt;/li&gt;
+  &lt;li&gt;Select the appropriate &lt;strong&gt;folder&lt;/strong&gt; for your question, e.g. “hw1”, “lectures”,
+etc.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks and enjoy,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now open for questions.</summary></entry></feed>

@@ -1,0 +1,838 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Using the course HPC servers | CS236781: Deep Learning</title>
+<meta name="description" content="How to connect to and run jobs on the course servers.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS236781: Deep Learning">
+<meta property="og:title" content="Using the course HPC servers">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/sp19/assignments/hpc-servers">
+
+
+  <meta property="og:description" content="How to connect to and run jobs on the course servers.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-03-17T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/sp19/assignments/hpc-servers">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "VISTA Lab",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/sp19",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/cs236781/semesters/sp19/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/cs236781/semesters/sp19/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/cs236781/semesters/sp19/">CS236781: Deep Learning</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/info/" >Info</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/lectures/" >Lectures</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/tutorials/" >Tutorials</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/sp19/assignments/" >Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Using the course HPC servers">
+    <meta itemprop="description" content="How to connect to and run jobs on the course servers.">
+    <meta itemprop="datePublished" content="March 17, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Using the course HPC servers
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  55 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#logging-in">Logging in</a>
+    <ul>
+      <li><a href="#connecting-from-home">Connecting from home</a></li>
+    </ul>
+  </li>
+  <li><a href="#usage">Usage</a>
+    <ul>
+      <li><a href="#general">General</a></li>
+      <li><a href="#job-queues">Job queues</a></li>
+      <li><a href="#priority-and-preemption">Priority and preemption</a></li>
+      <li><a href="#running-interactive-jobs">Running interactive jobs</a>
+        <ul>
+          <li><a href="#example">Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#running-batch-jobs">Running batch jobs</a>
+        <ul>
+          <li><a href="#example-1">Example</a></li>
+          <li><a href="#viewing-status">Viewing status</a></li>
+          <li><a href="#viewing-output">Viewing output</a></li>
+          <li><a href="#canceling">Canceling</a></li>
+          <li><a href="#course-helper-script">Course helper script</a></li>
+        </ul>
+      </li>
+      <li><a href="#running-jupyter">Running jupyter</a>
+        <ul>
+          <li><a href="#accessing-jupyter-from-home">Accessing jupyter from home</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#tips">Tips</a>
+    <ul>
+      <li><a href="#for-windows-users">For windows users</a></li>
+      <li><a href="#pubic-key-based-authentication">Pubic-key based authentication</a></li>
+      <li><a href="#git-based-workflow">Git-based workflow</a></li>
+      <li><a href="#transferring-files-to-and-from-the-server">Transferring files to and from the server</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>Those of you who are officially enrolled to the course will have access to
+dedicated high-performance computing servers (<code class="highlighter-rouge">rishon1-4</code>) provisioned by
+Computer Science faculty IT department. Running on the faculty servers will give
+you access to more computing power and also fast GPUs (which will greatly
+accelerate your deep-learning tasks). This should significantly speed up your
+workflow when performing the course homework assignments and when implementing
+your final project.</p>
+
+<p>These servers are mainly suited for running batch jobs which you can submit to
+dedicated job queues and be notified upon completion.  We therefore recommend
+you install and work on the assignments locally (on your own machine), and only
+use the faculty servers when you need to run a long model training task (we will
+specify in the assignment).</p>
+
+<h1 id="logging-in">Logging in</h1>
+
+<p>Logging in is performed with your Technion Single Sign-On (SSO) credentials.
+Usually this means the username and password of your <code class="highlighter-rouge">@campus</code> or <code class="highlighter-rouge">@technion</code>
+email address.</p>
+
+<p>If your username is e.g. <code class="highlighter-rouge">user</code>, login like so</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@rishon.technion.ac.il
+</code></pre></div></div>
+
+<p>or, directly using the server’s IP:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@132.68.39.36
+</code></pre></div></div>
+
+<p>Notes:</p>
+<ol>
+  <li>The <code class="highlighter-rouge">rishon</code> server is only directly accessible from <strong>within the Technion networks</strong>.</li>
+  <li>In some internal Technion networks the DNS lookup seems to not find
+the <code class="highlighter-rouge">rishon</code> hostname. If you get a <code class="highlighter-rouge">could not resolve hostname</code> error, use
+the second option (directly with IP).</li>
+</ol>
+
+<h2 id="connecting-from-home">Connecting from home</h2>
+
+<p>If you need to connect from home, first SSH into a Technion server that’s
+accessible from the outside (e.g. CSM, CSL) and from there you can SSH into
+<code class="highlighter-rouge">rishon</code>.</p>
+
+<p>You can do this in one command like so:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-J</span> user@csm.cs.technion.ac.il user@rishon.cs.technion.ac.il
+</code></pre></div></div>
+
+<p>This example will connect through the CSM server in the CS faculty. You should
+be able to use other Technion servers that you have SSH access to.</p>
+
+<p>This method (<code class="highlighter-rouge">-J</code>) has the useful advantage of forwarding the SSH public key
+from your local machine (if available) to the target machine though the
+intermediate machine.</p>
+
+<p>Notes:</p>
+<ol>
+  <li>Unfortunately the <code class="highlighter-rouge">t2</code>/<code class="highlighter-rouge">lux</code> student server cannot be used to access the
+Technion network from outside due to CIS
+<a href="https://cis.technion.ac.il/news/t2-server-upgraded-to-lux/">policy</a>.</li>
+  <li>If you use CSM, note that the credentials for the CSM server and <code class="highlighter-rouge">rishon</code> are
+not the same: CSM uses the CS-faculty credentials while the <code class="highlighter-rouge">rishon</code> server
+uses the Technion SSO credentials.</li>
+</ol>
+
+<h1 id="usage">Usage</h1>
+
+<h2 id="general">General</h2>
+
+<p>The faculty HPC server cluster is composed of a gateway server (<code class="highlighter-rouge">rishon</code>) into which
+you log in with SSH, and four compute nodes <code class="highlighter-rouge">rishon1-4</code> which run the actual
+computations. The gateway server is relatively weak and has no attached GPUs, so
+it should not be used for running computations.</p>
+
+<p>Your home directory on the gateway server (e.g. <code class="highlighter-rouge">/home/user</code>) is automatically
+mounted on all the computation nodes. This ensures that any programs you
+install locally under your home folder (for example a <code class="highlighter-rouge">conda</code> environment) will
+be available for jobs running on these nodes. In fact, the <strong>first thing</strong> you
+should do after connecting for the first time is to install <code class="highlighter-rouge">conda</code> and the
+course <code class="highlighter-rouge">conda</code> environment for your user account.</p>
+
+<p>The computation tasks are manged by a job scheduling system called
+<a href="https://slurm.schedmd.com/"><code class="highlighter-rouge">slurm</code></a>.  The system manages the computation nodes
+and resources and allocates them to jobs submitted by users into a queue (AKA
+partition).  If you wish, you can read the <code class="highlighter-rouge">slurm</code> <a href="https://slurm.schedmd.com/quickstart.html">quick start
+guide</a> to get a better understanding
+of the system and the available commands.</p>
+
+<p>The most useful <code class="highlighter-rouge">slurm</code> commands for our needs are,</p>
+<ul>
+  <li><a href="https://slurm.schedmd.com/sbatch.html"><code class="highlighter-rouge">sbatch</code></a></li>
+  <li><a href="https://slurm.schedmd.com/srun.html"><code class="highlighter-rouge">srun</code></a></li>
+  <li><a href="https://slurm.schedmd.com/squeue.html"><code class="highlighter-rouge">squeue</code></a></li>
+  <li><a href="https://slurm.schedmd.com/scancel.html"><code class="highlighter-rouge">scancel</code></a></li>
+</ul>
+
+<h2 id="job-queues">Job queues</h2>
+
+<p>We have a dedicated job queue (“partition”) for our course, <code class="highlighter-rouge">236781</code>. Jobs
+submitted to this queue will be served on one of the <code class="highlighter-rouge">rishon3</code> or <code class="highlighter-rouge">rishon4</code>
+nodes.</p>
+
+<p>You can view the jobs currently in the course queue by running <code class="highlighter-rouge">squeue -p
+236781</code> or an all queues with <code class="highlighter-rouge">squeue</code>.</p>
+
+<p>Each job defines which computational resources it requires (nodes, CPU cores, number of
+GPUs). Multiple jobs can run simultaneously on a compute node as long as
+their computational requirements can be satisfied.</p>
+
+<p>For example, if job1 requires 2 CPU cores and 1 GPU and job2 requires 4 CPU
+cores and 2 GPUs then they can run together on the same compute node if that node has at
+least 6 CPU cores and 3 GPUs.</p>
+
+<h2 id="priority-and-preemption">Priority and preemption</h2>
+
+<p>Students from our course have special priority for the compute nodes serving the
+<code class="highlighter-rouge">236781</code> queue.  Other users in the system can also run jobs on these nodes, but
+if resources become limited a job submitted by a student in this course will
+<strong>preempt</strong> (in this context, stop and re-queue) a job submitted by an external user that’s
+currently running on one of these nodes.</p>
+
+<p>Likewise if you submit your jobs without specifying a queue, they may end up
+running on a compute node that gives priority to other users. This might be OK
+if you’re running an interactive job or a jupyter server (see sections below),
+but it’s not a good idea for long-running batch jobs. The reason is that the
+system has the following <strong>major limitation</strong>: it can’t guarantee GPU state when your
+process starts running again after being preempted. In other words, if you get
+preempted while training some model on a GPU, the process may resume later on
+some other node with an inconsistent GPU state. Not fun. To prevent this, <strong>always
+use the course queue for running model training tasks</strong>.</p>
+
+<p>Specifying which queue to submit a job to is performed with the <code class="highlighter-rouge">-p</code> flag for
+the <code class="highlighter-rouge">srun</code>/<code class="highlighter-rouge">sbatch</code> commands. For example, use <code class="highlighter-rouge">-p 236781</code> to make sure your job
+is submitted to the course queue. If you don’t specify it, it will be submitted
+to the <code class="highlighter-rouge">all</code> queue which is served by all compute nodes, not just those that
+give priority to course students.</p>
+
+<p>The advantage of not specifying a specific queue is that your job may start
+sooner since it can run on any node. For interactive jobs, this may allow you to
+start immediately.</p>
+
+<h2 id="running-interactive-jobs">Running interactive jobs</h2>
+
+<p>An interactive job allows you to view it’s output and interact with it in
+real time, as if it were running on the machine you’re logged
+in to.</p>
+
+<p>Submitting an interactive job is performed with the <code class="highlighter-rouge">srun</code> command. Required resources
+can be specified and if they’re available the job starts running immediately.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Let’s see how to run an <code class="highlighter-rouge">ipython</code> console session as an interactive job with an
+allocated GPU.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>cs236781-hw<span class="o">)</span> avivr@rishon:~/cs236781-hw1<span class="nv">$ </span>srun <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">--pty</span> ipython
+cpu-bind<span class="o">=</span>MASK - rishon1, task  0  0 <span class="o">[</span>15995]: mask 0x100000001 <span class="nb">set
+</span>cpu-bind<span class="o">=</span>MASK - rishon1, task  0  0 <span class="o">[</span>15995]: mask 0x100000001 <span class="nb">set
+</span>Python 3.7.0 <span class="o">(</span>default, Oct  9 2018, 10:31:47<span class="o">)</span>
+Type <span class="s1">'copyright'</span>, <span class="s1">'credits'</span> or <span class="s1">'license'</span> <span class="k">for </span>more information
+IPython 7.1.1 <span class="nt">--</span> An enhanced Interactive Python. Type <span class="s1">'?'</span> <span class="k">for </span>help.
+
+In <span class="o">[</span>1]: import torch
+
+In <span class="o">[</span>2]: torch.cuda.is_available<span class="o">()</span>
+Out[2]: True
+
+In <span class="o">[</span>3]: t <span class="o">=</span> torch.tensor<span class="o">([</span>1,2,3], <span class="nv">dtype</span><span class="o">=</span>torch.float<span class="o">)</span>.cuda<span class="o">()</span>
+
+In <span class="o">[</span>4]: t.dot<span class="o">(</span>t<span class="o">)</span>
+Out[4]: tensor<span class="o">(</span>14., <span class="nv">device</span><span class="o">=</span><span class="s1">'cuda:0'</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Here the <code class="highlighter-rouge">-c 2</code> and <code class="highlighter-rouge">--gres=gpu:1</code> options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the <code class="highlighter-rouge">--pty</code> option is required for the session
+to be interactive and the last argument <code class="highlighter-rouge">ipython</code> is the command to run. You can
+specify any command and also add command arguments after it. In this example we
+didn’t specify the queue to submit to (<code class="highlighter-rouge">-p</code>) which may or may not be right for
+your use case. Indeed, you can see that the example ran on <code class="highlighter-rouge">rishon1</code>, which is not one
+of the dedicated course nodes.</p>
+
+<p>Notes:</p>
+<ol>
+  <li>You should use interactive jobs for debugging or running short one-off
+tasks.  If you need to run something long, submit a batch job instead.</li>
+  <li>When you submit an interactive job, your shell is blocked (by <code class="highlighter-rouge">srun</code>) until
+it completes. If you terminate <code class="highlighter-rouge">srun</code>, it will cancel your job.
+Crucially, this means that if you log out of the machine while running an
+interactive job, the job will terminate (as with regular processes you
+invoke from the shell). You can get around this by either,
+    <ul>
+      <li>Using terminal managers e.g. <code class="highlighter-rouge">screen</code> and <code class="highlighter-rouge">tmux</code>;</li>
+      <li>Running with <code class="highlighter-rouge">nohup</code>;</li>
+      <li>Running a batch job instead (preferred). See below.</li>
+    </ul>
+
+    <p>The reason the last method is preferred is that interactive jobs run with
+<code class="highlighter-rouge">srun</code> may be terminated after running for a few hours due to policy.</p>
+  </li>
+  <li>You should activate your <code class="highlighter-rouge">conda env</code> before running an interactive job if
+you need to run python.
+The shell environment variables will be passed to the process that will run
+your job on the compute node, so therefore the <code class="highlighter-rouge">conda env</code> will effectively
+also be active there.</li>
+  <li>You can specify <code class="highlighter-rouge">bash</code> as the command to run in an interactive job to get a
+shell on one of the compute nodes.</li>
+</ol>
+
+<h2 id="running-batch-jobs">Running batch jobs</h2>
+
+<p>A batch job is submitted to the queue with the <code class="highlighter-rouge">sbatch</code> command.
+It runs non-interactively when resources are available and sends it’s output to
+files that you can specify. Additionally, it can notify you by email when the
+job starts and finishes.</p>
+
+<p>Running jobs with <code class="highlighter-rouge">sbatch</code> is useful for long-running processes such as training
+models. While the job is running, it’s not connected to any specific shell
+session and thus it keeps running if you log out of the machine. To view output
+from a batch job, you’ll need to read it from the file it writes to.</p>
+
+<p>To use <code class="highlighter-rouge">sbatch</code>, you need to create a script for it to run. It can be any script
+with a valid shebang line (<code class="highlighter-rouge">#!</code>) at the top, e.g. a bash script or a python
+script.</p>
+
+<h3 id="example-1">Example</h3>
+
+<p>Lets create a file <code class="highlighter-rouge">~/myscript.sh</code> on the server with the following contents:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Setup env</span>
+<span class="nb">source</span> <span class="nv">$HOME</span>/miniconda3/etc/profile.d/conda.sh
+conda activate cs236781-hw
+<span class="nb">echo</span> <span class="s2">"hello from </span><span class="k">$(</span>python <span class="nt">--version</span><span class="k">)</span><span class="s2"> in </span><span class="k">$(</span>which python<span class="k">)</span><span class="s2">"</span>
+
+<span class="c"># Run some arbitrary python</span>
+python <span class="nt">-c</span> <span class="s1">'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'</span>
+</code></pre></div></div>
+
+<p>Then we can run the script as a <code class="highlighter-rouge">slurm</code> batch job as follows:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>avivr@rishon:~<span class="nv">$ </span>sbatch <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">-p</span> 236781 <span class="nt">-o</span> slurm-test.out <span class="nt">-J</span> my_job  myscript.sh
+Submitted batch job 114425
+
+avivr@rishon:~<span class="nv">$ </span>squeue <span class="nt">-p</span> 236781
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST<span class="o">(</span>REASON<span class="o">)</span>
+            114425    236781   my_job    avivr  R       0:01      1 rishon3
+
+avivr@rishon:~<span class="nv">$ </span>tail <span class="nt">-f</span> slurm-test.out
+cpu-bind<span class="o">=</span>MASK - rishon3, task  0  0 <span class="o">[</span>20442]: mask 0x100000001 <span class="nb">set
+</span>cpu-bind<span class="o">=</span>MASK - rishon3, task  0  0 <span class="o">[</span>20442]: mask 0x100000001 <span class="nb">set
+</span>hello from Python 3.7.0 <span class="k">in</span> /home/avivr/miniconda3/envs/cs236781-hw/bin/python
+i can haz gpu? True
+</code></pre></div></div>
+
+<p>Here the <code class="highlighter-rouge">-c 2</code> and <code class="highlighter-rouge">--gres=gpu:1</code> options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the <code class="highlighter-rouge">-p 236781</code> option specifies the name of the
+job queue (partition) to use, the <code class="highlighter-rouge">-o slurm-test.out</code> option specifies where
+to write the output from the process and <code class="highlighter-rouge">-J my_job</code> is an arbitrary name we can
+assign to the job.</p>
+
+<h3 id="viewing-status">Viewing status</h3>
+
+<p>After submitting a batch job, you can use <code class="highlighter-rouge">squeue -p 236781</code> to view it’s
+status in the queue, as shown in the example above. You can see the job name and
+it’s id there.</p>
+
+<h3 id="viewing-output">Viewing output</h3>
+
+<p>Each job you submit causes a text file you be created in your current directory,
+named <code class="highlighter-rouge">slurm-&lt;jobid&gt;.out</code>.</p>
+
+<p>To view the output from a job in real time, you can use <code class="highlighter-rouge">tail -f</code> or <code class="highlighter-rouge">less -r
++F</code> on the output file for the relevant job. <code class="highlighter-rouge">less</code> allows you to also scroll
+back.</p>
+
+<h3 id="canceling">Canceling</h3>
+
+<p>To cancel a batch job you’ve submitted (whether it’s running or waiting in the
+queue), run <code class="highlighter-rouge">scancel &lt;job-id&gt;</code> where <code class="highlighter-rouge">&lt;job-id&gt;</code> is the id you received when
+starting the batch job.</p>
+
+<h3 id="course-helper-script">Course helper script</h3>
+
+<p>To slightly simplify your workflow on the server, we provide you with a simple
+script to run python code from the course <code class="highlighter-rouge">conda env</code> as a <code class="highlighter-rouge">slurm</code> batch job.</p>
+
+<p>The homework assignment repos contain a script called <code class="highlighter-rouge">py-sbatch.sh</code>. You can
+use this script as if it were the <code class="highlighter-rouge">python</code> command, and it will active the
+<code class="highlighter-rouge">conda env</code> for you and execute your provided python code with <code class="highlighter-rouge">sbatch</code>.</p>
+
+<p>For example, let’s say we want to run all our notebooks with the <code class="highlighter-rouge">main.py</code>
+script. Instead of</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate cs236781-hw
+python main.py run-nb <span class="k">*</span>.ipynb
+</code></pre></div></div>
+
+<p>which will run on the gateway server, do this</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./py-sbatch.sh main.py run-nb <span class="k">*</span>.ipynb
+</code></pre></div></div>
+
+<p>This will take care of activating the <code class="highlighter-rouge">conda env</code> and run the script on the more
+powerful compute nodes as a batch job. The script has some declared variables
+which you can edit to configure the <code class="highlighter-rouge">sbatch</code> parameters such as computational
+resources, notification email address and others.</p>
+
+<p>Note that for the above example it may have been more straightforward to use an
+interactive job (<code class="highlighter-rouge">srun</code>). However this script may be useful when you need to
+create a batch job running a python script, for example to run long training
+tasks.</p>
+
+<p>In any case, this script is completely optional since you can always use
+<code class="highlighter-rouge">sbatch</code> directly as shown in the previous section.</p>
+
+<h2 id="running-jupyter">Running <code class="highlighter-rouge">jupyter</code></h2>
+
+<p>You can run <code class="highlighter-rouge">jupyter</code> on a compute node by creating a script that exposes the IP
+of the compute node as the jupyer server URL.</p>
+
+<p>For example, if you create a script <code class="highlighter-rouge">jupyter-lab.sh</code> like so</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">unset </span>XDG_RUNTIME_DIR
+jupyter lab <span class="nt">--no-browser</span> <span class="nt">--ip</span><span class="o">=</span><span class="k">$(</span>hostname <span class="nt">-I</span><span class="k">)</span> <span class="nt">--port-retries</span><span class="o">=</span>100
+</code></pre></div></div>
+
+<p>then you can start the jupyter lab server with <code class="highlighter-rouge">srun</code>, e.g.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>srun <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">--pty</span> jupyter-lab.sh
+</code></pre></div></div>
+
+<p>The connection URL in the console will show the IP of the compute node that the
+server is actually running on.</p>
+
+<p>We’ll provide you with a similar script in the assignment repos.</p>
+
+<p>Notes:</p>
+<ol>
+  <li>As mentioned previously, interactive jobs are not meant to be long-running.
+Please be considerate of other students and use the computing resources only
+as needed.</li>
+  <li>In the above example we didn’t specify a specific queue. Read the
+above section about preemption to understand the implications of this.</li>
+</ol>
+
+<h3 id="accessing-jupyter-from-home">Accessing jupyter from home</h3>
+
+<p>Although the <code class="highlighter-rouge">rishon</code> servers are only accessible within the Technion networks,
+it’s possible to connect from home to a jupyter instance running on them by using a
+combination of SSH port forwarding and using an intermediate server.</p>
+
+<ol>
+  <li>Follow the instructions above to start jupyter on one of the compute nodes.</li>
+  <li>
+    <p>Observe the IP and port of the jupyter server specified on the command line.
+Let’s assume you got this line after jupyer started:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">[</span>I 21:39:07.830 LabApp] http://132.68.39.38:8888/?token<span class="o">=</span>abcdef0123...
+</code></pre></div>    </div>
+  </li>
+  <li>Additionally, let’s assume you can you have SSH access from home to another
+Technion server, such as CSM as in the previous examples.</li>
+  <li>
+    <p>Then you can run the following from your machine (from a different terminal):</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh <span class="nt">-L</span> 9999:132.68.39.38:8888 <span class="nt">-J</span> user@csm.cs.technion.ac.il user@rishon
+</code></pre></div>    </div>
+
+    <p>This creates a local port forwarding from port <code class="highlighter-rouge">9999</code> on your <code class="highlighter-rouge">localhost</code> to
+<code class="highlighter-rouge">132.68.39.38:8888</code> from the CSM machine through an SSH tunnel, and also
+gives you a new SSH session on <code class="highlighter-rouge">rison</code> which you can work from.</p>
+  </li>
+  <li>To connect to the jupyter lab server from home, you can now point your
+local browser to <code class="highlighter-rouge">localhost:9999</code>.</li>
+</ol>
+
+<h1 id="tips">Tips</h1>
+
+<h2 id="for-windows-users">For windows users</h2>
+
+<p>Many people recommend <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> as
+a good graphical ssh client for windows.
+Here’s a useful <a href="cs236781/semesters/sp19/assets/mobaXterm_guide.docx">guide</a> for using it to
+connect to the server.</p>
+
+<h2 id="pubic-key-based-authentication">Pubic-key based authentication</h2>
+
+<p>You can use a public-key based authentication to prevent the need for typing
+your password when connecting to remote servers over SSH.</p>
+
+<ol>
+  <li>Generate an SSH key pair using the <code class="highlighter-rouge">ssh-keygen</code> tool. More detailed instructions for all platforms can be found
+<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">here</a>.</li>
+  <li>Copy the <strong>public</strong> key. By default it’s in <code class="highlighter-rouge">~/.ssh/id_rsa.pub</code>. Make sure you copy it exactly
+without any extra spaces or newlines.</li>
+  <li>Connect to your user on the machine and paste the public key contents into a new line in <code class="highlighter-rouge">~/.ssh/authorized_keys</code>.</li>
+</ol>
+
+<p>Notes:</p>
+
+<ol>
+  <li>On macOS and linux, there’s a utility you can use to automate steps 2-3.
+After generating the key pair, copy the public key to the server like so:
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh-copy-id user@rishon.cs.technion.ac.il
+</code></pre></div>    </div>
+  </li>
+  <li>If you use an intermediate server to connect from home, make sure to first
+also copy your public key to that server.</li>
+</ol>
+
+<p>After generating your key pair, you should also <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">add it to your github
+account</a>.
+After that, you can use the SSH remote-URLs (instead of HTTPS) to clone repos
+and prevent the need to specify your username and password when
+<code class="highlighter-rouge">push</code>ing, <code class="highlighter-rouge">pull</code>ing and <code class="highlighter-rouge">fetch</code>ing.</p>
+
+<h2 id="git-based-workflow">Git-based workflow</h2>
+
+<p>A very effective way to synchronize your local work with the server (and also with your
+assignment partner) is with <code class="highlighter-rouge">git</code>. Note that <code class="highlighter-rouge">git</code> is already installed on the
+server.</p>
+
+<p>You can <a href="https://help.github.com/articles/fork-a-repo/">fork</a> the assignment repo.
+Then you can clone your fork both onto your local machine and to the server. This
+will allow you to work on either machine while synching changes both with
+yourself (on each machine) and with your partner.</p>
+
+<p>If you decide to work this way you should also add the original assignment repo
+as a new <code class="highlighter-rouge">git remote</code> so that you can pull updates from us.</p>
+
+<h2 id="transferring-files-to-and-from-the-server">Transferring files to and from the server</h2>
+
+<p>The <code class="highlighter-rouge">rsync</code> tool can be your friend. For example, to send files or a directory
+you can do</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -Cavz path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+</code></pre></div></div>
+
+<p>To send files from home via an intermediate server (in this example CSM):</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+</code></pre></div></div>
+
+<p>To download files from the server to your computer, simple change the order of
+the last two arguments in the above examples.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-03-17T00:00:00+02:00">March 17, 2019</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/cs236781/semesters/sp19/assignments/getting-started" class="pagination--pager" title="Getting started with the course assignments
+">Previous</a>
+    
+    
+      <a href="/cs236781/semesters/sp19/assignments/final-project" class="pagination--pager" title="Final Project
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        
+<!-- Technion and VISTA logos --><script>
+
+var logo_element = '\
+<div class="technion-logo"> \
+    <a href="https://cs.technion.ac.il"> \
+        <img src="/cs236781/semesters/sp19/assets/images/cs_technion-logo.png" alt="Technion"> \
+    </a> \
+</div> \
+';
+
+document
+    .querySelector('.masthead__inner-wrap')
+    .insertAdjacentHTML('afterbegin', logo_element);
+
+var logo_element = '\
+<div class="vista-logo"> \
+    <a href="https://vista.cs.technion.ac.il" > \
+        <img src="/cs236781/semesters/sp19/assets/images/vista-logo-bw.png" alt="VISTA"> \
+    </a> \
+</div> \
+';
+
+var footerNodes = document.getElementsByTagName("FOOTER")
+var footerNode = footerNodes[footerNodes.length - 1];
+footerNode.insertAdjacentHTML('afterend', logo_element);
+
+</script>
+<!-- Mathjax support --><!-- see: http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/ -->
+<!-- also: http://docs.mathjax.org/en/latest/tex.html for defning mathjax macros -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noErrors: { disabled: true },
+      Macros: {
+        // Each def here is an array: [<macro>, <num_params>]
+        // Aviv's defs
+        bold: ["{\\bf #1}",1],
+        m: ["\\boldsymbol {#1}",1],             // matrix
+        mt: ["\\boldsymbol {#1}^\\top",1],      // transposed matrix
+        v: ["\\boldsymbol {#1}",1],             // vector
+        vt: ["\\boldsymbol {#1}^\\top",1],      // transposed vector
+        diag: ["\\mathop{\\mathrm{diag}}"],
+        trace: ["\\mathop{\\mathrm{tr}}"],
+        rank: ["\\mathop{\\mathrm{rank}}"],
+        set: ["\\mathbb {#1}",1],
+        rvar: ["\\mathrm{#1}",1],               // random variable
+        rvec: ["\\boldsymbol{\\mathrm{#1}}",1], // random vector
+
+        // Alex's defs
+        bm: ["{\\bf #1}",1],
+        bb: ["{\\bm{\\mathrm{#1}}}",1],
+        spn: ["\\mathrm{span}\\left\\{ {#1} \\right\\}",1],
+        vec: ["\\mathrm{vec}"],
+        dx:  ["\\bb{dx}"], dX:  ["\\bb{dX}"], dy:  ["\\bb{dy}"], du:  ["\\bb{du}"],
+        df:  ["\\bb{df}"], dg:  ["\\bb{dg}"],
+        dphi:  ["\\bb{d\\varphi}"],
+        Tr: ["\\top"],
+        RR: ["\\set{R}"],
+        mathpzc: ["\\rvar{#1}", 1],
+        mathpzcb: ["\\rvec{#1}", 1],
+        ind: ["\\unicode{x1D7D9}"]
+      }
+    },
+
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'] ],
+    processEscapes: true,
+  },
+
+  "HTML-CSS": {
+     fonts: ["TeX"]
+  },
+
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<!-- Copyright notice support on single pages -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://vista.cs.technion.ac.il"><i class="fas fa-fw fa-link" aria-hidden="true"></i> VISTA Lab</a></li>
+        
+      
+        
+          <li><a href="https://github.com/vistalab-technion"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/cs236781/semesters/sp19/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 VISTA Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/cs236781/semesters/sp19/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/sp19/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
