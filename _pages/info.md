@@ -1,7 +1,7 @@
 ---
 permalink: /info/
 title: Course Info
-classes: wide text-justify
+classes: text-justify
 ---
 
 Deep learning is a powerful and relatively-new branch of machine learning.
@@ -33,7 +33,7 @@ At the end of the course, the student will:
 
 ## Administration
 
-**Evaluation**: 40% Homework assignments, 60% final project.
+**Evaluation**: 100% Homework assignments.
 
 **Language**: The course will be taught in English.
 
@@ -61,7 +61,7 @@ regulations committee.
    However, you must implement all required code independently of other groups
    (only with your submission partner).
 1. Submitted work must only be your own. You must do your own thinking,
-   coding, debugging and write all answers yourself. We will run automatic
+   coding, debugging and write all answers yourself. We **will** run automatic
    plagiarism-detection software on your submissions to enforce this policy.
 3. You may not use any solutions from previous semesters' homeworks.
 4. You may not share your solutions with other students.
@@ -82,7 +82,8 @@ following material may be useful.
 
 ## Detailed Syllabus
 
-Due to the COVID-19 pandemic, this semester the course will be given using a remote-learning approach.
+Due to the COVID-19 pandemic, this semester the course will be given using a
+remote-learning approach.
 
 We provide lecture videos, notes, and slides to facilitate self-learning of the
 core topics.  The tutorials are based on detailed and self-contained Jupyter
@@ -90,31 +91,29 @@ notebooks, which guide you through a full implementation of one or more models
 and techniques for solving a specific task. They are meant to teach you the
 technical aspects of implementing deep learning systems.  The course also
 includes hands-on homework assignments where you will implement working
-real-world models and run them on GPUs in the course servers.  Finally, you will be
-required to perform a small research project instead of a final exam.
+real-world models and run them on GPUs in the course servers.
 
-Students are expected to watch and read course material, available from the
+In addition, we provide videos and written material, available from the
 course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
 }}/tutorials) pages.  Viewing and/or reading the lecture and tutorial material is
-**mandatory** and crucial for success in the homework and project.
+highly recommended.
 
 
-| #    | Date                       | Lecture materials                                                        | Tutorial materials                                                       | Homework   |
-| ---- | -----------------------    | ------------------------------------------------------------------------ | -------------------------------------------                              | ---------- |
-| 1    | `19/03/2020`               | Lecture 1: Course Introduction (Zoom, video lecture)                     | Tutorial 1: Python, numpy, env setup (Zoom, jupyter notebook)            |            |
-| 2    | `26/03/2020`               | Lecture 2: Supervised learning (motivation and main lecture videos)      | Tutorial 2: Supervised learning, PyTorch basics I (video and notebook)   | HW1        |
-| 3    | `02/04/2020`               | Lecture 3: Neural networks and CNNs (video)                              | Tutorial 3: MLP, PyTorch basics II (video and notebook)                  |            |
-| 4    | `09/04/2020`               | **NO CLASS**                                                             |                                                                          |            |
-| 5    | `16/04/2020`               | **NO CLASS**                                                             |                                                                          | HW2        |
-| 6    | `23/04/2020`               | Lecture 4: Training (motivation and main lecture videos)                 | Tutorial 4: CNNs, ResNets (video and notebook)                           |            |
-| 7    | **Monday**<br>`27/04/2020` | Advanced training techniques                                             |                                                                          |            |
-| 8    | `07/05/2020`               | Lecture 5: Sequence models (part 1 and 2 videos)                         | Tutorial 5: Sequence modeling, RNNs, TCNs (video and notebook)           | HW3        |
-| 9    | `14/05/2020`               | **NO CLASS**                                                             |                                                                          |            |
-| 10   | `21/05/2020`               | Lecture 5: Attention and Transformers (slides)                           | Tutorial 7: Attention (video and notebook)                               |            |
-| 11   | **Sunday**<br>`24/05/2020` | Lecture 6: Unsupervised learning and supplementary (videos)              | Tutorial 6: Transfer learning and domain adaptation (video and notebook) |            |
-| 12   | `04/06/2020`               | Lecture 7: Deep Reinforcement learning (video)                           | Tutorial 8: Deep reinforcement learning (video and notebook)             | HW4        |
-| 13   | `11/06/2020`               | Lecture 11: Non-euclidean domains (video)                                | Tutorial 9: Geometric deep learning (video and notebook)                 |            |
-| 14   | `18/06/2020`               | Lecture 8:  Intro to parallel architectures (video)                      | Tutorial 10: CUDA                                                        |            |
-| 15   | `25/06/2020`               | Assorted theoretical topics                                              |                                                                          |            |
-| ---- | -----------------------    | ------------------------------------------------------------------------ | -------------------------------------------                              | ---------- |
+| #    | Date            | Lecture                                   | Tutorial                                    | Homework   |
+| ---- | --------------- | ----------------------------------------- | ------------------------------------------- | ---------- |
+| 1    | `22/10/2020`    | Course Introduction                       | Python, numpy, env setup                    |            |
+| 2    | `29/10/2020`    | Supervised learning                       | Supervised learning, PyTorch basics I       | HW1        |
+| 3    | `05/11/2020`    | Neural networks and CNNs                  | MLP, PyTorch basics II                      |            |
+| 4    | `12/11/2020`    | Training                                  | CNNs, ResNets                               |            |
+| 5    | `19/11/2020`    | Advanced training and hardware aspects    |                                             | HW2        |
+| 6    | `26/11/2020`    | Sequence models                           | Sequence modeling, RNNs, TCNs               |            |
+| 7    | `03/12/2020`    | Attention and Transformers                | Attention                                   |            |
+| 8    | `10/12/2020`    | Unsupervised learning I                   | Transfer learning, domain adaptation        | HW3        |
+| 9    | `17/12/2020`    | ** NO CLASS **                            |                                             |            |
+| 10   | `24/12/2020`    | Unsupervised learning II                  | Deep reinforcement learning                 |            |
+| 11   | `31/12/2020`    | Geometric deep learning                   | Geometric deep learning                     | HW4        |
+| 12   | `07/01/2021`    | Adversarial robustness                    | TBD                                         |            |
+| 13   | `14/01/2021`    | DNN Compression                           | TBD                                         |            |
+| 14   | `21/01/2021`    | Hardware Architectures                    | CUDA                                        |            |
+| ---- | --------------- | ----------------------------------------- | ------------------------------------------- | ---------- |
 
