@@ -1,11 +1,24 @@
+# Note about making sure this works with github pages:
+# We just need to make sure the github-pages gem is up to date,
+# the latest version is what's deployed on github. This gem
+# depends on all the things needed, such as jekyll itself.
+# Also, the 'jekyll' command we're running in the container is actually
+# a script which will run the jekyll installed by bundler. So the container
+# Image version doesn't matter much.
+#
+# To update to the latest github pages site I simply do:
+# - dc run site bash # This is start a shell in the container of the 'site' service
+# - (inside the container) bundle update # This updates all gems to their newest versions, specifically github-pages
 version: "3"
 services:
   site:
     command: jekyll serve --watch --incremental --livereload
     image: jekyll/jekyll:latest
     volumes:
-      - $PWD:/srv/jekyll
+      - $PWD:/srv/jekyll:delegated
       - $PWD/vendor/bundle:/usr/local/bundle
+    environment:
+      - "JEKYLL_GITHUB_TOKEN=${JEKYLL_GITHUB_TOKEN}"
     ports:
       - 4000:4000
       - 35729:35729
