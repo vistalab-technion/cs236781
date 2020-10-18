@@ -69,6 +69,21 @@ regulations committee.
    github. Private repos are OK, but they must remain so even after course completion.
    As an exception, for the course final project only, you may use a public github repo.
 
+### Course Piazza (Q&A Site)
+
+We will be using Piazza for class discussion. The system is highly
+catered to getting you help fast and efficiently from classmates and TAs.
+
+Please refrain from using email for non-personal questions and all questions
+relating to course material. Such questions should be posted on Piazza only and
+they will be addressed by the course TAs.
+
+Notes about posting on Piazza:
+- Select the proper **post type** (at the top of the "New Post" page).
+  Select "Question" if you need an answer.
+- Select the appropriate **folder** for your question, e.g. "hw1", "lectures",
+  etc.
+
 ## Course Staff
 
 {% include course_staff.html %}
@@ -83,20 +98,33 @@ following material may be useful.
 ## Detailed Syllabus
 
 Due to the COVID-19 pandemic, this semester the course will be given using a
-remote-learning approach.
+remote-learning approach, over Zoom only.
 
-We provide lecture videos, notes, and slides to facilitate self-learning of the
-core topics.  The tutorials are based on detailed and self-contained Jupyter
-notebooks, which guide you through a full implementation of one or more models
-and techniques for solving a specific task. They are meant to teach you the
-technical aspects of implementing deep learning systems.  The course also
-includes hands-on homework assignments where you will implement working
-real-world models and run them on GPUs in the course servers.
+The lectures will follow a flipped-classroom approach: Students will be
+requested to read/watch prerequisite material before each lecture. We provide
+videos and written material, on the course [Lectures]({{ site.baseurl
+}}/lectures) page, to facilitate self-learning of the core topics. The in-class
+(zoom) lectures will usually be short (1h) and cover only a review of material,
+with time for questions and possibly an introduction to more advanced topics. 
 
-In addition, we provide videos and written material, available from the
-course [Lectures]({{ site.baseurl }}/lectures) and [Tutorials]({{ site.baseurl
-}}/tutorials) pages.  Viewing and/or reading the lecture and tutorial material is
-highly recommended.
+The prerequisite reading/viewing material will be published at least one week
+before each lecture. Note that following this material is a **mandatory** part
+of the course.
+
+The [Tutorials]({{ site.baseurl }}/tutorials) are based on detailed and
+self-contained Jupyter notebooks, which guide you through a full implementation
+of one or more models and techniques for solving a specific task. They are
+meant to teach you the technical aspects of implementing deep learning systems.
+The in-class (zoom) tutorials will cover all this material - no pre-requisite
+viewing required.
+
+The course also includes hands-on homework assignments in which you'll implement
+working real-world models and run them on GPUs on the course servers.
+Performing the assignment in full is a crucial aspect of the course, which will
+provide you with many of the technical skills required to be effective with
+Deep Learning.
+
+This semester's syllabus is provided below.
 
 
 | #    | Date            | Lecture                                   | Tutorial                                    | Homework   |
@@ -105,15 +133,15 @@ highly recommended.
 | 2    | `29/10/2020`    | Supervised learning                       | Supervised learning, PyTorch basics I       | HW1        |
 | 3    | `05/11/2020`    | Neural networks and CNNs                  | MLP, PyTorch basics II                      |            |
 | 4    | `12/11/2020`    | Training                                  | CNNs, ResNets                               |            |
-| 5    | `19/11/2020`    | Advanced training and hardware aspects    |                                             | HW2        |
+| 5    | `19/11/2020`    | Advanced training and hardware aspects    | Optimization                                | HW2        |
 | 6    | `26/11/2020`    | Sequence models                           | Sequence modeling, RNNs, TCNs               |            |
 | 7    | `03/12/2020`    | Attention and Transformers                | Attention                                   |            |
 | 8    | `10/12/2020`    | Unsupervised learning I                   | Transfer learning, domain adaptation        | HW3        |
-| 9    | `17/12/2020`    | ** NO CLASS **                            |                                             |            |
+| 9    | `17/12/2020`    | **NO CLASS**                              |                                             |            |
 | 10   | `24/12/2020`    | Unsupervised learning II                  | Deep reinforcement learning                 |            |
 | 11   | `31/12/2020`    | Geometric deep learning                   | Geometric deep learning                     | HW4        |
-| 12   | `07/01/2021`    | Adversarial robustness                    | TBD                                         |            |
-| 13   | `14/01/2021`    | DNN Compression                           | TBD                                         |            |
+| 12   | `07/01/2021`    | Adversarial robustness                    | Matrix Completion                           |            |
+| 13   | `14/01/2021`    | DNN Compression                           |                                             |            |
 | 14   | `21/01/2021`    | Hardware Architectures                    | CUDA                                        |            |
 | ---- | --------------- | ----------------------------------------- | ------------------------------------------- | ---------- |
 
