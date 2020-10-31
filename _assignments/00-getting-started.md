@@ -4,7 +4,7 @@ permalink: assignments/getting-started
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2019-03-17
+date: 2020-10-31
 ---
 
 This document will help you get started with the course homework assignments.
@@ -33,11 +33,10 @@ We will not support any other installation method other than the one
 described.
 
 For working on the code itself, we recommend using
-[PyCharm](https://www.jetbrains.com/pycharm/),
-however you can use any other
-editor or IDE if you prefer. Note that you can get the professional version of
-PyCharm for free by using your Technion student email - see
-[here](https://www.jetbrains.com/student/).
+[PyCharm](https://www.jetbrains.com/pycharm/), however you can use any other
+editor or IDE if you prefer. You can obtain the professional version of PyCharm
+for free by using your Technion student email (see
+[here](https://www.jetbrains.com/student/)).
 
 ### Project structure
 
@@ -46,15 +45,14 @@ Each assignment's root directory contains the following files and folders:
 - `cs236781`: Python package containing course utilities and helper functions.
   You do not need to edit anything here.
 - `hwN` where `N` is the assignment number: Python package containing the
-  assignment code. **All** your solutions will be implemented here.
-- `tests`: A package containing tests that run all the assignment notebooks and
-  fail if there are errors.
+  assignment code. **All** your solutions will be implemented here, including
+  answers to questions.
 - `PartN_XYZ.ipynb` where `N` is a number and `XYZ` is some name:
   A set of jupyter notebooks that contain the instructions that will guide you
-  through the assignment. You won't need to edit these except if you wish to
-  play around and to write your name at the beginning.
+  through the assignment. You do **not** need to edit these. However, you
+  should write your name(s) at the beginning of `Part0`.
 - `main.py`: A script providing some utilities via a CLI.
-  Mainly, you'll run it to create your submission after completing the
+  You'll run it to create your submission after completing the
   assignment.
 - `environment.yml`: A file for `conda`, specifying the third-party packages it
   should install into the virtual environment it creates.
@@ -66,23 +64,25 @@ Each assignment's root directory contains the following files and folders:
    for your platform.
 
    For example, on linux you should do:
-   ```shell
-   curl -fsSLO https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
-   bash Miniconda3-latest-Linux-x86_64.sh
-   # Accept EULA
-   # Install in default directory
-   # Select no for editing .bashrc
 
-   # Update your bashrc like so:
-   echo "source $HOME/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
-   ```
+    ```shell
+    curl -fsSLO https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+    bash Miniconda3-latest-Linux-x86_64.sh
+    # Accept EULA
+    # Install in default directory
+    # Select no for editing .bashrc
+
+    # Update your bashrc like so:
+    echo "source $HOME/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+    ```
 
    On macOS it's similar but with a different script URL
-   ```shell
-   curl -fsSLO https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh 
-   bash Miniconda3-latest-MacOSX-x86_64.sh
-   # Rest is the same
-   ```
+
+    ```shell
+    curl -fsSLO https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh 
+    bash Miniconda3-latest-MacOSX-x86_64.sh
+    # Rest is the same
+    ```
 
    On Windows, download the installer and follow the instructions on the conda
    website. See also the Windows-specific notes below before you proceed.
@@ -90,18 +90,18 @@ Each assignment's root directory contains the following files and folders:
 2. Use conda to create a virtual environment for the assignment.
    From the assignment's root directory, run
 
-   ```shell
-   conda env create -f environment.yml
-   ```
+    ```shell
+    conda env update -f environment.yml
+    ```
 
    This will install all the necessary packages into a new conda virtual
    environment named `cs236781-hw`.
 
 3. Activate the new environment by running
 
-   ```shell
-   conda activate cs236781-hw
-   ```
+    ```shell
+    conda activate cs236781-hw
+    ```
 
    *Activating* an environment simply means that the path to its python binaries
    (and packages) is placed at the beginning of your `$PATH` shell variable.
@@ -111,9 +111,9 @@ Each assignment's root directory contains the following files and folders:
 
    To check what conda environments you have and which is active, run
 
-   ```shell
-   conda env list
-   ```
+    ```shell
+    conda env list
+    ```
 
    or, you can run `which python` and you should see the python binary is in a
    subfolder of `~/miniconda3/envs/cs236781-hw/`.
@@ -127,19 +127,22 @@ Notes:
   However, the third-party package dependencies (in the `environment.yml` file)
   might slightly change from one
   assignment to the next. To make sure you have the correct versions run
-  ```shell
-  conda env update
-  ```
-  from the assignment root directory every time a new assignment is published.
 
-- Always make sure the correct environment is active. It will revert to it's
+    ```shell
+    conda env update -f environment.yml
+    ```
+  again from the assignment root directory every time a new assignment is
+  published.
+
+- Always make sure the correct environment is active! It will revert to it's
   default each new terminal session. If you want to change the default env you
   can add a `conda activate` in your `~/.bashrc`.
 
 - If you use PyCharm or any other IDE, you should configure the interpreter path
   of the IDE to the path of the `python` executable within the conda
   env folder. For example, point the interpreter path to
-  `~/miniconda3/envs/cs236781/bin/python`.
+  `~/miniconda3/envs/cs236781-hw/bin/python`.
+  This is under `Settings -> Project -> Project Interpreter`.
 
 - On Windows, you can run these commands from the **Anaconda Prompt** program
   that is installed with miniconda. If you also add the `conda` installation
@@ -151,11 +154,16 @@ Notes:
   before the conda environment.  Make sure "C++ Build Tools" is selected during
   installation.
 
+- You'll need to install the conda env within your user folder on the course
+  server. The installation procedure is exactly the same, just follow the
+  instructions for linux.
+
 ## Working on the assignment
 
 ### Running Jupyter
 
-Make sure that the active conda environment is `cs236781-hw`, and run
+Make sure that the active conda environment is `cs236781-hw` (see above), and
+run
 
 ```shell
 jupyter lab
@@ -198,11 +206,22 @@ Notes:
    implement everything and the notebook runs without error, you can be
    confident about your solution.
 
-2. Please don't put other files in the assignment directory. If you do, they
+2. You **may** edit any part of the code, not just the sections marked with
+   `YOUR CODE`. However, note that there is always a solution which requires
+   editing only within these markers.
+
+3. When we check your submission, we'll run the **original notebook files** of
+   the assignment, together with your submitted code (from the `hwN`) package.
+   Therefore, any changes you do to the notebook files (such as changing the
+   tests) will not affect the results of our grading. If you rely on notebook
+   modifications to pass the tests, the tests will fail when we grade your work
+   and you will lose marks.
+
+4. Please don't put other files in the assignment directory. If you do, they
    will be added to your submission which is automatically generated from the
    contents of the assignment folder.
 
-3. Always make sure the active conda env is `cs236781-hw`. If you get strange
+5. Always make sure the active conda env is `cs236781-hw`. If you get strange
    errors or broken import statements, this is probably the reason.
    Note that if you close your terminal session you will need to re-activate
    since conda will use it's default `base` environment.
@@ -213,9 +232,9 @@ What you'll submit:
 - All notebooks, after running them clean from start to end, with all outputs
   present.
 - An html file containing the merged content of all notebooks.
-- The code with all your solutions present.
+- The code package (`hwN`), with all your solutions present.
 
-You don't need to do this manually - we provide you with a helper CLI program to
+You don't need to do this manually; we provide you with a helper CLI program to
 run all the notebooks and combine them into a single file for submission.
 
 ### Generating your submission file
@@ -246,7 +265,8 @@ Note however that if some of the outputs are missing from your submission you'll
 lose marks.
 
 **Note**: The submission script must also be run from within the same `conda env` as
-the assignment.
+the assignment. Don't forget to activate the env before running the submission
+script!
 
 ### Submitting a partial solution
 
@@ -264,3 +284,7 @@ The `.zip` file you generate should be uploaded using the assignments tab in the
 [webcourse](https://webcourse.cs.technion.ac.il/236781/) system.
 
 Grades will also be reported there.
+
+Only a submisstion generated by the course script is considered valid. Any
+other submissions, e.g. submitting only the notebooks or the code files will
+**not be graded**.
