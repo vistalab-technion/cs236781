@@ -101,15 +101,12 @@ Due to the COVID-19 pandemic, this semester the course will be given using a
 remote-learning approach, over Zoom only.
 
 The lectures will follow a flipped-classroom approach: Students will be
-requested to read/watch prerequisite material before each lecture. We provide
-videos and written material, on the course [Lectures]({{ site.baseurl
-}}/lectures) page, to facilitate self-learning of the core topics. The in-class
-(zoom) lectures will usually be short (1h) and cover only a review of material,
-with time for questions and possibly an introduction to more advanced topics. 
-
-The prerequisite reading/viewing material will be published at least one week
-before each lecture. Note that following this material is a **mandatory** part
-of the course.
+requested to watch recorded video lectures as a **mandatory** course
+requirement. We provide videos and written material, on the course
+[Lectures]({{ site.baseurl }}/lectures) page, to facilitate self-learning of
+the core topics. The in-class (zoom) lectures will be short (1h), **optional**,
+and cover more advanced material, such as state of the art approaches from the
+latest research.
 
 The [Tutorials]({{ site.baseurl }}/tutorials) are based on detailed and
 self-contained Jupyter notebooks, which guide you through a full implementation
@@ -127,21 +124,21 @@ Deep Learning.
 This semester's syllabus is provided below.
 
 
-| #    | Date            | Lecture                                   | Tutorial                                    | Homework   |
-| ---- | --------------- | ----------------------------------------- | ------------------------------------------- | ---------- |
-| 1    | `22/10/2020`    | Course Introduction                       | Python, numpy, env setup                    |            |
-| 2    | `29/10/2020`    | Supervised learning                       | Supervised learning, PyTorch basics I       | HW1        |
-| 3    | `05/11/2020`    | Neural networks and CNNs                  | MLP, PyTorch basics II                      |            |
-| 4    | `12/11/2020`    | Training                                  | CNNs, ResNets                               |            |
-| 5    | `19/11/2020`    | Advanced training and hardware aspects    | Optimization                                | HW2        |
-| 6    | `26/11/2020`    | Sequence models                           | Sequence modeling, RNNs, TCNs               |            |
-| 7    | `03/12/2020`    | Attention and Transformers                | Attention                                   |            |
-| 8    | `10/12/2020`    | Unsupervised learning I                   | Transfer learning, domain adaptation        | HW3        |
-| 9    | `17/12/2020`    | **NO CLASS**                              |                                             |            |
-| 10   | `24/12/2020`    | Unsupervised learning II                  | Deep reinforcement learning                 |            |
-| 11   | `31/12/2020`    | Geometric deep learning                   | Geometric deep learning                     | HW4        |
-| 12   | `07/01/2021`    | Adversarial robustness                    | Matrix Completion                           |            |
-| 13   | `14/01/2021`    | DNN Compression                           |                                             |            |
-| 14   | `21/01/2021`    | Hardware Architectures                    | CUDA                                        |            |
-| ---- | --------------- | ----------------------------------------- | ------------------------------------------- | ---------- |
+| #    | Date          | Lecture (video, mandatory)                                                | Supplemental (zoom, optional) | Tutorial                                    | Homework   |
+| ---- | ------------- | ------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------- | ---------- |
+| 1    | `22/10/2020`  | Introduction ([🔗]({{ site.baseurl}}/lectures/lecture_01/))               | Introduction                  | Env setup, numpy, torch
+| 2    | `29/10/2020`  | Supervised learning ([🔗]({{ site.baseurl}}/lectures/lecture_02/))        | Supervised learning           | Supervised learning, PyTorch basics I       | HW1        |
+| 3    | `05/11/2020`  | Neural networks, CNNs ([🔗]({{ site.baseurl}}/lectures/lecture_03/))      | CNNs                          | MLP, PyTorch basics II                      |            |
+| 4    | `12/11/2020`  | Training ([🔗]({{ site.baseurl}}/lectures/lecture_04))                    | Advanced training             | CNNs, ResNets                               |            |
+| 5    | `19/11/2020`  | -                                                                         | Hardware aspects of training  | Optimization                                | HW2        |
+| 6    | `26/11/2020`  | Sequence models ([🔗]({{ site.baseurl}}/lectures/lecture_05))             | RNNs                          | Sequence modeling, RNNs, TCNs               |            |
+| 7    | `03/12/2020`  | -                                                                         | Attention and Transformers    | Attention                                   |            |
+| 8    | `10/12/2020`  | Unsupervised learning ([🔗]({{ site.baseurl}}/lectures/lecture_06))       | Unsupervised learning I       | Transfer learning, domain adaptation        | HW3        |
+| 9    | `17/12/2020`  | **NO CLASS**                                                              |                               |                                             |            |
+| 10   | `24/12/2020`  | Deep reinforcement learning ([🔗]({{ site.baseurl}}/lectures/lecture_07)) | Unsupervised learning II      | Deep reinforcement learning                 |            |
+| 11   | `31/12/2020`  | Geometric deep learning ([🔗]({{ site.baseurl}}/lectures/lecture_11))     | Geometric deep learning       | Geometric deep learning                     | HW4        |
+| 12   | `07/01/2021`  | -                                                                         | Adversarial robustness        | Matrix Completion                           |            |
+| 13   | `14/01/2021`  | Parallel architectures I ([🔗]({{ site.baseurl}}/lectures/lecture_09))    | DNN Compression               |                                             |            |
+| 14   | `21/01/2021`  | Parallel architectures II ([🔗]({{ site.baseurl}}/lectures/lecture_09))   | DNN Hardware                  | CUDA                                        |            |
+| ---- | ------------- | ------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------- | ---------- |
 
