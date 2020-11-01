@@ -42,6 +42,9 @@ aviv:
     # - label: "Web"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://avivr.net"
+  # office_hours:
+  #   location: Zoom
+  #   time: Thursday, 13:30
 
 evgenii:
   name: Evgenii Zheltonozhskii

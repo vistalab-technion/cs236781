@@ -34,6 +34,11 @@
         {{ author.bio }}
       </p>
     {% endif %}
+    {% if author.office_hours %}
+      <p class="author__oh" itemprop="description">
+        Office Hours: {{ author.office_hours.time }} ({{ author.office_hours.location }})
+      </p>
+    {% endif %}
   </div>
 
   <div class="author__urls-wrapper">
