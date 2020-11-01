@@ -12,14 +12,13 @@ image_path="assets/images/lec3/conv.png"
 alt="" caption="" ref=""
 %}
 
-## Slides
-
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21204&amp;authkey=AJZxyB6b0SlZ3gQ&amp;em=2&amp;wdAr=1.6" %}
-
-## Videos
+## Video
 
 {% include video provider="youtube" id="KCd07ZVIVXQ" %}
+
+## Slides
+
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21204&amp;authkey=AJZxyB6b0SlZ3gQ&amp;em=2&amp;wdAr=1.6" %}
 
 ## Supplementary Slides
 
@@ -28,7 +27,6 @@ src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6D
 
 - CNNs
 {% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21286&amp;authkey=ADhsAsSRmPJ__cU&amp;em=2&amp;wdAr=1.7777777777777777" %}
-
 
 ## Lecture Notes
 

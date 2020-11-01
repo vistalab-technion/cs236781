@@ -9,22 +9,20 @@ equation, q-learning, policy learning, actor-critic learning, AutoML.
 
 {% include figure image_path="assets/images/lec7/rl1.jpg" alt="" caption="" ref="" %}
 
-## Slides
+## Video
 
-- Main Lecture
+{% include video provider="youtube" id="0ck90bLwiPI" %}
+
+## Slides
 
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21216&amp;authkey=AAz9aK1XwP0em2w&amp;em=2&amp;wdAr=1.6" %}
 
-- Supplementary Slides
+## Supplementary Slides
 
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21296&amp;authkey=AO69olTyORaGBjI&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
-
-## Videos
-
-{% include video provider="youtube" id="0ck90bLwiPI" %}
 
 ## Lecture Notes
 

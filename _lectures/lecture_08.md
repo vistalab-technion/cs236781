@@ -8,11 +8,12 @@ Parallelism and multithreading, execution of DL tasks, CPU vs. GPU architectures
 
 {% include figure image_path="assets/images/lec8/gpu1.png" alt="" caption="" ref="" %}
 
+## Video
+
+{% include video provider="youtube" id="G4hQQrvJckg" %}
+
 ## Slides
 
 {% include ppt_embed.html
 src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&resid=449B779EEB6DCD79%21218&authkey=AK_Yl6zPVxQmrTo&em=2" %}
 
-## Video
-
-{% include video provider="youtube" id="G4hQQrvJckg" %}

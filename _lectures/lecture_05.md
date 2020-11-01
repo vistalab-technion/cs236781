@@ -9,27 +9,25 @@ backpropagation through time, word embeddings, attention, transformers.
 
 {% include figure image_path="assets/images/lec5/tbptt.png" alt="" caption="" ref="" %}
 
-## Slides
+## Video
 
-- Part I: RNNs
+{% include video provider="youtube" id="\_mQf44nB4JQ" %}
 
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21208&amp;authkey=AC2UftXfSCJp_lQ&amp;em=2&amp;wdAr=1.6" %}
+## Supplementary Video
 
-- Part II: Attention and Transformers
-
-{% include ppt_embed.html
-src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21290&amp;authkey=AGPMyuvEmiUGqdQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
-
-## Videos
-
-- Part I
-
-{% include video provider="youtube" id="_mQf44nB4JQ" %}
-
-- Part II: Word embeddings
+Word embeddings
 
 {% include video provider="youtube" id="rZSnN5LvvkA" %}
+
+## Slides
+
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21208&amp;authkey=AC2UftXfSCJp_lQ&amp;em=2&amp;wdAr=1.6" %}
+
+
+## Supplementary Slides
+
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21290&amp;authkey=AGPMyuvEmiUGqdQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
+
 
 ## Lecture Notes
 
