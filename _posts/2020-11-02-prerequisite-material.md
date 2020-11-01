@@ -8,8 +8,9 @@ Dear Students,
 
 The mandatory viewing material for each week of this semester is as follows.
 
-In each of the lecture links below, only the main video is mandatory. Anything
-marked as "supplementary" is optional unless otherwise noted.
+In each of the lecture links below, only the main video is mandatory.
+These lectures represent the core material of the course.
+Anything marked as "supplementary" is optional unless otherwise noted.
 
 The in-class (zoom) lectures are now also **optional**. They will be 1h long
 and only present more advanced topics and new research in the field.
@@ -30,8 +31,6 @@ and only present more advanced topics and new research in the field.
 - `07/01/2021`: None
 - `14/01/2021`: Parallel architectures I ([🔗]({{site.baseurl}}/lectures/lecture_09))
 - `21/01/2021`: Parallel architectures II ([🔗]({{site.baseurl}}/lectures/lecture_10))
-
-These lectures represent the core material of the course.
 
 Thanks,  
 Course staff.
