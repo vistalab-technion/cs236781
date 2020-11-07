@@ -268,12 +268,10 @@ $$
 Label $y=0$ is assigned if
 
 $$
-\frac{ P(Y=0|\bb{X}=\bb{x}) }{ P(Y=1|\bb{X}=\bb{x}) } = e^{ \bb{w}^\Tr \bb{x}} > 1,
+\frac{ P(Y=0|\bb{X}=\bb{x}) }{ P(Y=1|\bb{X}=\bb{x}) } = e^{ \bb{w}^\Tr \bb{x}} > 1.
 $$
 
-which is equivalent to
-$e^{ \bb{w}^\Tr \bb{x}} > 0$. The label $y=1$ is
-assigned otherwise.
+The label $y=1$ is assigned otherwise.
 
 In order to solve the regression problem, we maximize the likelihood of the
 observed labels in the training data given the corresponding instances,
