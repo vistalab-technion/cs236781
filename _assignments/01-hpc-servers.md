@@ -5,7 +5,7 @@ excerpt: How to connect to and run jobs on the course servers.
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2020-11-01
+date: 2020-10-31
 published: true
 ---
 
