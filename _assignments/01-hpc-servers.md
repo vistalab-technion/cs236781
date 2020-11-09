@@ -5,22 +5,23 @@ excerpt: How to connect to and run jobs on the course servers.
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2019-03-17
-published: false
+date: 2020-11-01
+published: true
 ---
 
-Those of you who are officially enrolled to the course will have access to
-dedicated high-performance computing servers (`rishon1-4`) provisioned by
-Computer Science faculty IT department. Running on the faculty servers will give
-you access to more computing power and also fast GPUs (which will greatly
+Those of you who are officially enrolled to the course and requested access
+using the server registration form will have access to dedicated
+high-performance computing servers (`lambda1-4`) provisioned by Computer
+Science faculty IT department. Running on the faculty servers will give you
+access to more computing power and also fast GPUs (which will greatly
 accelerate your deep-learning tasks). This should significantly speed up your
 workflow when performing the course homework assignments and when implementing
 your final project.
 
 These servers are mainly suited for running batch jobs which you can submit to
 dedicated job queues and be notified upon completion.  We therefore recommend
-you install and work on the assignments locally (on your own machine), and only
-use the faculty servers when you need to run a long model training task (we will
+you install and work on the assignments locally (on your own machine), and 
+use the faculty servers mainly to run long model training tasks (we will
 specify in the assignment).
 
 # Logging in 
@@ -32,10 +33,11 @@ email address.
 If your username is e.g. `user`, login like so
 
 ```shell
-ssh user@rishon.technion.ac.il
+ssh user@lambda.cs.technion.ac.il
 ```
 
-or, directly using the server's IP:
+or, use the server's IP directly if you're connecting over a VPN or receive an
+unknown hostname error:
 
 ```shell
 ssh user@132.68.39.36
@@ -49,70 +51,56 @@ Notes:
    If connecting over WiFi, do not use the `TechPublic` network, as it won't
    allow you to connect. The `TechSec` network will work, as well as other
    non-open faculty networks (e.g. `CS-WIFI`).
-1. `rishon` is a gateway server that you connect to in order to run jobs on the
-   actual compute nodes (`rishon1-4`) as explained below.
-   You should not run any computations on `rishon` itself as it does not have a
+1. `lambda` is a gateway server that you connect to in order to run jobs on the
+   actual compute nodes (`lambda1-4`) as explained below.
+   You should not run any computations on `lambda` itself as it does not have a
    GPU and is limited in CPU resources.
-1. In some internal Technion networks the DNS lookup seems to not find
-   the `rishon` hostname. If you get a `could not resolve hostname` error, use
-   the second option (directly with IP).
+1. In some internal Technion networks, and when connecting through VPN, the DNS
+   lookup does not find the `lambda` hostname. If you get a `could not
+   resolve hostname` error, use the second option (directly with IP).
 
 ## Connecting from home
 
-The easiest way is to configure a VPN connection to the Technion. See the
+To connect from home you'll need to configure a VPN connection to the Technion. See the
 [instructions](https://cis.technion.ac.il/en/central-services/communication/off-campus-connection/ssl-vpn/)
 on the Technion CIS website regarding how to set this up. After you connect
 though the VPN, you can connect to the server as normal.
-Note that we cannot provide you with techical support regarding how to setup/use
-the VPN. You can contact CIS for support.
 
-Another way is to first SSH into a Technion server that’s
-accessible from the outside (e.g. CSM, CSL) and from there you can SSH into
-`rishon`. 
-
-You can do this in one command like so:
-
-```shell
-ssh -J user@csm.cs.technion.ac.il user@rishon.cs.technion.ac.il
-```
-
-This example will connect through the CSM server in the CS faculty. You should
-be able to use other Technion servers that you have SSH access to.
-
-This method (`-J`) has the useful advantage of forwarding the SSH public key
-from your local machine (if available) to the target machine though the
-intermediate machine.
-
-Notes:
-1. Unfortunately the `t2`/`lux` student server cannot be used to access the
-   Technion network from outside due to CIS
-   [policy](https://cis.technion.ac.il/news/t2-server-upgraded-to-lux/).
-1. If you use CSM, note that the credentials for the CSM server and `rishon` are
-   not the same: CSM uses the CS-faculty credentials while the `rishon` server
-   uses the Technion SSO credentials.
-1. We cannot provide you with credentials to any such server (CSM/CSL/other
-   technion servers).
+Note that we cannot provide you with technical support regarding how to
+setup/use the VPN. You should contact CIS if you need VPN support.
 
 # Server Usage
 
 ## General
 
-The faculty HPC server cluster is composed of a gateway server, `rishon`, into which
-you log in with SSH, and four compute nodes `rishon1-4` which run the actual
+### Storage and Environment
+
+Your home directory on the gateway server `lambda` (e.g. `/home/user`) is
+automatically mounted on all the computation nodes `lambda1-4`. This ensures
+that any programs you install locally under your home folder (for example a
+`conda` environment) will be available for jobs running on these nodes.
+
+In fact, the **first thing** you should do after connecting for the first time
+is to install `conda` and the course `conda` environment within your home
+folder. Follow the instructions for linux on the [getting started page]({{
+site.baseurl }}{% link _assignments/00-getting-started.md %}).
+
+Note that your home folder will be deleted from the server at some point after
+the semester ends, likely without prior notice. Please make sure to backup your files.
+
+### Computation
+
+The faculty HPC server cluster is composed of a gateway server, `lambda`, into which
+you log in with SSH, and four compute nodes `lambda1-4` which run the actual
 computations. The gateway server is relatively weak and has no attached GPUs, so
 it should not be used for running computations.
 
-Your home directory on the gateway server (e.g. `/home/user`) is automatically
-mounted on all the computation nodes. This ensures that any programs you
-install locally under your home folder (for example a `conda` environment) will
-be available for jobs running on these nodes. In fact, the **first thing** you
-should do after connecting for the first time is to install `conda` and the
-course `conda` environment for your user account.
+Again, to be clear: **do not run any computations directly on `lambda`!** after
+logging in, only run computations through `slurm` as described below.
 
 The computation tasks are manged by a job scheduling system called
-[`slurm`](https://slurm.schedmd.com/).  The system manages the computation nodes
-and resources and allocates them to jobs submitted by users into a queue
-("partition").
+[`slurm`](https://slurm.schedmd.com/).  The system manages the computation
+nodes and resources and allocates them to jobs submitted by users into a queue.
 If you wish, you can read the `slurm` [quick start
 guide](https://slurm.schedmd.com/quickstart.html) to get a better understanding
 of the system and the available commands.
@@ -135,15 +123,13 @@ can be specified and if they're available the job starts running immediately.
 ### Example
 
 Let's see how to run an `ipython` console session as an interactive job with an
-allocated GPU.
+allocated GPU (notice that the course `conda` env is already active).
 
 ```shell
-(cs236781-hw) avivr@rishon:~/cs236781-hw1$ srun -c 2 --gres=gpu:1 --pty ipython
-cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
-cpu-bind=MASK - rishon1, task  0  0 [15995]: mask 0x100000001 set
-Python 3.7.0 (default, Oct  9 2018, 10:31:47)
+(cs236781-hw) avivr@lambda:~/cs236781-hw$ srun -c 2 --gres=gpu:1 --pty ipython
+Python 3.8.6 | packaged by conda-forge | (default, Oct  7 2020, 19:08:05)
 Type 'copyright', 'credits' or 'license' for more information
-IPython 7.1.1 -- An enhanced Interactive Python. Type '?' for help.
+IPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]: import torch
 
@@ -162,19 +148,18 @@ to be interactive and the last argument `ipython` is the command to run. You can
 specify any command and also add command arguments after it.
 
 Notes:
-1. You should use interactive jobs for debugging or running short one-off
-   tasks.  If you need to run something long, submit a batch job instead.
+1. You should use interactive jobs for debugging or running short tasks like
+   launching `jupyter`. If you need to run something long, it's better to
+   submit a batch job instead (see below).
 1. When you submit an interactive job, your shell is blocked (by `srun`) until
-   it completes. If you terminate `srun`, it will cancel your job.
-   Crucially, this means that if you log out of the machine while running an
-   interactive job, the job will terminate (as with regular processes you
-   invoke from the shell). You can get around this by either,
+   it completes. If you terminate `srun`, it will cancel your job. Crucially,
+   this means that if you log out of the machine while running an interactive
+   job, the job will terminate (as with regular processes you invoke from the
+   shell). You can get around this by either,
     - Using terminal managers e.g. `screen` and `tmux`;
     - Running with `nohup`;
     - Running a batch job instead (preferred). See below.
 
-   The reason the last method is preferred is that interactive jobs run with
-   `srun` may be terminated after running for a few hours due to policy.
 1. You should activate your `conda env` before running an interactive job if
    you need to run python.
    The shell environment variables will be passed to the process that will run
@@ -182,6 +167,7 @@ Notes:
    also be active there.
 1. You can specify `bash` as the command to run in an interactive job to get a
    shell on one of the compute nodes.
+1. Jobs may be terminated after running for more than 24 hours due to policy.
 
 ## Running batch jobs
 
@@ -190,10 +176,11 @@ It runs non-interactively when resources are available and sends it's output to
 files that you can specify. Additionally, it can notify you by email when the
 job starts and finishes.
 
-Running jobs with `sbatch` is useful for long-running processes such as training
-models. While the job is running, it's not connected to any specific shell
-session and thus it keeps running if you log out of the machine. To view output
-from a batch job, you'll need to read it from the file it writes to.
+Running jobs with `sbatch` is useful for long-running processes such as
+training models or running experiments. While the job is running, it's not
+connected to any specific shell session and thus it keeps running if you log
+out of the machine. To view output from a batch job, you'll need to read it
+from the file it writes to.
 
 To use `sbatch`, you need to create a script for it to run. It can be any script
 with a valid shebang line (`#!`) at the top, e.g. a bash script or a python
@@ -216,18 +203,21 @@ python -c 'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'
 
 Then we can run the script as a `slurm` batch job as follows:
 ```shell
-avivr@rishon:~$ sbatch -c 2 --gres=gpu:1 -o slurm-test.out -J my_job  myscript.sh
-Submitted batch job 114425
+# Run a batch job with slurm
+avivr@lambda:~$ sbatch -c 2 --gres=gpu:1 -o slurm-test.out -J my_job  myscript.sh
+Submitted batch job 3550
 
-avivr@rishon:~$ squeue 
+# Check the job status in the queue
+avivr@lambda:~$ squeue 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-            114425    236781   my_job    avivr  R       0:01      1 rishon3
+              3550       all   my_job    avivr  R       0:01      1 lambda2
 
-avivr@rishon:~$ tail -f slurm-test.out
-cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
-cpu-bind=MASK - rishon3, task  0  0 [20442]: mask 0x100000001 set
-hello from Python 3.7.0 in /home/avivr/miniconda3/envs/cs236781-hw/bin/python
+# See the output from the job by following the output file contents
+(cs236781-hw) avivr@lambda:~/cs236781-hw$ tail -f slurm-test.out
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+hello from Python 3.8.6 in /home/avivr/miniconda3/envs/cs236781-hw/bin/python
 i can haz gpu? True
+^C
 ```
 
 Here the `-c 2` and `--gres=gpu:1` options specify that we want to allocate 2 CPU
@@ -292,59 +282,36 @@ In any case, this script is completely optional since you can always use
 
 ## Running `jupyter`
 
-You can run `jupyter` on a compute node by creating a script that exposes the IP
-of the compute node as the jupyer server URL.
+You can run `jupyter` on a compute node by running a small script what we
+provide, `jupyter-lab.sh`.
 
-For example, if you create a script `jupyter-lab.sh` like so
-```bash
-#!/bin/bash
-unset XDG_RUNTIME_DIR
-jupyter lab --no-browser --ip=$(hostname -I) --port-retries=100
-```
-
-then you can start the jupyter lab server with `srun`, e.g.
+You should run this script via `srun`, like so:
 ```shell
-srun -c 2 --gres=gpu:1 --pty jupyter-lab.sh
+(cs236781-hw) avivr@lambda:~/cs236781-hw$ srun -c2 --gres=gpu:1 jupyter-lab.sh
+
+[I 22:47:14.620 LabApp] JupyterLab extension loaded from /home/avivr/miniconda3/envs/cs236781-hw/lib/python3.8/site-packages/jupyterlab
+[I 22:47:14.621 LabApp] JupyterLab application directory is /home/avivr/miniconda3/envs/cs236781-hw/share/jupyter/lab
+[I 22:47:14.624 LabApp] Serving notebooks from local directory: /home/avivr/cs236781-hw
+[I 22:47:14.624 LabApp] Jupyter Notebook 6.1.4 is running at:
+[I 22:47:14.624 LabApp] http://132.68.39.38:8888/?token=5d426de30111ee82c7af4789077dbc4cf7a996f9e46476e6
+[I 22:47:14.624 LabApp]  or http://127.0.0.1:8888/?token=5d426de30111ee82c7af4789077dbc4cf7a996f9e46476e6
+[I 22:47:14.624 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 22:47:14.632 LabApp]
+
+    To access the notebook, open this file in a browser:
+        file:///home/avivr/.local/share/jupyter/runtime/nbserver-20063-open.html
+    Or copy and paste one of these URLs:
+        http://132.68.39.38:8888/?token=5d426de...
+     or http://127.0.0.1:8888/?token=5d426de...
 ```
 
 The connection URL in the console will show the IP of the compute node that the
-server is actually running on.
+server is actually running on. Use the **first url** to open jupyter in your
+browser.
 
-We'll provide you with a similar script in the assignment repos.
-
-Note: As mentioned previously, interactive jobs are not meant to be
-long-running.  Please be considerate of other students and use the computing
-resources only as needed. For long-running jobs use `sbatch`.
-
-### Accessing jupyter from home
-
-Although the `rishon` servers are only accessible within the Technion networks,
-it's possible to connect from home to a jupyter instance running on them by using a
-combination of SSH port forwarding and using an intermediate server.
-
-1. Follow the instructions above to start jupyter on one of the compute nodes.
-2. Observe the IP and port of the jupyter server specified on the command line.
-   Let's assume you got this line after jupyer started:
-
-    ```shell
-    [I 21:39:07.830 LabApp] http://132.68.39.38:8888/?token=abcdef0123...
-    ```
-3. If connecting from home using a VPN, simply point your browser to the above
-   URL.
-3. If not using a VPN, let's assume you can you have SSH access from home to another
-   Technion server, such as CSM as in the previous examples.
-   Then you can run the following from your machine (from a different terminal):
-
-   ```shell
-   ssh -L 9999:132.68.39.38:8888 -J user@csm.cs.technion.ac.il user@rishon
-   ```
-
-   This creates a local port forwarding from port `9999` on your `localhost` to
-   `132.68.39.38:8888` from the CSM machine through an SSH tunnel, and also
-   gives you a new SSH session on `rison` which you can work from.
-
-5. To connect to the jupyter lab server from home, you can now point your
-   local browser to `localhost:9999`.
+Note: Please be considerate of other students and use the computing
+resources only as needed. Do not leave unattended jupyter notebooks just
+running without a reason.
 
 # Tips
 
@@ -363,9 +330,10 @@ Notes:
 
 1. On macOS and linux, there's a utility you can use to automate steps 2-3.
    After generating the key pair, copy the public key to the server like so:
-   ```shell
-   ssh-copy-id user@rishon.cs.technion.ac.il
-   ```
+
+    ```shell
+    ssh-copy-id user@lambda.cs.technion.ac.il
+    ```
 1. If you use an intermediate server to connect from home, make sure to first
    also copy your public key to that server.
 
@@ -377,18 +345,19 @@ and prevent the need to specify your username and password when
 
 ## Transferring files to and from the server
 
-The `rsync` tool can be your friend. It can automatically sync between local and
+The `rsync` tool can be helpful. It can automatically sync between local and
 remote folders, only uploading/downloading modified files.
 
 For example, to send files or a directory you can do
 
-```
-rsync -Cavz path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+```shell
+rsync -Cavz path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
 ```
 
 To send files from home via an intermediate server (in this example CSM):
-```
-rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@rishon:/home/user/path/to/remote/file_or_dir
+
+```shell
+rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
 ```
 
 To download files from the server to your computer, simply change the order of
@@ -403,5 +372,18 @@ use to copy files to/from the server using a GUI.
 
 Many people recommend [MobaXterm](https://mobaxterm.mobatek.net/) as
 a good graphical ssh client for windows.
-Here's a useful [guide]({{ site.baseurl }}{% link assets/mobaXterm_guide.docx %}) for using it to
-connect to the server.
+
+
+# Additional Information
+
+Please also read the [Faculty lambda help
+page](https://hpc.cswp.cs.technion.ac.il/2020/08/31/lambda-computational-cluster/).
+
+It contains other important information you need to know:
+- Limits on resources for jobs (number of hours, maximal GPUs, etc).
+- How jobs are prioritized between different students of the course,
+  and between different courses.
+- Code of conduct. Failure to meed this code will cause revocation of your
+  account.
+
+
