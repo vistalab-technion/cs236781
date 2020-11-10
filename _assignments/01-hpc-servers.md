@@ -11,7 +11,7 @@ published: true
 
 Those of you who are officially enrolled to the course and requested access
 using the server registration form will have access to dedicated
-high-performance computing servers (`lambda1-4`) provisioned by Computer
+high-performance computing servers (`lambda1-5`) provisioned by Computer
 Science faculty IT department. Running on the faculty servers will give you
 access to more computing power and also fast GPUs (which will greatly
 accelerate your deep-learning tasks). This should significantly speed up your
@@ -52,7 +52,7 @@ Notes:
    allow you to connect. The `TechSec` network will work, as well as other
    non-open faculty networks (e.g. `CS-WIFI`).
 1. `lambda` is a gateway server that you connect to in order to run jobs on the
-   actual compute nodes (`lambda1-4`) as explained below.
+   actual compute nodes (`lambda1-5`) as explained below.
    You should not run any computations on `lambda` itself as it does not have a
    GPU and is limited in CPU resources.
 1. In some internal Technion networks, and when connecting through VPN, the DNS
@@ -76,7 +76,7 @@ setup/use the VPN. You should contact CIS if you need VPN support.
 ### Storage and Environment
 
 Your home directory on the gateway server `lambda` (e.g. `/home/user`) is
-automatically mounted on all the computation nodes `lambda1-4`. This ensures
+automatically mounted on all the computation nodes `lambda1-5`. This ensures
 that any programs you install locally under your home folder (for example a
 `conda` environment) will be available for jobs running on these nodes.
 
@@ -91,7 +91,7 @@ the semester ends, likely without prior notice. Please make sure to backup your 
 ### Computation
 
 The faculty HPC server cluster is composed of a gateway server, `lambda`, into which
-you log in with SSH, and four compute nodes `lambda1-4` which run the actual
+you log in with SSH, and five compute nodes `lambda1-5` which run the actual
 computations. The gateway server is relatively weak and has no attached GPUs, so
 it should not be used for running computations.
 
@@ -315,7 +315,7 @@ running without a reason.
 
 # Tips
 
-## Pubic-key based authentication
+## Public-key based authentication
 
 You can use a public-key based authentication to prevent the need for typing
 your password when connecting to remote servers over SSH.
@@ -351,17 +351,11 @@ remote folders, only uploading/downloading modified files.
 For example, to send files or a directory you can do
 
 ```shell
-rsync -Cavz path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
-```
-
-To send files from home via an intermediate server (in this example CSM):
-
-```shell
-rsync -Cavz -e 'ssh -A -J user@csm.cs.technion.ac.il' path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
+rsync -Crvz path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
 ```
 
 To download files from the server to your computer, simply change the order of
-the last two arguments in the above examples.
+the last two arguments in the above example.
 
 ### GUI option for macOS users
 
