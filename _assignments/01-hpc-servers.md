@@ -370,8 +370,7 @@ a good graphical ssh client for windows.
 
 # Additional Information
 
-Please also read the [Faculty lambda help
-page](https://hpc.cswp.cs.technion.ac.il/2020/08/31/lambda-computational-cluster/).
+Please also read the Faculty's [lambda help page](https://hpc.cswp.cs.technion.ac.il/lambda).
 
 It contains other important information you need to know:
 - Limits on resources for jobs (number of hours, maximal GPUs, etc).
