@@ -40,7 +40,7 @@ or, use the server's IP directly if you're connecting over a VPN or receive an
 unknown hostname error:
 
 ```shell
-ssh user@132.68.39.36
+ssh user@132.68.39.159
 ```
 
 Notes:
