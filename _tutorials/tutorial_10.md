@@ -1,17 +1,19 @@
 ---
-title: "Tutorial 10: CUDA Kernels"
+title: "Tutorial 10: Geometric deep learning"
 author: aviv
-published: true
+published: True
 ---
 
-The CUDA programming model, `numba`, implementing CUDA kernels in python, thread synchronization, shared memory
+Filters on graphs, graph convolution layers, semi-supervised node classification
 
 ## Notebook
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t10/tutorial10-cuda.ipynb).
+The tutorial notebook can be viewed
+[here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t10/tutorial10-GeometricDL.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="VYf4XmKYUKs" %}
+
+{% include video provider="youtube" id="2lFSDyoNTpw" %}
 
 

@@ -1,17 +1,16 @@
 ---
-title: "Tutorial 6: Transfer learning and domain adaptation"
+title: "Tutorial 6: Sequence Models"
 author: aviv
 published: true
 ---
 
-Transfer learning definition and contexts, fine-tuning pre-trained models,
-unsupervised domain adaptation via an adversarial approach.
+RNN implementation, sentiment analysis, Temporal Convolution Networks.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-TL_DA.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-SeqModels.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="U4ab267wl6U" %}
+{% include video provider="youtube" id="M9SZoztGDNU" %}
 

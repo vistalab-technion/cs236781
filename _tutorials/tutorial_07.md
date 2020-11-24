@@ -1,17 +1,17 @@
 ---
-title: "Tutorial 7: Attention"
+title: "Tutorial 7: Transfer learning and domain adaptation"
 author: aviv
 published: true
 ---
 
-Attention mechanisms, sequence-to-sequence models, machine translation.
+Transfer learning definition and contexts, fine-tuning pre-trained models,
+unsupervised domain adaptation via an adversarial approach.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t07/tutorial7-Attention.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t07/tutorial7-TL_DA.ipynb).
 
 ## Video
 
-{% include video provider="youtube" id="w0OZ5iHsamk" %}
-
+{% include video provider="youtube" id="U4ab267wl6U" %}
 
