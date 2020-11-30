@@ -26,7 +26,8 @@ Word embeddings
 
 ## Supplementary Slides
 
-{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21290&amp;authkey=AGPMyuvEmiUGqdQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
+{% include ppt_embed.html
+src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21299&amp;authkey=AAaQ6kZgZ4vaiiQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
 
 ## Lecture Notes
