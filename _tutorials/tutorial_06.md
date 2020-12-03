@@ -8,7 +8,7 @@ RNN implementation, sentiment analysis, Temporal Convolution Networks.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-SeqModels.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-SeqModels.ipynb?flush_cache=true).
 
 ## Video
 

@@ -8,7 +8,7 @@ The CUDA programming model, `numba`, implementing CUDA kernels in python, thread
 
 ## Notebook
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t11/tutorial11-cuda.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t11/tutorial11-cuda.ipynb?flush_cache=true).
 
 ## Video
 

@@ -9,7 +9,7 @@ Filters on graphs, graph convolution layers, semi-supervised node classification
 ## Notebook
 
 The tutorial notebook can be viewed
-[here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t10/tutorial10-GeometricDL.ipynb).
+[here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t10/tutorial10-GeometricDL.ipynb?flush_cache=true).
 
 ## Video
 

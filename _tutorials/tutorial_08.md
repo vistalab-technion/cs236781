@@ -9,7 +9,7 @@ unsupervised domain adaptation via an adversarial approach.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t08/tutorial8-TL_DA.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t08/tutorial8-TL_DA.ipynb?flush_cache=true).
 
 ## Video
 
