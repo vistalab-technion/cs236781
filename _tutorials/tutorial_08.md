@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 7: Transfer learning and domain adaptation"
+title: "Tutorial 8: Transfer learning and domain adaptation"
 author: aviv
 published: true
 ---
@@ -9,7 +9,7 @@ unsupervised domain adaptation via an adversarial approach.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t07/tutorial7-TL_DA.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t08/tutorial8-TL_DA.ipynb).
 
 ## Video
 
