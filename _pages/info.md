@@ -136,8 +136,8 @@ This semester's syllabus is provided below.
 | 8    | `10/12/2020`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I       | Transfer learning, domain adaptation        | HW3        |
 | 9    | `17/12/2020`  | **NO CLASS**                                                              |                               |                                             |            |
 | 10   | `24/12/2020`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II      | Deep reinforcement learning                 |            |
-| 11   | `31/12/2020`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning       | Geometric deep learning                     | HW4        |
-| 12   | `07/01/2021`  | -                                                                         | Adversarial robustness        | Matrix Completion                           |            |
+| 11   | `31/12/2020`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning       | Geometric deep learning                     |            |
+| 12   | `07/01/2021`  | -                                                                         | Adversarial robustness        | Matrix Completion                           | HW4        |
 | 13   | `14/01/2021`  | Parallel architectures I ([🔗]({{site.baseurl}}/lectures/lecture_09))     | DNN Compression               |                                             |            |
 | 14   | `21/01/2021`  | Parallel architectures II ([🔗]({{site.baseurl}}/lectures/lecture_10))    | DNN Hardware                  | CUDA                                        |            |
 | ---- | ------------- | ------------------------------------------------------------------------- | ----------------------------- | ------------------------------------------- | ---------- |
