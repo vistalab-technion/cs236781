@@ -27,8 +27,9 @@ Stabilizing GAN training
 
 {% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21292&amp;authkey=ACzwqnl_y8ID8x4&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
-{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21294&amp;authkey=AJQcBDbJFUGdkBY&amp;em=2&amp;wdAr=1.7777777777777777" %}
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21303&amp;authkey=AEgJZLBbJ_y-6UM&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
+{% include ppt_embed.html src="https://onedrive.live.com/embed?cid=449B779EEB6DCD79&amp;resid=449B779EEB6DCD79%21304&amp;authkey=AK6zru3HD3evzvQ&amp;em=2&amp;wdAr=1.7777777777777777" %}
 
 ## Lecture Notes
 
