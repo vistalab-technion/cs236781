@@ -67,7 +67,6 @@ regulations committee.
 4. You may not share your solutions with other students.
 5. You may not upload your homework solutions to *any* public website, such as
    github. Private repos are OK, but they must remain so even after course completion.
-   As an exception, for the course final project only, you may use a public github repo.
 
 ### Course Piazza (Q&A Site)
 
