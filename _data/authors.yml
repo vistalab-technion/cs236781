@@ -1,6 +1,6 @@
 alex:
   name: Prof. Alex Bronstein
-  bio: Lecturer
+  bio: Head Lecturer
   avatar: "/assets/images/bio-photo-alex.jpg"
   links:
     - label: "Email"
@@ -9,18 +9,6 @@ alex:
     - label: "Web"
       icon: "fas fa-fw fa-link"
       url: "https://www.cs.technion.ac.il/~bron/"
-
-avi:
-  name: Prof. Avi Mendelson
-  bio: Lecturer
-  avatar: "/assets/images/bio-photo-avi.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:avi.mendelson@tce.technion.ac.il"
-    - label: "Web"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.cs.technion.ac.il/~mendlson/"
 
 chaim:
   name: Chaim Baskin
@@ -33,7 +21,7 @@ chaim:
 
 aviv:
   name: Aviv Rosenberg
-  bio: TA
+  bio: Head TA
   avatar: "/assets/images/bio-photo-aviv.jpg"
   links:
     - label: "Email"
