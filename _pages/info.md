@@ -127,7 +127,7 @@ lecture before each respective class.
 | 8    | `03/06/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I        | Transfer learning, domain adaptation        | HW3        |
 | 9    | `10/06/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II       | Deep reinforcement learning                 |            |
 | 10   | `17/06/2021`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning        | Geometric deep learning                     |            |
-| 11   | `24/06/2021`  | -                                                                         | Adversarial robustness         | Matrix Completion                           | HW4        |
+| 11   | `24/06/2021`  | -                                                                         | Adversarial examples           | Matrix Completion                           | HW4        |
 | 12   | `01/07/2021`  | Parallel architectures ([🔗]({{site.baseurl}}/lectures/lecture_09))       | DNN Compression                | CUDA Kernels                                |            |
 | ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | ------------------------------------------- | ---------- |
 
