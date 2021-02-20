@@ -6,7 +6,7 @@ excerpt: Dates and times.
 
 Dear Students,
 
-Starting from Thursday, March 25th, the course weekly schedule is as follows:
+Starting from Thursday, March 25th, 2021, the course weekly schedule is as follows:
 
 1. Thursdays, 10:30-11:30.  
    Supplementary lecture, presented by Chaim Baskin or Prof. Alex Bronstein.
@@ -19,7 +19,7 @@ Starting from Thursday, March 25th, the course weekly schedule is as follows:
 
 Notes:
 - Evgenii's tutorial group starts from the **second** week of the semester
-  (April 1st), so it comes after each week's lecture.
+  (April 7th due to Passover), so that it comes after each week's lecture.
 - The in-class lectures are supplementary and optional; the main lecture
   material is covered by Alex's videos. Weekly video-viewing schedule is
   defined in the [syllabus]({{ site.baseurl }}{% link _pages/info.md %}#detailed-syllabus).
