@@ -23,8 +23,10 @@ jupyter lab
 ```
 to update your environment and run jupyter.
 
-## Video
+## Video (requires Technion account)
 
-{% include video provider="youtube" id="dJGTeInV2ZM" %}
+{% include panopto_embed.html
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=447d027b-77a3-4b1d-8b28-ac6300bbff85&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&start=0&interactivity=all" %}
+
 
 

@@ -10,7 +10,6 @@ RNN implementation, sentiment analysis, Temporal Convolution Networks.
 
 The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06/tutorial6-SeqModels.ipynb?flush_cache=true).
 
-## Video
+## Video (requires Technion account)
 
-{% include video provider="youtube" id="M9SZoztGDNU" %}
-
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=7073dff1-e12e-4353-bd7c-ac7f00c382c8&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}

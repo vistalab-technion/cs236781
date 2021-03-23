@@ -16,6 +16,10 @@ To run it yourself we recommend cloning the course [tutorials repo](https://gith
 Students are encouraged to install the provided `conda` environment and play
 with the examples from the notebook.
 
+## Video (requires Technion account)
+
+{% include panopto_embed.html
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=8153fd85-f4ae-4460-97b8-ac5c00b640b9&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
 
 ## Extra Resources
 
