@@ -30,9 +30,9 @@ aviv:
     # - label: "Web"
     #   icon: "fas fa-fw fa-link"
     #   url: "https://avivr.net"
-  # office_hours:
-  #   location: Zoom
-  #   time: Thursday, 13:30
+  office_hours:
+    location: Zoom
+    time: Thursday, 13:30
 
 yaniv:
   name: Yaniv Nemcovsky
