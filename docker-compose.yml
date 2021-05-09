@@ -15,7 +15,7 @@ services:
     command: jekyll serve --watch --incremental --livereload
     image: jekyll/jekyll:latest
     volumes:
-      - $PWD:/srv/jekyll:delegated
+      - $PWD:/srv/jekyll
       - $PWD/vendor/bundle:/usr/local/bundle
     environment:
       - "JEKYLL_GITHUB_TOKEN=${JEKYLL_GITHUB_TOKEN}"
