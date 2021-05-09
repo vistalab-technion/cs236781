@@ -1,7 +1,7 @@
 ---
 permalink: /info/
 title: Course Info
-classes: text-justify
+classes: text-justify 
 ---
 
 Deep learning is a powerful and relatively-new branch of machine learning. In
@@ -121,9 +121,9 @@ lecture before each respective class.
 | 3    | `22/04/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/lecture_03/))       | CNNs                           | MLP, PyTorch basics II                      |            |
 | 4    | `29/04/2021`  | Training ([🔗]({{site.baseurl}}/lectures/lecture_04))                     | Advanced training              | CNNs, ResNets                               |            |
 | 5    | `06/05/2021`  | -                                                                         | Hardware aspects of training   | Optimization                                | HW2        |
-| -    | `13/05/2021`  | **NO CLASS**                                                              | (Students' Day)                |                                             |            |
-| 6    | `20/05/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/lecture_05))              | RNNs                           | Sequence modeling, RNNs, TCNs               |            |
-| 7    | `27/05/2021`  | -                                                                         | Attention and Transformers     | Attention                                   |            |
+| -    | `13/05/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/lecture_05))              | RNNs                           | Sequence modeling, RNNs, TCNs               |            |
+| 6    | `20/05/2021`  | -                                                                         | Attention and Transformers     | Attention                                   |            |
+| -    | `27/05/2021`  | **NO CLASS**                                                              | (Students' Day)                |                                             |            |
 | 8    | `03/06/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I        | Transfer learning, domain adaptation        | HW3        |
 | 9    | `10/06/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II       | Deep reinforcement learning                 |            |
 | 10   | `17/06/2021`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning        | Geometric deep learning                     |            |
