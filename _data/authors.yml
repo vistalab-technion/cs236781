@@ -27,12 +27,12 @@ aviv:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:avivr@cs.technion.ac.il"
-    # - label: "Web"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://avivr.net"
+    - label: "Web"
+      icon: "fas fa-fw fa-link"
+      url: "https://avivr.net"
   office_hours:
     location: Zoom
-    time: Thursday, 13:30
+    time: Thursday, 17:30
 
 yaniv:
   name: Yaniv Nemcovsky
