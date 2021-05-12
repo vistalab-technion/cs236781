@@ -1,7 +1,9 @@
 ---
 title: "Lecture 11: Learning on Non-Euclidean Domains"
 excerpt: "Toeplitz operators, manifolds, graphs, convolution, spectral CNN"
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 All learning settings we have encountered thus far had a common

@@ -1,7 +1,9 @@
 ---
 title: "Lecture 5: Recurrent Neural Networks"
 excerpt: RNN building blocks, backpropagation through time, GRU, attention, convolutional alternatives.
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 Multi-layered perceptrons require the input to be of a fixed dimension,

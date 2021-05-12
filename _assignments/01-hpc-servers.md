@@ -7,6 +7,9 @@ toc_label: Contents
 toc_sticky: true
 date: 2020-10-31
 published: true
+copyright:
+  name: aviv
+  icon: fas fa-at
 ---
 
 Those of you who are officially enrolled to the course and requested access

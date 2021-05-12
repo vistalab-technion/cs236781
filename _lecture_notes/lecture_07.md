@@ -2,7 +2,9 @@
 title: "Lecture 7: Reinforcement learning"
 excerpt: "Markov decision process, optimal control, value-based learning,
     policy-based learning."
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 Until now, we have seen two learning regimes: the *supervised* regime,

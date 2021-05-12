@@ -2,7 +2,9 @@
 title: Multivariate Calculus
 excerpt: "Gradient, directional derivative, Hessian, Taylor expansion"
 author: alex
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 

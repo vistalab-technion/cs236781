@@ -2,7 +2,9 @@
 title: Linear Algebra Crash Course
 excerpt: Spaces, vector and matrix inner products, matrix functions, eigendecomposition
 author: alex
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 ## Introduction

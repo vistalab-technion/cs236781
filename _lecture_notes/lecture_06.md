@@ -1,7 +1,9 @@
 ---
 title: "Lecture 6: Unsupervised learning and generative models"
 excerpt: Autoencoders, adjoint convolutions and pooling, variational autoencoders, generative adversarial nets
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 The only training regime we have seen so far for deep neural models was

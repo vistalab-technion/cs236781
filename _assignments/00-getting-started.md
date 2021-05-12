@@ -5,6 +5,9 @@ toc: true
 toc_label: Contents
 toc_sticky: true
 date: 2020-10-31
+copyright:
+  name: aviv
+  icon: fas fa-at
 ---
 
 This document will help you get started with the course homework assignments.

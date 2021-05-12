@@ -2,7 +2,9 @@
 title: "Probability and statistics: a survival guide"
 excerpt: "Random variables and vectors, statistical estimation"
 author: alex
-copyright: alex
+copyright:
+  name: alex
+  icon: far fa-copyright
 ---
 
 Random variables
