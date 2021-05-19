@@ -14,6 +14,11 @@ The grading policy for the homework assignments is follows:
 - HW4 (mini project): 40%
 
 
+We wish to remind you also:
+- Appeals about the grades should be sent directly to the HW checkers, not
+  TAs. We will publish the info of the relevant HW checker for each assignment.
+- Technical questions must be posted on Piazza only.
+
 
 Good luck,  
 Course staff.
