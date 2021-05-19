@@ -18,6 +18,8 @@ We wish to remind you also:
 - Appeals about the grades should be sent directly to the HW checkers, not
   TAs. We will publish the info of the relevant HW checker for each assignment.
 - Technical questions must be posted on Piazza only.
+- A bonus of 1, 2, or 3 points will be given to the three students with the
+  highest number of instructor-endorsed answers on Piazza.
 
 
 Good luck,  
