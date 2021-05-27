@@ -112,22 +112,22 @@ This semester's syllabus is provided below. Please watch the linked (🔗) video
 lecture before each respective class.
 
 
-| Week | Date          | Lecture (video, mandatory)                                                | Supplemental (class, optional) | Tutorial                                    | Homework   |
-| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | ------------------------------------------- | ---------- |
+| Week | Date          | Lecture (video, mandatory)                                                | Supplemental (class, optional) | Tutorial                                                           | Homework   |
+| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | -------------------------------------------                        | ---------- |
 | 1    | `25/03/2021`  | Introduction ([🔗]({{site.baseurl}}/lectures/lecture_01/))                | Introduction                   | Env setup, numpy, torch
-| -    | `01/04/2021`  | **NO CLASS**                                                              | (Passover Holiday)             |                                             |            |
-| 2    | `08/04/2021`  | Supervised learning ([🔗]({{site.baseurl}}/lectures/lecture_02/))         | Supervised learning            | Supervised learning, PyTorch basics I       | HW1        |
-| -    | `15/04/2021`  | **NO CLASS**                                                              | (Independence Day)             |                                             |            |
-| 3    | `22/04/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/lecture_03/))       | CNNs                           | MLP, PyTorch basics II                      |            |
-| 4    | `29/04/2021`  | Training ([🔗]({{site.baseurl}}/lectures/lecture_04))                     | Advanced training              | CNNs, ResNets                               |            |
-| 5    | `06/05/2021`  | -                                                                         | Hardware aspects of training   | Optimization                                | HW2        |
-| -    | `13/05/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/lecture_05))              | RNNs                           | Sequence modeling, RNNs, TCNs               |            |
-| 6    | `20/05/2021`  | -                                                                         | Attention and Transformers     | Attention                                   |            |
-| -    | `27/05/2021`  | **NO CLASS**                                                              | (Students' Day)                |                                             |            |
-| 8    | `03/06/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I        | Transfer learning, domain adaptation        | HW3        |
-| 9    | `10/06/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II       | Deep reinforcement learning                 |            |
-| 10   | `17/06/2021`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning        | Geometric deep learning                     |            |
-| 11   | `24/06/2021`  | -                                                                         | Adversarial examples           | Matrix Completion                           | HW4        |
-| 12   | `01/07/2021`  | -                                                                         | DNN Compression                | CUDA Kernels                                |            |
-| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | ------------------------------------------- | ---------- |
+| -    | `01/04/2021`  | **NO CLASS**                                                              | (Passover Holiday)             |                                                                    |            |
+| 2    | `08/04/2021`  | Supervised learning ([🔗]({{site.baseurl}}/lectures/lecture_02/))         | Supervised learning            | Supervised learning, PyTorch basics I                              | HW1        |
+| -    | `15/04/2021`  | **NO CLASS**                                                              | (Independence Day)             |                                                                    |            |
+| 3    | `22/04/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/lecture_03/))       | CNNs                           | MLP, PyTorch basics II                                             |            |
+| 4    | `29/04/2021`  | Training ([🔗]({{site.baseurl}}/lectures/lecture_04))                     | Advanced training              | CNNs I                                                             |            |
+| 5    | `06/05/2021`  | -                                                                         | Hardware aspects of training   | CNNs II, ResNets                                                   | HW2        |
+| 6    | `13/05/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/lecture_05))              | RNNs                           | Optimization I                                                     |            |
+| 7    | `20/05/2021`  | -                                                                         | Attention and Transformers     | Optimization II                                                    |            |
+| 8    | `27/05/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I        | Sequence modeling, RNNs, TCNs Transfer learning, domain adaptation | HW3        |
+| -    | `03/06/2021`  | **NO CLASS**                                                              | (Students' Day)                |                                                                    |            |
+| 9    | `10/06/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II       | Attention                                                          |            |
+| 10   | `17/06/2021`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning        | Deep reinforcement learning                                        |            |
+| 11   | `24/06/2021`  | -                                                                         | Adversarial examples           | Geometric deep learning                                            | HW4        |
+| 12   | `01/07/2021`  | -                                                                         | DNN Compression                | CUDA Kernels                                                       |            |
+| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | -------------------------------------------                        | ---------- |
 
