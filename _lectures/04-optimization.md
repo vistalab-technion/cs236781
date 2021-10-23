@@ -1,5 +1,5 @@
 ---
-title: "Lecture 4: Training Neural Networks"
+title: "Lecture 4: Training and Optimization"
 header:
     teaser: assets/images/lec4/teaser.jpg
 ---

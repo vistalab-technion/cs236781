@@ -2,6 +2,7 @@
 title: "Lecture 12: Neural network compression"
 header:
     teaser: assets/images/lec12/pruning_inv.png
+published: false
 ---
 
 SVD for linear layers, flattened and grouped convolutions, pruning and

@@ -1,5 +1,5 @@
 ---
-title: "Lecture 11: Learning on Non-Euclidean Domains"
+title: "Lecture 8: Learning on Non-Euclidean Domains"
 header:
     teaser: assets/images/lec11/lec11-1.jpg
 ---

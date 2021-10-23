@@ -2,6 +2,7 @@
 title: "Lecture 8: Intro to Parallel Architectures"
 header:
     teaser: assets/images/lec8/gpu2.jpg
+published: false
 ---
 
 Parallelism and multithreading, execution of DL tasks, CPU vs. GPU architectures, CUDA programming model.
