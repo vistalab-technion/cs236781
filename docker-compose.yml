@@ -14,6 +14,7 @@ services:
   site:
     command: jekyll serve --watch --incremental --livereload
     image: jekyll/jekyll:latest
+    init: true
     volumes:
       - $PWD:/srv/jekyll
       - $PWD/vendor/bundle:/usr/local/bundle
