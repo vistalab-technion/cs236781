@@ -10,10 +10,8 @@ The **mandatory** viewing material for each week of this semester is detailed
 in the [syllabus]({{ site.baseurl }}{% link _pages/info.md
 %}#detailed-syllabus).
 
-In each of the lecture links, only the main video is mandatory.
-These lectures represent the core material of the course.
-Anything marked as "supplementary" is optional unless otherwise noted.
-The in-class lectures are also supplemental. They will be 1-hour long and aim to
+In each of the lecture links, only the main video is mandatory. The in-class
+lectures provide supplemental material. They will be 1-hour long and aim to
 present more advanced topics and new research in the field.
 
 Thanks,  

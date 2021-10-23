@@ -2,6 +2,7 @@
 title: Links for in-class meeting recordings
 author: aviv
 excerpt: Now published.
+published: false
 ---
 
 Dear Students,
