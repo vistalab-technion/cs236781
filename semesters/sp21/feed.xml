@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/" rel="alternate" type="text/html" /><updated>2021-10-23T18:18:33+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/feed.xml</id><title type="html">CS236781: Deep Learning</title><subtitle>Course website</subtitle><author><name>{&quot;name&quot;=&gt;&quot;&quot;, &quot;avatar&quot;=&gt;&quot;&quot;, &quot;bio&quot;=&gt;&quot;&quot;, &quot;location&quot;=&gt;&quot;&quot;, &quot;email&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Final homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/07/04/hw4/" rel="alternate" type="text/html" title="Final homework assignment" /><published>2021-07-04T00:00:00+03:00</published><updated>2021-07-04T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/07/04/hw4</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/07/04/hw4/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The fourth and final homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/sp21/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Good luck!&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Third homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/11/hw3/" rel="alternate" type="text/html" title="Third homework assignment" /><published>2021-06-11T00:00:00+03:00</published><updated>2021-06-11T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/11/hw3</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/11/hw3/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The third homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/sp21/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Schedule updates</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/01/schedule-update/" rel="alternate" type="text/html" title="Schedule updates" /><published>2021-06-01T00:00:00+03:00</published><updated>2021-06-01T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/01/schedule-update</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/06/01/schedule-update/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;This Thursday we’ll have a complementary tutorial instead of the lecture
+(10:30-12:30).&lt;/p&gt;
+
+&lt;p&gt;It will be given over Zoom only - please use the regular tutorials’ Zoom link.&lt;/p&gt;
+
+&lt;p&gt;See you,&lt;br /&gt;
+Aviv &amp;amp; Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">This week.</summary></entry><entry><title type="html">Grading policy</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/19/grading-policy/" rel="alternate" type="text/html" title="Grading policy" /><published>2021-05-19T00:00:00+03:00</published><updated>2021-05-19T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/19/grading-policy</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/19/grading-policy/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The homework assignments in this course do not have equal weight.
+The grading policy for the homework assignments is follows:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;HW1: 10%&lt;/li&gt;
+  &lt;li&gt;HW2: 20%&lt;/li&gt;
+  &lt;li&gt;HW3: 30%&lt;/li&gt;
+  &lt;li&gt;HW4 (mini project): 40%&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We wish to remind you also:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Appeals about the grades should be sent directly to the HW checkers, not
+TAs. We will publish the info of the relevant HW checker for each assignment.&lt;/li&gt;
+  &lt;li&gt;Technical questions must be posted on Piazza only.&lt;/li&gt;
+  &lt;li&gt;A bonus of 1, 2, or 3 points will be given to the three students with the
+highest number of instructor-endorsed answers on Piazza.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">For homework assignments.</summary></entry><entry><title type="html">Second homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/12/hw2/" rel="alternate" type="text/html" title="Second homework assignment" /><published>2021-05-12T00:00:00+03:00</published><updated>2021-05-12T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/12/hw2</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/05/12/hw2/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The second homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/sp21/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Those of you who signed up for access to the course servers should have access.
+Please read the &lt;a href=&quot;cs236781/semesters/sp21/assignments/hpc-servers&quot;&gt;guide for using course servers&lt;/a&gt; carefully.&lt;/p&gt;
+
+&lt;p&gt;Good luck and have fun!&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Access to course servers</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/19/access-to-servers/" rel="alternate" type="text/html" title="Access to course servers" /><published>2021-04-19T00:00:00+03:00</published><updated>2021-04-19T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/19/access-to-servers</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/19/access-to-servers/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;Those of you who registered for access to the course servers before the
+deadline (April 15th) should now have access.
+Please read the &lt;a href=&quot;cs236781/semesters/sp21/assignments/hpc-servers&quot;&gt;usage instructions&lt;/a&gt; carefully.&lt;/p&gt;
+
+&lt;p&gt;Also, please note that if you have issues using the Technion VPN, please
+contact &lt;a href=&quot;https://cis.technion.ac.il/support/&quot;&gt;CIS support&lt;/a&gt; directly, as we cannot assist you with that.&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now available.</summary></entry><entry><title type="html">First homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/10/hw1/" rel="alternate" type="text/html" title="First homework assignment" /><published>2021-04-10T00:00:00+03:00</published><updated>2021-04-10T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/10/hw1</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/10/hw1/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The first homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/sp21/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Please read the &lt;a href=&quot;cs236781/semesters/sp21/assignments/getting-started&quot;&gt;getting started page&lt;/a&gt; carefully before starting!&lt;/p&gt;
+
+&lt;p&gt;Good luck and have fun with the assignment.&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Links for in-class meeting recordings</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/01/recording-links/" rel="alternate" type="text/html" title="Links for in-class meeting recordings" /><published>2021-04-01T00:00:00+03:00</published><updated>2021-04-01T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/01/recording-links</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/04/01/recording-links/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;You can view the recordings of the in-class meetings from the current semester here:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://panoptotech.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=ae97046b-79c0-4e66-8857-acf700c2dce3&quot;&gt;Tutorials&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://panoptotech.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=4f37da0b-50a4-42de-9450-acfd013ff49b&quot;&gt;Supplementary
+Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the tutorials, you can instead watch the videos on the
+&lt;a href=&quot;cs236781/semesters/sp21/tutorials/&quot;&gt;Tutorials&lt;/a&gt;
+page.&lt;/p&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Course schedule</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/course-schedule/" rel="alternate" type="text/html" title="Course schedule" /><published>2021-02-21T00:00:00+02:00</published><updated>2021-02-21T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/course-schedule</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/course-schedule/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;Starting from Thursday, March 25th, 2021, the course weekly schedule is as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thursdays, 10:30-11:30, Taub 2 and Zoom (hybrid).&lt;br /&gt;
+Supplementary lecture, presented by Chaim Baskin or Prof. Alex Bronstein.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Thursdays at 12:30-13:30, Taub 7 and Zoom (hybrid).&lt;br /&gt;
+Tutorial, presented by Aviv Rosenberg.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Wednesdays at 11:30-12:30, Zoom only.&lt;br /&gt;
+Tutorial, presented by Yaniv Nemcovsky.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Notes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Yaniv’s tutorial group starts from the &lt;strong&gt;second&lt;/strong&gt; week of the semester
+(April 7th due to Passover), so that it comes after each week’s lecture.&lt;/li&gt;
+  &lt;li&gt;The in-class lectures are supplementary; the main lecture
+material is covered by Alex’s videos. Weekly video-viewing schedule is
+defined in the &lt;a href=&quot;cs236781/semesters/sp21/info/#detailed-syllabus&quot;&gt;syllabus&lt;/a&gt;.
+Make sure to watch the relevant video lecture each week &lt;strong&gt;before&lt;/strong&gt; class.&lt;/li&gt;
+  &lt;li&gt;The Zoom links will be published to the course mailing list.&lt;/li&gt;
+  &lt;li&gt;All course meetings will be held in &lt;strong&gt;English&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;Everything will be recorded to provide you with maximal flexibility regarding attendance.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We wish you a productive semester and hope you enjoy the course!&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Aviv &amp;amp; course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Dates and times.</summary></entry><entry><title type="html">Weekly video schedule</title><link href="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/viewing-schedule/" rel="alternate" type="text/html" title="Weekly video schedule" /><published>2021-02-21T00:00:00+02:00</published><updated>2021-02-21T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/viewing-schedule</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/sp21/2021/02/21/viewing-schedule/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;mandatory&lt;/strong&gt; viewing material for each week of this semester is detailed
+in the &lt;a href=&quot;cs236781/semesters/sp21/info/#detailed-syllabus&quot;&gt;syllabus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In each of the lecture links, only the main video is mandatory.
+These lectures represent the core material of the course.
+Anything marked as “supplementary” is optional unless otherwise noted.
+The in-class lectures are also supplemental. They will be 1-hour long and aim to
+present more advanced topics and new research in the field.&lt;/p&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Required viewing material per week</summary></entry></feed>
