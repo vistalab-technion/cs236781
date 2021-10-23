@@ -10,8 +10,8 @@ We have opened a Piazza forum for your benefit.
 This will serve as the **only official** discussion forum for our course.
 
 You can sign up and access Piazza
-[here](piazza.com/technion.ac.il/winter2022/236781), by sigining up with your
-Techinon `@campus` email. External (non-Technion) students can also access
+[here](https://piazza.com/technion.ac.il/winter2022/236781), by signing up with your
+Technion `@campus` email. External (non-Technion) students can also access
 Piazza by invitation. Such students can send me an email and request an invite
 for Piazza.
 
