@@ -1,10 +1,10 @@
 ---
 permalink: /info/
 title: Course Info
-classes: text-justify 
+classes: text-justify wide
 ---
 
-Deep learning is a powerful and relatively-new branch of machine learning. In
+Deep learning is a powerful and relatively new branch of machine learning. In
 recent years it has been successfully applied to some of the most challenging
 problems in the broad field of AI, such as recognizing objects in an image,
 converting speech to text or playing games. In many such tasks, the state of
@@ -22,13 +22,11 @@ learning research.
 
 At the end of the course, the student will:
 
-1.	Understand the key notions of deep learning, such as learning regimes, model
-    types, optimization and training methodologies.
+1.	Understand the key notions of deep learning, such as neural networks,
+    learning regimes, optimization algorithms and training methodologies.
 1.  Be able to apply deep learning algorithms to real-world data and problems.
 1.	Know how to effectively use python and pytorch to implement models and
     algorithms from the recent literature.
-1.	Know how to leverage GPUs and write custom computational kernels to
-    accelerate both training and inference.
 1.	Perform a small research project using the studied notions and techniques.
 
 
@@ -36,7 +34,7 @@ At the end of the course, the student will:
 
 **Evaluation**: 100% Homework assignments.
 
-**Language**: The course will be taught in English only.
+**Language**: All course materials (including lecture and tutorial videos) are provided in English.
 
 **Credits**: 3.0.
 
@@ -91,7 +89,7 @@ The lectures will follow a flipped-classroom approach: Students will be
 requested to watch recorded video lectures as a **mandatory** course
 requirement. We provide videos and written material, on the course
 [Lectures]({{ site.baseurl }}/lectures) page, to facilitate self-learning of
-the core topics. The in-class lectures will be short (1h), optional, and
+the core topics. The in-class lectures will be short (1h), and
 cover more advanced material, such as state of the art approaches from the
 latest research.
 
@@ -111,23 +109,21 @@ with Deep Learning.
 This semester's syllabus is provided below. Please watch the linked (🔗) video
 lecture before each respective class.
 
-
-| Week | Date          | Lecture (video, mandatory)                                                | Supplemental (class, optional) | Tutorial                                    | Homework   |
-| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | ------------------------------------------- | ---------- |
-| 1    | `25/03/2021`  | Introduction ([🔗]({{site.baseurl}}/lectures/lecture_01/))                | Introduction                   | Env setup, numpy, torch
-| -    | `01/04/2021`  | **NO CLASS**                                                              | (Passover Holiday)             |                                             |            |
-| 2    | `08/04/2021`  | Supervised learning ([🔗]({{site.baseurl}}/lectures/lecture_02/))         | Supervised learning            | Supervised learning, PyTorch basics I       | HW1        |
-| -    | `15/04/2021`  | **NO CLASS**                                                              | (Independence Day)             |                                             |            |
-| 3    | `22/04/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/lecture_03/))       | CNNs                           | MLP, PyTorch basics II                      |            |
-| 4    | `29/04/2021`  | Training ([🔗]({{site.baseurl}}/lectures/lecture_04))                     | Advanced training              | CNNs I                                      |            |
-| 5    | `06/05/2021`  | -                                                                         | Hardware aspects of training   | CNNs II, ResNets                            | HW2        |
-| 6    | `13/05/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/lecture_05))              | RNNs                           | Optimization I                              |            |
-| 7    | `20/05/2021`  | -                                                                         | Attention and Transformers     | Optimization II                             |            |
-| 8    | `27/05/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/lecture_06))        | Unsupervised learning I        | Sequence modeling, RNNs I,                  |            |
-| 9    | `03/06/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/lecture_07))  | Unsupervised learning II       | RNNs II, TCNs, Attention                    | HW3        |
-| -    | `10/06/2021`  | **NO CLASS**                                                              | (Students' Day)                |                                             |            |
-| 10   | `17/06/2021`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/lecture_11))        | Geometric deep learning        | Transfer learning, domain adaptation        |            |
-| 11   | `24/06/2021`  | -                                                                         | Adversarial examples           | Deep reinforcement learning                 |            |
-| 12   | `01/07/2021`  | -                                                                         | DNN Compression                | Geometric deep learning                     | HW4        |
-| ---- | ------------- | ------------------------------------------------------------------------- | -----------------------------  | ------------------------------------------- | ---------- |
+| Week | Date          | Lecture (video)                                                              | Supplemental (class)          | Tutorial                                    | Homework   |
+| ---- | ------------- | -------------------------------------------------------------------------    | ----------------------------- | ------------------------------------------- | ---------- |
+| 1    | `28/10/2021`  | Introduction ([🔗]({{site.baseurl}}/lectures/01-intro/))                     | Introduction                  | Env setup, numpy, torch
+| 2    | `04/11/2021`  | Supervised learning ([🔗]({{site.baseurl}}/lectures/02-supervised/))         | Supervised learning           | Supervised learning, PyTorch basics I       | HW1        |
+| 3    | `11/11/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/03-neural_nets/))      | CNNs I                        | MLP, PyTorch basics II                      |            |
+| 4    | `18/11/2021`  | -                                                                            | CNNs II                       | CNNs                                        | HW2        |
+| 5    | `25/11/2021`  | Training and Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/)) | Training                      | Optimization I                              |            |
+| -    | `02/12/2021`  | **NO CLASS**                                                                 | (Hanukkah)                    |                                             |            |
+| 6    | `09/12/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))               | RNNs                          | Optimization II                             |            |
+| 7    | `16/12/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Attention and Transformers    | Sequence modeling, RNNs I                   | HW3        |
+| 8    | `23/12/2021`  | -                                                                            | Unsupervised learning I       | RNNs II, TCNs                               |            |
+| 9    | `30/12/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/07-rl/))         | Unsupervised learning II      | Attention I                                 |            |
+| 10   | `06/01/2022`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/08-geometric/))        | Geometric DL I                | Attention II                                | HW4        |
+| 11   | `13/01/2022`  | -                                                                            | Geometric DL II               | Transfer learning, domain adaptation        |            |
+| 12   | `20/01/2022`  | -                                                                            | Visual Attention              | Deep reinforcement learning                 |            |
+| 13   | `27/01/2022`  | -                                                                            | Adversarial examples          | Geometric deep learning                     |            |
+| ---- | ------------- | -------------------------------------------------------------------------    | ----------------------------- | ------------------------------------------- | ---------- |
 
