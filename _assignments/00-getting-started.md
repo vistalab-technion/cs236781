@@ -4,7 +4,7 @@ permalink: assignments/getting-started
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2020-10-31
+date: 2021-11-04
 copyright:
   name: aviv
   icon: fas fa-at
@@ -58,7 +58,8 @@ Each assignment's root directory contains the following files and folders:
   You'll run it to create your submission after completing the
   assignment.
 - `environment.yml`: A file for `conda`, specifying the third-party packages it
-  should install into the virtual environment it creates.
+  should install into the virtual environment it creates. Note that every
+  assignment could define a different environment.
 
 ## Environment set-up
 
@@ -98,13 +99,14 @@ Each assignment's root directory contains the following files and folders:
     ```
 
    This will install all the necessary packages into a new conda virtual
-   environment named `cs236781-hw`.
+   environment named `cs236781-hwN` (where `N` is the assignment number).
 
-3. Activate the new environment by running
+3. Activate the new environment by running e.g.
 
     ```shell
-    conda activate cs236781-hw
+    conda activate cs236781-hw1
     ```
+    (change `hw1` to `hw2`, etc. for each assignment).
 
    *Activating* an environment simply means that the path to its python binaries
    (and packages) is placed at the beginning of your `$PATH` shell variable.
@@ -119,33 +121,37 @@ Each assignment's root directory contains the following files and folders:
     ```
 
    or, you can run `which python` and you should see the python binary is in a
-   subfolder of `~/miniconda3/envs/cs236781-hw/`.
+   subfolder of `~/miniconda3/envs/cs236781-hwN/`.
 
    You can find more useful info about conda environments
    [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
 
-Notes: 
+### General Notes
 
-- You only need to do steps 1 and 2 above once (not for each assignment).
-  However, the third-party package dependencies (in the `environment.yml` file)
-  might slightly change from one
-  assignment to the next. To make sure you have the correct versions run
+- You should to do steps 1 (installing `conda`) once, not for each assignment.
 
-    ```shell
-    conda env update -f environment.yml
-    ```
-  again from the assignment root directory every time a new assignment is
-  published.
+- However, the third-party package dependencies (in the `environment.yml` file)
+  might slightly change from one assignment to the next.
+  To make sure you have the correct versions, always install the environment
+  again (step 2 above) from the assignment root directory every time a new
+  assignment is published and then activate the environment with the assignment
+  number.
 
-- Always make sure the correct environment is active! It will revert to it's
+- Always make sure the correct environment is active! It will revert to its
   default each new terminal session. If you want to change the default env you
   can add a `conda activate` in your `~/.bashrc`.
 
 - If you use PyCharm or any other IDE, you should configure the interpreter path
   of the IDE to the path of the `python` executable within the conda
   env folder. For example, point the interpreter path to
-  `~/miniconda3/envs/cs236781-hw/bin/python`.
+  `~/miniconda3/envs/cs236781-hwN/bin/python`.
   This is under `Settings -> Project -> Project Interpreter`.
+
+- You'll need to install the conda env within your user folder on the course
+  server. The installation procedure is exactly the same, just follow the
+  instructions for linux.
+
+### Notes for Windows Users
 
 - On Windows, you can run these commands from the **Anaconda Prompt** program
   that is installed with miniconda. If you also add the `conda` installation
@@ -155,17 +161,13 @@ Notes:
 - Also on Windows, you need to install Microsoft's [Build Tools for Visual
   Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)
   before the conda environment.  Make sure "C++ Build Tools" is selected during
-  installation.
-
-- You'll need to install the conda env within your user folder on the course
-  server. The installation procedure is exactly the same, just follow the
-  instructions for linux.
+  installation. This only needs to be done once.
 
 ## Working on the assignment
 
 ### Running Jupyter
 
-Make sure that the active conda environment is `cs236781-hw` (see above), and
+Make sure that the active conda environment is `cs236781-hwN` (see above), and
 run
 
 ```shell
@@ -224,10 +226,11 @@ Notes:
    will be added to your submission which is automatically generated from the
    contents of the assignment folder.
 
-5. Always make sure the active conda env is `cs236781-hw`. If you get strange
-   errors or broken import statements, this is probably the reason.
-   Note that if you close your terminal session you will need to re-activate
-   since conda will use it's default `base` environment.
+5. Always make sure the active conda env is `cs236781-hwN` (where `N` is the
+   assignment number). If you get strange errors or failing import statements,
+   this is probably the reason. Note that if you close your terminal session
+   you will need to re-activate since conda will use it's default `base`
+   environment.
 
 ## Submitting the assignment
 
@@ -288,6 +291,6 @@ The `.zip` file you generate should be uploaded using the assignments tab in the
 
 Grades will also be reported there.
 
-Only a submisstion generated by the course script is considered valid. Any
+Only a submission generated by the course script is considered valid. Any
 other submissions, e.g. submitting only the notebooks or the code files will
 **not be graded**.
