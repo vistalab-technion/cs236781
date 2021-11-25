@@ -114,12 +114,12 @@ lecture before each respective class.
 | 1    | `28/10/2021`  | Introduction ([🔗]({{site.baseurl}}/lectures/01-intro/))                     | Introduction                  | Env setup, numpy, torch
 | 2    | `04/11/2021`  | Supervised learning ([🔗]({{site.baseurl}}/lectures/02-supervised/))         | Supervised learning           | Supervised learning, PyTorch basics I       | HW1        |
 | 3    | `11/11/2021`  | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/03-neural_nets/))      | CNNs I                        | MLP, PyTorch basics II                      |            |
-| 4    | `18/11/2021`  | -                                                                            | CNNs II                       | CNNs                                        | HW2        |
-| 5    | `25/11/2021`  | Training and Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/)) | Training                      | Optimization I                              |            |
+| 4    | `18/11/2021`  | -                                                                            | CNNs II                       | CNNs                                        |            |
+| 5    | `25/11/2021`  | Training and Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/)) | Training                      | Optimization I                              | HW2        |
 | -    | `02/12/2021`  | **NO CLASS**                                                                 | (Hanukkah)                    |                                             |            |
 | 6    | `09/12/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))               | RNNs                          | Optimization II                             |            |
-| 7    | `16/12/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Attention and Transformers    | Sequence modeling, RNNs I                   | HW3        |
-| 8    | `23/12/2021`  | -                                                                            | Unsupervised learning I       | RNNs II, TCNs                               |            |
+| 7    | `16/12/2021`  | -                                                                            | Attention and Transformers    | Sequence modeling, RNNs I                   | HW3        |
+| 8    | `23/12/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Unsupervised learning I       | RNNs II, TCNs                               |            |
 | 9    | `30/12/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/07-rl/))         | Unsupervised learning II      | Attention I                                 |            |
 | 10   | `06/01/2022`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/08-geometric/))        | Geometric DL I                | Attention II                                | HW4        |
 | 11   | `13/01/2022`  | -                                                                            | Geometric DL II               | Transfer learning, domain adaptation        |            |
