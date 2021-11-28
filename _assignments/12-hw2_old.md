@@ -1,26 +1,26 @@
 ---
 title: "Homework 2"
 permalink: assignments/hw2
-excerpt: MLPs and CNNs
+excerpt: Backpropagarion, optimization, training, and convolutional architectures
 author: aviv
-published: true
+published: false
 ---
 
-**Submission date**: December 23rd, 2021
+**Submission date**: June 6th, 2021
 
 ## Topics
 
-- Multilayer perceptrons
-- Decision boundaries
-- Threshold selection
-- Convolutional neural networks
+- Backpropagation
+- Optimization algorithms for deep learning
+- Training
+- Convolutional networks
 - Residual blocks
 - Network architecture
 
 ## Downloading
 
 The assignment is available
-[here](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/EUTO8jIM19hKnWpnpB35wl4BlOuKMphkWMavtplrbTi5Pw?e=V76oeJ)
+[here](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/ESoAv7kB6olBtbJdxwNOCXQBkYd2MxVoWE7LyVcZiXI08Q?e=y693v4)
 (use the download button at the top).
 
 
