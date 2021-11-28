@@ -118,11 +118,11 @@ lecture before each respective class.
 | 5    | `25/11/2021`  | Training and Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/)) | Training                      | Optimization I                              | HW2        |
 | -    | `02/12/2021`  | **NO CLASS**                                                                 | (Hanukkah)                    |                                             |            |
 | 6    | `09/12/2021`  | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))               | RNNs                          | Optimization II                             |            |
-| 7    | `16/12/2021`  | -                                                                            | Attention and Transformers    | Sequence modeling, RNNs I                   | HW3        |
-| 8    | `23/12/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Unsupervised learning I       | RNNs II, TCNs                               |            |
+| 7    | `16/12/2021`  | -                                                                            | Attention and Transformers    | Sequence modeling, RNNs I                   |            |
+| 8    | `23/12/2021`  | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Unsupervised learning I       | RNNs II, TCNs                               | HW3        |
 | 9    | `30/12/2021`  | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/07-rl/))         | Unsupervised learning II      | Attention I                                 |            |
-| 10   | `06/01/2022`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/08-geometric/))        | Geometric DL I                | Attention II                                | HW4        |
-| 11   | `13/01/2022`  | -                                                                            | Geometric DL II               | Transfer learning, domain adaptation        |            |
+| 10   | `06/01/2022`  | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/08-geometric/))        | Geometric DL I                | Attention II                                |            |
+| 11   | `13/01/2022`  | -                                                                            | Geometric DL II               | Transfer learning, domain adaptation        | HW4        |
 | 12   | `20/01/2022`  | -                                                                            | Visual Attention              | Deep reinforcement learning                 |            |
 | 13   | `27/01/2022`  | -                                                                            | Adversarial examples          | Geometric deep learning                     |            |
 | ---- | ------------- | -------------------------------------------------------------------------    | ----------------------------- | ------------------------------------------- | ---------- |
