@@ -1,24 +1,23 @@
 ---
 title: "Homework 3"
 permalink: assignments/hw3
-excerpt: Backpropagarion, optimization, RNNs
+excerpt: Sequence models, variational autoencoders, GANs
 author: aviv
-published: true
+published: false
 ---
 
-**Submission date**: January 16th, 2022
+**Submission date**: July 4th, 2021
 
 ## Topics
 
-- Backpropagation
-- Optimization algorithms for deep learning
-- Training
 - Sequence models for text generation
+- Image generation with a Variational Autoencoder
+- Generative adversarial networks
 
 ## Downloading
 
 The assignment is available
-[here](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/EYGCM7_vULJKj4-JLk_QVy8Bp7F9EMhI8Unatafwe0mOjQ)
+[here](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/EQ2hG2Z4ib9Im1M9NzHL0bcBvuUTvzYh1bsdrGu11GetzQ?e=cJjwFe)
 (use the download button at the top).
 
 ## FAQ
