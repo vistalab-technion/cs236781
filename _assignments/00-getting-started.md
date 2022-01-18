@@ -91,7 +91,15 @@ Each assignment's root directory contains the following files and folders:
    On Windows, download the installer and follow the instructions on the conda
    website. See also the Windows-specific notes below before you proceed.
 
-2. Use conda to create a virtual environment for the assignment.
+2. Configure `conda` to use strict channel priority (will speed up solving the
+   environment) and to not automatically activate the default env (will force
+   you to activate a specific env):
+    ```shell
+    conda config --set channel_priority strict
+    conda config --set auto_activate_base False
+    ```
+
+3. Use conda to create a virtual environment for the assignment.
    From the assignment's root directory, run
 
     ```shell
@@ -101,7 +109,7 @@ Each assignment's root directory contains the following files and folders:
    This will install all the necessary packages into a new conda virtual
    environment named `cs236781-hwN` (where `N` is the assignment number).
 
-3. Activate the new environment by running e.g.
+4. Activate the new environment by running e.g.
 
     ```shell
     conda activate cs236781-hw1
