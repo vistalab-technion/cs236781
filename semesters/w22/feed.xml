@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/" rel="alternate" type="text/html" /><updated>2022-03-12T12:37:15+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/feed.xml</id><title type="html">CS236781: Deep Learning</title><subtitle>Course website</subtitle><author><name>{&quot;name&quot;=&gt;&quot;&quot;, &quot;avatar&quot;=&gt;&quot;&quot;, &quot;bio&quot;=&gt;&quot;&quot;, &quot;location&quot;=&gt;&quot;&quot;, &quot;email&quot;=&gt;nil, &quot;links&quot;=&gt;[{&quot;label&quot;=&gt;&quot;Email&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-envelope-square&quot;}, {&quot;label&quot;=&gt;&quot;Website&quot;, &quot;icon&quot;=&gt;&quot;fas fa-fw fa-link&quot;}, {&quot;label&quot;=&gt;&quot;Twitter&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-twitter-square&quot;}, {&quot;label&quot;=&gt;&quot;Facebook&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-facebook-square&quot;}, {&quot;label&quot;=&gt;&quot;GitHub&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-github&quot;}, {&quot;label&quot;=&gt;&quot;Instagram&quot;, &quot;icon&quot;=&gt;&quot;fab fa-fw fa-instagram&quot;}]}</name></author><entry><title type="html">Final homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2022/01/18/hw4/" rel="alternate" type="text/html" title="Final homework assignment" /><published>2022-01-18T00:00:00+02:00</published><updated>2022-01-18T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2022/01/18/hw4</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2022/01/18/hw4/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The final homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/w22/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Good luck and enjoy,&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Third homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/26/hw3/" rel="alternate" type="text/html" title="Third homework assignment" /><published>2021-12-26T00:00:00+02:00</published><updated>2021-12-26T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/26/hw3</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/26/hw3/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The third homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/w22/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Computational imaging projects</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/07/projects_at_vista/" rel="alternate" type="text/html" title="Computational imaging projects" /><published>2021-12-07T00:00:00+02:00</published><updated>2021-12-07T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/07/projects_at_vista</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/07/projects_at_vista/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;The VISTA Lab is looking for excellent students (M.Sc. or final year
+undergraduate) to conduct research projects on computational imaging. Our Deep
+Learning course has strong applicability for these projects.&lt;/p&gt;
+
+&lt;p&gt;Please find below the project proposals with further details.
+Interested students can contact &lt;a href=&quot;mailto:tomerweiss196@gmail.com&quot;&gt;Tomer Weiss&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1g9bsnlYkQqton8Dofj7jUn3ARo9pp43Z/view?usp=sharing&quot;&gt;Learning efficient dynamic MRI&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1ApnTRxbqqMqtmbD55PwnQhbC_eIZhrzR/view?usp=sharing&quot;&gt;Task-driven efficient MIMO Radar Imaging&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">At the VISTA Lab.</summary></entry><entry><title type="html">Update for HW2</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/05/hw2-update1/" rel="alternate" type="text/html" title="Update for HW2" /><published>2021-12-05T00:00:00+02:00</published><updated>2021-12-05T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/05/hw2-update1</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/12/05/hw2-update1/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;We have published an update for HW2.
+Please see the &lt;a href=&quot;cs236781/semesters/w22/assignments/hw2&quot;&gt;hw2 assignment page&lt;/a&gt; for more details and the
+updated download link.&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Is available.</summary></entry><entry><title type="html">Second homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/28/hw2/" rel="alternate" type="text/html" title="Second homework assignment" /><published>2021-11-28T00:00:00+02:00</published><updated>2021-11-28T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/28/hw2</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/28/hw2/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The second homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/w22/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Those of you who signed up for access to the course servers should have access.
+Please read the &lt;a href=&quot;cs236781/semesters/w22/assignments/hpc-servers&quot;&gt;guide for using course servers&lt;/a&gt; carefully.&lt;/p&gt;
+
+&lt;p&gt;Good luck and have fun!&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Access to course servers</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/17/access-to-servers/" rel="alternate" type="text/html" title="Access to course servers" /><published>2021-11-17T00:00:00+02:00</published><updated>2021-11-17T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/17/access-to-servers</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/17/access-to-servers/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;Those of you who registered for access to the course servers should now have access.
+Please read the &lt;a href=&quot;cs236781/semesters/w22/assignments/hpc-servers&quot;&gt;usage instructions&lt;/a&gt; carefully.&lt;/p&gt;
+
+&lt;p&gt;Also, please note that if you have issues using the Technion VPN, please
+contact &lt;a href=&quot;https://cis.technion.ac.il/support/&quot;&gt;CIS support&lt;/a&gt; directly, as we cannot assist you with that.&lt;/p&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now available.</summary></entry><entry><title type="html">Room Change for Thursday Tutorials</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/11/room-change/" rel="alternate" type="text/html" title="Room Change for Thursday Tutorials" /><published>2021-11-11T00:00:00+02:00</published><updated>2021-11-11T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/11/room-change</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/11/room-change/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;Starting from today (November 11), the Thursday 12:30 tutorials will be
+presented in Taub 7.&lt;/p&gt;
+
+&lt;p&gt;See you,&lt;br /&gt;
+Aviv &amp;amp; Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">From now on in Taub 7.</summary></entry><entry><title type="html">First homework assignment</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/04/hw1/" rel="alternate" type="text/html" title="First homework assignment" /><published>2021-11-04T00:00:00+02:00</published><updated>2021-11-04T00:00:00+02:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/04/hw1</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/11/04/hw1/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The first homework assignment is out and can be viewed in the &lt;a href=&quot;cs236781/semesters/w22/assignments/&quot;&gt;assignments&lt;/a&gt; section.&lt;/p&gt;
+
+&lt;p&gt;Please read the &lt;a href=&quot;cs236781/semesters/w22/assignments/getting-started&quot;&gt;getting started page&lt;/a&gt; carefully before starting!&lt;/p&gt;
+
+&lt;p&gt;Good luck and have fun with the assignment.&lt;br /&gt;
+Aviv&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now published.</summary></entry><entry><title type="html">Grading policy</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/grading-policy/" rel="alternate" type="text/html" title="Grading policy" /><published>2021-10-24T00:00:00+03:00</published><updated>2021-10-24T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/grading-policy</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/grading-policy/">&lt;p&gt;Dear Students,&lt;/p&gt;
+
+&lt;p&gt;The homework assignments in this course do not have equal weight.
+Also, each assignment will be graded by a different HW checker.&lt;/p&gt;
+
+&lt;p&gt;The grading policy and HW checkers are as follows:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;Weight&lt;/th&gt;
+      &lt;th&gt;Graded By&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HW1&lt;/td&gt;
+      &lt;td&gt;10%&lt;/td&gt;
+      &lt;td&gt;Yaniv&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HW2&lt;/td&gt;
+      &lt;td&gt;20%&lt;/td&gt;
+      &lt;td&gt;Evgenii&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HW3&lt;/td&gt;
+      &lt;td&gt;30%&lt;/td&gt;
+      &lt;td&gt;Evgenii&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;HW4 (mini-project)&lt;/td&gt;
+      &lt;td&gt;40%&lt;/td&gt;
+      &lt;td&gt;Ben&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Please note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Any appeals or inquiries about the grades should be sent directly to the
+relevant HW checker for the assignment, not to the TAs.&lt;/li&gt;
+  &lt;li&gt;Technical questions about the HW assignments must be posted on Piazza only.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Good luck,&lt;br /&gt;
+Course staff.&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">For homework assignments.</summary></entry><entry><title type="html">Registration for course servers</title><link href="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/registration-for-servers/" rel="alternate" type="text/html" title="Registration for course servers" /><published>2021-10-24T00:00:00+03:00</published><updated>2021-10-24T00:00:00+03:00</updated><id>https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/registration-for-servers</id><content type="html" xml:base="https://vistalab-technion.github.io/cs236781/semesters/w22/2021/10/24/registration-for-servers/">&lt;p&gt;Dear students,&lt;/p&gt;
+
+&lt;p&gt;This course requires use of a GPU for some of the homework assignments.
+We can provide you access to the faculty’s compute cluster which contains
+GPU-enabled servers.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: enrollment in the course does &lt;strong&gt;not automatically&lt;/strong&gt; provide
+access to the course servers; if you wish you use the course servers, separate
+registration is required using the link below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Deadline for registration is 18/11/2021&lt;/strong&gt;. After this date the list of
+students who requested access (and are also officially enrolled to the course)
+will be passed to the CS faculty IT team and granted access. Students who do
+not register before the deadline forfeit server access for the entire semester!&lt;/p&gt;
+
+&lt;p&gt;Please register using &lt;a href=&quot;https://forms.gle/F7DdKvWV92fhLF9g8&quot;&gt;this link&lt;/a&gt;.
+Make sure to only provide your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@campus&lt;/code&gt; email address.&lt;/p&gt;
+
+&lt;p&gt;Thanks,&lt;br /&gt;
+Course Staff&lt;/p&gt;</content><author><name>Aviv Rosenberg</name></author><summary type="html">Now open.</summary></entry></feed>
