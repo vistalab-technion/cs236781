@@ -2,7 +2,7 @@
 title: Access to course servers
 author: aviv
 excerpt: Now available.
-published: True
+published: false
 ---
 
 Dear Students,

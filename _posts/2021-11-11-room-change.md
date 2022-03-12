@@ -2,6 +2,7 @@
 title: Room Change for Thursday Tutorials
 author: aviv
 excerpt: From now on in Taub 7.
+published: false
 ---
 
 Dear Students,

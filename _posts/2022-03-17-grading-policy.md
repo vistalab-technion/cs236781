@@ -12,12 +12,12 @@ Also, each assignment will be graded by a different HW checker.
 The grading policy and HW checkers are as follows:
 
 
-| #                  | Weight | Graded By |
-| -                  | ------ | --------- |
-| HW1                | 10%    | Yaniv     |
-| HW2                | 20%    | Evgenii   |
-| HW3                | 30%    | Evgenii   |
-| HW4 (mini-project) | 40%    | Ben       |
+| #   | Weight | Graded By |
+| -   | ------ | --------- |
+| HW1 | 10%    | TBD       |
+| HW2 | 20%    | TBD       |
+| HW3 | 30%    | TBD       |
+| HW4 | 40%    | TBD       |
 
 
 Please note:

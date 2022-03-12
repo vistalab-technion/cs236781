@@ -6,20 +6,23 @@ excerpt: Dates and times.
 
 Dear Students,
 
-Starting from Thursday, October 28th, 2021, the course weekly schedule is as follows:
+Starting from Thursday, March 24th, 2022, the course weekly schedule is as follows:
 
-1. Thursdays, 11:30-12:30, Taub 1.  
+1. Thursdays, 11:30-12:30, Taub 2.  
    Supplementary lecture, presented by Dr. Chaim Baskin or Prof. Alex Bronstein.
 
-1. Thursdays at 12:30-13:30, Taub 1.  
+1. Thursdays at 12:30-13:30, Taub 7.  
    Tutorial, presented by Aviv Rosenberg.
 
-1. Wednesdays at 11:30-12:30 Taub 9.
-   Tutorial, presented by Yaniv Nemcovsky.
+1. Sundays at 11:30-12:30 Taub 5.
+   Tutorial, presented by TBD.
+
+1. Tuesdays at 13:30-14:30 Taub 7.
+   Tutorial, presented by TBD.
 
 Notes:
-- Yaniv's tutorial group starts from the **second** week of the semester, so
-  that it comes after each week's lecture.
+- The Sunday/Tuesday tutorial groups start from the **second** week of the
+  semester, so that it comes after each week's lecture.
 - The primary lecture material is covered by Alex's videos. Weekly
   video-viewing schedule is defined in the [syllabus]({{ site.baseurl }}{% link
   _pages/info.md %}#detailed-syllabus). Make sure to watch the relevant video
