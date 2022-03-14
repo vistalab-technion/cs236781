@@ -12,12 +12,12 @@ Also, each assignment will be graded by a different HW checker.
 The grading policy and HW checkers are as follows:
 
 
-| #   | Weight | Graded By |
-| -   | ------ | --------- |
-| HW1 | 10%    | TBD       |
-| HW2 | 20%    | TBD       |
-| HW3 | 30%    | TBD       |
-| HW4 | 40%    | TBD       |
+| #   | Weight | Graded By                                                       |
+| -   | ------ | ---------                                                       |
+| HW1 | 10%    | [Yaniv]({{ site.baseurl }}{% link _pages/info.md %}#tas)        |
+| HW2 | 20%    | [Evgenii]({{ site.baseurl }}{% link _pages/info.md %}#checkers) |
+| HW3 | 30%    | [Evgenii]({{ site.baseurl }}{% link _pages/info.md %}#checkers) |
+| HW4 | 40%    | [Ben]({{ site.baseurl }}{% link _pages/info.md %}#checkers)     |
 
 
 Please note:
