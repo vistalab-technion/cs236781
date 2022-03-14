@@ -2,7 +2,7 @@
 
 
 {% for position in positions %}
-<h3>{{ position }}s</h3>
+<h3 id="{{ position | slugify }}s">{{ position }}s</h3>
 <div class="staff_container">
     {% for kv in site.data.authors %}
         {% assign author = kv[1] %}
