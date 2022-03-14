@@ -8,6 +8,7 @@ date: 2021-11-04
 copyright:
   name: aviv
   icon: fas fa-at
+published: false
 ---
 
 This document will help you get started with the course homework assignments.

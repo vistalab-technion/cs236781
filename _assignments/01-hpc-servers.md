@@ -10,6 +10,7 @@ published: true
 copyright:
   name: aviv
   icon: fas fa-at
+published: false
 ---
 
 Those of you who are officially enrolled to the course and requested access
