@@ -42,6 +42,14 @@ yaniv:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yanemcovsky@campus.technion.ac.il"
+yonatan:
+  name: Yonatan Elul
+  bio: TA
+  avatar: "/assets/images/bio-photo-yonatan.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:johnneye@campus.technion.ac.il"
 
 evgenii:
   name: Evgenii Zheltonozhskii
