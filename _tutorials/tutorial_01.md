@@ -1,6 +1,6 @@
 ---
-title: "Tutorial 1: Python and tensor basics"
-excerpt: Environment setup, jupyter, python, tensor basics with numpy and PyTorch
+title: "Tutorial 1: Python and PyTorch basics"
+excerpt: Environment setup, jupyter, python, tensor basics with PyTorch
 author: aviv
 published: True
 ---
@@ -9,7 +9,7 @@ published: True
 
 
 The tutorial notebook can be viewed
-[here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t01/tutorial1-Python_Numpy.ipynb?flush_cache=true).
+[here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t01/tutorial1-Python_Pytorch.ipynb?flush_cache=true).
 
 To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236781-tutorials).
 
