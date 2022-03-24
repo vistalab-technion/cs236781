@@ -5,12 +5,12 @@ excerpt: How to connect to and run jobs on the course servers.
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2020-10-31
+date: 2022-03-24
 published: true
 copyright:
   name: aviv
   icon: fas fa-at
-published: false
+published: true
 ---
 
 Those of you who are officially enrolled to the course and requested access

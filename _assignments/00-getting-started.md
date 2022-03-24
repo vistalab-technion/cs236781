@@ -4,11 +4,11 @@ permalink: assignments/getting-started
 toc: true
 toc_label: Contents
 toc_sticky: true
-date: 2021-11-04
+date: 2022-03-23
 copyright:
   name: aviv
   icon: fas fa-at
-published: false
+published: true
 ---
 
 This document will help you get started with the course homework assignments.
@@ -75,10 +75,7 @@ Each assignment's root directory contains the following files and folders:
     bash Miniconda3-latest-Linux-x86_64.sh
     # Accept EULA
     # Install in default directory
-    # Select no for editing .bashrc
-
-    # Update your bashrc like so:
-    echo "source $HOME/miniconda3/etc/profile.d/conda.sh" >> ~/.bashrc
+    # Select yes for running conda init
     ```
 
    On macOS it's similar but with a different script URL
@@ -92,7 +89,10 @@ Each assignment's root directory contains the following files and folders:
    On Windows, download the installer and follow the instructions on the conda
    website. See also the Windows-specific notes below before you proceed.
 
-2. Configure `conda` to use strict channel priority (will speed up solving the
+   Note that you can skip this step if you already have either `conda` or the
+   full Anaconda distribution installed.
+
+2. Recommended: configure `conda` to use strict channel priority (will speed up solving the
    environment) and to not automatically activate the default env (will force
    you to activate a specific env):
     ```shell
@@ -100,24 +100,38 @@ Each assignment's root directory contains the following files and folders:
     conda config --set auto_activate_base False
     ```
 
-3. Use conda to create a virtual environment for the assignment.
+3. Install [mamba](https://github.com/mamba-org/mamba) (a drop-in replacement
+   for `conda` which is much faster in solving the dependency requirements):
+    ```shell
+    conda install -n base -c conda-forge mamba
+    mamba init
+    ```
+
+4. Use `mamba` to create a virtual environment for the assignment.
    From the assignment's root directory, run
 
     ```shell
-    conda env update -f environment.yml
+    mamba env update -f environment.yml -n cs236781-hw
     ```
+   This will install all the necessary packages into a new virtual
+   environment named `cs236781-hw`.
 
-   This will install all the necessary packages into a new conda virtual
-   environment named `cs236781-hwN` (where `N` is the assignment number).
+   From here on you can use either `conda` or `mamba` (they have exactly the same
+   CLI), but for this course generally `mamba` will be much faster. You can
+   even `alias conda=mamba`.
 
-4. Activate the new environment by running e.g.
+   Note for users with M1 macs (Apple Silicon): You'll need to install the
+   Intel versions of the packages (they'll run fine via rosetta2).
+   To do this, run `export CONDA_SUBDIR=osx-64` before running the above
+   `mamba` command.
+
+5. Activate the new environment by running e.g.
 
     ```shell
-    conda activate cs236781-hw1
+    conda activate cs236781-hw
     ```
-    (change `hw1` to `hw2`, etc. for each assignment).
 
-   *Activating* an environment simply means that the path to its python binaries
+   Note: *Activating* an environment simply means that the path to its python binaries
    (and packages) is placed at the beginning of your `$PATH` shell variable.
    Therefore, running programs installed into the conda env (e.g. `python`) will
    run the version from the env since it appears in the `$PATH` before any other
@@ -130,7 +144,7 @@ Each assignment's root directory contains the following files and folders:
     ```
 
    or, you can run `which python` and you should see the python binary is in a
-   subfolder of `~/miniconda3/envs/cs236781-hwN/`.
+   subfolder of e.g. `~/miniconda3/envs/cs236781-hw/`.
 
    You can find more useful info about conda environments
    [here](https://conda.io/docs/user-guide/tasks/manage-environments.html).
@@ -140,20 +154,20 @@ Each assignment's root directory contains the following files and folders:
 - You should to do steps 1 (installing `conda`) once, not for each assignment.
 
 - However, the third-party package dependencies (in the `environment.yml` file)
-  might slightly change from one assignment to the next.
+  might slightly change from one assignment to the next, or in case an update
+  is published.
   To make sure you have the correct versions, always install the environment
-  again (step 2 above) from the assignment root directory every time a new
+  again (**step 4 above**) from the assignment root directory every time a new
   assignment is published and then activate the environment with the assignment
   number.
 
-- Always make sure the correct environment is active! It will revert to its
-  default each new terminal session. If you want to change the default env you
-  can add a `conda activate` in your `~/.bashrc`.
+- Always make sure the correct environment is active! Each time you close and
+  re-open your terminal, the environment will need to be activated again.
 
 - If you use PyCharm or any other IDE, you should configure the interpreter path
   of the IDE to the path of the `python` executable within the conda
   env folder. For example, point the interpreter path to
-  `~/miniconda3/envs/cs236781-hwN/bin/python`.
+  `~/miniconda3/envs/cs236781-hw/bin/python`.
   This is under `Settings -> Project -> Project Interpreter`.
 
 - You'll need to install the conda env within your user folder on the course
@@ -167,7 +181,7 @@ Each assignment's root directory contains the following files and folders:
   to the Windows `PATH` variable, you can run these commands from the regular
   windows command prompt.
 
-- Also on Windows, you need to install Microsoft's [Build Tools for Visual
+- Also on Windows, you may need to install Microsoft's [Build Tools for Visual
   Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019)
   before the conda environment.  Make sure "C++ Build Tools" is selected during
   installation. This only needs to be done once.
@@ -176,7 +190,7 @@ Each assignment's root directory contains the following files and folders:
 
 ### Running Jupyter
 
-Make sure that the active conda environment is `cs236781-hwN` (see above), and
+Make sure that the active conda environment is `cs236781-hw` (see above), and
 run
 
 ```shell
@@ -235,11 +249,10 @@ Notes:
    will be added to your submission which is automatically generated from the
    contents of the assignment folder.
 
-5. Always make sure the active conda env is `cs236781-hwN` (where `N` is the
-   assignment number). If you get strange errors or failing import statements,
-   this is probably the reason. Note that if you close your terminal session
-   you will need to re-activate since conda will use it's default `base`
-   environment.
+5. Always make sure the active conda env is `cs236781-hw`. If you get strange
+   errors or failing import statements, this is probably the reason. Note that
+   if you close your terminal session you will need to re-activate since conda
+   will use it's default `base` environment.
 
 ## Submitting the assignment
 
