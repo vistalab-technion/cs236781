@@ -122,6 +122,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/vistalab-technion
+    - label: "Accessibility"
+      icon: "fas fa-universal-access"
+      url: https://cs.technion.ac.il/en/accessibility/
 
 
 # Reading Files
