@@ -42,6 +42,7 @@ yaniv:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:yanemcovsky@campus.technion.ac.il"
+
 yonatan:
   name: Yonatan Elul
   bio: TA
