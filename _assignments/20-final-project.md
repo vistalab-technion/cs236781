@@ -16,7 +16,7 @@ The submission date is **September 18th, 2022**.
 ## Project files
 
 Please download the following materials:
-- [Project definition](https://technionmail-my.sharepoint.com/:b:/g/personal/avivr_campus_technion_ac_il/EZ9gK-budfFFqe_wwQwqpuQBLauvqmZOmyzyedkhutkptg?e=K89o9d) (includes guidelines for submission)
+- [Project definition](https://technionmail-my.sharepoint.com/:b:/g/personal/avivr_campus_technion_ac_il/Ef8Rx2DI6txOs8d8JFQM-TQB7NefnMyk_z-Hkoae-4kMsQ?e=BX1Njc) (includes guidelines for submission)
 - [Code](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/ERYw1q_wuE9Jlac6HkWSgNwBlf4ViUzuVeJUPI2w-SNoGA?e=p6kAVg)
 - [Data](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/Edvhf_EDUN5Kjb1iEMaBFSIBCkWrpRj-XV5f51EqYrQfmQ?e=LgFDlN)
 
@@ -30,6 +30,8 @@ For technical questions and guidance, dedicated office hours will be given
 (over zoom). The office hours will be given on Tuesdays, 14:00-16:00, starting
 from 19/07, via [this zoom link](https://technion.zoom.us/j/91078492868).
 
+## Updates
 
+- **2022-07-23**: Updated project definition file.
 
 Enjoy and good luck!
