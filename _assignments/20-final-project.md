@@ -16,7 +16,7 @@ The submission date is **September 18th, 2022**.
 ## Project files
 
 Please download the following materials:
-- [Project definition](https://technionmail-my.sharepoint.com/:b:/g/personal/avivr_campus_technion_ac_il/Ef8Rx2DI6txOs8d8JFQM-TQB7NefnMyk_z-Hkoae-4kMsQ?e=BX1Njc) (includes guidelines for submission)
+- [Project definition](https://lh3.google.com/u/0/d/1yeEG9P05YQ9dJqMv3IjxXwWuvvgFWNrG=w522-h390-p-k-nu-iv1) (includes guidelines for submission)
 - [Code](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/ERYw1q_wuE9Jlac6HkWSgNwBlf4ViUzuVeJUPI2w-SNoGA?e=p6kAVg)
 - [Data](https://technionmail-my.sharepoint.com/:u:/g/personal/avivr_campus_technion_ac_il/Edvhf_EDUN5Kjb1iEMaBFSIBCkWrpRj-XV5f51EqYrQfmQ?e=LgFDlN)
 
