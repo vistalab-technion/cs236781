@@ -109,22 +109,21 @@ with Deep Learning.
 This semester's syllabus is provided below. Please watch the linked (🔗) video
 lecture before each respective class.
 
-| #    | Date             | Lecture (video)                                                              | Supplemental (class)          | Tutorial                                    | Homework   |
-| ---- | -------------    | -------------------------------------------------------------------------    | ----------------------------- | ------------------------------------------- | ---------- |
-| 1    | `24/03/2022`     | Introduction ([🔗]({{site.baseurl}}/lectures/01-intro/))                     | Introduction                  | Env setup, numpy, torch
-| 2    | `31/03/2022`     | Supervised learning ([🔗]({{site.baseurl}}/lectures/02-supervised/))         | Supervised learning           | Supervised learning, PyTorch basics I       | HW1        |
-| 3    | `07/04/2022`     | Neural networks, CNNs ([🔗]({{site.baseurl}}/lectures/03-neural_nets/))      | CNNs I                        | MLP, PyTorch basics II                      |            |
-| 4    | `14/04/2022`     | -                                                                            | CNNs II                       | CNNs                                        |            |
-| -    | `21/04/2022`     | **NO CLASS**                                                                 | (Passover)                    |                                             |            |
-| 5    | `28/04/2022`     | Training and Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/)) | Training                      | Optimization I                              | HW2        |
-| -    | `05/05/2022`     | **NO CLASS**                                                                 | (Independence Day)            |                                             |            |
-| 6    | `12/05/2022`     | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))               | RNNs                          | Optimization II                             |            |
-| 7    | `19/05/2022`     | -                                                                            | Attention and Transformers    | Sequence modeling, RNNs I                   |            |
-| 8    | **`24/05/2022`** | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))     | Unsupervised learning I       | RNNs II, TCNs                               |            |
-| 9    | `02/06/2022`     | Deep reinforcement learning ([🔗]({{site.baseurl}}/lectures/07-rl/))         | Unsupervised learning II      | Attention I                                 | HW3        |
-| 10   | `09/06/2022`     | Non-euclidean domains ([🔗]({{site.baseurl}}/lectures/08-geometric/))        | Geometric DL I                | Attention II                                |            |
-| 11   | `16/06/2022`     | -                                                                            | Geometric DL II               | Transfer learning, domain adaptation        |            |
-| 12   | `23/06/2022`     | -                                                                            | Visual Attention              | Deep reinforcement learning                 |            |
-| 13   | `30/06/2022`     | -                                                                            | Adversarial examples          | Geometric deep learning                     | HW4        |
+| #    | Date             | Lecture (video)                     | Supplemental (class)                                                      | Tutorial                                    | Homework        |
+| ---- | -------------    | -------------------------------     | ------------------------------------------------------------------------- | ------------------------------------------- | ----------      |
+| 1    | `27/10/2022`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch basics I       |                 |
+| 2    | `03/11/2022`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))        | MLP, PyTorch basics II                      | HW1             |
+| 3    | `10/11/2022`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs I                                      |                 |
+| 4    | `17/11/2022`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))            | CNNs II                                     |                 |
+| 5    | `24/11/2022`     | Optimization and Training II        |                                                                           |   Optimization                              |                 |
+| 6    | `01/12/2022`     | Dense prediction                    |                                                                            | Dense Prediction I (detection)              | HW2             |
+| 7    | `08/12/2022`     | Sequence models                     |                                                                           | Dense Prediction II (segmentation)          |                 |
+| 8    | `15/12/2022`     | Self supervision                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))           | RNNs                                        |                 |
+| -    | `22/12/2022`     | **NO CLASS**   Chanuka              |                                                                            |                                             |                 |
+| 9    |   `29/12/2022`   |  Attention (Transformer)            | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  |Attention                                    |                 |
+| 10   | `05/01/2023`     | VIT                                 |                                                                           | Transformers                                | HW3             |
+| 11   | `12/01/2023`     | GAN                                 |                                                                           | Vision Transformers                         |                 |
+| 12   | `19/01/2023`     | VAE                                 |                                                                           | GANs                                        |                 |
+| 13   | `26/01/2023`     | Diffusion models                    |                                                                           | VAEs                                        |                 | 
 | ---- | -------------    | -------------------------------------------------------------------------    | ----------------------------- | ------------------------------------------- | ---------- |
 
