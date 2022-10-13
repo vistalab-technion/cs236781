@@ -19,14 +19,17 @@ chaim:
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:chaimbaskin@cs.technion.ac.il"
 
-moshe:
-  name: Moshe Kimhi
+aviv:
+  name: Aviv Rosenberg
   bio: Head TA
-  avatar: "/assets/images/bio-photo-moshe.jpg"
+  avatar: "/assets/images/bio-photo-aviv.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:moshekimhi@campus.technion.ac.il"
+      url: "mailto:avivr@cs.technion.ac.il"
+    - label: "Web"
+      icon: "fas fa-fw fa-link"
+      url: "https://avivr.net"
   # office_hours:
   #   location: Zoom
   #   time: Thursday, 17:30
@@ -41,9 +44,9 @@ yaniv:
       url: "mailto:yanemcovsky@campus.technion.ac.il"
 
 yonatan:
-  name: Efrat
-  bio: Homework Checker
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  name: Yonatan Elul
+  bio: TA
+  avatar: "/assets/images/bio-photo-yonatan.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -57,3 +60,12 @@ evgenii:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:evgeniizh@campus.technion.ac.il"
+
+ben:
+  name: Ben Finkelshtein
+  bio: Homework Checker
+  avatar: "/assets/images/bio-photo-ben.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:benfin@campus.technion.ac.il"
