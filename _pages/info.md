@@ -72,7 +72,7 @@ regulations committee.
    github. Private repos are OK, but they must remain so even after course completion.
 
 ## Course Staff
-
+The old course staff:
 {% include course_staff.html %}
 
 ## Literature
