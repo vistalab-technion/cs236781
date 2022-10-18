@@ -32,9 +32,18 @@ At the end of the course, the student will:
 
 ## Administration
 
-**Evaluation**: 100% Homework assignments.
+**Evaluation**: 
 
-**Language**: All course materials (including lecture and tutorial videos) are provided in English.
+First Homework assignment : 10% 
+Second Homework assignment : 25%
+Third Homework assignment : 25%
+Final Project: 40%
+
+The Project might have a competitive component to it. If there will be, the course staff will anounce it in advance.
+We are aware for students worries and it wound **Not** effect your final grade by more then 5% (if at all will be a part of the grading), so do not worry for your grade.
+
+
+**Language**: All course materials (including lecture and tutorial videos) are provided in English, possible to change upon request.
 
 **Credits**: 3.0.
 
