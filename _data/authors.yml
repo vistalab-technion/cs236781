@@ -31,17 +31,8 @@ moshe:
   #   location: Zoom
   #   time: Thursday, 17:30
 
-yaniv:
-  name: Yaniv Nemcovsky
-  bio: TA
-  avatar: "/assets/images/bio-photo-yaniv.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:yanemcovsky@campus.technion.ac.il"
-
 yonatan:
-  name: Efrat
+  name: Efrat Levkovich
   bio: Homework Checker
   avatar: "/assets/images/bio-photo-generic.jpg"
   links:
