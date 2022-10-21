@@ -114,17 +114,17 @@ lecture before each respective class.
 | #    | Date             | Lecture                             | Supplemental (video)                                                      | Tutorial                                    | Homework    |
 | ---- | -------------    | -------------------------------     | ------------------------------------------------------------------------- | ------------------------------------------- | ----------  |
 | 1    | `27/10/2022`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch basics I       |    HW1      |
-| 2    | `03/11/2022`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))        | MLP, PyTorch basics II                      |             |
+| 2    | `03/11/2022`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch basics II                      |             |
 | 3    | `10/11/2022`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs I                                      |             |
-| 4    | `17/11/2022`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))            | CNNs II                                     |    HW2      |
+| 4    | `17/11/2022`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | CNNs II                                     |    HW2      |
 | 5    | `24/11/2022`     | Optimization and Training II        |                                                                           |   Optimization                              |             |
-| 6    | `01/12/2022`     | Dense prediction                    |                                                                            | Dense Prediction I (detection)              |             |
+| 6    | `01/12/2022`     | Dense prediction                    |                                                                           | Dense Prediction I (detection)              |             |
 | 7    | `08/12/2022`     | Sequence models                     |                                                                           | Dense Prediction II (segmentation)          |             |
-| 8    | `15/12/2022`     | Self supervision                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))           | RNNs                                        |    HW3      |
-| -    | `22/12/2022`     | **Chanuka (NO CLASS)**                 |                                                                            |                                             |             |
+| 8    | `15/12/2022`     | Self supervision                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | RNNs                                        |    HW3      |
+| -    | `22/12/2022`     | **Chanuka (NO CLASS)**              |                                                                           |                                             |             |
 | 9    |   `29/12/2022`   |  Attention (Transformer)            | Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  |Attention                                    |             |
 | 10   | `05/01/2023`     | VIT                                 |                                                                           | Transformers                                |             |
-| 11   | `12/01/2023`     | GAN                                 |                                                                           | Vision Transformers                         |Final projecy|
+| 11   | `12/01/2023`     | GAN                                 |                                                                           | Vision Transformers                         |Final Project|
 | 12   | `19/01/2023`     | VAE                                 |                                                                           | GANs                                        |             |
 | 13   | `26/01/2023`     | Diffusion models                    |                                                                           | VAEs                                        |             | 
 | ---- | -------------    | --------------------------------    | ------------------------------------------------------------------------- | ------------------------------------------- | ----------- |
