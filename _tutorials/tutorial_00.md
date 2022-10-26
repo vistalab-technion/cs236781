@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 1: Python and PyTorch basics"
+title: "Tutorial 0: Python and PyTorch basics"
 excerpt: Environment setup, jupyter, python, tensor basics with PyTorch
 author: aviv
 published: True
