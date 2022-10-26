@@ -7,6 +7,12 @@ permalink: /lectures/
 classes:
     - wide
 ---
+Zoom link for lectures: https://technion.zoom.us/j/97605904796
+The lecture presentations would be posted here
+
+
+
+
 
 The accompanying material for each lecture is posted here.
 

@@ -5,6 +5,8 @@ collection: tutorials
 permalink: /tutorials/
 author_profile: false
 ---
+Zoom link for tutorials: https://technion.zoom.us/j/3881992654
+
 
 All tutorial materials will be available on this page.
 
