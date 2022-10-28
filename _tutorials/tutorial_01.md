@@ -26,7 +26,5 @@ to update your environment and run jupyter.
 ## Video (requires Technion account)
 
 {% include panopto_embed.html
-src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=447d027b-77a3-4b1d-8b28-ac6300bbff85&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&start=0&interactivity=all" %}
 
-
-
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=5086ba8e-f8fe-4cfd-98e7-af3b00ad1f95&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
