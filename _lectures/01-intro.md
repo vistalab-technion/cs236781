@@ -1,7 +1,6 @@
 ---
 title: "Lecture 1: Introduction"
 header:
-    teaser: assets/images/lec1/dataism-large.jpg
 ---
 
 Origins of deep learning, course goals, overview of machine-learning

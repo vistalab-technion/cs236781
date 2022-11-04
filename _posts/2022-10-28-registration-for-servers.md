@@ -14,7 +14,7 @@ GPU-enabled servers.
 access to the course servers; if you wish you use the course servers, separate
 registration is required using the link below.
 
-**Deadline for registration is 17/11/2022**. After this date the list of
+**Deadline for registration is 08/11/2022**. After this date the list of
 students who requested access (and are also officially enrolled to the course)
 will be passed to the CS faculty IT team and granted access. Students who do
 not register before the deadline forfeit server access for the entire semester.
