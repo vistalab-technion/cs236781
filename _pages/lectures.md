@@ -10,13 +10,7 @@ classes:
 [Zoom link for lectures](https://technion.zoom.us/j/4108205267)
 
 
-The lecture presentations would be posted here
-
-For now the first one is available [here](https://www.dropbox.com/scl/fi/whmc6bnjfv33jd8enfsxb/236781_lec01_intro.pptx?dl=0&rlkey=83j9i48mqqnnk0soqp112m3bb)
-
-
-
-The accompanying material for each lecture is posted here.
+The lecture presentations and the accompanying material for each lecture is posted here.
 
 <div class="grid-collection-container">
     <div class="entries-{{ page.entries_layout }}">
