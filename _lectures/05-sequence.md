@@ -1,7 +1,6 @@
 ---
-title: "Lecture 5: Sequence Models"
+title: "Video Lecture 5: Sequence Models"
 header:
-    teaser: assets/images/lec5/rnn.png
 ---
 
 RNN model, input-output sequences relationships, non-sequential input, layered RNN,

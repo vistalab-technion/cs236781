@@ -1,7 +1,6 @@
 ---
-title: "Lecture 2: Supervised learning"
+title: "Video Lecture 2: Supervised learning"
 header:
-    teaser: assets/images/lec2/supervised-bw.jpg
 ---
 
 Supervised learning problem statement, data sets, hypothesis classes, loss

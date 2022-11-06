@@ -1,10 +1,7 @@
 ---
-title: "Lecture 1: Introduction"
+title: "Video Lecture 1: Introduction"
 header:
 ---
-
-Origins of deep learning, course goals, overview of machine-learning
-paradigms, intro to computational acceleration.
 
 {% include figure
 image_path="assets/images/lec1/dataism-large.jpg"

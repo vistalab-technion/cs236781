@@ -1,7 +1,6 @@
 ---
-title: "Lecture 4: Training and Optimization"
+title: "Video Lecture 4: Training and Optimization"
 header:
-    teaser: assets/images/lec4/teaser.jpg
 ---
 
 Approximation, estimation and optimization errors, regularization, loss surface

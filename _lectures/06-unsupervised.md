@@ -1,7 +1,6 @@
 ---
-title: "Lecture 6: Unsupervised Learning and Generative Models"
+title: "Video Lecture 6: Unsupervised Learning and Generative Models"
 header:
-    teaser: assets/images/lec6/3.png
 ---
 
 Subspace models, autoencoders, unsupervised loss,
