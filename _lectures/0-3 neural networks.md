@@ -4,22 +4,16 @@ header:
     teaser: assets/images/lec3/nn-black.jpg
 ---
 
-Linear and multilayer Perceptron, loss functions, activation functions, pooling,
-weight sharing, convolutional layers, gradient descent, backpropagation.
-
-{% include figure
-image_path="assets/images/lec1/dataism-large.jpg"
-alt="" caption="" ref=""
-%}
+advance architectures
 
 
 ## Video
 
-[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0959f9cb-ef72-4a71-a68b-af4200b54a5e)
+[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1f311817-a07c-41b7-9a9f-af4900b78863)
 
 ## Slides
 
-can be found for this lecture and the next one [here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_lec2_3.pptx)
+[here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_lec2_3.pptx)
 
 ## Supplementary Slides
 
