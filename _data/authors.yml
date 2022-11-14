@@ -34,7 +34,7 @@ moshe:
 yonatan:
   name: Efrat Levkovich
   bio: Homework Checker
-  avatar: "/assets/images/bio-photo-generic.jpg"
+  avatar: "/assets/images/bio-photo-effrat.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
