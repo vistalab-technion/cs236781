@@ -8,7 +8,7 @@ From resnet to mobilenet, guild to efficient CNNs
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t04-%20efficient%20CNN/tutorial4-efficient%20CNNs.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t04-%20efficient%20CNN/tutorial4-efficient%20CNNs.ipynb?flush_cache=true).
 
 ## Video (requires Technion account)
 

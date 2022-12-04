@@ -10,7 +10,7 @@ regression, pytorch and autograd basics.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t02/tutorial2-Logistic_Regression.ipynb?flush_cache=true).
+The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t01%20-%20linear%20models/tutorial%201-Logistic_Regression.ipynb?flush_cache=true).
 
 To run it yourself we recommend cloning the course [tutorials repo](https://github.com/vistalab-technion/cs236781-tutorials).
 

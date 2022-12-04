@@ -9,7 +9,7 @@ residual nets.
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t04%20-%20CNN/tutorial4-CNNs.ipynb).
+The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t03%20-%20CNN/tutorial3-CNNs.ipynb?flush_cache=true).
 
 ## Video (requires Technion account)
 

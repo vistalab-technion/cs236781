@@ -8,7 +8,7 @@ MLP model, activations, backprop, loss functions and optimization in PyTorch
 
 ## Material
 
-The tutorial notebook can be viewed [here](https://nbviewer.jupyter.org/github/vistalab-technion/cs236781-tutorials/blob/master/t03/tutorial3-MLP.ipynb?flush_cache=true).
+The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t02%20-%20mlp/tutorial%202%20-MLP.ipynb?flush_cache=true).
 
 ## Video (requires Technion account)
 

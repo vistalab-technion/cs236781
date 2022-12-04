@@ -1,11 +1,10 @@
 ---
-title: "Tutorial 5: Optimization"
-author: aviv
+title: "Tutorial 6: Object detection"
+author: moshe
 published: true
 ---
 
-Descent-based methods, backpropagation, automatic differentiation, bi-level
-optimization, time-series analysis with CNNs.
+Evaluation methods (mAP, mIoU), two stage models (RCNN), one stage models (yolo)
 
 ## Material
 
