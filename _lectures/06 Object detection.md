@@ -16,4 +16,6 @@ CV-based approaches, R-CNN, RPN, YOLO, SSD, losses, benchmarks and performance m
 
 Accompanying notes are not available for this lecture.
 
+## Supplementary Slides
 
+Not avalible for this lecture
