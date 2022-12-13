@@ -1,5 +1,5 @@
 ---
-title: "Video Lecture 5: Sequence Models"
+title: "Lecture 7: Sequence Models"
 header:
     teaser: \assets\images\lec5\rnn.png
 ---
