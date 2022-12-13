@@ -1,7 +1,6 @@
 ---
-title: "Lecture 6: Object detection"
+title: "Lecture 6: Object Detection"
 header:
-	teaser: \assets\images\lec13\Picture6.png
 ---
 
 CV-based approaches, R-CNN, RPN, YOLO, SSD, losses, benchmarks and performance metrics.
