@@ -1,5 +1,5 @@
 ---
-title: "Lecture 2: Neural Networks"
+title: "Lecture 3: Neural Networks II"
 header:
     teaser: assets/images/lec3/nn-black.jpg
 ---

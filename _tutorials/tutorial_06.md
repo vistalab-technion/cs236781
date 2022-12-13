@@ -13,4 +13,4 @@ The tutorial notebook can be viewed
 
 ## Video (requires Technion account)
 
-{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3827c87e-a00e-4f50-8770-af5700be6ac3&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=445aed61-1a2a-4a1c-a90b-af5e00befc8d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}

@@ -1,5 +1,5 @@
 ---
-title: "Video Lecture 6: Object detection"
+title: "Lecture 6: Object detection"
 header:
 	teaser: \assets\images\lec13\Picture6.png
 ---
