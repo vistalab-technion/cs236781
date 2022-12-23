@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 8: Transfer learning and domain adaptation"
+title: "Tutorial 7: Transfer learning and domain adaptation"
 author: moshe
 published: true
 ---
