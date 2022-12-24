@@ -9,7 +9,7 @@ Evaluation methods (mAP, mIoU), two stage models (RCNN), one stage models (yolo)
 ## Material
 
 The tutorial notebook can be viewed
-[here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t05%20-%20optimization/tutorial5-Optimization.ipynb?flush_cache=true).
+[here](https://nbviewer.org/github/vistalab-technion/cs236781-tutorials/blob/master/t06-%20Object%20detection/tutorial6-OD.ipynb?flush_cache=true).
 
 ## Video (requires Technion account)
 
