@@ -20,6 +20,8 @@ The lecture presentations and the accompanying material for each lecture is post
 
 ## Additional Resources
 
+- From previus semesters, the videos of [Alex lectures]({{ site.baseurl }}{% link _pages/Alex_lectures.md %})
+
 - The [supplemental material]({{ site.baseurl }}{% link _pages/supplements.md %}) page 
   contains prerequisite topics you should be familiar with.
 
