@@ -8,8 +8,10 @@ published: true
 ---
 
 
-The submission date is **March 19th, 2023**.
+The submission date is **March 16th, 2023**.
 
+
+**This is a hard deadline! there will be no extention and each delayed day will reduce your grade by 5 points**
 
 ## Project files
 
