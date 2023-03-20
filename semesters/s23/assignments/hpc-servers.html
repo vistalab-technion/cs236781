@@ -1,0 +1,788 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Using the course HPC servers | CS236781: Deep Learning</title>
+<meta name="description" content="How to connect to and run jobs on the course servers.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS236781: Deep Learning">
+<meta property="og:title" content="Using the course HPC servers">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/w22/assignments/hpc-servers">
+
+
+  <meta property="og:description" content="How to connect to and run jobs on the course servers.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-10-31T00:00:00+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/w22/assignments/hpc-servers">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "VISTA Lab",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/w22",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/cs236781/semesters/w22/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/cs236781/semesters/w22/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/cs236781/semesters/w22/">CS236781: Deep Learning</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/info/" >Info</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/lectures/" >Lectures</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/tutorials/" >Tutorials</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/assignments/" >Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Using the course HPC servers">
+    <meta itemprop="description" content="How to connect to and run jobs on the course servers.">
+    <meta itemprop="datePublished" content="October 31, 2020">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Using the course HPC servers
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  44 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#logging-in">Logging in</a>
+    <ul>
+      <li><a href="#connecting-from-home">Connecting from home</a></li>
+    </ul>
+  </li>
+  <li><a href="#server-usage">Server Usage</a>
+    <ul>
+      <li><a href="#general">General</a>
+        <ul>
+          <li><a href="#storage-and-environment">Storage and Environment</a></li>
+          <li><a href="#computation">Computation</a></li>
+        </ul>
+      </li>
+      <li><a href="#running-interactive-jobs">Running interactive jobs</a>
+        <ul>
+          <li><a href="#example">Example</a></li>
+        </ul>
+      </li>
+      <li><a href="#running-batch-jobs">Running batch jobs</a>
+        <ul>
+          <li><a href="#example-1">Example</a></li>
+          <li><a href="#viewing-status">Viewing status</a></li>
+          <li><a href="#viewing-output">Viewing output</a></li>
+          <li><a href="#canceling">Canceling</a></li>
+          <li><a href="#course-helper-script">Course helper script</a></li>
+        </ul>
+      </li>
+      <li><a href="#running-jupyter">Running jupyter</a></li>
+    </ul>
+  </li>
+  <li><a href="#tips">Tips</a>
+    <ul>
+      <li><a href="#public-key-based-authentication">Public-key based authentication</a></li>
+      <li><a href="#transferring-files-to-and-from-the-server">Transferring files to and from the server</a>
+        <ul>
+          <li><a href="#gui-option-for-macos-users">GUI option for macOS users</a></li>
+          <li><a href="#gui-option-windows-users">GUI option Windows users</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#additional-information">Additional Information</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>Those of you who are officially enrolled to the course and requested access
+using the server registration form will have access to dedicated
+high-performance computing servers (<code class="language-plaintext highlighter-rouge">lambda1-5</code>) provisioned by Computer
+Science faculty IT department. Running on the faculty servers will give you
+access to more computing power and also fast GPUs (which will greatly
+accelerate your deep-learning tasks). This should significantly speed up your
+workflow when performing the course homework assignments and when implementing
+your final project.</p>
+
+<p>These servers are mainly suited for running batch jobs which you can submit to
+dedicated job queues and be notified upon completion.  We therefore recommend
+you install and work on the assignments locally (on your own machine), and 
+use the faculty servers mainly to run long model training tasks (we will
+specify in the assignment).</p>
+
+<h1 id="logging-in">Logging in</h1>
+
+<p>Logging in is performed with your Technion Single Sign-On (SSO) credentials.
+Usually this means the username and password of your <code class="language-plaintext highlighter-rouge">@campus</code> or <code class="language-plaintext highlighter-rouge">@technion</code>
+email address.</p>
+
+<p>If your username is e.g. <code class="language-plaintext highlighter-rouge">user</code>, login like so</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@lambda.cs.technion.ac.il
+</code></pre></div></div>
+
+<p>or, use the server’s IP directly if you’re connecting over a VPN or receive an
+unknown hostname error:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh user@132.68.39.159
+</code></pre></div></div>
+
+<p>Notes:</p>
+<ol>
+  <li>Your credentials will only work after we pass a final list of
+registered students to the faculty IT department.
+This will happen during the first 2-3 weeks of the semester.</li>
+  <li>These servers are only directly accessible from <strong>within the Technion networks</strong>.
+If connecting over WiFi, do not use the <code class="language-plaintext highlighter-rouge">TechPublic</code> network, as it won’t
+allow you to connect. The <code class="language-plaintext highlighter-rouge">TechSec</code> network will work, as well as other
+non-open faculty networks (e.g. <code class="language-plaintext highlighter-rouge">CS-WIFI</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">lambda</code> is a gateway server that you connect to in order to run jobs on the
+actual compute nodes (<code class="language-plaintext highlighter-rouge">lambda1-5</code>) as explained below.
+You should not run any computations on <code class="language-plaintext highlighter-rouge">lambda</code> itself as it does not have a
+GPU and is limited in CPU resources.</li>
+  <li>In some internal Technion networks, and when connecting through VPN, the DNS
+lookup does not find the <code class="language-plaintext highlighter-rouge">lambda</code> hostname. If you get a <code class="language-plaintext highlighter-rouge">could not
+resolve hostname</code> error, use the second option (directly with IP).</li>
+</ol>
+
+<h2 id="connecting-from-home">Connecting from home</h2>
+
+<p>To connect from home you’ll need to configure a VPN connection to the Technion. See the
+<a href="https://cis.technion.ac.il/en/central-services/communication/off-campus-connection/ssl-vpn/">instructions</a>
+on the Technion CIS website regarding how to set this up. After you connect
+though the VPN, you can connect to the server as normal.</p>
+
+<p>Note that we cannot provide you with technical support regarding how to
+setup/use the VPN. You should contact CIS if you need VPN support.</p>
+
+<h1 id="server-usage">Server Usage</h1>
+
+<h2 id="general">General</h2>
+
+<h3 id="storage-and-environment">Storage and Environment</h3>
+
+<p>Your home directory on the gateway server <code class="language-plaintext highlighter-rouge">lambda</code> (e.g. <code class="language-plaintext highlighter-rouge">/home/user</code>) is
+automatically mounted on all the computation nodes <code class="language-plaintext highlighter-rouge">lambda1-5</code>. This ensures
+that any programs you install locally under your home folder (for example a
+<code class="language-plaintext highlighter-rouge">conda</code> environment) will be available for jobs running on these nodes.</p>
+
+<p>In fact, the <strong>first thing</strong> you should do after connecting for the first time
+is to install <code class="language-plaintext highlighter-rouge">conda</code> and the course <code class="language-plaintext highlighter-rouge">conda</code> environment within your home
+folder. Follow the instructions for linux on the <a href="cs236781/semesters/w22/assignments/getting-started">getting started page</a>.</p>
+
+<p>Note that your home folder will be deleted from the server at some point after
+the semester ends, likely without prior notice. Please make sure to backup your files.</p>
+
+<h3 id="computation">Computation</h3>
+
+<p>The faculty HPC server cluster is composed of a gateway server, <code class="language-plaintext highlighter-rouge">lambda</code>, into which
+you log in with SSH, and five compute nodes <code class="language-plaintext highlighter-rouge">lambda1-5</code> which run the actual
+computations. The gateway server is relatively weak and has no attached GPUs, so
+it should not be used for running computations.</p>
+
+<p>Again, to be clear: <strong>do not run any computations directly on <code class="language-plaintext highlighter-rouge">lambda</code>!</strong> after
+logging in, only run computations through <code class="language-plaintext highlighter-rouge">slurm</code> as described below.</p>
+
+<p>The computation tasks are manged by a job scheduling system called
+<a href="https://slurm.schedmd.com/"><code class="language-plaintext highlighter-rouge">slurm</code></a>.  The system manages the computation
+nodes and resources and allocates them to jobs submitted by users into a queue.
+If you wish, you can read the <code class="language-plaintext highlighter-rouge">slurm</code> <a href="https://slurm.schedmd.com/quickstart.html">quick start
+guide</a> to get a better understanding
+of the system and the available commands.</p>
+
+<p>The most useful <code class="language-plaintext highlighter-rouge">slurm</code> commands for our needs are,</p>
+<ul>
+  <li><a href="https://slurm.schedmd.com/sbatch.html"><code class="language-plaintext highlighter-rouge">sbatch</code></a></li>
+  <li><a href="https://slurm.schedmd.com/srun.html"><code class="language-plaintext highlighter-rouge">srun</code></a></li>
+  <li><a href="https://slurm.schedmd.com/squeue.html"><code class="language-plaintext highlighter-rouge">squeue</code></a></li>
+  <li><a href="https://slurm.schedmd.com/scancel.html"><code class="language-plaintext highlighter-rouge">scancel</code></a></li>
+</ul>
+
+<h2 id="running-interactive-jobs">Running interactive jobs</h2>
+
+<p>An interactive job allows you to view it’s output and interact with it in
+real time, as if it were running on the machine you’re logged
+in to.</p>
+
+<p>Submitting an interactive job is performed with the <code class="language-plaintext highlighter-rouge">srun</code> command. Required resources
+can be specified and if they’re available the job starts running immediately.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Let’s see how to run an <code class="language-plaintext highlighter-rouge">ipython</code> console session as an interactive job with an
+allocated GPU (notice that the course <code class="language-plaintext highlighter-rouge">conda</code> env is already active).</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>cs236781-hw<span class="o">)</span> avivr@lambda:~/cs236781-hw<span class="nv">$ </span>srun <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">--pty</span> ipython
+Python 3.8.6 | packaged by conda-forge | <span class="o">(</span>default, Oct  7 2020, 19:08:05<span class="o">)</span>
+Type <span class="s1">'copyright'</span>, <span class="s1">'credits'</span> or <span class="s1">'license'</span> <span class="k">for </span>more information
+IPython 7.19.0 <span class="nt">--</span> An enhanced Interactive Python. Type <span class="s1">'?'</span> <span class="k">for </span>help.
+
+In <span class="o">[</span>1]: import torch
+
+In <span class="o">[</span>2]: torch.cuda.is_available<span class="o">()</span>
+Out[2]: True
+
+In <span class="o">[</span>3]: t <span class="o">=</span> torch.tensor<span class="o">([</span>1,2,3], <span class="nv">dtype</span><span class="o">=</span>torch.float<span class="o">)</span>.cuda<span class="o">()</span>
+
+In <span class="o">[</span>4]: t.dot<span class="o">(</span>t<span class="o">)</span>
+Out[4]: tensor<span class="o">(</span>14., <span class="nv">device</span><span class="o">=</span><span class="s1">'cuda:0'</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>Here the <code class="language-plaintext highlighter-rouge">-c 2</code> and <code class="language-plaintext highlighter-rouge">--gres=gpu:1</code> options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the <code class="language-plaintext highlighter-rouge">--pty</code> option is required for the session
+to be interactive and the last argument <code class="language-plaintext highlighter-rouge">ipython</code> is the command to run. You can
+specify any command and also add command arguments after it.</p>
+
+<p>Notes:</p>
+<ol>
+  <li>You should use interactive jobs for debugging or running short tasks like
+launching <code class="language-plaintext highlighter-rouge">jupyter</code>. If you need to run something long, it’s better to
+submit a batch job instead (see below).</li>
+  <li>When you submit an interactive job, your shell is blocked (by <code class="language-plaintext highlighter-rouge">srun</code>) until
+it completes. If you terminate <code class="language-plaintext highlighter-rouge">srun</code>, it will cancel your job. Crucially,
+this means that if you log out of the machine while running an interactive
+job, the job will terminate (as with regular processes you invoke from the
+shell). You can get around this by either,
+    <ul>
+      <li>Using terminal managers e.g. <code class="language-plaintext highlighter-rouge">screen</code> and <code class="language-plaintext highlighter-rouge">tmux</code>;</li>
+      <li>Running with <code class="language-plaintext highlighter-rouge">nohup</code>;</li>
+      <li>Running a batch job instead (preferred). See below.</li>
+    </ul>
+  </li>
+  <li>You should activate your <code class="language-plaintext highlighter-rouge">conda env</code> before running an interactive job if
+you need to run python.
+The shell environment variables will be passed to the process that will run
+your job on the compute node, so therefore the <code class="language-plaintext highlighter-rouge">conda env</code> will effectively
+also be active there.</li>
+  <li>You can specify <code class="language-plaintext highlighter-rouge">bash</code> as the command to run in an interactive job to get a
+shell on one of the compute nodes.</li>
+  <li>Jobs may be terminated after running for more than 24 hours due to policy.</li>
+</ol>
+
+<h2 id="running-batch-jobs">Running batch jobs</h2>
+
+<p>A batch job is submitted to the queue with the <code class="language-plaintext highlighter-rouge">sbatch</code> command.
+It runs non-interactively when resources are available and sends it’s output to
+files that you can specify. Additionally, it can notify you by email when the
+job starts and finishes.</p>
+
+<p>Running jobs with <code class="language-plaintext highlighter-rouge">sbatch</code> is useful for long-running processes such as
+training models or running experiments. While the job is running, it’s not
+connected to any specific shell session and thus it keeps running if you log
+out of the machine. To view output from a batch job, you’ll need to read it
+from the file it writes to.</p>
+
+<p>To use <code class="language-plaintext highlighter-rouge">sbatch</code>, you need to create a script for it to run. It can be any script
+with a valid shebang line (<code class="language-plaintext highlighter-rouge">#!</code>) at the top, e.g. a bash script or a python
+script.</p>
+
+<h3 id="example-1">Example</h3>
+
+<p>Lets create a file <code class="language-plaintext highlighter-rouge">~/myscript.sh</code> on the server with the following contents:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Setup env</span>
+<span class="nb">source</span> <span class="nv">$HOME</span>/miniconda3/etc/profile.d/conda.sh
+conda activate cs236781-hw
+<span class="nb">echo</span> <span class="s2">"hello from </span><span class="si">$(</span>python <span class="nt">--version</span><span class="si">)</span><span class="s2"> in </span><span class="si">$(</span>which python<span class="si">)</span><span class="s2">"</span>
+
+<span class="c"># Run some arbitrary python</span>
+python <span class="nt">-c</span> <span class="s1">'import torch; print(f"i can haz gpu? {torch.cuda.is_available()}")'</span>
+</code></pre></div></div>
+
+<p>Then we can run the script as a <code class="language-plaintext highlighter-rouge">slurm</code> batch job as follows:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Run a batch job with slurm</span>
+avivr@lambda:~<span class="nv">$ </span>sbatch <span class="nt">-c</span> 2 <span class="nt">--gres</span><span class="o">=</span>gpu:1 <span class="nt">-o</span> slurm-test.out <span class="nt">-J</span> my_job  myscript.sh
+Submitted batch job 3550
+
+<span class="c"># Check the job status in the queue</span>
+avivr@lambda:~<span class="nv">$ </span>squeue 
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST<span class="o">(</span>REASON<span class="o">)</span>
+              3550       all   my_job    avivr  R       0:01      1 lambda2
+
+<span class="c"># See the output from the job by following the output file contents</span>
+<span class="o">(</span>cs236781-hw<span class="o">)</span> avivr@lambda:~/cs236781-hw<span class="nv">$ </span><span class="nb">tail</span> <span class="nt">-f</span> slurm-test.out
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale <span class="o">(</span>en_US.UTF-8<span class="o">)</span>
+hello from Python 3.8.6 <span class="k">in</span> /home/avivr/miniconda3/envs/cs236781-hw/bin/python
+i can haz gpu? True
+^C
+</code></pre></div></div>
+
+<p>Here the <code class="language-plaintext highlighter-rouge">-c 2</code> and <code class="language-plaintext highlighter-rouge">--gres=gpu:1</code> options specify that we want to allocate 2 CPU
+cores and one GPU to the job, the <code class="language-plaintext highlighter-rouge">-o slurm-test.out</code> option specifies where
+to write the output from the process and <code class="language-plaintext highlighter-rouge">-J my_job</code> is an arbitrary name we can
+assign to the job.</p>
+
+<h3 id="viewing-status">Viewing status</h3>
+
+<p>After submitting a batch job, you can use <code class="language-plaintext highlighter-rouge">squeue</code> to view it’s
+status in the queue, as shown in the example above. You can see the job name and
+it’s id there.</p>
+
+<h3 id="viewing-output">Viewing output</h3>
+
+<p>Each job you submit causes a text file you be created in your current directory,
+named <code class="language-plaintext highlighter-rouge">slurm-&lt;jobid&gt;.out</code>.</p>
+
+<p>To view the output from a job in real time, you can use <code class="language-plaintext highlighter-rouge">tail -f</code> or <code class="language-plaintext highlighter-rouge">less -r
++F</code> on the output file for the relevant job. <code class="language-plaintext highlighter-rouge">less</code> allows you to also scroll
+back.</p>
+
+<h3 id="canceling">Canceling</h3>
+
+<p>To cancel a batch job you’ve submitted (whether it’s running or waiting in the
+queue), run <code class="language-plaintext highlighter-rouge">scancel &lt;job-id&gt;</code> where <code class="language-plaintext highlighter-rouge">&lt;job-id&gt;</code> is the id you received when
+starting the batch job.</p>
+
+<h3 id="course-helper-script">Course helper script</h3>
+
+<p>To slightly simplify your workflow on the server, we provide you with a simple
+script to run python code from the course <code class="language-plaintext highlighter-rouge">conda env</code> as a <code class="language-plaintext highlighter-rouge">slurm</code> batch job.</p>
+
+<p>The homework assignment repos contain a script called <code class="language-plaintext highlighter-rouge">py-sbatch.sh</code>. You can
+use this script as if it were the <code class="language-plaintext highlighter-rouge">python</code> command, and it will active the
+<code class="language-plaintext highlighter-rouge">conda env</code> for you and execute your provided python code with <code class="language-plaintext highlighter-rouge">sbatch</code>.</p>
+
+<p>For example, let’s say we want to run all our notebooks with the <code class="language-plaintext highlighter-rouge">main.py</code>
+script. Instead of</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda activate cs236781-hw
+python main.py run-nb <span class="k">*</span>.ipynb
+</code></pre></div></div>
+
+<p>which will run on the gateway server, do this</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./py-sbatch.sh main.py run-nb <span class="k">*</span>.ipynb
+</code></pre></div></div>
+
+<p>This will take care of activating the <code class="language-plaintext highlighter-rouge">conda env</code> and run the script on the more
+powerful compute nodes as a batch job. The script has some declared variables
+which you can edit to configure the <code class="language-plaintext highlighter-rouge">sbatch</code> parameters such as computational
+resources, notification email address and others.</p>
+
+<p>Note that for the above example it may have been more straightforward to use an
+interactive job (<code class="language-plaintext highlighter-rouge">srun</code>). However this script may be useful when you need to
+create a batch job running a python script, for example to run long training
+tasks.</p>
+
+<p>In any case, this script is completely optional since you can always use
+<code class="language-plaintext highlighter-rouge">sbatch</code> directly as shown in the previous section.</p>
+
+<h2 id="running-jupyter">Running <code class="language-plaintext highlighter-rouge">jupyter</code></h2>
+
+<p>You can run <code class="language-plaintext highlighter-rouge">jupyter</code> on a compute node by running a small script what we
+provide, <code class="language-plaintext highlighter-rouge">jupyter-lab.sh</code>.</p>
+
+<p>You should run this script via <code class="language-plaintext highlighter-rouge">srun</code>, like so:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">(</span>cs236781-hw<span class="o">)</span> avivr@lambda:~/cs236781-hw<span class="nv">$ </span>srun <span class="nt">-c2</span> <span class="nt">--gres</span><span class="o">=</span>gpu:1 jupyter-lab.sh
+
+<span class="o">[</span>I 22:47:14.620 LabApp] JupyterLab extension loaded from /home/avivr/miniconda3/envs/cs236781-hw/lib/python3.8/site-packages/jupyterlab
+<span class="o">[</span>I 22:47:14.621 LabApp] JupyterLab application directory is /home/avivr/miniconda3/envs/cs236781-hw/share/jupyter/lab
+<span class="o">[</span>I 22:47:14.624 LabApp] Serving notebooks from <span class="nb">local </span>directory: /home/avivr/cs236781-hw
+<span class="o">[</span>I 22:47:14.624 LabApp] Jupyter Notebook 6.1.4 is running at:
+<span class="o">[</span>I 22:47:14.624 LabApp] http://132.68.39.38:8888/?token<span class="o">=</span>5d426de30111ee82c7af4789077dbc4cf7a996f9e46476e6
+<span class="o">[</span>I 22:47:14.624 LabApp]  or http://127.0.0.1:8888/?token<span class="o">=</span>5d426de30111ee82c7af4789077dbc4cf7a996f9e46476e6
+<span class="o">[</span>I 22:47:14.624 LabApp] Use Control-C to stop this server and shut down all kernels <span class="o">(</span>twice to skip confirmation<span class="o">)</span><span class="nb">.</span>
+<span class="o">[</span>C 22:47:14.632 LabApp]
+
+    To access the notebook, open this file <span class="k">in </span>a browser:
+        file:///home/avivr/.local/share/jupyter/runtime/nbserver-20063-open.html
+    Or copy and <span class="nb">paste </span>one of these URLs:
+        http://132.68.39.38:8888/?token<span class="o">=</span>5d426de...
+     or http://127.0.0.1:8888/?token<span class="o">=</span>5d426de...
+</code></pre></div></div>
+
+<p>The connection URL in the console will show the IP of the compute node that the
+server is actually running on. Use the <strong>first url</strong> to open jupyter in your
+browser.</p>
+
+<p>Note: Please be considerate of other students and use the computing
+resources only as needed. Do not leave unattended jupyter notebooks just
+running without a reason.</p>
+
+<h1 id="tips">Tips</h1>
+
+<h2 id="public-key-based-authentication">Public-key based authentication</h2>
+
+<p>You can use a public-key based authentication to prevent the need for typing
+your password when connecting to remote servers over SSH.</p>
+
+<ol>
+  <li>Generate an SSH key pair using the <code class="language-plaintext highlighter-rouge">ssh-keygen</code> tool. More detailed instructions for all platforms can be found
+<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/">here</a>.</li>
+  <li>Copy the <strong>public</strong> key. By default it’s in <code class="language-plaintext highlighter-rouge">~/.ssh/id_rsa.pub</code>. Make sure you copy it exactly
+without any extra spaces or newlines.</li>
+  <li>Connect to your user on the machine and paste the public key contents into a new line in <code class="language-plaintext highlighter-rouge">~/.ssh/authorized_keys</code>.</li>
+</ol>
+
+<p>Notes:</p>
+
+<ol>
+  <li>
+    <p>On macOS and linux, there’s a utility you can use to automate steps 2-3.
+After generating the key pair, copy the public key to the server like so:</p>
+
+    <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code> ssh-copy-id user@lambda.cs.technion.ac.il
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If you use an intermediate server to connect from home, make sure to first
+also copy your public key to that server.</p>
+  </li>
+</ol>
+
+<p>After generating your key pair, you should also <a href="https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/">add it to your github
+account</a>.
+After that, you can use the SSH remote-URLs (instead of HTTPS) to clone repos
+and prevent the need to specify your username and password when
+<code class="language-plaintext highlighter-rouge">push</code>ing, <code class="language-plaintext highlighter-rouge">pull</code>ing and <code class="language-plaintext highlighter-rouge">fetch</code>ing.</p>
+
+<h2 id="transferring-files-to-and-from-the-server">Transferring files to and from the server</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">rsync</code> tool can be helpful. It can automatically sync between local and
+remote folders, only uploading/downloading modified files.</p>
+
+<p>For example, to send files or a directory you can do</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rsync <span class="nt">-Crvz</span> path/to/local/file_or_dir user@lambda:/home/user/path/to/remote/file_or_dir
+</code></pre></div></div>
+
+<p>To download files from the server to your computer, simply change the order of
+the last two arguments in the above example.</p>
+
+<h3 id="gui-option-for-macos-users">GUI option for macOS users</h3>
+
+<p><a href="https://cyberduck.io/">Cyberduck</a> is a free remote file browser that you can
+use to copy files to/from the server using a GUI.</p>
+
+<h3 id="gui-option-windows-users">GUI option Windows users</h3>
+
+<p>Many people recommend <a href="https://mobaxterm.mobatek.net/">MobaXterm</a> as
+a good graphical ssh client for windows.</p>
+
+<h1 id="additional-information">Additional Information</h1>
+
+<p>Please also read the Faculty’s <a href="https://hpc.cswp.cs.technion.ac.il/lambda">lambda help page</a>.</p>
+
+<p>It contains other important information you need to know:</p>
+<ul>
+  <li>Limits on resources for jobs (number of hours, maximal GPUs, etc).</li>
+  <li>How jobs are prioritized between different students of the course,
+and between different courses.</li>
+  <li>Code of conduct. Failure to meed this code will cause revocation of your
+account.</li>
+</ul>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-10-31T00:00:00+02:00">October 31, 2020</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="#" class="pagination--pager disabled">Previous</a>
+    
+    
+      <a href="/cs236781/semesters/w22/assignments/getting-started" class="pagination--pager" title="Getting started with the course assignments
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        
+<!-- Technion and VISTA logos --><script>
+
+var logo_element = '\
+<div class="technion-logo"> \
+    <a href="https://cs.technion.ac.il"> \
+        <img src="/cs236781/semesters/w22/assets/images/cs_technion-logo.png" alt="Technion"> \
+    </a> \
+</div> \
+';
+
+document
+    .querySelector('.masthead__inner-wrap')
+    .insertAdjacentHTML('afterbegin', logo_element);
+
+var logo_element = '\
+<div class="vista-logo"> \
+    <a href="https://vista.cs.technion.ac.il" > \
+        <img src="/cs236781/semesters/w22/assets/images/vista-logo-bw.png" alt="VISTA"> \
+    </a> \
+</div> \
+';
+
+var footerNodes = document.getElementsByTagName("FOOTER")
+var footerNode = footerNodes[footerNodes.length - 1];
+footerNode.insertAdjacentHTML('afterend', logo_element);
+
+</script>
+<!-- Mathjax support --><!-- see: http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/ -->
+<!-- also: http://docs.mathjax.org/en/latest/tex.html for defning mathjax macros -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noErrors: { disabled: true },
+      Macros: {
+        // Each def here is an array: [<macro>, <num_params>]
+        // Aviv's defs
+        bold: ["{\\bf #1}",1],
+        m: ["\\boldsymbol {#1}",1],             // matrix
+        mt: ["\\boldsymbol {#1}^\\top",1],      // transposed matrix
+        v: ["\\boldsymbol {#1}",1],             // vector
+        vt: ["\\boldsymbol {#1}^\\top",1],      // transposed vector
+        diag: ["\\mathop{\\mathrm{diag}}"],
+        trace: ["\\mathop{\\mathrm{tr}}"],
+        rank: ["\\mathop{\\mathrm{rank}}"],
+        set: ["\\mathbb {#1}",1],
+        rvar: ["\\mathrm{#1}",1],               // random variable
+        rvec: ["\\boldsymbol{\\mathrm{#1}}",1], // random vector
+
+        // Alex's defs
+        bm: ["{\\bf #1}",1],
+        bb: ["{\\bm{\\mathrm{#1}}}",1],
+        spn: ["\\mathrm{span}\\left\\{ {#1} \\right\\}",1],
+        vec: ["\\mathrm{vec}"],
+        dx:  ["\\bb{dx}"], dX:  ["\\bb{dX}"], dy:  ["\\bb{dy}"], du:  ["\\bb{du}"],
+        df:  ["\\bb{df}"], dg:  ["\\bb{dg}"],
+        dphi:  ["\\bb{d\\varphi}"],
+        Tr: ["\\top"],
+        RR: ["\\set{R}"],
+        mathpzc: ["\\rvar{#1}", 1],
+        mathpzcb: ["\\rvec{#1}", 1],
+        ind: ["\\unicode{x1D7D9}"]
+      }
+    },
+
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,
+  },
+
+  "HTML-CSS": {
+     fonts: ["TeX"]
+  },
+
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- Copyright notice support on single pages -->
+<script>
+var copyright_element = '\
+    <p class="page__meta" style="margin-top: -0.5em;"> \
+    <i class="fas fa-at"></i> \
+    Aviv Rosenberg \
+    </p> \
+';
+
+first_header = document.getElementsByTagName('header')[0]
+first_header.insertAdjacentHTML('beforeend', copyright_element);
+</script>
+
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://vista.cs.technion.ac.il"><i class="fas fa-fw fa-link" aria-hidden="true"></i> VISTA Lab</a></li>
+        
+      
+        
+          <li><a href="https://github.com/vistalab-technion"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/cs236781/semesters/w22/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 VISTA Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/cs236781/semesters/w22/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>

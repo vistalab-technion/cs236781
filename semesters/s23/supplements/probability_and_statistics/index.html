@@ -1,0 +1,1242 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Probability and statistics: a survival guide | CS236781: Deep Learning</title>
+<meta name="description" content="Random variables and vectors, statistical estimation">
+
+
+  <meta name="author" content="Prof. Alex Bronstein">
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="CS236781: Deep Learning">
+<meta property="og:title" content="Probability and statistics: a survival guide">
+<meta property="og:url" content="https://vistalab-technion.github.io/cs236781/semesters/w22/supplements/probability_and_statistics/">
+
+
+  <meta property="og:description" content="Random variables and vectors, statistical estimation">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://vistalab-technion.github.io/cs236781/semesters/w22/supplements/probability_and_statistics/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "VISTA Lab",
+      "url": "https://vistalab-technion.github.iocs236781/semesters/w22",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/cs236781/semesters/w22/feed.xml" type="application/atom+xml" rel="alternate" title="CS236781: Deep Learning Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/cs236781/semesters/w22/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single text-justify wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/cs236781/semesters/w22/">CS236781: Deep Learning</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/info/" >Info</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/lectures/" >Lectures</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/tutorials/" >Tutorials</a>
+            </li><li class="masthead__menu-item">
+              <a href="/cs236781/semesters/w22/assignments/" >Assignments</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Probability and statistics: a survival guide">
+    <meta itemprop="description" content="Random variables and vectors, statistical estimation">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Probability and statistics: a survival guide
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  107 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#random-variables">Random variables</a>
+    <ul>
+      <li><a href="#probability-measure">Probability measure</a></li>
+      <li><a href="#random-variables-1">Random variables</a></li>
+      <li><a href="#uniform-distribution-and-uniformization">Uniform distribution and uniformization</a></li>
+      <li><a href="#expectation">Expectation</a></li>
+      <li><a href="#moments">Moments</a></li>
+    </ul>
+  </li>
+  <li><a href="#random-vectors">Random vectors</a>
+    <ul>
+      <li><a href="#joint-and-marginal-distributions">Joint and marginal distributions</a></li>
+      <li><a href="#statistical-independence">Statistical independence</a></li>
+      <li><a href="#limit-theorems">Limit theorems</a></li>
+      <li><a href="#joint-moments">Joint moments</a></li>
+      <li><a href="#linear-transformations">Linear transformations</a></li>
+    </ul>
+  </li>
+  <li><a href="#estimation">Estimation</a>
+    <ul>
+      <li><a href="#maximum-likelihood">Maximum likelihood</a></li>
+      <li><a href="#conditioning">Conditioning</a>
+        <ul>
+          <li><a href="#conditional-distribution">Conditional distribution</a></li>
+          <li><a href="#bayes-theorem">Bayes’ theorem</a></li>
+          <li><a href="#law-of-total-expectation">Law of total expectation</a></li>
+        </ul>
+      </li>
+      <li><a href="#maximum-a-posteriori">Maximum a posteriori</a></li>
+      <li><a href="#minimum-mean-squared-error">Minimum mean squared error</a></li>
+      <li><a href="#best-linear-estimator">Best linear estimator</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="random-variables">Random variables</h1>
+
+<h2 id="probability-measure">Probability measure</h2>
+
+<p>We start with a few elementary (and simplified) definitions from the
+theory of probability. Let us fix a <em>sample space</em> $\Omega = [0,1]$. A
+<em>Borel set</em> on $\Omega$ is a set that can be formed from open intervals
+of the form $(a,b), 0 \le a&lt;b \le 1$, through the operations of
+countable union, countable intersection, and set difference. We will
+denote the collection of all Borel sets in $\Omega$ as $\Sigma$. It is
+pretty straightforward to show that $\Sigma$ contains the empty set, is
+closed under complement, and is closed under countable union. Such a set
+is known as <em>$\sigma$-algebra</em> and its elements (subsets of
+$\mathbb{R}$) are referred to as <em>events</em>.</p>
+
+<p>A <em>probability measure</em> $P$ on $\Sigma$ is a function
+$P : \Sigma \rightarrow [0,1]$ satisfying $P(\emptyset) = 0$,
+$P(\mathbb{R}) = 1$ and additivity for every countable collection
+${ E _n \in \Sigma }$,</p>
+
+\[P\left(  \bigcup _n E _n \right) = \sum _{n} P(E _n).\]
+
+<h2 id="random-variables-1">Random variables</h2>
+
+<p>A <em>random variable</em> $\mathpzc{X}$ is a <em>measurable</em> map
+$\mathpzc{X} : \Omega \rightarrow \mathbb{R}$, i.e., a function such
+that for every $a$,
+${ \mathpzc{X} \le a } = { \alpha : \mathpzc{X}(\alpha) \le a  } \in \Sigma$.
+The map $\mathpzc{X}$ pushes forward the probability measure $P$; the
+<em>pushforward measure</em> $\mathpzc{X} _\ast P$ is given by</p>
+
+\[(\mathpzc{X} _\ast P)(A) = P(\mathpzc{X}^{-1}(A)),\]
+
+<p>where
+$\mathpzc{X}^{-1}(A) = { \alpha  : X(\alpha) \in A }$ is the preimage
+of $A \subseteq \mathbb{R}$. (In short, we can write
+$\mathpzc{X} _\ast P = P\mathpzc{X}^{-1}$). This pushforward probability
+measure $\mathpzc{X} _\ast P$ is usually referred to as the <em>probability
+distribution</em> (or the <em>law</em>) of $\mathpzc{X}$.</p>
+
+<p>When the range of $\mathpzc{X}$ is finite or countably infinite, the
+random variable is called <em>discrete</em> and its distribution can be
+described by the <em>probability mass function</em> (PMF):</p>
+
+\[f _{\mathpzc{X}}(x) = P(\mathpzc{X}=x),\]
+
+<p>which is a shorthand for
+$P(  {\alpha : \mathpzc{X}(\alpha) = x } )$. Otherwise, $\mathpzc{X}$
+is called a <em>continuous</em> random variable. Any random variable can be
+described by the <em>cumulative distribution function</em> (CDF)</p>
+
+\[F _{\mathpzc{X}}(x) = P({\mathpzc{X} \le x}),\]
+
+<p>which is a shorthand
+for
+$F _{\mathpzc{X}}(x) = P(  {\alpha : \mathpzc{X}(\alpha) \le x } )$. If
+$X$ is absolutely continuous, the CDF can be described by the integral</p>
+
+\[F _{\mathpzc{X}}(x) = \int _{-\infty}^x f _{\mathpzc{X}}(x') dx',\]
+
+<p>where
+the integrand $f _{\mathpzc{X}}$ is known as the <em>probability density
+function</em> (PDF)<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<h2 id="uniform-distribution-and-uniformization">Uniform distribution and uniformization</h2>
+
+<p>A random variable $\mathpzc{U}$ is said to be <em>uniformly distributed</em> on
+$[0,1]$ (denoted as $\mathpzc{U} \sim \mathcal{U}[0,1]$) if</p>
+
+\[P(\mathpzc{U} \in [a,b]) = b-a = \lambda([a,b]).\]
+
+<p>In other words, the
+map $\mathpzc{U}$ pushes forward the standard Lebesgue measure on
+$[0,1]$, $\mathpzc{U} _\ast P = \lambda$. The corresponding CDF is
+$F _\mathpzc{U}(u) = \max{ 0, \min{ 1, u } }$. Let $\mathpzc{X}$ be
+some other random variable characterized by the CDF $F _\mathpzc{X}$. We
+define $\mathpzc{U} = F _\mathpzc{X}(\mathpzc{X})$. Let us pick an
+arbitrary $x \in \mathbb{R}$ and let $u = F _\mathpzc{X}(x) \in [0,1]$.
+From monotonicity of the CDF, it follows that $\mathpzc{U} \le u$ if and
+only if $\mathpzc{X} \le x$. Hence,
+$F _\mathpzc{U}(u) = P(\mathpzc{U} \le u) = P(\mathpzc{X} \le x) = F _\mathpzc{X}(x) = u$.
+We conclude that by transforming a random variable with its own CDF
+uniformizes it on the interval $[0,1]$.</p>
+
+<p>Applying the relation in inverse direction, let
+$\mathpzc{U} \sim \mathcal{U}[0,1]$ and let $F$ be a valid CDF. Then,
+the random variable $\mathpzc{X} = F^{-1}(\mathpzc{U})$ is distributed
+with the CDF $F _\mathpzc{U} = F$.</p>
+
+<h2 id="expectation">Expectation</h2>
+
+<p>The <em>expected value</em> (a.k.a. the <em>expectation</em> or <em>mean</em>) of a random
+variable $\mathpzc{X}$ is given by</p>
+
+\[\mathbb{E} \mathpzc{X} = \int _{\mathbb{R}} \mathrm{id}\, d(\mathpzc{X} _\ast P) =  \int _{\Omega} \mathpzc{X}(\alpha) d\alpha,\]
+
+<p>where the integral is the Lebesgue integral w.r.t. the measure $P$;
+whenever a probability density function exists, the latter can be
+written as</p>
+
+\[\mathbb{E} \mathpzc{X} = \int _{\mathbb{R}} x  f _{\mathpzc{X}}(x) dx.\]
+
+<p>Note that due to the linearity of integration, the expectation operator
+$\mathbb{E}$ is linear. Using the Lebesgue integral notation, we can
+write for $E \in \Sigma$</p>
+
+\[P(E) = \int _E dP = \int _\mathbb{R} \ind _E \, dP = \mathbb{E}  \ind _E,\]
+
+<p>where</p>
+
+\[\ind _E(\alpha) = \left\{
+ \begin{array}{ccc}
+ 1 &amp; : &amp; \alpha \in E \\
+ 0 &amp; : &amp; \mathrm{otherwise}
+ \end{array}
+   \right.\]
+
+<p>is the <em>indicator function</em> of $E$, which is by itself a
+random variable. This relates the expectation of the indicator of an
+event to its probability.</p>
+
+<h2 id="moments">Moments</h2>
+
+<p>For any measurable function $g : \mathbb{R} \rightarrow \mathbb{R}$,
+$\mathpzc{Z} = g(\mathpzc{X})$ is also a random variable with the
+expectation</p>
+
+\[\mathbb{E} \mathpzc{Z} = \mathbb{E} g(\mathpzc{X}) =  \int _{\mathbb{R}} g\, dP =  \int _{\mathbb{R}} g(x) f _{\mathpzc{X}}(x) dx.\]
+
+<p>Such an expectation is called a <em>moment</em> of $\mathpzc{X}$. Particularly,
+the $k$-th order moment is obtained by setting $g(x) = x^k$,</p>
+
+\[\mu _{k}(\mathpzc{X}) = \mathbb{E} \mathpzc{X}^k.\]
+
+<p>The expected value
+itself is the first-order moment of $\mathpzc{X}$, which is often
+denoted simply as $\mu _\mathpzc{X} = \mu _{1}(\mathpzc{X})$. The
+<em>central</em> $k$-th order moment is obtained by setting
+$g(x) = (x - \mu _\mathpzc{X})^k$,</p>
+
+\[m _{k}(\mathpzc{X}) = \mathbb{E} ( \mathpzc{X}  - \mathbb{E}  \mathpzc{X})^k.\]
+
+<p>A particularly important central second-order moment is the <em>variance</em></p>
+
+\[\sigma _\mathpzc{X}^2 = \mathrm{Var}\, \mathpzc{X} = m _2 = \mathbb{E} ( \mathpzc{X}  - \mathbb{E}  \mathpzc{X})^2 = \mu _2  ( \mathpzc{X} ) - \mu^2 _\mathpzc{X}.\]
+
+<h1 id="random-vectors">Random vectors</h1>
+
+<h2 id="joint-and-marginal-distributions">Joint and marginal distributions</h2>
+
+<p>A vector $\mathpzcb{X} = (\mathpzc{X} _1, \dots, \mathpzc{X} _n)$ of
+random variables is called a <em>random vector</em>. Its probability
+distribution is defined as before as the pushforward measure
+$P = \mathpzcb{X} _\ast \lambda$ Its is customary to treat $\mathpzcb{X}$
+as a collection of $n$ random variables and define their <em>joint CDF</em> as</p>
+
+\[F _{\mathpzcb{X}}(\bb{x}) = P({\mathpzcb{X} \le \bb{x}}) = P(\mathpzc{X} _1 \le x _1, \dots, \mathpzc{X} _n \le x _n) 
+= P(\{ \mathpzc{X} _1 \le x _1 \} \times  \dots \times \{ \mathpzc{X} _n \le x _n \}).\]
+
+<p>As before, whenever the following holds</p>
+
+\[F _{\mathpzcb{X}}(\bb{x}) = \int _{-\infty}^{x _1} \cdots \int _{-\infty}^{x _n}  f _{\mathpzcb{X}}(x _1',\dots, x _n') dx' _1 \cdots dx' _n,\]
+
+<p>the integrand $f _{\mathpzcb{X}}$ is called the <em>joint PDF</em> of
+$\mathpzcb{X}$. The more rigorous definition as the Radon-Nikodym
+derivative</p>
+
+\[f _{\mathpzcb{X}} = \frac{d(\mathpzc{X} _\ast P) }{ d\lambda}\]
+
+<p>stays
+unaltered, only that now $\lambda$ is the $n$-dimensional Lebesgue
+measure.</p>
+
+<p>Note that the joint CDF of the sub-vector
+$(\mathpzc{X} _2, \dots, \mathpzc{X} _n)$ is given by</p>
+
+\[\begin{aligned}
+F _{\mathpzc{X} _2, \cdots, \mathpzc{X} _n } (x _2,\dots,x _n) &amp;=&amp; P(\mathpzc{X} _2 \le x _2, \dots, \mathpzc{X} _n \le x _n) 
+= P(\mathpzc{X} _1 \le \infty, \mathpzc{X} _2 \le x _2, \dots, \mathpzc{X} _n \le x _n)  \\
+&amp;=&amp; F _{\mathpzc{X} _1, \cdots, \mathpzc{X} _n } (\infty, x _2,\dots,x _n).
+\end{aligned}\]
+
+<p>Such a distribiution is called <em>marginal</em> w.r.t. $\mathpzc{X} _1$ and the
+process of obtaining it by substituting $x _1 = \infty$ into
+$F _{\mathpzcb{X}}$ is called <em>marginalization</em>. The corresponding action
+in terms of the PDF consists of integration over $x _1$,</p>
+
+\[\begin{aligned}
+f _{\mathpzc{X} _2, \cdots, \mathpzc{X} _n } (x _2,\dots,x _n) &amp;=&amp; 
+\int _\mathbb{R} f _{\mathpzc{X} _1, \cdots, \mathpzc{X} _n } (x _1, x _2,\dots,x _n) dx _1.
+\end{aligned}\]
+
+<h2 id="statistical-independence">Statistical independence</h2>
+
+<p>A set $\mathpzc{X} _1, \dots, \mathpzc{X} _n$ of random variables is
+called <em>statistically independent</em> if their joint CDF is
+coordinate-separable, i.e., can be written as the following tensor
+product</p>
+
+\[F _{\mathpzc{X} _1, \cdots, \mathpzc{X} _n} = F _{\mathpzc{X} _1} \otimes \cdots \otimes F _{\mathpzc{X} _n}.\]
+
+<p>An alternative definion can be given in terms of the PDF (whenever it
+exists):</p>
+
+\[f _{\mathpzc{X} _1, \cdots, \mathpzc{X} _n} = f _{\mathpzc{X} _1} \otimes \cdots \otimes f _{\mathpzc{X} _n}.\]
+
+<p>We will see a few additional alternative definitions in the sequel. Let
+$\mathpzc{X}$ and $\mathpzc{Y}$ be statistically-independent random
+variables with a PDF and let $\mathpzc{Z} = \mathpzc{X}+\mathpzc{Y}$.
+Then,</p>
+
+\[\begin{aligned}
+F _\mathpzc{Z}(z) &amp;=&amp; P(\mathpzc{Z} \le z) = P(X+Y \le z) = \int _{\mathbb{R}} \int _{\infty}^{z-y} f _{\mathpzc{X}\mathpzc{Y}}(x,y) dxdy \\
+&amp;=&amp; \int _{\mathbb{R}} \int _{\infty}^{z} f _{\mathpzc{X}\mathpzc{Y}}(x'-y,y) dx' dy,
+\end{aligned}\]
+
+<p>where we changed the variable $x$ to $x’ = x+y$. Differentiating w.r.t.
+$z$ yields</p>
+
+\[\begin{aligned}
+f _\mathpzc{Z}(z)  &amp;=&amp; \frac{dF _\mathpzc{Z}(z)}{dz} = \int _{\mathbb{R}} \frac{\partial}{\partial z} \int _{\infty}^{z} f _{\mathpzc{X}\mathpzc{Y}}(x'-y,y) dx' dy = \int _{\mathbb{R}}  f _{\mathpzc{X}\mathpzc{Y}}(z-y,y)  dy.\end{aligned}\]
+
+<p>Since $\mathpzc{X}$ and $\mathpzc{Y}$ are statistically-independent, we
+can substitute
+$f _{\mathpzc{X}\mathpzc{Y}} = f _{\mathpzc{X}} \otimes f _{\mathpzc{Y}}$
+yielding</p>
+
+\[\begin{aligned}
+f _\mathpzc{Z}(z)  &amp;=&amp; \int _{\mathbb{R}}  f _{\mathpzc{X}}(z-y) f _{\mathpzc{Y}}(y)  dy = (f _{\mathpzc{X}} \ast f _{\mathpzc{Y}} )(z).\end{aligned}\]
+
+<p>This result is known as the <em>convolution theorem</em>.</p>
+
+<h2 id="limit-theorems">Limit theorems</h2>
+
+<p>Given independent identically distributed (i.i.d.) variables
+$\mathpzc{X} _1, \dots, \mathpzc{X} _n$ with mean $\mu$ and variance
+$\sigma^2$, we define their <em>sample average</em> as</p>
+
+\[\mathpzc{S} _n = \frac{1}{n}( \mathpzc{X} _1 + \cdots + \mathpzc{X} _n ).\]
+
+<p>Note that $\mathpzc{S} _n$ is also a random variable with
+$\mu _{\mathpzc{S} _n} = \mu$ and
+$\displaystyle{\sigma^2 _{\mathpzc{S} _n} = \frac{\sigma^2}{n}}$. It is
+straightforward to see that the variance decays to zero in the limit
+$n \rightarrow \infty$, meaning that $\mathpzc{S} _n$ approaches a
+deterministic variable $\mathpzc{S} = \mu$. However, a much stronger
+result exists: the (strong) <em>law of large numbers</em> states that in the
+limit $n \rightarrow \infty$, the sample average converges in
+probability to the expected value, i.e.,</p>
+
+\[P\left(  \lim _{n \rightarrow \infty} \mathpzc{S} _n = \mu  \right) = 1.\]
+
+<p>This fact is often denoted as
+$\mathpzc{S} _n \mathop{\rightarrow}^P \mu$. Furthermore, defining the
+normalized deviation from the limit
+$\mathpzc{D} _n = \sqrt{n}(\mathpzc{S} _n - \mu)$, the <em>central limit
+theorem</em> states that $\mathpzc{D} _n$ converges in distribution to
+$\mathcal{N}(0,\sigma^2)$, that is, its CDF converges pointwise to that
+of the normal distribution. This is often denoted as
+$\mathpzc{D} _n \mathop{\rightarrow}^D \mathcal{N}(0,\sigma^2)$.</p>
+
+<p>A slightly more general result is known as the <em>delta method</em> in
+statistics: if $g :  \mathbb{R} \rightarrow \mathbb{R}$ is a
+$\mathcal{C}^1$ function with non-vanishing derivative, then by the
+Taylor theorem,</p>
+
+\[g(\mathpzc{S} _n) = g(\mu) + g'(\nu)(\mathpzc{S} _n-\mu) + \mathcal{O}(| \mathpzc{S} _n-\mu |^2),\]
+
+<p>where $\nu$ lies between $\mathpzc{S} _n$ and $\mu$. Since by the law of
+large numbers $\mathpzc{S} _n \mathop{\rightarrow}^P \mu$, we also have
+$\nu \mathop{\rightarrow}^P \mu$; since $g’$ is continuous,
+$g’(\nu) \mathop{\rightarrow}^P g’(\mu)$. Rearranging the terms and
+multiplying by $\sqrt{n}$ yields</p>
+
+\[\sqrt{n}( g(\mathpzc{S} _n) - g(\mu) ) = g'(\nu) \sqrt{n}( \mathpzc{S} _n) - \mu ) = g'(\nu) \mathpzc{D} _n,\]
+
+<p>from where (formally, by invoking the Slutsky theorem):</p>
+
+\[\sqrt{n}( g(\mathpzc{S} _n) - g(\mu) ) \mathop{\rightarrow}^D \mathcal{N}(0,g^{\prime} (\mu)^2 \sigma^2).\]
+
+<h2 id="joint-moments">Joint moments</h2>
+
+<p>Given a measurable function
+$\bb{g} : \mathbb{R}^n \rightarrow \mathbb{R}^m$, a (joint) moment of a
+random vector $\mathpzcb{X} = (\mathpzc{X} _1, \dots, \mathpzc{X} _n)$ is</p>
+
+\[\mathbb{E} \bb{g}(\mathpzcb{X}) = \int \bb{g}(\bb{x}) dP = 
+\left(\begin{array}{c} 
+ \int g _1(\bb{x}) dP \\
+\vdots \\
+ \int g _m(\bb{x}) dP
+\end{array}
+\right)
+=
+\left(\begin{array}{c} 
+\int _{\mathbb{R}^n} g _1(\bb{x}) f _{\mathpzcb{X}}(\bb{x}) d\bb{x}  \\
+\vdots \\
+\int _{\mathbb{R}^n} g _m(\bb{x}) f _{\mathpzcb{X}}(\bb{x}) d\bb{x}
+\end{array}
+\right);\]
+
+<p>the last term migh be undefined if the PDF does not exist.
+The mean of a random vector is simply
+$\bb{\mu} _\mathpzcb{X}  = \mathbb{E} \mathpzcb{X}$. Of particular
+importance are the second-order joint moments of pairs of random
+variables,</p>
+
+\[r _{\mathpzc{X}\mathpzc{Y}} = \mathbb{E} \mathpzc{X}\mathpzc{Y}\]
+
+<p>and
+its central version</p>
+
+\[\sigma^2 _{\mathpzc{X}\mathpzc{Y}} = \mathrm{Cov}(\mathpzc{X},\mathpzc{Y}) = \mathbb{E} \left( (\mathpzc{X} - \mathbb{E} \mathpzc{X} )(\mathpzc{Y}  - \mathbb{E} \mathpzc{Y}) \right) = r _{\mathpzc{X}\mathpzc{Y}} - \mu _\mathpzc{X} \mu _\mathpzc{Y}.\]
+
+<p>The latter quantity is known as the <em>covariance</em> of $\mathpzc{X}$ and
+$\mathpzc{Y}$.</p>
+
+<p>Two random variables $\mathpzc{X}$ and $\mathpzc{Y}$ with
+$r _{\mathpzc{X}\mathpzc{Y}} = 0$ are called <em>orthogonal</em><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>The variables with $\sigma^2 _{\mathpzc{X}\mathpzc{Y}} = 0$ are called
+<em>uncorrelated</em>. Note that for a statistically independent pair
+$(\mathpzc{X},\mathpzc{Y})$,</p>
+
+\[\begin{aligned}
+\sigma^2 _{\mathpzc{X}\mathpzc{Y}} &amp;=&amp; \int _{\mathbb{R}^2} (x-\mu _\mathpzc{X}) (y-\mu _\mathpzc{Y}) d((\mathpzc{X} \times \mathpzc{Y}) _\ast P) = \int _{\mathbb{R}} (x-\mu _\mathpzc{X}) d(\mathpzc{X} _\ast P) \, \int _{\mathbb{R}} (y-\mu _\mathpzc{Y}) d(\mathpzc{Y} _\ast P) \\
+&amp;=&amp; \mathbb{E} (\mathpzc{X} - \mathbb{E} \mathpzc{X} ) \cdot \mathbb{E} (\mathpzc{Y}  - \mathbb{E} \mathpzc{Y}) = 0.
+\end{aligned}\]
+
+<p>However, the converse is not true, i.e., lack of correlation does not
+generally imply statistical independence (with the notable exception of
+normal variables). If $\mathpzc{X}$ and $\mathpzc{Y}$ are uncorrelated
+and furthermore one of them is zero-mean, then they are also orthogonal
+(and the other way around).</p>
+
+<p>In general, the <em>correlation matrix</em> of a random vector
+$\mathpzcb{X} = (\mathpzc{X} _1, \dots, \mathpzc{X} _n)$ is given by</p>
+
+\[\bb{R} _{\mathpzcb{X}} = \mathbb{E}  \mathpzcb{X} \mathpzcb{X}^\Tr;\]
+
+<p>its $(i,j)$-th element is
+$(\bb{R} _{\mathpzcb{X}}) _{ij} = \mathbb{E} \mathpzc{X} _i \mathpzc{X} _j$.
+Similarly, the <em>covariance matrix</em> is defined as the central counterpart
+of the above moment,</p>
+
+\[\bb{C} _{\mathpzcb{X}} = \mathbb{E}  (\mathpzcb{X} - \bb{\mu} _\mathpzcb{X} ) (\mathpzcb{X} - \bb{\mu} _\mathpzcb{X} )^\Tr;\]
+
+<p>its $(i,j)$-th element is
+$(\bb{C} _{\mathpzcb{X}}) _{ij} =\mathrm{Cov}( \mathpzc{X} _i , \mathpzc{X} _j)$.
+Given another random vector
+$\mathpzcb{Y} = (\mathpzc{Y} _1, \dots, \mathpzc{Y} _m)$, the
+<em>cross-correlation</em> and <em>cross-covariance</em> matrices are defined as
+$\bb{R} _{\mathpzcb{X}\mathpzcb{Y}} = \mathbb{E}  \mathpzcb{X} \mathpzcb{Y}^\Tr$
+and
+$\bb{C} _{\mathpzcb{X}\mathpzcb{Y}} = \mathbb{E}  (\mathpzcb{X} - \bb{\mu} _\mathpzcb{X} ) (\mathpzcb{Y} - \bb{\mu} _\mathpzcb{Y} )^\Tr$,
+respectively.</p>
+
+<h2 id="linear-transformations">Linear transformations</h2>
+
+<p>Let $\mathpzcb{X} = (\mathpzc{X} _1, \dots, \mathpzc{X} _n)$ be an
+$n$-dimensional random vector, $\bb{A}$ and $m \times n$ deterministic
+matrix, and $\bb{b}$ and $m$-dimensional deterministic vector. We define
+a random vector $\mathpzcb{Y} = \bb{A} \mathpzcb{X} + \bb{b} $ as the
+affine transformation of $\mathpzcb{X}$. Using linearity of the
+expectation operator, it is straightforward to show that</p>
+
+\[\begin{aligned}
+\bb{\mu} _\mathpzcb{Y}  &amp;=&amp; \mathbb{E}(\bb{A} \mathpzcb{X} + \bb{b}) = \bb{A} \bb{\mu} _\mathpzcb{X} + \bb{b} \\
+\bb{C} _\mathpzcb{Y}  &amp;=&amp; \mathbb{E}(\bb{A} \mathpzcb{X} - \bb{A} \bb{\mu} _\mathpzcb{X} ) (\bb{A} \mathpzcb{X} - \bb{A} \bb{\mu} _\mathpzcb{X} )^\Tr = \bb{A} \bb{C} _\mathpzcb{X} \bb{A}^\Tr \\
+\bb{C} _{\mathpzcb{X} \mathpzcb{Y}}  &amp;=&amp; \mathbb{E}(\mathpzcb{X} - \bb{\mu} _\mathpzcb{X} ) (\bb{A} \mathpzcb{X} - \bb{A} \bb{\mu} _\mathpzcb{X} )^\Tr  = \bb{C} _\mathpzcb{X} \bb{A}^\Tr.\end{aligned}\]
+
+<h1 id="estimation">Estimation</h1>
+
+<p>Let $\mathpzcb{X}$ be a latent $n$-dimensional random vector, and let
+$\mathpzcb{Y}$ be a statistically related $m$-dimensional observation
+(measurement). For example $\mathpzcb{Y}$ can be a linearly transformed
+version of $\mathpzcb{X}$ corrupted by additive random noise,
+$\mathpzcb{Y} = \bb{A}\mathpzcb{X} + \mathpzcb{N}$. We might attempt
+using the information $\mathpzcb{Y}$ contains about $\mathpzcb{X}$ in
+order to <em>estimate</em> $\mathpzcb{X}$. For that purpose, let us construct a
+deterministic function $\bb{h} : \RR^m \rightarrow \RR^n$ that we are
+going to call an <em>estimator</em>. Supplying a realization
+$\mathpzcb{Y} = \bb{y}$ to this estimator will produce a deterministic
+vector $\hat{\bb{x}} = \bb{h}(\bb{y})$, which is referred to as the
+estimate of $\mathpzcb{X}$ given the measurement $\bb{y}$. With some
+abuse of notation, we will henceforth denote $\bb{h}(\bb{y})$ as
+$\hat{\bb{x}}(\bb{y})$. Note that supplying the random observation
+vector $\mathpzcb{Y}$ to $\hat{\bb{x}}$ produces the random vector
+$\hat{\mathpzcb{X}} = \hat{\bb{x}}(\mathpzcb{Y})$; here the
+deterministic function $\hat{\bb{x}}$ acts as a random variable
+transformation.</p>
+
+<p>Ideally, $\hat{\mathpzcb{X}}$ and $\mathpzcb{X}$ should coincide;
+however, unless the measurement is perfect, there will be a discrepancy
+$\mathpzcb{E} = \hat{\mathpzcb{X}} - \mathpzcb{X}$ which we will refer
+to as the <em>error</em> vector.</p>
+
+<h2 id="maximum-likelihood">Maximum likelihood</h2>
+
+<p>For the sake of simplicity of exposition, let us focus on a very common
+estimation setting with a linear forward model and an additive
+statisticaly independent noise, i.e.,</p>
+
+\[\mathpzcb{Y} = \bb{A}\mathpzcb{X} + \mathpzcb{N},\]
+
+<p>where $\bb{A}$ is
+a deterministic $m \times n$ matrix and $\mathpzcb{N}$ is independent of
+$\mathpzcb{X}$. In this case, we can assert that the distribution of the
+measurement $\mathpzcb{Y}$ given the latent signal $\mathpzcb{X}$ is
+simply the distribution of $\mathpzcb{N}$ at
+$\mathpzcb{N} = \mathpzcb{Y}- \bb{A} \mathpzcb{X}$,</p>
+
+\[P _{\mathpzcb{Y} | \mathpzcb{X}}( \bb{y} | \bb{x}  ) = P _{\mathpzcb{N}}( \bb{y} - \bb{A} \bb{x} ).\]
+
+<p>Assuming i.i.d. noise (i.e., that the $N _i$’s are distributed
+identically and independently of each other), the latter simplifies to a
+product of one-dimensional measures. Note that this is essentially a
+parametric family of distributions – each choice of $\bb{x}$ yields a
+distribution $P _{\mathpzcb{Y} | \mathpzcb{X} = \bb{x}}$ of
+$\mathpzcb{Y}$. For the time being, let us treat the notation
+$\mathpzcb{Y} | \mathpzcb{X}$ just as a funny way of writing.</p>
+
+<p>Given an estimate $\hat{\bb{x}}$ of the true realization $\bb{x}$ of
+$\mathpzcb{X}$, we can measure its “quality” by measuring some distance
+$D$ from $P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}}}$ to the true
+distribution $P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}$ that created
+$\mathpzcb{Y}$, and try to minimize it. Our estimator of $\bb{x}$ can
+therefore be written as</p>
+
+\[\hat{\bb{x}} = \mathrm{arg}\min _{\hat{\mathpzcb{X}}} D(P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}  ||  P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}}} ).\]
+
+<p>Note that we treat the quantity to be estimated as a deterministic
+parameter rather than a stochastic quantity.</p>
+
+<p>A standard way of measuring distance<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup> between distributions is the
+so-called <em>Kullback-Leibler (KL) divergence</em>. To define it, let $P$ and
+$Q$ be two probability measures (such that $P$ is absolutely continuous
+w.r.t. $Q$). Then, the KL divergence from Q to P is defined as</p>
+
+\[D(P || Q) = \int _{} \, \log \frac{dP}{dQ} \, dP.\]
+
+<p>In other words, it
+is the expectation of the logarithmic differences between the
+probabilities $P$ and $Q$ when the expectation is taken over $P$. The
+divergence can be thought of as an (asymmetric) distance between the two
+distributions.</p>
+
+<p>Let us have a closer look at the minimization objective</p>
+
+\[D(P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}  ||  P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}}}  ) = \mathbb{E} _{ \mathpzcb{Y} \sim P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}   }   \log\left(  \frac{P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}  }{ P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}} }  } \right) =
+\mathbb{E} _{ \mathpzcb{Y} \sim P _{\mathpzcb{Y} | \mathpzcb{X} = \bb{x}}   }   \log P _{\mathpzcb{Y} | \mathpzcb{X} = \bb{x}}  
+-\mathbb{E} _{ \mathpzcb{Y} \sim P _{\mathpzcb{Y} | \mathpzcb{X} = \bb{x}}   }   \log P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}} }.\]
+
+<p>Note that the first term (that can be recognized as the entropy of
+$\log P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}$) does not depend on the
+minimization variable; hence, we have</p>
+
+\[\hat{\bb{x}} = \mathrm{arg}\min _{\hat{\bb{x}}} \, \mathbb{E} _{ \mathpzcb{Y} \sim P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}   }   \left( - \log P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}}} \right).\]
+
+<p>Let us now assume that $N$ realization ${ \bb{y} _1, \dots, \bb{y} _N }$
+of $\mathpzcb{Y}$ are observed. In this case, we can express the joint
+p.d.f of the observations as the product of
+$f _\mathpzcb{N} (\bb{y} _i - \bb{A} \bb{x})$ or, taking the negative
+logarithm,</p>
+
+\[-\frac{1}{N} \log f _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}} (\bb{y} _1,\dots, \bb{y} _N ) = - \frac{1}{N} \sum _{i=1}^N \log f _\mathpzcb{N} (\bb{y} _i - \bb{A} \bb{x} ) = L(\bb{y} _1,\dots,\bb{y} _N | \bb{x}).\]
+
+<p>This function is known as the <em>negative log likelihood</em> function. By the
+law of large numbers, when $N$ approaches infinity,</p>
+
+\[L(\bb{y} _1,\dots,\bb{y} _N | \bb{x}) \rightarrow \mathbb{E} _{ \mathpzcb{Y} \sim P _{\mathpzcb{Y} | \mathpzcb{X}=\bb{x}}   }   \left( - \log P _{\mathpzcb{Y} | \mathpzcb{X}=\hat{\bb{x}}} \right).\]
+
+<p>Behold our minimization objective!</p>
+
+<p>To recapitulate, recall that we started with minimizing the discrepancy
+between the latent parametric distribution that generated the
+observation and that associated with our estimator. However, a closer
+look at the objective revealed that it is the limit of the negative log
+likelihood when the sample size goes to infinity. The minimization of
+the Kullback-Leibler divergence is equivalent to maximization of the
+likelihood of the data coming from a specific parametric distribution,</p>
+
+\[\hat{\bb{x}} = \mathrm{arg}\max _{\hat{\bb{x}}} \, P(  \mathpzcb{Y}=\bb{y} |  \mathpzcb{X}=\bb{x} ).\]
+
+<p>For this reason, the former estimator is called <em>maximum likelihood</em>
+(ML).</p>
+
+<h2 id="conditioning">Conditioning</h2>
+
+<p>Before treating maximum <em>a posteriori</em> estimation, we need to briefly
+introduce the important notion of conditioning and conditional
+distributions. Recall our construction of a probability space comprising
+the triplet $\Omega$ (the sample space), $\Sigma$ (the Borel sigma
+algebra), and $P$ (the probability measure). Let $X$ be a random
+variable and $B \subset \Sigma$ a sub sigma-algebra of $\Sigma$. We can
+then define the <em>conditional expectation of $\mathpzc{X}$ given $B$</em> as
+a random variable $\mathpzc{Z} = \mathbb{E} \mathpzc{X} | B$ satisfying
+for every $E \in B$</p>
+
+\[\int _E \mathpzc{Z} dP = \int _E \mathpzc{X} dP.\]
+
+<p>(we are omitting some technical details such as, e.g., integrability
+that $\mathpzc{X}$ has to satisfy).</p>
+
+<p>Given another random variable $\mathpzc{Y}$, we say that it generates a
+sigma algebra $\sigma(\mathpzc{Y})$ as the set of pre-images of all
+Borel sets in $\mathbb{R}$,</p>
+
+\[\sigma(\mathpzc{Y}) = \{ \mathpzc{Y}^{-1}(A) : A \in \mathbb{B}(\mathbb{R}) \}.\]
+
+<p>We can then use the previous definition to define the conditional
+expectation of <em>$\mathpzc{X}$ given $\mathpzc{Y}$</em> as</p>
+
+\[\mathbb{E} \mathpzc{X} | \mathpzc{Y} = \mathbb{E} \mathpzc{X} | \sigma(\mathpzc{Y}).\]
+
+<h3 id="conditional-distribution">Conditional distribution</h3>
+
+<p>Recall that expectation applied to indicator functions can be used to
+define probability measures. In fact, for every $E \in \Sigma$, we may
+construct the random variable $\ind _E$, leading to
+$P(E) = \mathbb{E} \ind _E$. We now repeat the same, this time replacing
+$\mathbb{E} $ with $\mathbb{E} \cdot | \mathpzc{Y}$. For every
+$E \in \Sigma$,</p>
+
+\[\varphi(\mathpzc{Y}) = \mathbb{E} \, E | \mathpzc{Y}\]
+
+<p>is a random variable that can be thought of as a transformation of the
+random variable $\mathpzc{Y}$ by the function $\varphi$. We denote this
+function as $P(E |\mathpzc{Y})$ and refer to it as the (regular)
+<em>conditional probability of event $E$ given $\mathpzc{Y}$</em>. It is easy
+to show that for every measurable set $B \subset \mathbb{R}$,</p>
+
+\[\int _B P(E | \mathpzc{Y}=y) (\mathpzc{Y} _\ast P)(dy) = P(E \cap \{ \mathpzc{Y} \in B \});\]
+
+<p>Substituting $E = { \mathpzc{X} \in B}$ yields the <em>conditional
+distribution of random variable $X$ given $\mathpzc{Y}$</em>,</p>
+
+\[P _{\mathpzc{X} | \mathpzc{Y}} (  B  | \mathpzc{Y}=y) = P(\mathpzc{X} \in B | \mathpzc{Y}=y).\]
+
+<p>It can be easily shown that $P _{\mathpzc{X} | \mathpzc{Y}}$ is a valid
+probability measure on $\Sigma$ and for every pair of measurable sets
+$A$ and $B$,</p>
+
+\[\int _B P _{\mathpzc{X} | \mathpzc{Y}} (A | \mathpzc{Y}=y) (\mathpzc{Y} _\ast P)(dy) = P(\{ \mathpzc{X} \in A  \} \cap \{ \mathpzc{Y} \in B \}).\]
+
+<p>If density exists, $P _{\mathpzc{X} | \mathpzc{Y}}$ can be described
+using the <em>conditional p.d.f.</em> $f _{\mathpzc{X} | \mathpzc{Y}}$ and the
+latter identity can be rewritten in the form</p>
+
+\[\int _A \left( \int _B f _{\mathpzc{X} | \mathpzc{Y}} (x | y) f _\mathpzc{Y}(y) dy  \right)  dx = P(\{ \mathpzc{X} \in A  \} \cap \{ \mathpzc{Y} \in B \}) = \int _A \int _B f _{\mathpzc{XY} } (x, y) dxdy.\]
+
+<p>This essentially means that
+$f _{\mathpzc{XY} } (x, y) = f _{\mathpzc{X} | \mathpzc{Y}} (x | y)  f _\mathpzc{Y}(y)$.
+Integrating w.r.t. $y$ yields the so-called <em>total probability formula</em></p>
+
+\[f _{\mathpzc{X} } (x) = \int _\mathbb{R} f _{\mathpzc{XY} } (x, y) dy = \int _\mathbb{R} f _{\mathpzc{X|Y} } (x|y)  f _\mathpzc{Y}(y) dy.\]
+
+<p>We can also immediately observe that if $\mathpzc{X}$ and $\mathpzc{Y}$
+are statistically independent, we have</p>
+
+\[f _{\mathpzc{XY} } (x, y) = f _{\mathpzc{X} }(x) f _{\mathpzc{Y} } (y) =  f _{\mathpzc{X} | \mathpzc{Y}} (x | y)  f _\mathpzc{Y}(y),\]
+
+<p>from where $f _{\mathpzc{X} | \mathpzc{Y}} = f _{\mathpzc{X}}$. In this
+case, conditioning on $\mathpzc{Y}$ does not change our knowledge of
+$\mathpzc{X}$.</p>
+
+<h3 id="bayes-theorem">Bayes’ theorem</h3>
+
+<p>One of the most celebrate (and useful) results related to conditional
+distributions is the following theorem named after Thomas Bayes.
+Exchanging the roles of $\mathpzc{X}$ and $\mathpzc{Y}$, we have</p>
+
+\[f _{\mathpzc{XY} }  = f _{\mathpzc{X} | \mathpzc{Y}}   f _\mathpzc{Y} = f _{\mathpzc{Y} | \mathpzc{X}}   f _\mathpzc{X};\]
+
+<p>re-arranging the terms, we have</p>
+
+\[f _{\mathpzc{Y} | \mathpzc{X}} = f _{\mathpzc{X} | \mathpzc{Y}} \, \frac{  f _\mathpzc{X} }{  f _\mathpzc{Y} };\]
+
+<p>in terms of probability measures, the equivalent form is</p>
+
+\[P _{\mathpzc{Y} | \mathpzc{X}} = P _{\mathpzc{X} | \mathpzc{Y}} \, \frac{  dP _\mathpzc{X} }{  dP _\mathpzc{Y} }.\]
+
+<h3 id="law-of-total-expectation">Law of total expectation</h3>
+
+<p>Note that treating the conditional density
+$f _{\mathpzc{X}|\mathpzc{Y}}(x|y)$ just as a funnily-decorated p.d.f.
+with the argument $x$, we can write the following expectation integral</p>
+
+\[\mathbb{E} (\mathpzc{X}|\mathpzc{Y}=y) = \int _{\RR} x f _{\mathpzc{X}|\mathpzc{Y}}(x|y) dx.\]
+
+<p>With (a very accepted) abuse of notation, we denote it as
+“$\mathbb{E} (\mathpzc{X}|\mathpzc{Y}=y)$”. Note, however, that this is
+a very different object from $\mathbb{E} \, \mathpzc{X}|\mathpzc{Y}$ –
+while the former is a deterministic value, the latter is a random
+variable (a transformation of $\mathpzc{Y}$). In order to construct
+$\mathbb{E} \, \mathpzc{X}|\mathpzc{Y}$ out of
+$\mathbb{E} (\mathpzc{X}|\mathpzc{Y}=y)$, we define the map
+$\varphi : y \mapsto \mathbb{E} (\mathpzc{X}|\mathpzc{Y}=y)$ and apply
+it to the random variable $\mathpzc{Y}$, obtaining
+$\mathbb{E} \, \mathpzc{X}|\mathpzc{Y} = \varphi(Y)$. Again, with a
+slight abuse of notation, we can write this as</p>
+
+\[\varphi(Y) = \mathbb{E} \, \mathpzc{X}|\mathpzc{Y} = \int _{\RR} x f _{\mathpzc{X}|\mathpzc{Y}}(x|Y) dx.\]
+
+<p>Let us now take a regular expectation of the transformed variable
+$\varphi(Y)$, which can be viewed as a generalized moment of
+$\mathpzc{Y}$,</p>
+
+\[\mathbb{E}\, \varphi(\mathpzc{Y}) = \int _{\RR} \varphi(y) f _{\mathpzc{Y}} (y) dy =  \int _{\RR}  \left(
+\int _{\RR} x f _{\mathpzc{X}|\mathpzc{Y}}(x|y) dx  \right)  f _{\mathpzc{Y}} (y) dy.\]
+
+<p>Rearranging the integrands and using
+$f _{\mathpzc{XY} }  = f _{\mathpzc{X} | \mathpzc{Y}}   f _\mathpzc{Y}$, we
+obtain</p>
+
+\[\mathbb{E}\, \varphi(\mathpzc{Y}) = \int _{\RR^2} x f _{\mathpzc{XY} }(x,y) dx dy = \mathbb{E}\, X.\]
+
+<p>Stated differently,</p>
+
+\[\mathbb{E}\left(  \mathbb{E}\, X|Y \right)  = \mathbb{E}\, X.\]
+
+<p>This
+result is known as the <em>smoothing theorem</em> or the <em>law of total
+expectation</em> and can be thought of as an integral version of the law of
+total probability.</p>
+
+<h2 id="maximum-a-posteriori">Maximum <em>a posteriori</em></h2>
+
+<p>Recall that in maximum likelihood estimation we treated $\mathpzcb{X}$
+as a deterministic parameter and tried to maximize the conditional
+probability $P(\mathpzcb{Y} | \mathpzcb{X})$. Let us now think of
+$\mathpzcb{X}$ as of a random vector and maximize its probability given
+the data,</p>
+
+\[\hat{\bb{x}}(\bb{y}) = \mathrm{arg}\max _{ \hat{\bb{x}} } P _{\mathpzcb{X} | \mathpzcb{Y} } ( \mathpzcb{X} =  \hat{\bb{x}} | \mathpzcb{Y} = \bb{y}).\]
+
+<p>Invoking the Bayes theorem yields</p>
+
+\[P _{\mathpzcb{X} | \mathpzcb{Y}} = P _{\mathpzcb{Y} | \mathpzcb{X} } \, \frac{ dP _{\mathpzcb{X}} }{dP _{\mathpzcb{Y}} }\]
+
+<p>In the Bayesian jargon, $P _{\mathpzcb{X}}$ is called the <em>prior</em>
+probability, that is, our initial knowledge about $\mathpzcb{X}$ before
+any observation thereof was obtained; $P _{\mathpzcb{X} | \mathpzcb{Y}}$
+is called the <em>posterior</em> probability having accounted for the
+measurement $\mathpzcb{Y}$. Note that the term
+$P _{\mathpzcb{Y} | \mathpzcb{X}}$ is our good old likelihood. Since we
+are maximizing the posterior probability, the former estimator is called
+<em>maximum a posteriori</em> (MAP).</p>
+
+<p>Taking negative logarithm, we obtain</p>
+
+\[-\log P _{\mathpzcb{X} | \mathpzcb{Y}} = -\log P _{\mathpzcb{Y} | \mathpzcb{X} } -\log P _\mathpzcb{X} +\log P _{\mathpzcb{Y}} = L(\mathpzcb{Y} | \mathpzcb{X}) - \log P _{\mathpzcb{X}} + \mathrm{const}.\]
+
+<p>This yields the following expression for the MAP estimator</p>
+
+\[\bb{h}(\bb{Y}) = \mathrm{arg}\min _{ \hat{\bb{x}} } L(\mathpzcb{Y} |  \hat{\bb{x}} ) - \log P _\mathpzcb{X} ( \hat{\bb{x}} ).\]
+
+<p>The minimization objective looks very similar to what we had in the ML
+case; the only difference is that now a <em>prior</em> term is added. In the
+absence of a good prior, a uniform prior is typically assumed, which
+reduces MAP estimation to ML estimation.</p>
+
+<h2 id="minimum-mean-squared-error">Minimum mean squared error</h2>
+
+<p>Another sound way of constructing the estimator function $\hat{\bb{x}}$
+is by minimizing some error criterion related to the error vector
+$\mathcal{E}(\mathpzcb{E})$. A very common pragmatic choice is the <em>mean
+squared error</em> (MSE) criterion,</p>
+
+\[\mathcal{E}(\mathpzcb{E}) = \mathbb{E} \, \|  \mathpzcb{E} \| _2^2,\]
+
+<p>leading to the following optimization problem:</p>
+
+\[\hat{\bb{x}}^{\mathrm{MMSE}}  = \mathrm{arg} \min _{ \bb{h} : \RR^m \rightarrow \RR^n }  \mathbb{E} \, \| \bb{h}( \mathpzcb{Y} ) - \mathpzcb{X}  \| _2^2.\]
+
+<p>The resulting estimator is called <em>minimum mean squared error</em> (or MMSE)
+estimator. Since the squared norm is coordinate separable, we can
+effectively solve for each dimension of $\hat{\bb{x}}^{\mathrm{MMSE}}$
+independently, finding the best (in the MSE sense) estimator of $X _i$
+given $\mathpzcb{Y}$,</p>
+
+\[\hat{x} _i^{\mathrm{MMSE}} = \mathrm{arg} \min _{ h : \RR^m \rightarrow \RR }  \mathbb{E} \, ( h( \mathpzcb{Y} ) - X _i  )^2.\]
+
+<p>The minimization objective can be written explicitly as</p>
+
+\[\begin{aligned}
+ \mathbb{E} \, ( h( \mathpzcb{Y} ) - X _i  )^2 &amp;=&amp;   \mathbb{E} \, \left( \mathbb{E}\, (  h( \mathpzcb{Y} ) - X _i  )^2 | \mathpzcb{Y} \right) =
+  \mathbb{E} \, \left( \mathbb{E}\,  h^2 ( \mathpzcb{Y} ) | \mathpzcb{Y}  - 2 \mathbb{E}\,  h ( \mathpzcb{Y} ) X _i | \mathpzcb{Y}   + \mathbb{E}\, X^2 _i | \mathpzcb{Y}  \right)    \\
+  &amp;=&amp; 
+    \mathbb{E} \, \left(  h^2 ( \mathpzcb{Y} )  - 2   \mathbb{E}\, X _i | \mathpzcb{Y} \cdot h ( \mathpzcb{Y} )   + \mathbb{E}\, X^2 _i | \mathpzcb{Y}  \right) \\
+    &amp;=&amp; \int _{\RR^m}  (  h^2 ( \bb{y} )  - 2   \mathbb{E} (X _i | \mathpzcb{Y}=\bb{y}) \cdot h ( \mathpzcb{Y} )   + \mathbb{E} ( X^2 _i | \mathpzcb{Y}=\bb{y})    )  f _{\mathpzcb{Y}} (\bb{y}) d\bb{y}.
+\end{aligned}\]
+
+<p>The latter integral is minimized iff its non-negative integrand is
+minimized at every point $\bb{y}$. Let us fix $\bb{y}$ and define
+$a = h(\bb{y})$. The expression to minimize is</p>
+
+\[\varphi(a) = a^2  - 2a\,   \mathbb{E} (\mathpzc{X} _i | \mathpzcb{Y}=\bb{y})   + \mathbb{E} ( \mathpzc{X}^2 _i | \mathpzcb{Y}=\bb{y});\]
+
+<p>note that this is a convex quadratic function with the minimizer given
+by</p>
+
+\[a^\ast = \mathbb{E} (\mathpzc{X} _i | \mathpzcb{Y}=\bb{y}).\]
+
+<p>From
+here we conclude that</p>
+
+\[h(\bb{Y}) =  \mathbb{E} \mathpzc{X} _i | \mathpzcb{Y};\]
+
+<p>consequently,
+the MMSE estimator of $\mathpzcb{X}$ given $\mathpzcb{Y}$ is given by
+the conditional expectation</p>
+
+\[\hat{\mathpzcb{X}}^{\mathrm{MMSE}}  =  \mathbb{E} \, \mathpzcb{X} | \mathpzcb{Y}.\]
+
+<p>The error vector produced by the MMSE estimator is given by
+$\mathpzcb{E} =  \mathbb{E} \, \mathpzcb{X} | \mathpzcb{Y} - \mathpzcb{X}$.
+Taking the expectation yields</p>
+
+\[\mathbb{E}\, \mathpzcb{E} =  \mathbb{E} \left( \mathbb{E} \, \mathpzcb{X} | \mathpzcb{Y} \right) - \mathbb{E}\, \mathpzcb{X} =  \mathbb{E}\, \mathpzcb{X} -  \mathbb{E}\, \mathpzcb{X}  = \bb{0}.\]
+
+<p>In other words, the estimation error is zero mean – a property often
+stated by saying that the MMSE estimator is <em>unbiased</em>.</p>
+
+<p>Since the MSE is equivalent (isomorphic) to Euclidean length, MMSE
+estimation can be viewed as the minimization of the length of the vector
+$\mathpzcb{E}$ over the subspace of vectors of the form
+$\hat{\mathpzcb{X}} = \bb{h}( \mathpzcb{Y}  )$ with
+$\bb{h} : \RR^m \rightarrow \RR^m$. We known from Euclidean geometry
+that the minimum length is obtained by the orthogonal projection of
+$\mathpzcb{X}$ onto the said subspace, meaning that $\hat{\mathpzcb{X}}$
+is an MMSE estimator iff its error vector $\mathpzcb{E}$ is <em>orthogonal</em>
+to every $\bb{h}( \mathpzcb{Y}  )$, that is,</p>
+
+\[\mathbb{E}\, \left( (\hat{\mathpzcb{X}} - \mathpzcb{X} )  \bb{h}^\Tr ( \mathpzcb{Y}  ) \right)  = \bb{0}\]
+
+<p>for every $\bb{h} : \RR^m \rightarrow \RR^m$.</p>
+
+<h2 id="best-linear-estimator">Best linear estimator</h2>
+
+<p>Sometimes the functional dependence of
+$\hat{\mathpzcb{X}}^{\mathrm{MMSE}} $ on $\mathpzcb{Y}$ might be too
+complicated to compute. In that case, it is convenient to restrict the
+family of functions to some simple class such as that of linear (more
+precisely, affine) functions of the form
+$\bb{h}(\bb{y}) = \bb{A} \bb{y} + \bb{b}$. The MMSE estimator restricted
+to such a subspace of functions is known as the <em>best linear estimator</em>
+(BLE), and its optimal parameters $\bb{A}$ and $\bb{b}$ are found by
+minimizing</p>
+
+\[\min _{ \bb{A}, \bb{b} }  \mathbb{E} \, \| \bb{A} \mathpzcb{Y} + \bb{b} - \mathpzcb{X}  \| _2^2.\]
+
+<p>Note that since
+$\mathbb{E} \mathpzcb{E} =   \bb{A} \mathbb{E}\, \mathpzcb{Y} + \bb{b} - \mathbb{E}\, \mathpzcb{X}$,
+we can always zero the estimator bias by setting
+$\bb{b} = \bb{\mu} _{\mathpzcb{X}} -  \bb{A}\bb{\mu} _{\mathpzcb{Y}}$.
+With this choice, the problem reduces to</p>
+
+\[\min _{ \bb{A} }  \mathbb{E} \, \| \bb{A} (\mathpzcb{Y} - \bb{\mu} _{\mathpzcb{Y}} ) - ( \mathpzcb{X}  - \bb{\mu} _{\mathpzcb{X}} )  \| _2^2\]
+
+<p>or, equivalently,</p>
+
+\[\min _{ \bb{A} }  \, \mathbb{E} \, \mathrm{tr} \left( (\mathpzcb{Y} - \bb{\mu} _{\mathpzcb{Y}} )^\Tr \bb{A}^\Tr \bb{A} (\mathpzcb{Y} -
+ \bb{\mu} _{\mathpzcb{Y}} ) \right) - 2 \mathbb{E} \,\mathrm{tr} \left(      (\mathpzcb{Y} - \bb{\mu} _{\mathpzcb{Y}} )^\Tr \bb{A}^\Tr 
+  (\mathpzcb{X} -
+ \bb{\mu} _{\mathpzcb{X}} )     \right).\]
+
+<p>Manipulating the order of
+multiplication under the trace, exchaging its order with that of the
+expectation operator, and moving the constants outside the expectation
+yields the following minimization objective:</p>
+
+\[\begin{aligned}
+\varphi(\bb{A}) &amp;=&amp; \mathrm{tr} \left(   \bb{A} \mathbb{E}   (\mathpzcb{Y} -
+ \bb{\mu} _{\mathpzcb{Y}} )  (\mathpzcb{Y} -
+ \bb{\mu} _{\mathpzcb{Y}} )^\Tr \bb{A}^\Tr 
+ -2 \bb{A} \mathbb{E}   (\mathpzcb{X} -
+ \bb{\mu} _{\mathpzcb{X}} )  (\mathpzcb{Y} -
+ \bb{\mu} _{\mathpzcb{Y}} )^\Tr 
+   \right) \\
+   &amp;=&amp;  \mathrm{tr} \left(   \bb{A} \bb{C} _{\mathpzcb{Y}}  \bb{A}^\Tr 
+ -2 \bb{A}  \bb{C} _{\mathpzcb{X} \mathpzcb{Y}}
+   \right).
+\end{aligned}\]
+
+<p>Note that this is a convex (since
+$\bb{C} _{\mathpzcb{Y}}  \succ 0$) quadratic function. In order to find
+its minimizer, we differentiate w.r.t. the parameter $\bb{A}$ and equate
+the gradient to zero:</p>
+
+\[0 = \nabla \varphi(\bb{A}) = 2\bb{A} \bb{C} _{\mathpzcb{Y}} - 2\bb{C} _{\mathpzcb{X} \mathpzcb{Y}}.\]
+
+<p>The optimal parameter is obtained as
+$\bb{A} = \bb{C} _{\mathpzcb{X} \mathpzcb{Y}}\bb{C} _{\mathpzcb{Y}}^{-1}$.</p>
+
+<p>Combining this result with the expression for $\bb{b}$, the best linear
+estimator is</p>
+
+\[\hat{\mathpzcb{X}}^{\mathrm{BLE}} =  \bb{C} _{\mathpzcb{X} \mathpzcb{Y}}\bb{C} _{\mathpzcb{Y}}^{-1} (  \mathpzcb{Y} -
+ \bb{\mu} _{\mathpzcb{Y}}  )  + \bb{\mu} _{\mathpzcb{X}} .\]
+
+<p>As the more
+general MMSE estimator, BLE is also unbiased and enjoys the
+orthogonality property, meaning that $\hat{\mathpzcb{X}}$ is an MMSE
+estimator iff its error vector $\mathpzcb{E}$ is <em>orthogonal</em> to every
+affine function of $\mathpzcb{Y}  )$, that is,</p>
+
+\[\mathbb{E}\, \left( (\hat{\mathpzcb{X}} - \mathpzcb{X} )  ( \bb{A}\mathpzcb{Y}  + \bb{b} )^\Tr \right)  = \bb{0}\]
+
+<p>for every $\bb{A} \in \RR^{m \times n}$ and $\bb{b} \in \RR^m$.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>To be completely rigorous, the proper way to define the PDF is by
+first equipping the image of the map $\mathpzc{X}$ with the Lebesgue
+measure $\lambda$ that assigns to every interval $[a,b]$ its length
+$b-a$. Then, we invoke the Radon-Nikodym theorem saying that if
+$\mathpzc{X}$ is absolutely continuous w.r.t. $\lambda$, there
+exists a measurable function $f : \mathbb{R} \rightarrow [0,\infty)$
+such that for every measurable $A \subset \mathbb{R}$,
+$\displaystyle{(\mathpzc{X} _\ast P)(A) =P(\mathpzc{X}^{-1}(A)) = \int _A f d\lambda}$.
+$f$ is called the <em>Radon-Nikodym derivative</em> and denoted by
+$\displaystyle{f = \frac{d(\mathpzc{X} _\ast P)}{d\lambda}} $. It is
+exactly our PDF. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>In fact, $r _{\mathpzc{X}\mathpzc{Y}}$ can be viewed as an inner
+product on the space of random variables. This creates a geometry
+isomorphic to the standard Euclidean metric in $\mathbb{R}^n$. Using
+this construction, the Cauchy-Schwarz inequality immediately
+follows:
+$| r _{\mathpzc{X}\mathpzc{Y}} | \le \sigma _\mathpzc{X} \sigma _\mathpzc{Y}$. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Actually, not a true <em>metric</em> (which what the term distance
+implies, but rather an asymmetric form thereof, formally termed a
+<em>divergence</em>. <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/cs236781/semesters/w22/supplements/multivariate_calculus/" class="pagination--pager" title="Multivariate Calculus
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        
+<!-- Technion and VISTA logos --><script>
+
+var logo_element = '\
+<div class="technion-logo"> \
+    <a href="https://cs.technion.ac.il"> \
+        <img src="/cs236781/semesters/w22/assets/images/cs_technion-logo.png" alt="Technion"> \
+    </a> \
+</div> \
+';
+
+document
+    .querySelector('.masthead__inner-wrap')
+    .insertAdjacentHTML('afterbegin', logo_element);
+
+var logo_element = '\
+<div class="vista-logo"> \
+    <a href="https://vista.cs.technion.ac.il" > \
+        <img src="/cs236781/semesters/w22/assets/images/vista-logo-bw.png" alt="VISTA"> \
+    </a> \
+</div> \
+';
+
+var footerNodes = document.getElementsByTagName("FOOTER")
+var footerNode = footerNodes[footerNodes.length - 1];
+footerNode.insertAdjacentHTML('afterend', logo_element);
+
+</script>
+<!-- Mathjax support --><!-- see: http://haixing-hu.github.io/programming/2013/09/20/how-to-use-mathjax-in-jekyll-generated-github-pages/ -->
+<!-- also: http://docs.mathjax.org/en/latest/tex.html for defning mathjax macros -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      noErrors: { disabled: true },
+      Macros: {
+        // Each def here is an array: [<macro>, <num_params>]
+        // Aviv's defs
+        bold: ["{\\bf #1}",1],
+        m: ["\\boldsymbol {#1}",1],             // matrix
+        mt: ["\\boldsymbol {#1}^\\top",1],      // transposed matrix
+        v: ["\\boldsymbol {#1}",1],             // vector
+        vt: ["\\boldsymbol {#1}^\\top",1],      // transposed vector
+        diag: ["\\mathop{\\mathrm{diag}}"],
+        trace: ["\\mathop{\\mathrm{tr}}"],
+        rank: ["\\mathop{\\mathrm{rank}}"],
+        set: ["\\mathbb {#1}",1],
+        rvar: ["\\mathrm{#1}",1],               // random variable
+        rvec: ["\\boldsymbol{\\mathrm{#1}}",1], // random vector
+
+        // Alex's defs
+        bm: ["{\\bf #1}",1],
+        bb: ["{\\bm{\\mathrm{#1}}}",1],
+        spn: ["\\mathrm{span}\\left\\{ {#1} \\right\\}",1],
+        vec: ["\\mathrm{vec}"],
+        dx:  ["\\bb{dx}"], dX:  ["\\bb{dX}"], dy:  ["\\bb{dy}"], du:  ["\\bb{du}"],
+        df:  ["\\bb{df}"], dg:  ["\\bb{dg}"],
+        dphi:  ["\\bb{d\\varphi}"],
+        Tr: ["\\top"],
+        RR: ["\\set{R}"],
+        mathpzc: ["\\rvar{#1}", 1],
+        mathpzcb: ["\\rvec{#1}", 1],
+        ind: ["\\unicode{x1D7D9}"]
+      }
+    },
+
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+    processEscapes: true,
+  },
+
+  "HTML-CSS": {
+     fonts: ["TeX"]
+  },
+
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<!-- Copyright notice support on single pages -->
+<script>
+var copyright_element = '\
+    <p class="page__meta" style="margin-top: -0.5em;"> \
+    <i class="far fa-copyright"></i> \
+    Prof. Alex Bronstein \
+    </p> \
+';
+
+first_header = document.getElementsByTagName('header')[0]
+first_header.insertAdjacentHTML('beforeend', copyright_element);
+</script>
+
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://vista.cs.technion.ac.il"><i class="fas fa-fw fa-link" aria-hidden="true"></i> VISTA Lab</a></li>
+        
+      
+        
+          <li><a href="https://github.com/vistalab-technion"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    <li><a href="/cs236781/semesters/w22/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 VISTA Lab. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/cs236781/semesters/w22/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+
+
+
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr.min.js"></script>
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr-store.js"></script>
+<script src="/cs236781/semesters/w22/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
