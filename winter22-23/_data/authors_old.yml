@@ -1,0 +1,71 @@
+alex:
+  name: Prof. Alex Bronstein
+  bio: Head Lecturer
+  avatar: "/assets/images/bio-photo-alex.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:bron@cs.technion.ac.il"
+    - label: "Web"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.cs.technion.ac.il/~bron/"
+
+chaim:
+  name: Dr. Chaim Baskin
+  bio: Lecturer
+  avatar: "/assets/images/bio-photo-chaim.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:chaimbaskin@cs.technion.ac.il"
+
+aviv:
+  name: Aviv Rosenberg
+  bio: Head TA
+  avatar: "/assets/images/bio-photo-aviv.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:avivr@cs.technion.ac.il"
+    - label: "Web"
+      icon: "fas fa-fw fa-link"
+      url: "https://avivr.net"
+  # office_hours:
+  #   location: Zoom
+  #   time: Thursday, 17:30
+
+yaniv:
+  name: Yaniv Nemcovsky
+  bio: TA
+  avatar: "/assets/images/bio-photo-yaniv.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:yanemcovsky@campus.technion.ac.il"
+
+yonatan:
+  name: Yonatan Elul
+  bio: TA
+  avatar: "/assets/images/bio-photo-yonatan.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:johnneye@campus.technion.ac.il"
+
+evgenii:
+  name: Evgenii Zheltonozhskii
+  bio: Homework Checker
+  avatar: "/assets/images/bio-photo-evgeniy.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:evgeniizh@campus.technion.ac.il"
+
+ben:
+  name: Ben Finkelshtein
+  bio: Homework Checker
+  avatar: "/assets/images/bio-photo-ben.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:benfin@campus.technion.ac.il"

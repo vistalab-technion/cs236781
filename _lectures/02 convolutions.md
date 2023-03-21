@@ -15,7 +15,7 @@ alt="" caption="" ref=""
 
 ## Video
 
-[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0959f9cb-ef72-4a71-a68b-af4200b54a5e)
+After class
 
 ## Slides
 

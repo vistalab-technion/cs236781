@@ -9,7 +9,7 @@ advance architectures
 
 ## Video
 
-[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1f311817-a07c-41b7-9a9f-af4900b78863)
+After class
 
 ## Slides
 

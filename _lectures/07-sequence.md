@@ -11,7 +11,8 @@ backpropagation through time, word embeddings, attention, transformers.
 
 ## Video
 
-avalible [here] (https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=09f88b9d-602f-4b5f-974e-af6500b1ef8b)
+After class
+
 ## Supplementary Video
 
 Word embeddings

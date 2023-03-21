@@ -14,7 +14,7 @@ curvature, descent-based optimization methods, second-order methods.
 
 ## Videos
 
-[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d65e5907-e871-404c-b2e8-af5000b79025)
+After class
 
 ## Slides
 

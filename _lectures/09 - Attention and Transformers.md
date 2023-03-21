@@ -8,8 +8,7 @@ and generative models like GPT
 
 ## Video
 
-[Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=fceb6497-75a8-49bd-91c4-af7a00af1bf9)
-
+After class
 
 
 ## Slides

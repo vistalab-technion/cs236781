@@ -8,6 +8,7 @@ VAE, VQ-VAE and Dall-E
 
 ## Video
 
+After class
 
 ## Slides
 
