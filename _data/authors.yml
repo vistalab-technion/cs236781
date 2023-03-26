@@ -33,7 +33,7 @@ moshe:
 mitchell:
   name: Mitchell Keren Taraday
   bio: TA
-  avatar: "/assets/images/bio-photo-moshe.jpg"
+  avatar: "/assets/images/bio-photo-mitchell"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -43,14 +43,24 @@ mitchell:
   #   time: Thursday, 17:30
 
 
-yonatan:
-  name: Efrat Levkovich
+ 
+yair:
+  name: Yair Davidson
   bio: Homework Checker
-  avatar: "/assets/images/bio-photo-effrat.jpg"
+  avatar: "/assets/images/bio-photo-generic.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:efrat3232@gmail.com"
+      url: "mailto: yairdavidson@campus.technion.ac.il"
+
+ohad:
+  name: Ohad Einav
+  bio: Homework Checker
+  avatar: "/assets/images/bio-photo-generic.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:ohadeinav@campus.technion.ac.il"
 
 evgenii:
   name: Evgenii Zheltonozhskii

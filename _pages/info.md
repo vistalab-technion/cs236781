@@ -117,10 +117,10 @@ lecture before each respective class.
 | 2    | `30/03/2023`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
 | -    | `06/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
 | -    | `13/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
-| 3    | `20/04/2023`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs I                            |             |
-| 4    | `24/04/2023`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | CNNs II                           |    HW2      |
+| 3    | `20/04/2023`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs (+workshop)                  |             |
+| 4    | `24/04/2023`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |    HW2      |
 | -    | `27/04/2023`     | **independence day (NO CLASS)**     |                                                                           |                                   |             |
-| 5    | `04/05/2023`     | Optimization and Training II        |                                                                           | Optimization         	            |             |
+| 5    | `04/05/2023`     | Optimization and Training II        |                                                                           | Optimization II      	            |             |
 | 6    | `11/05/2023`     | Dense prediction                    |                                                                           | Dense Prediction 				    |             |
 | -    | `18/05/2023`     | **student festival (NO CLASS)**     |                                                                           |                                   |             |
 | 7    | `21/05/2023`     | Sequence models                     |                                                                           | Domain adaptation				    |             |
