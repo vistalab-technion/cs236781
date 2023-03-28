@@ -10,8 +10,7 @@ GAN, DCGAN, WGAN
 ## Video
 
 
-You can watch [Here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=7d68d5b3-8bc5-4c92-a8ba-af8800b4f386)
-
+After class
 
 ## Slides
 

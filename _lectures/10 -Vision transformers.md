@@ -9,7 +9,7 @@ Transformers in computer Vision, clip etc..
 ## Video
 
 
-Soon
+After class
 
 
 ## Slides
