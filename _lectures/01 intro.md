@@ -19,6 +19,8 @@ After class
 
 ## Slides
 
+Can be seen [Here](https://www.dropbox.com/scl/fi/le5u2f3u7dw9i1ldjco2f/236781_lec01_intro-1.pptx?dl=0&rlkey=uwq8wzjqkgnktzgi64q70n2pg)
+
 {% include ppt_embed.html src="https://www.dropbox.com/scl/fi/le5u2f3u7dw9i1ldjco2f/236781_lec01_intro-1.pptx?dl=0&rlkey=uwq8wzjqkgnktzgi64q70n2pg" %}
 
 
