@@ -1,5 +1,5 @@
 ---
-title: Strike day
+title: Todays tutorial and this week lecture
 author: moshe
 excerpt: Dates and times.
 ---
