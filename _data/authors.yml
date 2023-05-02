@@ -33,7 +33,7 @@ moshe:
 mitchell:
   name: Mitchell Keren Taraday
   bio: TA
-  avatar: "/assets/images/bio-photo-mitchell"
+  avatar: "/assets/images/bio-photo-mitchell.jpg"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
