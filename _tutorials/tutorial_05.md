@@ -1,11 +1,10 @@
 ---
-title: "Tutorial 5: Optimization"
-author: aviv
+title: "Tutorial 5: Automatic Differentiation"
+author: Mitchell
 published: true
 ---
 
-Descent-based methods, backpropagation, automatic differentiation, bi-level
-optimization, time-series analysis with CNNs.
+Numerical differentiation, computational graphs, forward and reverse mode AD, the backpropagation algorithm, custom AD with PyTorch.
 
 ## Material
 
