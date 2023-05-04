@@ -70,15 +70,3 @@ evgenii:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:evgeniizh@campus.technion.ac.il"
-<<<<<<< HEAD
-      
-mitchell:
-  name: mitchell keren
-  bio: Tutor
-  avatar: "/assets/images/bio-photo-evgeniy.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:mitchell@campus.technion.ac.il"
-=======
->>>>>>> b44bcc686ef4b99a8596a29d236061c1e543c99f
