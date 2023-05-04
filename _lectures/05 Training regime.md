@@ -12,7 +12,7 @@ Training regime for Deep Learning
 
 ## Videos
 
-After class
+[from previus semesters](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6656b0df-9591-4eb7-b0ec-af5700fbd116)
 
 ## Slides
 

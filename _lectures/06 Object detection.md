@@ -9,7 +9,7 @@ CV-based approaches, R-CNN, RPN, YOLO, SSD, losses, benchmarks and performance m
 
 ## Slides
 
-[from dropbox](https://www.dropbox.com/scl/fi/n5ra0gkn4iwqlc63xrvsl/236781_Dec06.pptx?dl=0&rlkey=sy3bxwl6ft6ej4ijiwamcsnn8)
+[here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_Lec6.pptx)
 
 ## Lecture Notes
 
