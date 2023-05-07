@@ -19,4 +19,4 @@ Hebrew recording:
 
 English recording: 
 
-upload soon
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=c5632537-a56b-44cb-ac4b-aff800af4cd0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
