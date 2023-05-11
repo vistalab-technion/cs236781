@@ -11,7 +11,9 @@ CV-based approaches, R-CNN, RPN, YOLO, SSD, losses, benchmarks and performance m
 
 [here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_Lec6.pptx)
 
-## Lecture Notes
+## Recording
+
+https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6963f6da-2999-439f-82fc-aff800aaaf59
 
 Accompanying notes are not available for this lecture.
 
