@@ -21,7 +21,7 @@ Word embeddings
 
 ## Slides
 
-[Here](https://www.dropbox.com/scl/fi/59w1ceasdi4o7s2mlr1dc/236781Lecture6_RNNs.pptx?dl=0&rlkey=1kc0gkf9yf4208lgzmvfamb0c)
+[here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_Lec9.pptx)
 
 ## Supplementary Slides
 
