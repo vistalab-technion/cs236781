@@ -117,18 +117,18 @@ lecture before each respective class.
 | 2    | `30/03/2023`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
 | -    | `06/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
 | -    | `13/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
-| 3    | `20/04/2023`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs (+workshop)                  |             |
+| 3    | `20/04/2023`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
 | 4    | `24/04/2023`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
 | -    | `27/04/2023`     | **independence day (NO CLASS)**     |                                                                           |                                   |             |
 | 5    | `04/05/2023`     | Dense prediction                    |                                                                           | Optimization II      	            |     HW2     |
 | 6    | `11/05/2023`     | Self supervision                    |                                                                           | Dense Prediction 				    |             |
 | -    | `18/05/2023`     | **student festival (NO CLASS)**     |                                                                           |                                   |             |
 | 7    | `21/05/2023`     | Sequence models                     |                                                                           | Domain adaptation				    |             |
-| -    | `25/05/2023`     | **sahvout (NO CLASS)**     			|                                                                           |                                   |             |
-| 8    | `01/06/2023`     | Attention     	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | RNNs				                |    HW3      |
-| 9    | `08/06/2023`  	  | Transformers            			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Attention	               		    |             |
-| 10   | `15/06/2023`     | VIT                                 |                                                                           | Transformers                      |             |
-| 11   | `22/06/2023`     | GAN                                 |                                                                           | GANs		                   	    |Final Project|
-| 12   | `29/06/2023`     | VAE                                 |                                                                           | VAEs                              |             |
-| 13   | `06/07/2023`     | Diffusion models                    |                                                                           | Diffusion models                  |             | 
+| -    | `25/05/2023`     | **sahvout (NO CLASS)**     			|                                                                           | RNNs                              |             |
+| 8    | `01/06/2023`     | Attention     	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention			                |    HW3      |
+| 9    | `08/06/2023`  	  | Transformers            			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		    |             |
+| 10   | `15/06/2023`     | GAN                                 |                                                                           | Efficient models                  |             |
+| 11   | `22/06/2023`     | VAE                                 |                                                                           | GANs		                   	    |Final Project|
+| 12   | `29/06/2023`     | Diffusion models                    |                                                                           | VAEs                              |             |
+| 13   | `06/07/2023`     | VIT                 			    |                                                                           | Diffusion models                  |             | 
 | ---- | -------------    | --------------------------------    | ------------------------------------------------------------------------- | --------------------------------- | ----------- |
