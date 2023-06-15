@@ -13,3 +13,7 @@ The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-
 ## Video (requires Technion account)
 Hebrew:
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3838ffa6-4bb7-4820-a328-b017009fa135&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
+
+English:
+
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9e18ee34-c866-4294-943d-b01b00b111d0&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
