@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 11: Varietional AutoEncoders"
+title: "Tutorial 12: Varietional AutoEncoders"
 author: moshe
 published: true
 ---

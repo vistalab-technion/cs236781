@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 12: Generative Adverserial Networks"
+title: "Tutorial 11: Generative Adverserial Networks"
 author: moshe
 published: true
 ---
