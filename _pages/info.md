@@ -49,7 +49,6 @@ This semester the frontal lectures and tutorials will be in Hebrew.
 **Credits**: 3.0.
 
 
-
 ### Prerequisites
 
 This is an advanced course. Without **both** mathematical maturity and
