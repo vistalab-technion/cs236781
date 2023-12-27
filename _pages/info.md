@@ -12,7 +12,7 @@ the art performance today is attained by deep-learning algorithms, in some
 cases surpassing human-level performance.
 
 This course will focus on the theory and algorithms behind deep learning, as
-well as on hardware and software techniques that allow efficient training of
+well as on software techniques that allow efficient training of
 deep learning algorithms. It is a graduate-level course which provides both the
 necessary theoretical background and the hands-on experience required to be an
 effective deep learning practitioner, or to start on the path towards deep
@@ -40,12 +40,15 @@ Third Homework assignment : 25%
 Final Project: 40%
 
 The Project might have a competitive component to it. If there will be, the course staff will anounce it in advance.
-We are aware for students worries and it wound **Not** effect your final grade by more then 5% (if at all will be a part of the grading), so do not worry for your grade.
 
+**Reserve Duty**: Please come to the tutor in charge if you have specific needs due to army servise.
 
-**Language**: All course materials (including lecture and tutorial videos) are provided in English, possible to change upon request.
+**Language**: All course materials (including lecture and tutorial videos) are provided in English.
+This semester the frontal lectures and tutorials will be in Hebrew.
 
 **Credits**: 3.0.
+
+
 
 ### Prerequisites
 
@@ -81,26 +84,23 @@ regulations committee.
    github. Private repos are OK, but they must remain so even after course completion.
 
 ## Course Staff
-The old course staff:
+The course staff:
 {% include course_staff.html %}
 
 ## Literature
 
-The course does not follow any specific book. For your own reference, the
-following material may be useful.
+The course does not follow any specific book due to the rapid changes in the field.
+For your own reference, the following material may be useful.
 
 {% include literature.html %}
 
 ## Detailed Syllabus
 
 
-The lectures are **In person**, and suplementry matirial with teoretical background 
+The lectures and tutorials are **In person**, and suplementry matirial with teoretical background 
 exist in the [Lectures]({{ site.baseurl }}/lectures) page.
-For some classes, you would be asked to watch a complimenty video to the lecture.
 
 The tutorials are based on detailed and self-contained Jupyter notebooks, which guide you through.
-
-This semester we changed the tutorials and you can use the [Old version]({{ site.baseurl }}/tutorials) as a suplementry matirial.
 
 The course also includes hands-on homework assignments in which you'll
 implement working real-world models and run them on GPUs on the course servers.
@@ -113,22 +113,17 @@ lecture before each respective class.
 
 | #    | Date             | Lecture                             | Supplemental (video)                                                      | Tutorial                          | Homework    |
 | ---- | -------------    | -------------------------------     | ------------------------------------------------------------------------- | --------------------------------- | ----------  |
-| 1    | `23/03/2023`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch I 	|    HW1      |
-| 2    | `30/03/2023`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
-| -    | `06/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
-| -    | `13/04/2023`     | **Passover (NO CLASS)**             |                                                                           |                                   |             |
-| 3    | `20/04/2023`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
-| 4    | `24/04/2023`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
-| -    | `27/04/2023`     | **independence day (NO CLASS)**     |                                                                           |                                   |             |
-| 5    | `04/05/2023`     | Dense prediction                    |                                                                           | Optimization II      	            |     HW2     |
-| 6    | `11/05/2023`     | Self supervision                    |                                                                           | Dense Prediction 				    |             |
-| -    | `18/05/2023`     | **student festival (NO CLASS)**     |                                                                           |                                   |             |
-| 7    | `21/05/2023`     | Sequence models                     |                                                                           | Domain adaptation				    |             |
-| -    | `25/05/2023`     | **sahvout (NO CLASS)**     			|                                                                           | RNNs                              |             |
-| 8    | `01/06/2023`     | Attention     	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention			                |    HW3      |
-| 9    | `08/06/2023`  	  | Transformers            			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		    |             |
-| 10   | `15/06/2023`     | GAN                                 |                                                                           | Efficient models                  |             |
-| 11   | `22/06/2023`     | VAE                                 |                                                                           | GANs		                   	    |Final Project|
-| 12   | `29/06/2023`     | Diffusion models                    |                                                                           | VAEs                              |             |
-| 13   | `06/07/2023`     | VIT                 			    |                                                                           | Diffusion models                  |             | 
+| 1    | `18/01/2024`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch I 	|    HW1      |
+| 2    | `25/01/2024`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
+| 3    | `01/02/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
+| 4    | `08/02/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
+| 5    | `15/02/2024`     | Self supervision                    |                                                                           | Automatic diffrentiation      	|     HW2     |
+| 6    | `22/02/2024`     | Sequence models                     |                                                                           | Object detection					|             |
+| 7    | `29/02/2024`     | Attention                           |                                                                           | RNN			    				|             |
+| 8    | `07/03/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		|    HW3      |
+| 9    | `14/03/2024`     | VIT       		           			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		    |             |
+| 10   | `21/03/2024`     | GAN                                 |                                                                           | GANs			                	|             |
+| 11   | `04/04/2024`     | VAE                                 |                                                                           | VAEs	                   	    	|Final Project|
+| 12   | `11/04/2024`     | Diffusion models                    |                                                                           | Diffusion models                  |             | 
 | ---- | -------------    | --------------------------------    | ------------------------------------------------------------------------- | --------------------------------- | ----------- |
+

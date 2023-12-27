@@ -8,13 +8,13 @@ Dear Students,
 
 The course weekly schedule is as follows:
 
-1. Lecture, presented by Dr. Chaim Baskin and/or Prof. Alex Bronstein:
+1. Lecture, presented by Dr. Chaim Baskin:
 	Thursdays, 10:30-12:30, Taub 2.  
 
 2. Tutorials, presented by Moshe kimhi:
-	Sundays at 11:30-12:30, Taub 5, and Thursdays at 12:30-13:30 at Taub 7.
+	Thursdays at 12:30-13:30 at Taub 7.
 	
-3. Tutorials, presented by Mitchell Keren Taraday:
+3. Tutorials, presented by Tamir Shor:
 	Teusdays at 13:30-14:30, TBD
 	
 
