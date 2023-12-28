@@ -2,7 +2,7 @@
 permalink: /semesters/
 title: Semesters
 ---
-- [Winter 2024](/cs236781/) (Current semester)
+- [Winter 2024](/cs236781/)(Current semester)
 - Spring 2023
 - Winter 2022-23 
 - Spring 2022 
