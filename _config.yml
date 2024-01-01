@@ -17,7 +17,7 @@ title_separator          : "|"
 name                     : "VISTA Lab"
 description              : "Course website"
 url                      : "https://vistalab-technion.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/cs236781" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" #"/cs236781" # the subpath of your site, e.g. "/blog"
 repository               : "vistalab-technion/cs236781" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "https://placehold.it/500x300" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : false # true, false (default)
