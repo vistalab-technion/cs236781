@@ -1,6 +1,6 @@
 main:
   - title: "Info"
-    url: /_info/
+    url: /info/
   - title: "Lectures"
     url: /_lectures/
   - title: "Tutorials"
