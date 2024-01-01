@@ -8,8 +8,7 @@ VAE, VQ-VAE and Dall-E
 
 ## Video
 
-On [youtube](https://www.youtube.com/watch?v=98V7VRAFJGM&list=PLM0a6Z788YAa_WCy_V-q9NrGm5qQegZR5&index=12)
-
+After class
 
 ## Slides
 
