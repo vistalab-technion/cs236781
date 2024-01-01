@@ -2,9 +2,9 @@ main:
   - title: "Info"
     url: /info/
   - title: "Lectures"
-    url: /lectures/
+    url: /_lectures/
   - title: "Tutorials"
-    url: /tutorials/
+    url: /_tutorials/
   - title: "Assignments"
-    url: /assignments/
+    url: /_assignments/
 
