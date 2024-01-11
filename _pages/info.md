@@ -116,7 +116,7 @@ lecture before each respective class.
 | 2    | `25/01/2024`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
 | 3    | `01/02/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
 | 4    | `08/02/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
-| 5    | `15/02/2024`     | Self supervision                    |                                                                           | Automatic diffrentiation      	|     HW2     |
+| 5    | `15/02/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation      	|     HW2     |
 | 6    | `22/02/2024`     | Sequence models                     |                                                                           | Object detection					|             |
 | 7    | `29/02/2024`     | Attention                           |                                                                           | RNN			    				|             |
 | 8    | `07/03/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		|    HW3      |
