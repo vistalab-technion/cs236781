@@ -14,8 +14,13 @@ alt="" caption="" ref=""
 
 
 ## Video
+
+[Hebrew](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=75e9aa4a-2270-460d-b225-b0fa00efbf68)
+
 From last semester:
-[In english](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d304d55e-41d6-4a71-adaf-af3b00a6f26e)
+[english](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d304d55e-41d6-4a71-adaf-af3b00a6f26e)
+
+
 
 ## Slides
 
