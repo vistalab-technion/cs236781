@@ -18,5 +18,5 @@ Soon
 
 ## Slides
 
-Can be seen Soon
+Can be seen [HERE](https://www.dropbox.com/scl/fi/4v49wy5bkjeqhn9p2e1dz/236781_2.pptx?rlkey=dbk2k87hip6i6z1tl6kcfbwra&dl=0)
 
