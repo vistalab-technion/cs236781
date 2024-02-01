@@ -13,7 +13,8 @@ alt="" caption="" ref=""
 
 
 ## Video
-Soon
+
+[Watch here](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e8006782-cb74-4df1-bc66-b10200cf6edf)
 
 
 ## Slides
