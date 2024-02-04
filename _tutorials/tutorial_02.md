@@ -22,10 +22,14 @@ jupyter lab
 ```
 to update your environment and run jupyter.
 
-## Video (requires Technion account)
+## Moshe's Tutorial (requires Technion account)
 
 I did not record myself in hebrew, one will upload soon.
 
+## Tamir's Tutorial
+{% include panopto_embed.html
+
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=014b97ff-5173-4b8c-9f1b-b10000d6792f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
 
 [English from last semester](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a2491a95-9c2d-4078-a551-af4200bcd695)
 
