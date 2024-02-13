@@ -18,7 +18,6 @@ Hebrew:
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=af19b0c9-5f91-467c-a032-b10900c67b1e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
 
 
-
 english from last semester:
 
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=c13e09a8-4eeb-4f92-be47-af4900c2c7c2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
