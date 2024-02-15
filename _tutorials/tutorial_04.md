@@ -12,8 +12,12 @@ The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-
 
 ## Video (requires Technion account)
 
-Hebrew:
+Hebrew (Moshe):
 
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=d5a646b5-3c24-4b94-ac96-b11000cc5531&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
+
+Hebrew (Tamir):
+
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=98b8583a-b4e8-4b09-b66c-b11500d21719&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
 
 
