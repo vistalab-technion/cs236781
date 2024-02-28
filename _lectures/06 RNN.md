@@ -3,7 +3,7 @@ title: "Lecture 6: RNN"
 header:
 ---
 
-
+This lecture is about recurrent neural networks.
 
 ## Video
 
