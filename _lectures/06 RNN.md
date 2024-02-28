@@ -7,6 +7,7 @@ header:
 
 ## Video
 
+Watch in [HERE](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e397d7f9-779a-43f6-89ae-b11e00c6f795)
 
 ## Slides
 
