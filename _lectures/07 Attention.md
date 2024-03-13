@@ -8,6 +8,7 @@ The seminal attention mechanisem
 
 ## Video
 
+Can be watched [HERE](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b7f55e56-663e-4a2a-8be5-b12500c0a8e1)
 
 ## Slides
 
