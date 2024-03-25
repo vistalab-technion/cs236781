@@ -1,5 +1,5 @@
 ---
-title: 2024-03-25-Some Announcements.md
+title: Some Announcements
 author: tamir
 excerpt: Makeup tutorial and lecture room change
 ---
