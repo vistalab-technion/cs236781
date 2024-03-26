@@ -1,5 +1,5 @@
 ---
-title: "Tutorial 9: GAN"
+title: "Tutorial 10: GAN"
 author: tamir
 published: true
 ---
