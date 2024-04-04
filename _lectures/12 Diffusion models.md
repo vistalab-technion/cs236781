@@ -10,5 +10,5 @@ Soon
 
 ## Slides
 
-Can be seen [HERE](https://www.dropbox.com/scl/fi/1yy93e0v034o60hzj58x5/236781_lec12_DM_1.pptx?rlkey=mnf4hwa7afdq2ggrbhxdi5kpm&dl=0)
+Can be seen [HERE](https://www.dropbox.com/scl/fi/i5iwibspsqoxiss1l2qzj/236781_lec12_diffusion.pptx?rlkey=0pcz29ffuk8wu32gippoono5w&dl=0)
 
