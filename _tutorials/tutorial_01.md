@@ -33,7 +33,7 @@ src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Embed.aspx?id=f4958c54-f
 
 {% include panopto_embed.html
 
-src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=014b97ff-5173-4b8c-9f1b-b10000d6792f&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c2fdee3a-227e-476d-bb6d-b0f900d54446&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
 
 [English from last semester](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5086ba8e-f8fe-4cfd-98e7-af3b00ad1f95)
 
