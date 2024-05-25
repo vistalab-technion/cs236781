@@ -3,6 +3,7 @@ permalink: /semesters/
 title: Semesters
 ---
 - [Winter 2024](/cs236781/) (Current semester)
+- [Sprint 2023](/cs236781/semesters/s23)
 - Spring 2022 
 - [Winter 2021-22](/cs236781/semesters/w22)
 - [Spring 2021](/cs236781/semesters/sp21)
