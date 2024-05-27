@@ -4,12 +4,7 @@ title: Course Info
 classes: text-justify wide
 ---
 
-Deep learning is a powerful and relatively new branch of machine learning. In
-recent years it has been successfully applied to some of the most challenging
-problems in the broad field of AI, such as recognizing objects in an image,
-converting speech to text or playing games. In many such tasks, the state of
-the art performance today is attained by deep-learning algorithms, in some
-cases surpassing human-level performance.
+Deep learning is a transformative technology that stands at the forefront of artificial intelligence research and applications. Its ability to learn from vast amounts of data and its versatility across a wide range of domains—from medical diagnosis to autonomous driving—makes it an essential skill for the future. As technologies evolve, deep learning provides the tools to not only enhance current systems but also to innovate and drive advancements that were once thought impossible. By mastering deep learning, students at Technion will be equipped with cutting-edge skills that are highly sought after in the job market, enabling them to contribute to significant technological impacts across industries worldwide.
 
 This course will focus on the theory and algorithms behind deep learning, as
 well as on software techniques that allow efficient training of
@@ -39,15 +34,14 @@ Second Homework assignment : 25%
 Third Homework assignment : 25%
 Final Project: 40%
 
-The Project might have a competitive component to it. If there will be, the course staff will anounce it in advance.
+The Project might have a competitive component to it, but it will not effect your final grade by more then 5%.
 
-**Reserve Duty**: Please come to the tutor in charge if you have specific needs due to army servise.
+**Reserve Duty**: Please come to the tutor in charge if you have specific needs due to army servise!
 
 **Language**: All course materials (including lecture and tutorial videos) are provided in English.
 This semester the frontal lectures and tutorials will be in Hebrew.
 
 **Credits**: 3.0.
-
 
 ### Prerequisites
 
@@ -112,17 +106,19 @@ lecture before each respective class.
 
 | #    | Date             | Lecture                             | Supplemental (video)                                                      | Tutorial                          | Homework    |
 | ---- | -------------    | -------------------------------     | ------------------------------------------------------------------------- | --------------------------------- | ----------  |
-| 1    | `18/01/2024`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch I 	|    HW1      |
-| 2    | `25/01/2024`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |             |
-| 3    | `01/02/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
-| 4    | `08/02/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
-| 5    | `15/02/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation      	|     HW2     |
-| 6    | `22/02/2024`     | Sequence models                     |                                                                           | Object detection					|             |
-| 7    | `29/02/2024`     | Attention                           |                                                                           | RNN			    				|             |
-| 8    | `07/03/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		|    HW3      |
-| 9    | `14/03/2024`     | VIT       		           			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		    |             |
-| 10   | `21/03/2024`     | GAN                                 |                                                                           | GANs			                	|             |
-| 11   | `04/04/2024`     | VAE                                 |                                                                           | VAEs	                   	    	|Final Project|
-| 12   | `11/04/2024`     | Diffusion models                    |                                                                           | Diffusion models                  |             | 
+| 1    | `30/05/2024`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch I 	  |             |
+| 2    | `06/06/2024`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |    HW1      |
+|  -   | `13/06/2024`     | Shabout - no class                  |                                                                           |                                   |             |
+| 3    | `20/06/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
+|  -   | `27/06/2024`     | student festival                    |                                                                           |                                   |             |
+| 4    | `01/07/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |    HW2      |
+| 5    | `03/07/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation        	|             |
+| 6    | `11/07/2024`     | Sequence models                     |                                                                           | Object detection				        	|             |
+| 7    | `18/07/2024`     | Attention                           |                                                                           | RNN			    				              |             |
+| 8    | `25/07/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		    |    HW3      |
+| 9    | `01/08/2024`     | VIT       		           			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		            |             |
+| 10   | `08/08/2024`     | GAN                                 |                                                                           | GANs			                      	|             |
+| 11   | `15/08/2024`     | Diffusion models                    |                                                                           | DDPM	                   	      	|Final Project|
+| 12   | `22/08/2024`     | Multi-modality                      |                                                                           | Multi-modality                    |            | 
 | ---- | -------------    | --------------------------------    | ------------------------------------------------------------------------- | --------------------------------- | ----------- |
 
