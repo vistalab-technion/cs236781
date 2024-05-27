@@ -30,15 +30,6 @@ tamir:
   #   location: Zoom
   #   time: Thursday, 17:30
 
- 
-yair:
-  name: Yair Davidson
-  bio: Homework Checker
-  avatar: "/assets/images/bio-photo-generic.jpg"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto: yairdavidson@campus.technion.ac.il"
 
 ohad:
   name: Ohad Einav
