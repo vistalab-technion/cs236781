@@ -15,7 +15,7 @@ alt="" caption="" ref=""
 
 ## Video
 
-<!--[Hebrew](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=75e9aa4a-2270-460d-b225-b0fa00efbf68)-->
+[Hebrew](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2098fb5b-f59b-45c4-8a7e-b18000b8b820)
 
 ### Older version
 
