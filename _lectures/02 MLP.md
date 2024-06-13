@@ -16,7 +16,7 @@ alt="" caption="" ref=""
 ## Video
 
 
-[Hebrew](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6fafb42c-6543-4ef3-8f8f-b18700baa9bd)
+[Recording](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6fafb42c-6543-4ef3-8f8f-b18700baa9bd)
 
 ## Slides
 
