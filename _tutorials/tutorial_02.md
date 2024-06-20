@@ -24,7 +24,10 @@ to update your environment and run jupyter.
 
 ## Moshe's Tutorial (requires Technion account)
 
-I did not record myself in hebrew, one will upload soon.
+{% include panopto_embed.html
+
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=c82177e1-b9b8-4368-a9fd-b18500cb6138&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
+
 
 ## Tamir's Tutorial
 {% include panopto_embed.html
