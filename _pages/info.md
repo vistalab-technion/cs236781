@@ -112,7 +112,7 @@ lecture before each respective class.
 | 3    | `20/06/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
 |  -   | `27/06/2024`     | student festival                    |                                                                           |                                   |    HW2      |
 | 4    | `01/07/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
-| 5    | `03/07/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation        	|             |
+| 5    | `04/07/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation        	|             |
 | 6    | `11/07/2024`     | Sequence models                     |                                                                           | Object detection				        	|             |
 | 7    | `18/07/2024`     | Attention                           |                                                                           | RNN			    				              |    HW3      |
 | 8    | `25/07/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		    |             |
