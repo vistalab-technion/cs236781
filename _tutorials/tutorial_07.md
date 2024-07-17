@@ -11,3 +11,5 @@ The tutorial notebook can be viewed [here](https://nbviewer.org/github/vistalab-
 
 ## Video (requires Technion account)
 
+Tamir:
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dbf1b620-df61-4b5d-b906-b1b000b2c4a0" %}
