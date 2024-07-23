@@ -7,6 +7,7 @@ This lecture is about the attention mechanism.
 
 ## Video
 
+Acess [HERE](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=504dd381-4b12-4cdc-b938-b1b100ab1f5d)
 
 ## Slides
 
