@@ -1,10 +1,9 @@
 ---
-title: "Lecture 7: Transformers"
+title: "Lecture 8+9: Transformers"
 header:
 ---
 
-This one is about the Transformer architecture: "attention is all you need" and more.
-
+Transformers, LLM and ViT
 ## Video
 
 
