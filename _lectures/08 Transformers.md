@@ -7,7 +7,9 @@ Transformers, LLM and ViT
 
 
 ## Video
- [Lecture 8]](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=957c00fe-7882-426d-abaf-b1b800aabbc1)
+ [Lecture 8](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=957c00fe-7882-426d-abaf-b1b800aabbc1)
+ [Lecture 9](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=028ca3b1-8ce5-4890-af1a-b1bf009a140f)
+
 
 ## Slides
 
