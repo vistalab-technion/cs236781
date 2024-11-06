@@ -1,0 +1,10 @@
+main:
+  - title: "Info"
+    url: /info/
+  - title: "Lectures"
+    url: /lectures/
+  - title: "Tutorials"
+    url: /tutorials/
+  - title: "Assignments"
+    url: /assignments/
+

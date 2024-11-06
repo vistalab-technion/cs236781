@@ -11,4 +11,3 @@ title: Semesters
 - [Winter 2019-20](/cs236781/semesters/w1920)
 - [Spring 2019](/cs236781/semesters/sp19)
 - [Winter 2018-19](/cs236781/semesters/w1819)
-- [sppring 2024](/cs236781/semesters/s23)

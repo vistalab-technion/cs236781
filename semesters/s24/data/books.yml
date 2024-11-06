@@ -6,17 +6,6 @@ goodfellow2016:
   url: https://www.deeplearningbook.org
   cover_image: "https://images-na.ssl-images-amazon.com/images/I/61fim5QqaqL.jpg"
 
-goodfellow2016:
-  title: Deep Learning
-  author: Christopher M bISHOP, Hush Bishop
-  publisher: Springer
-  year: 2024
-  url: https://www.bishopbook.com/
-  cover_image: "https://www.bishopbook.com/assets/images/deep-learning-book-cover.jpg"
-
-
-
-
 # aggarwal2018:
 #   title: Neural Networks and Deep Learning
 #   author: Charu C. Aggarwal

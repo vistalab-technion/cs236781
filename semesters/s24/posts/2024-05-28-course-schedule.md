@@ -8,14 +8,14 @@ Dear Students,
 
 The course weekly schedule is as follows:
 
-1. Lecture, presented by Prof. Or Litany:
-	TBD.  
+1. Lecture, presented by Dr. Chaim Baskin:
+	Thursdays, 10:30-12:30, Sego 1.  
 
 2. Tutorials, presented by Moshe kimhi:
-	TBD
+	Sundays at 11:30-12:20 and Teusdays 13:30-14:30, both at Ulman 301.
 	
 3. Tutorials, presented by Tamir Shor:
-	TBD
+	Thursdays at 12:30-13:30, Ulman 306
 	
 
 Notes:
