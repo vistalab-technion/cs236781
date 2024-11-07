@@ -101,24 +101,22 @@ Performing the assignments **by yourself**  is a crucial aspect of the course, w
 will provide you with many of the technical skills required to be effective
 with Deep Learning.
 
-This semester's syllabus is provided below. Please watch the linked (🔗) video
-lecture before each respective class.
-
-| #    | Date             | Lecture                             | Supplemental (video)                                                      | Tutorial                          | Homework    |
-| ---- | -------------    | -------------------------------     | ------------------------------------------------------------------------- | --------------------------------- | ----------  |
-| 1    | `30/05/2024`     | Introduction + Supervised learning  |                                                                           | Supervised learning, PyTorch I 	  |             |
-| 2    | `06/06/2024`     | Neural networks, CNNs I             | Supervised learning([🔗]({{site.baseurl}}/lectures/02-supervised/))       | MLP, PyTorch II                   |    HW1      |
-|  -   | `13/06/2024`     | Shabout - no class                  |                                                                           |                                   |             |
-| 3    | `20/06/2024`     | Neural networks, CNNs II            | CNN    [🔗]({{site.baseurl}}/lectures/03-neural_nets/)                    | CNNs                              |             |
-|  -   | `27/06/2024`     | student festival                    |                                                                           |                                   |    HW2      |
-| 4    | `01/07/2024`     | Optimization and Training I         | Optimization ([🔗]({{site.baseurl}}/lectures/04-optimization/))           | Optimization                      |             |
-| 5    | `04/07/2024`     | Optimization and Training II        |                                                                           | Automatic diffrentiation        	|             |
-| 6    | `11/07/2024`     | Sequence models                     |                                                                           | Object detection				        	|             |
-| 7    | `18/07/2024`     | Attention                           |                                                                           | RNN			    				              |    HW3      |
-| 8    | `25/07/2024`     | Transformers  	                    | Sequence models ([🔗]({{site.baseurl}}/lectures/05-sequence/))            | Attention                 		    |             |
-| 9    | `01/08/2024`     | VIT       		           			| Unsupervised learning ([🔗]({{site.baseurl}}/lectures/06-unsupervised/))  | Transformers	           		            |             |
-| 10   | `08/08/2024`     | GAN                                 |                                                                           | GANs			                      	|             |
-| 11   | `15/08/2024`     | Diffusion models                    |                                                                           | DDPM	                   	      	|Final Project|
-| 12   | `22/08/2024`     | Multi-modality                      |                                                                           | Multi-modality                    |            | 
-| ---- | -------------    | --------------------------------    | ------------------------------------------------------------------------- | --------------------------------- | ----------- |
+This semester's syllabus is provided below. 
+30.12- hanuka
+| #    | Date             | Lecture                             | Tutorial                          | Homework    |
+| ---- | -------------    | -------------------------------     | --------------------------------- | ----------  |
+| 1    | `11/11/2024`     | Introduction + Supervised learning  | Supervised learning, PyTorch I 	  |             |
+| 2    | `18/11/2024`     | Neural networks, CNNs I             | MLP, PyTorch II                   |    HW1      |
+| 3    | `25/11/2024`     | Neural networks, CNNs II            | CNNs                              |             |
+| 4    | `02/12/2024`     | Optimization and Training I         | Optimization                      |             |
+| 5    | `09/12/2024`     | Optimization and Training II        | Automatic diffrentiation        	|             |
+| 6    | `16/12/2024`     | Sequence models                     | Object detection				        	|             |
+| 7    | `23/12/2024`     | Attention                           | RNN			    				              |    HW3      |
+| -    | `30/12/2024`     | hanuka- no class  	                |                            		    |             |
+| 8    | `06/01/2025`     | Transformers  	                    | Attention                 		    |             |
+| 9    | `13/01/2025`     | VIT       		           			      | Transformers	           		      |             |
+| 10   | `20/01/2025`     | GAN                                 | GANs			                      	|             |
+| 11   | `27/01/2025`     | Diffusion models                    | DDPM	                   	      	|Final Project|
+| 12   | `03/01/2025`     | Multi-modality                      | Multi-modality                    |             | 
+| ---- | -------------    | --------------------------------    | --------------------------------- | ----------- |
 
