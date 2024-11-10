@@ -93,7 +93,7 @@ For your own reference, the following material may be useful.
 ## Detailed Syllabus
 
 
-The lectures and tutorials are **In person**, and suplementry matirial with teoretical background 
+The lectures and tutorials are **In zoom only**, and suplementry matirial with teoretical background 
 exist in the [Lectures]({{ site.baseurl }}/lectures) page.
 
 The tutorials are based on detailed and self-contained Jupyter notebooks, which guide you through.
