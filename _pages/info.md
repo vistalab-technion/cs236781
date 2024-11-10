@@ -38,6 +38,9 @@ The Project might have a competitive component to it, but it will not effect you
 
 **Reserve Duty**: Please come to the tutor in charge if you have specific needs due to army servise!
 
+**Late submission**: In general, late submission will not be accepted, i.e. graded as 0.
+If you have a valid reason to request extention please contact the course staff.
+
 **Language**: All course materials (including lecture and tutorial videos) are provided in English.
 This semester the frontal lectures and tutorials will be in Hebrew.
 
