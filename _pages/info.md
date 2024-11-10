@@ -102,7 +102,8 @@ will provide you with many of the technical skills required to be effective
 with Deep Learning.
 
 This semester's syllabus is provided below. 
-30.12- hanuka
+
+
 | #    | Date             | Lecture                             | Tutorial                          | Homework    |
 | ---- | -------------    | -------------------------------     | --------------------------------- | ----------  |
 | 1    | `11/11/2024`     | Introduction + Supervised learning  | Supervised learning, PyTorch I 	  |             |
@@ -119,4 +120,3 @@ This semester's syllabus is provided below.
 | 11   | `27/01/2025`     | Diffusion models                    | DDPM	                   	      	|Final Project|
 | 12   | `03/01/2025`     | Multi-modality                      | Multi-modality                    |             | 
 | ---- | -------------    | --------------------------------    | --------------------------------- | ----------- |
-
