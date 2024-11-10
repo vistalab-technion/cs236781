@@ -109,10 +109,10 @@ This semester's syllabus is provided below.
 | 2    | `18/11/2024`     | Neural networks, CNNs I             | MLP, PyTorch II                   |    HW1      |
 | 3    | `25/11/2024`     | Neural networks, CNNs II            | CNNs                              |             |
 | 4    | `02/12/2024`     | Optimization and Training I         | Optimization                      |             |
-| 5    | `09/12/2024`     | Optimization and Training II        | Automatic diffrentiation        	|             |
+| 5    | `09/12/2024`     | Optimization and Training II        | Automatic diffrentiation        	|    HW2      |
 | 6    | `16/12/2024`     | Sequence models                     | Object detection				        	|             |
-| 7    | `23/12/2024`     | Attention                           | RNN			    				              |    HW3      |
-| -    | `30/12/2024`     | hanuka- no class  	                |                            		    |             |
+| 7    | `23/12/2024`     | Attention                           | RNN			    				              |             |
+| -    | `30/12/2024`     | hanuka- no class  	                |                            		    |   HW3       |
 | 8    | `06/01/2025`     | Transformers  	                    | Attention                 		    |             |
 | 9    | `13/01/2025`     | VIT       		           			      | Transformers	           		      |             |
 | 10   | `20/01/2025`     | GAN                                 | GANs			                      	|             |
