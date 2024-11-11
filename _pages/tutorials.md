@@ -5,7 +5,7 @@ collection: tutorials
 permalink: /tutorials/
 author_profile: false
 ---
-[Zoom link for Tamir's tutorials](https://technion.zoom.us/j/93807655419)
+[Zoom link for Tamir's tutorials](https://technion.zoom.us/j/93807655419) <br>   
 [Zoom link for Moshe's tutorials](https://technion.zoom.us/j/3881992654)
 
 
