@@ -7,8 +7,13 @@ permalink: /lectures/
 classes:
     - wide
 ---
-[Zoom link for lectures](https://technion.zoom.us/j/4108205267)
 
+
+Join Zoom Meeting
+https://technion.zoom.us/j/92170385542?pwd=jd7cSGLMr7clbgprAR0IEToPb6lIPa.1
+
+Meeting ID: 921 7038 5542
+Passcode: 964601
 
 The lecture presentations and the accompanying material for each lecture is posted here.
 
