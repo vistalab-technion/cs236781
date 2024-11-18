@@ -42,7 +42,7 @@ The Project might have a competitive component to it, but it will not effect you
 If you have a valid reason to request extention please contact the course staff.
 
 **Language**: All course materials (including lecture and tutorial videos) are provided in English.
-This semester the frontal lectures and tutorials will be in Hebrew.
+This semester the frontal lectures and tutorials will be in English.
 
 **Credits**: 3.0.
 
