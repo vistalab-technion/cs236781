@@ -10,5 +10,5 @@ header:
 
 
 ## Slides
-[HERE]({{ site.baseurl }}/assets/236781_winter24_lec02.pdf)
+[Here](https://github.com/vistalab-technion/cs236781/blob/master/assets/236781_winter24_lec02.pptx)
 
