@@ -10,6 +10,5 @@ header:
 
 
 ## Slides
-
-Can be seen [HERE](assets/236781_winter24_lec02.pdf)
+[HERE]({{ site.baseurl }}/assets/236781_winter24_lec02.pdf)
 
