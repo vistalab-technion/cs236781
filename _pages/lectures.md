@@ -17,6 +17,12 @@ Meeting ID: 921 7038 5542
 
 Passcode: 964601
 
+
+## Recorder lectures
+
+Can be acessed via the [Panopto](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=a1c5a124-18e4-4c97-b071-b22c00ef4c48) directory
+
+
 The lecture presentations and the accompanying material for each lecture is posted here.
 
 <div class="grid-collection-container">
