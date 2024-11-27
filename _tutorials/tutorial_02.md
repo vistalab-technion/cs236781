@@ -22,6 +22,10 @@ jupyter lab
 ```
 to update your environment and run jupyter.
 
+## Moshe
+
+{% include panopto_embed.html
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=1a832acd-3c68-469e-85d4-b22f00cbd0a0&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
 
 
 ## Tamir's Tutorial

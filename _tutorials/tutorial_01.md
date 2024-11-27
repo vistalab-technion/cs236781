@@ -23,6 +23,15 @@ jupyter lab
 ```
 to update your environment and run jupyter.
 
+# Moshe's recording (requires Technion account)
+
+{% include panopto_embed.html
+src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=5086ba8e-f8fe-4cfd-98e7-af3b00ad1f95&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=true&interactivity=all" %}
+
+
+[Hebrew](https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=58f30706-1282-4b19-a669-b22800ce996c)
+
+
 ## Tamir's Tutorial (requires Technion account)
 
 {% include panopto_embed.html
