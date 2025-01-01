@@ -1,6 +1,6 @@
 ---
-title: "Homework 2"
-permalink: assignments/hw2
+title: "Homework 2 added files"
+permalink: assignments/hw2_add
 author: Moshe
 published: true
 ---
