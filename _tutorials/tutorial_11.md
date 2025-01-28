@@ -14,3 +14,6 @@ Moshe's Recording (Hebrew)
 
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=6ae3c447-36d1-4e86-a29b-b1cc00ad5bba&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
 
+Tamir's Recording (Previous Semesters; Hebrew)
+
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=dfca41b9-0d72-4d0d-bae5-b14600c3e035&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}

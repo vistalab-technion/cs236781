@@ -14,3 +14,6 @@ Moshe's Recording (requires Technion account) (from previus semester)
 
 {% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3d50a236-0516-4076-ad62-b13300c64122&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
 
+Tamir's Recording
+
+{% include panopto_embed.html src="https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=09d8d566-151c-4ef8-a58e-b26500cf3aff&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" %}
